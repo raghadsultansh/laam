@@ -47,6 +47,10 @@ MANIFEST
 # IDEs
 .vscode/
 .idea/
+.claude/
+
+# TypeScript build info
+tsconfig.tsbuildinfo
 *.swp
 *.swo
 *.sublime-project
