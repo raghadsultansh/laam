@@ -84,3 +84,5 @@ logs/
 # Temporary files
 *.tmp
 *.temp
+
+.clone/
