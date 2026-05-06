@@ -1,0 +1,12 @@
+docling
+langchain
+langchain-core
+langchain-qdrant
+qdrant-client
+langchain-openai
+python-dotenv
+tiktoken
+rank-bm25
+langchain-community
+langchain-huggingface
+sentence-transformers
