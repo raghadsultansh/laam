@@ -1,45 +1,47 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { PanelRightClose } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { xbShafigh } from '@/lib/fonts';
-
-const sources = {
-  en: [
-    { title: 'Revenue section', page: 'Page 42', snippet: 'Revenue increased across the year with stronger contribution from core operations.' },
-    { title: 'Risk factors', page: 'Page 117', snippet: 'The report highlights commodity exposure and market volatility as key watch areas.' },
-  ],
-  ar: [
-    { title: 'قسم الإيرادات', page: 'الصفحة 42', snippet: 'ارتفعت الإيرادات خلال العام مع مساهمة أقوى من العمليات الأساسية.' },
-    { title: 'عوامل المخاطر', page: 'الصفحة 117', snippet: 'يشير التقرير إلى التعرض للسلع وتقلبات السوق كعوامل يجب متابعتها.' },
-  ],
-};
-
-const info = {
-  en: [
-    { label: 'Attached reports', value: 'Aramco 2024, STC 2023' },
-    { label: 'Sector coverage', value: 'Energy, Technology' },
-    { label: 'Processing status', value: 'Ready' },
-  ],
-  ar: [
-    { label: 'التقارير المرفقة', value: 'أرامكو 2024، إس تي سي 2023' },
-    { label: 'القطاعات', value: 'الطاقة، التقنية' },
-    { label: 'حالة المعالجة', value: 'جاهز' },
-  ],
-};
+import type { Source } from '@/lib/api';
 
 export function EvidencePanel({
   onTogglePanel,
+  sources,
+  reportLabel,
+  reportStatus,
+  highlightedIndex,
 }: {
   onTogglePanel: () => void;
+  sources?: Source[];
+  reportLabel?: string;
+  reportStatus?: string;
+  highlightedIndex?: number;
 }) {
   const { locale } = useAppPreferences();
   const isArabic = locale === 'ar';
   const [tab, setTab] = useState<'sources' | 'info'>('sources');
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  // Right panel is optional support content. It should not block the main chat flow.
-  // Replace these arrays with citations/report metadata from the answer API later.
+  // Scroll to and briefly flash highlighted source
+  useEffect(() => {
+    if (highlightedIndex == null) return;
+    setTab('sources');
+    const el = cardRefs.current[highlightedIndex];
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, [highlightedIndex]);
+
+  const infoItems = isArabic
+    ? [
+        { label: 'التقرير المرفق', value: reportLabel || '—' },
+        { label: 'حالة المعالجة', value: reportStatus === 'ready' ? 'جاهز' : reportStatus || '—' },
+      ]
+    : [
+        { label: 'Attached report', value: reportLabel || '—' },
+        { label: 'Processing status', value: reportStatus === 'ready' ? 'Ready' : reportStatus || '—' },
+      ];
+
   return (
     <aside className="h-[calc(100vh-5.25rem)] w-[340px] rounded-[1.15rem] bg-[var(--card-strong)] p-4 shadow-[var(--shadow-md)]">
       <div className={`mb-4 flex items-center ${isArabic ? 'justify-start' : 'justify-end'}`}>
@@ -48,11 +50,11 @@ export function EvidencePanel({
           onClick={onTogglePanel}
           className="grid h-10 w-10 place-content-center rounded-2xl bg-[var(--background)] text-[var(--foreground)] shadow-[var(--shadow-sm)] transition hover:bg-[var(--muted)]"
           aria-label={isArabic ? 'إغلاق لوحة المعلومات' : 'Close info panel'}
-          title={isArabic ? 'إغلاق لوحة المعلومات' : 'Close info panel'}
         >
           <PanelRightClose className="h-4 w-4 text-[var(--brand)]" />
         </button>
       </div>
+
       <div className="flex rounded-[1.2rem] bg-[var(--background)] p-1">
         <button
           type="button"
@@ -74,21 +76,48 @@ export function EvidencePanel({
         </button>
       </div>
 
-      <div className="mt-4 space-y-3">
-        {tab === 'sources'
-          ? sources[locale].map((source) => (
-              <div key={source.title} className="rounded-[1.2rem] bg-[var(--card-strong)]/76 p-4 shadow-[var(--shadow-sm)]">
-                <p className={`text-sm font-semibold text-[var(--foreground)] ${isArabic ? `${xbShafigh.className} arabic-display` : ''}`}>{source.title}</p>
-                <p className="mt-1 text-xs font-semibold text-[var(--brand)]">{source.page}</p>
-                <p className="mt-3 text-sm leading-7 text-[var(--muted-foreground)]">{source.snippet}</p>
-              </div>
-            ))
-          : info[locale].map((item) => (
-              <div key={item.label} className="rounded-[1.2rem] bg-[var(--card-strong)]/76 p-4 shadow-[var(--shadow-sm)]">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--muted-foreground)]">{item.label}</p>
-                <p className="mt-2 text-sm font-semibold text-[var(--foreground)]">{item.value}</p>
-              </div>
-            ))}
+      <div className="mt-4 space-y-3 overflow-y-auto" style={{ maxHeight: 'calc(100% - 8rem)' }}>
+        {tab === 'sources' ? (
+          sources && sources.length > 0 ? (
+            sources.map((src, i) => {
+              const isHighlighted = highlightedIndex === i;
+              return (
+                <div
+                  key={i}
+                  ref={(el) => { cardRefs.current[i] = el; }}
+                  className={`rounded-[1.2rem] p-4 shadow-[var(--shadow-sm)] transition-all duration-500 ${
+                    isHighlighted
+                      ? 'bg-[var(--brand-soft)] ring-2 ring-[var(--brand)]/40'
+                      : 'bg-[var(--card-strong)]/76'
+                  }`}
+                >
+                  <p className={`text-sm font-semibold text-[var(--foreground)] ${isArabic ? `${xbShafigh.className} arabic-display` : ''}`}>
+                    {src.section_title || (isArabic ? 'قسم غير معروف' : 'Unknown section')}
+                  </p>
+                  {src.page_number != null ? (
+                    <p className="mt-1 text-xs font-semibold text-[var(--brand)]">
+                      {isArabic ? `الصفحة ${src.page_number}` : `Page ${src.page_number}`}
+                    </p>
+                  ) : null}
+                  {src.snippet ? (
+                    <p className="mt-3 text-sm leading-7 text-[var(--muted-foreground)]">{src.snippet}</p>
+                  ) : null}
+                </div>
+              );
+            })
+          ) : (
+            <p className="py-8 text-center text-sm text-[var(--muted-foreground)]">
+              {isArabic ? 'اسأل سؤالاً لعرض المصادر هنا.' : 'Ask a question to see sources here.'}
+            </p>
+          )
+        ) : (
+          infoItems.map((item) => (
+            <div key={item.label} className="rounded-[1.2rem] bg-[var(--card-strong)]/76 p-4 shadow-[var(--shadow-sm)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--muted-foreground)]">{item.label}</p>
+              <p className="mt-2 text-sm font-semibold text-[var(--foreground)]">{item.value}</p>
+            </div>
+          ))
+        )}
       </div>
     </aside>
   );

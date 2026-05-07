@@ -30,15 +30,15 @@ class StructureAwareChunker:
             meta = getattr(chunk, "meta", None)
             
             page_numbers = set()
-            if meta and hasattr(meta, "doc_items"):
+            if meta and getattr(meta, "doc_items", None):
                 for item in meta.doc_items:
-                    for prov in getattr(item, "prov", []):
+                    for prov in (getattr(item, "prov", None) or []):
                         if hasattr(prov, "page_no"):
                             page_numbers.add(prov.page_no)
-                            
+
             page_str = ", ".join(map(str, sorted(list(page_numbers)))) if page_numbers else "Unknown"
-            
-            headings = getattr(meta, "headings", []) if meta else []
+
+            headings = (getattr(meta, "headings", None) or []) if meta else []
             headings_text = []
             for h in headings:
                 if isinstance(h, str):

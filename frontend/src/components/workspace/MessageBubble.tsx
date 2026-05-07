@@ -1,17 +1,31 @@
 'use client';
 
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
+import type { Source } from '@/lib/api';
+
+function extractFinalAnswer(raw: string): string {
+  const marker = raw.indexOf('**Final Answer**:');
+  if (marker !== -1) return raw.slice(marker + '**Final Answer**:'.length).trim();
+  const marker2 = raw.indexOf('Final Answer:');
+  if (marker2 !== -1) return raw.slice(marker2 + 'Final Answer:'.length).trim();
+  return raw;
+}
 
 export function MessageBubble({
   message,
   role,
+  sources,
+  onSourceClick,
 }: {
   message: string;
   role: 'user' | 'assistant';
+  sources?: Source[];
+  onSourceClick?: (sources: Source[], index: number) => void;
 }) {
   const { locale } = useAppPreferences();
   const isUser = role === 'user';
   const isArabic = locale === 'ar';
+  const displayText = isUser ? message : extractFinalAnswer(message);
 
   return (
     <div className={`flex w-full ${isUser ? 'justify-end' : 'justify-start'}`}>
@@ -25,7 +39,32 @@ export function MessageBubble({
         <p className={`mb-1 text-[11px] font-semibold uppercase tracking-[0.16em] ${isUser ? 'text-white/70' : 'text-[var(--muted-foreground)]'}`}>
           {isUser ? (isArabic ? 'أنت' : 'You') : isArabic ? 'المساعد' : 'Assistant'}
         </p>
-        <p>{message}</p>
+        <p>{displayText}</p>
+
+        {!isUser && sources && sources.length > 0 ? (
+          <div className="mt-3 border-t border-[var(--border)] pt-2">
+            <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--muted-foreground)]">
+              {isArabic ? 'المصادر' : 'Sources'}
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {sources.map((src, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => onSourceClick?.(sources, i)}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-[var(--brand)]/25 bg-[var(--brand-soft)] px-3 py-1 text-[11px] font-semibold text-[var(--brand)] transition hover:bg-[var(--brand)] hover:text-white"
+                >
+                  {src.page_number != null ? (
+                    <span className="opacity-70">{isArabic ? `ص${src.page_number}` : `p.${src.page_number}`}</span>
+                  ) : null}
+                  <span className="max-w-[160px] truncate">
+                    {src.section_title || (isArabic ? 'مصدر' : 'Source')}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );

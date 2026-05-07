@@ -95,10 +95,9 @@ class AnnualReportParser:
         print("[+] Merged successfully! Metadata and ordering preserved.")
         
         # Export to JSON for inspection
-        import json
         output_path = "extracted_docling.json"
         with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(final_doc.model_dump(), f, indent=2)
+            f.write(final_doc.model_dump_json(indent=2))
         print(f"[+] Docling extraction saved to {output_path}")
         
         return final_doc

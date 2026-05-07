@@ -1,9 +1,12 @@
 'use client';
 
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Chrome } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { AuthShell } from '@/components/auth/AuthShell';
+import { supabase } from '@/lib/supabase';
 
 const registerCopy = {
   en: {
@@ -42,18 +45,70 @@ const registerCopy = {
   },
 } as const;
 
-// Visual form only at this stage.
-// Connect this to Firebase createUser and Google sign-up when auth wiring starts.
 export function RegisterForm() {
   const { locale } = useAppPreferences();
   const isArabic = locale === 'ar';
   const copy = registerCopy[locale];
+  const router = useRouter();
+
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+    setLoading(true);
+    setError('');
+
+    const { error: authError } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { data: { full_name: fullName } },
+    });
+
+    if (authError) {
+      setError(authError.message);
+      setLoading(false);
+      return;
+    }
+
+    setSuccess(true);
+    setTimeout(() => router.push('/login'), 3000);
+  }
+
+  async function handleGoogle() {
+    await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: `${window.location.origin}/reports` },
+    });
+  }
+
+  if (success) {
+    return (
+      <AuthShell title={copy.title} subtitle="" contentWidthClassName="max-w-[470px]">
+        <div className="rounded-xl bg-green-50 px-6 py-5 text-center text-sm text-green-700 dark:bg-green-950/40 dark:text-green-400">
+          {isArabic
+            ? 'تم إنشاء حسابك! تحقق من بريدك الإلكتروني لتأكيد التسجيل.'
+            : 'Account created! Check your email to confirm your registration.'}
+        </div>
+      </AuthShell>
+    );
+  }
 
   return (
     <AuthShell title={copy.title} subtitle={copy.subtitle} contentWidthClassName="max-w-[470px]">
-      <form className="space-y-5" dir={isArabic ? 'rtl' : 'ltr'}>
+      <form className="space-y-5" dir={isArabic ? 'rtl' : 'ltr'} onSubmit={handleSubmit}>
         <button
           type="button"
+          onClick={handleGoogle}
           className="flex h-12 w-full items-center justify-center gap-3 rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm font-medium text-[var(--foreground)] transition hover:border-[var(--brand)] hover:text-[var(--brand)]"
         >
           <Chrome className="h-4 w-4" />
@@ -72,7 +127,10 @@ export function RegisterForm() {
           <label className="block text-sm font-semibold text-[var(--foreground)]">{copy.fullName}</label>
           <input
             type="text"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
             placeholder={copy.fullNamePlaceholder}
+            required
             className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
           />
         </div>
@@ -81,7 +139,10 @@ export function RegisterForm() {
           <label className="block text-sm font-semibold text-[var(--foreground)]">{copy.email}</label>
           <input
             type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder={copy.emailPlaceholder}
+            required
             className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
           />
         </div>
@@ -91,7 +152,10 @@ export function RegisterForm() {
             <label className="block text-sm font-semibold text-[var(--foreground)]">{copy.password}</label>
             <input
               type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder={copy.passwordPlaceholder}
+              required
               className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
             />
           </div>
@@ -100,17 +164,27 @@ export function RegisterForm() {
             <label className="block text-sm font-semibold text-[var(--foreground)]">{copy.confirmPassword}</label>
             <input
               type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder={copy.confirmPasswordPlaceholder}
+              required
               className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
             />
           </div>
         </div>
 
+        {error ? (
+          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600 dark:bg-red-950/40 dark:text-red-400">
+            {error}
+          </p>
+        ) : null}
+
         <button
           type="submit"
-          className="h-12 w-full rounded-full bg-[var(--brand)] text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]"
+          disabled={loading}
+          className="h-12 w-full rounded-full bg-[var(--brand)] text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)] disabled:opacity-60"
         >
-          {copy.submit}
+          {loading ? '...' : copy.submit}
         </button>
 
         <p className="text-center text-sm text-[var(--muted-foreground)]">

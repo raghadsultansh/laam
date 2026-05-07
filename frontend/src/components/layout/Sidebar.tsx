@@ -1,59 +1,39 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { Clock3, FileUp, FolderOpen, LayoutDashboard, LogOut, PanelLeftClose, PanelLeftOpen, Plus, Settings2 } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { Logo } from '@/components/Logo';
 import { xbShafigh } from '@/lib/fonts';
+import { listSessions, type BackendSession } from '@/lib/api';
+import { supabase } from '@/lib/supabase';
 
-type SessionHistoryItem = {
-  id: string;
-  titleEn: string;
-  titleAr: string;
-  reportsEn: string;
-  reportsAr: string;
-  active?: boolean;
-};
-
-const sessions: SessionHistoryItem[] = [
-  {
-    id: 'demo',
-    titleEn: 'Aramco + STC Comparison',
-    titleAr: 'مقارنة أرامكو وإس تي سي',
-    reportsEn: '2 reports attached',
-    reportsAr: 'تقريران مرفقان',
-    active: true,
-  },
-  {
-    id: 'rajhi',
-    titleEn: 'Al Rajhi 2024 Review',
-    titleAr: 'مراجعة الراجحي 2024',
-    reportsEn: '1 report attached',
-    reportsAr: 'تقرير واحد مرفق',
-  },
-  {
-    id: 'sabic',
-    titleEn: 'SABIC Risks Session',
-    titleAr: 'جلسة مخاطر سابك',
-    reportsEn: '1 report attached',
-    reportsAr: 'تقرير واحد مرفق',
-  },
-];
-
-// Workspace sidebar uses demo session data right now.
-// Backend should replace sessions with the signed-in user's saved workspaces.
 export function Sidebar({
   collapsed,
   onToggleCollapsed,
   onUploadClick,
+  currentSessionId,
 }: {
   collapsed: boolean;
   onToggleCollapsed: () => void;
   onUploadClick: () => void;
+  currentSessionId?: string;
 }) {
   const { locale } = useAppPreferences();
   const isArabic = locale === 'ar';
+  const router = useRouter();
+  const [sessions, setSessions] = useState<BackendSession[]>([]);
+
+  useEffect(() => {
+    listSessions().then(setSessions).catch(() => {});
+  }, []);
+
+  async function handleLogout() {
+    await supabase.auth.signOut();
+    router.push('/');
+  }
 
   const copy = isArabic
     ? {
@@ -200,22 +180,31 @@ export function Sidebar({
 
         <div className="workspace-sidebar-scroll mt-3 h-full overflow-y-auto pr-1 [direction:ltr]">
           <div className={`space-y-2 pb-3 ${isArabic ? '[direction:rtl]' : '[direction:ltr]'}`}>
-            {sessions.map((session) => (
-              <Link
-                key={session.id}
-                href={`/workspace/${session.id}`}
-                className={`block rounded-[1.2rem] border px-4 py-3 transition ${
-                session.active
-                  ? 'border-transparent bg-[var(--brand-soft)]'
-                  : 'border-transparent bg-[var(--card-strong)]/58 hover:bg-[var(--background)]'
-                }`}
-              >
-                <p className={`text-sm font-semibold text-[var(--foreground)] ${isArabic ? `${xbShafigh.className} arabic-display` : ''}`}>
-                  {isArabic ? session.titleAr : session.titleEn}
-                </p>
-                <p className="mt-1 text-xs text-[var(--muted-foreground)]">{isArabic ? session.reportsAr : session.reportsEn}</p>
-              </Link>
-            ))}
+            {sessions.map((session) => {
+              const isActive = session.id === currentSessionId;
+              const company = session.reports?.companies;
+              const reportYear = session.reports?.fiscal_year ?? '';
+              const subtitle = company
+                ? `${company.name_en}${reportYear ? ` ${reportYear}` : ''}`
+                : reportYear || (isArabic ? 'تقرير' : 'Report');
+
+              return (
+                <Link
+                  key={session.id}
+                  href={`/workspace/${session.id}`}
+                  className={`block rounded-[1.2rem] border px-4 py-3 transition ${
+                    isActive
+                      ? 'border-transparent bg-[var(--brand-soft)]'
+                      : 'border-transparent bg-[var(--card-strong)]/58 hover:bg-[var(--background)]'
+                  }`}
+                >
+                  <p className={`text-sm font-semibold text-[var(--foreground)] ${isArabic ? `${xbShafigh.className} arabic-display` : ''}`}>
+                    {session.title}
+                  </p>
+                  <p className="mt-1 text-xs text-[var(--muted-foreground)]">{subtitle}</p>
+                </Link>
+              );
+            })}
 
             <div className="rounded-[1.2rem] bg-[var(--background)] px-4 py-4">
               <div className="flex items-center gap-2">
@@ -233,7 +222,10 @@ export function Sidebar({
           <Settings2 className="h-4 w-4" />
           {copy.settings}
         </Link>
-        <button className="mt-1 flex w-full items-center gap-3 rounded-[1rem] px-3 py-2.5 text-sm font-medium text-[var(--muted-foreground)] transition hover:bg-[var(--background)] hover:text-[var(--foreground)]">
+        <button
+          onClick={handleLogout}
+          className="mt-1 flex w-full items-center gap-3 rounded-[1rem] px-3 py-2.5 text-sm font-medium text-[var(--muted-foreground)] transition hover:bg-[var(--background)] hover:text-[var(--foreground)]"
+        >
           <LogOut className="h-4 w-4" />
           {copy.logout}
         </button>

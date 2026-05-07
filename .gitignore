@@ -85,4 +85,9 @@ logs/
 *.tmp
 *.temp
 
-.clone/
+# Pipeline runtime artifacts
+*.pkl
+extracted_docling.json
+
+# Demo PDFs — keep folder via .gitkeep only
+demo_reports/*.pdf

@@ -4,26 +4,31 @@ import { FormEvent, useRef, useState } from 'react';
 import { SendHorizonal } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 
-export function QuestionInput() {
+export function QuestionInput({
+  onSubmit,
+  disabled = false,
+}: {
+  onSubmit?: (question: string) => void;
+  disabled?: boolean;
+}) {
   const { locale } = useAppPreferences();
   const isArabic = locale === 'ar';
   const [value, setValue] = useState('');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Makes the input grow while typing instead of showing a textarea scrollbar.
   const resizeTextarea = () => {
     const textarea = textareaRef.current;
     if (!textarea) return;
-
     textarea.style.height = 'auto';
     textarea.style.height = `${textarea.scrollHeight}px`;
   };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!value.trim()) return;
+    const trimmed = value.trim();
+    if (!trimmed || disabled) return;
 
-    // Frontend only for now. Backend chat request should be sent before clearing this.
+    onSubmit?.(trimmed);
     setValue('');
     requestAnimationFrame(() => {
       const textarea = textareaRef.current;
@@ -58,7 +63,11 @@ export function QuestionInput() {
           }`}
         />
 
-        <button type="submit" className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand)] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[var(--brand-alt)]">
+        <button
+          type="submit"
+          disabled={disabled}
+          className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand)] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[var(--brand-alt)] disabled:opacity-50"
+        >
           {isArabic ? 'إرسال' : 'Send'}
           <SendHorizonal className="h-4 w-4" />
         </button>

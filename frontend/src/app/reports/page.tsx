@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { type ClassValue } from 'clsx';
 import clsx from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -14,6 +15,7 @@ import {
   ChevronLeft,
   ChevronRight,
   ExternalLink,
+  Loader2,
   Search,
   SlidersHorizontal,
   X,
@@ -22,6 +24,7 @@ import { FooterSection } from '@/components/landing/FooterSection';
 import { Navbar } from '@/components/layout/Navbar';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { xbShafigh } from '@/lib/fonts';
+import { getReports, createSession } from '@/lib/api';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -127,109 +130,40 @@ type Company = {
   reports: ReportItem[];
 };
 
-// Temporary report library for the frontend demo.
-// Later this should come from the backend reports endpoint.
-const companies: Company[] = [
-  {
-    id: 'rajhi',
-    name: { en: 'Al Rajhi Bank', ar: 'مصرف الراجحي' },
-    sector: { en: 'Banking', ar: 'القطاع البنكي' },
-    logo: '/company-logos/Al_Rajhi_Bank_Logo.png',
-    reports: [
-      { id: 'rajhi-2024', year: '2024', title: { en: 'Annual Report 2024', ar: 'التقرير السنوي 2024' } },
-      { id: 'rajhi-2023', year: '2023', title: { en: 'Annual Report 2023', ar: 'التقرير السنوي 2023' } },
-      { id: 'rajhi-2022', year: '2022', title: { en: 'Annual Report 2022', ar: 'التقرير السنوي 2022' } },
-      { id: 'rajhi-2021', year: '2021', title: { en: 'Annual Report 2021', ar: 'التقرير السنوي 2021' } },
-      { id: 'rajhi-2020', year: '2020', title: { en: 'Annual Report 2020', ar: 'التقرير السنوي 2020' } },
-      { id: 'rajhi-2019', year: '2019', title: { en: 'Annual Report 2019', ar: 'التقرير السنوي 2019' } },
-    ],
-  },
-  {
-    id: 'aramco',
-    name: { en: 'Saudi Aramco', ar: 'أرامكو السعودية' },
-    sector: { en: 'Energy', ar: 'الطاقة' },
-    logo: '/company-logos/Saudi Aramco Logo.png',
-    reports: [
-      { id: 'aramco-2024', year: '2024', title: { en: 'Annual Report 2024', ar: 'التقرير السنوي 2024' } },
-      { id: 'aramco-2023', year: '2023', title: { en: 'Annual Report 2023', ar: 'التقرير السنوي 2023' } },
-      { id: 'aramco-2022', year: '2022', title: { en: 'Annual Report 2022', ar: 'التقرير السنوي 2022' } },
-      { id: 'aramco-2021', year: '2021', title: { en: 'Annual Report 2021', ar: 'التقرير السنوي 2021' } },
-    ],
-  },
-  {
-    id: 'stc',
-    name: { en: 'STC', ar: 'إس تي سي' },
-    sector: { en: 'Technology', ar: 'التقنية' },
-    logo: '/company-logos/Stc-logo.png',
-    reports: [
-      { id: 'stc-2024', year: '2024', title: { en: 'Integrated Report 2024', ar: 'التقرير المتكامل 2024' } },
-      { id: 'stc-2023', year: '2023', title: { en: 'Integrated Report 2023', ar: 'التقرير المتكامل 2023' } },
-      { id: 'stc-2022', year: '2022', title: { en: 'Integrated Report 2022', ar: 'التقرير المتكامل 2022' } },
-      { id: 'stc-2021', year: '2021', title: { en: 'Integrated Report 2021', ar: 'التقرير المتكامل 2021' } },
-      { id: 'stc-2020', year: '2020', title: { en: 'Integrated Report 2020', ar: 'التقرير المتكامل 2020' } },
-      { id: 'stc-2019', year: '2019', title: { en: 'Integrated Report 2019', ar: 'التقرير المتكامل 2019' } },
-      { id: 'stc-2018', year: '2018', title: { en: 'Integrated Report 2018', ar: 'التقرير المتكامل 2018' } },
-    ],
-  },
-  {
-    id: 'sabic',
-    name: { en: 'SABIC', ar: 'سابك' },
-    sector: { en: 'Industrial', ar: 'الصناعة' },
-    logo: '/company-logos/SABIC Logo.png',
-    reports: [
-      { id: 'sabic-2024', year: '2024', title: { en: 'Annual Report 2024', ar: 'التقرير السنوي 2024' } },
-      { id: 'sabic-2023', year: '2023', title: { en: 'Annual Report 2023', ar: 'التقرير السنوي 2023' } },
-      { id: 'sabic-2022', year: '2022', title: { en: 'Annual Report 2022', ar: 'التقرير السنوي 2022' } },
-      { id: 'sabic-2021', year: '2021', title: { en: 'Annual Report 2021', ar: 'التقرير السنوي 2021' } },
-    ],
-  },
-  {
-    id: 'bupa',
-    name: { en: 'Bupa Arabia', ar: 'بوبا العربية' },
-    sector: { en: 'Healthcare', ar: 'الرعاية الصحية' },
-    logo: '/company-logos/Bupa Arabia Logo.png',
-    reports: [
-      { id: 'bupa-2024', year: '2024', title: { en: 'Annual Report 2024', ar: 'التقرير السنوي 2024' } },
-      { id: 'bupa-2023', year: '2023', title: { en: 'Annual Report 2023', ar: 'التقرير السنوي 2023' } },
-      { id: 'bupa-2022', year: '2022', title: { en: 'Annual Report 2022', ar: 'التقرير السنوي 2022' } },
-    ],
-  },
-  {
-    id: 'tawuniya',
-    name: { en: 'Tawuniya', ar: 'التعاونية' },
-    sector: { en: 'Insurance', ar: 'التأمين' },
-    logo: '/company-logos/Tawuniya Logo.png',
-    reports: [
-      { id: 'tawuniya-2024', year: '2024', title: { en: 'Annual Report 2024', ar: 'التقرير السنوي 2024' } },
-      { id: 'tawuniya-2023', year: '2023', title: { en: 'Annual Report 2023', ar: 'التقرير السنوي 2023' } },
-      { id: 'tawuniya-2022', year: '2022', title: { en: 'Annual Report 2022', ar: 'التقرير السنوي 2022' } },
-    ],
-  },
-  {
-    id: 'jarir',
-    name: { en: 'Jarir', ar: 'جرير' },
-    sector: { en: 'Retail', ar: 'التجزئة' },
-    logo: '/company-logos/Jarir Bookstore Logo.png',
-    reports: [
-      { id: 'jarir-2024', year: '2024', title: { en: 'Annual Report 2024', ar: 'التقرير السنوي 2024' } },
-      { id: 'jarir-2023', year: '2023', title: { en: 'Annual Report 2023', ar: 'التقرير السنوي 2023' } },
-      { id: 'jarir-2022', year: '2022', title: { en: 'Annual Report 2022', ar: 'التقرير السنوي 2022' } },
-      { id: 'jarir-2021', year: '2021', title: { en: 'Annual Report 2021', ar: 'التقرير السنوي 2021' } },
-    ],
-  },
-  {
-    id: 'maaden',
-    name: { en: 'Maaden', ar: 'Maaden' },
-    sector: { en: 'Mining', ar: 'Mining' },
-    logo: '/company-logos/Maaden Logo.png',
-    reports: [
-      { id: 'maaden-2024', year: '2024', title: { en: 'Annual Report 2024', ar: 'Annual Report 2024' } },
-      { id: 'maaden-2023', year: '2023', title: { en: 'Annual Report 2023', ar: 'Annual Report 2023' } },
-      { id: 'maaden-2022', year: '2022', title: { en: 'Annual Report 2022', ar: 'Annual Report 2022' } },
-      { id: 'maaden-2021', year: '2021', title: { en: 'Annual Report 2021', ar: 'Annual Report 2021' } },
-    ],
-  },
-];
+const SECTOR_AR: Record<string, string> = {
+  Banking: 'القطاع البنكي',
+  Energy: 'الطاقة',
+  Technology: 'التقنية',
+  Industrial: 'الصناعة',
+  Healthcare: 'الرعاية الصحية',
+  Insurance: 'التأمين',
+  Retail: 'التجزئة',
+  Mining: 'التعدين',
+  'Real Estate': 'العقارات',
+  Petrochemicals: 'البتروكيماويات',
+  Telecommunications: 'الاتصالات',
+  Food: 'الغذاء',
+  Transportation: 'النقل',
+  Utilities: 'الخدمات',
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function adaptCompanies(raw: any[]): Company[] {
+  return raw.map((bc) => ({
+    id: bc.id,
+    name: { en: bc.name_en ?? '', ar: bc.name_ar ?? bc.name_en ?? '' },
+    sector: { en: bc.sector ?? '', ar: SECTOR_AR[bc.sector] ?? bc.sector ?? '' },
+    logo: bc.logo_url ?? '',
+    reports: (bc.reports ?? []).map((r: any) => ({
+      id: r.id,
+      year: String(r.fiscal_year ?? ''),
+      title: {
+        en: r.title ?? `Annual Report ${r.fiscal_year}`,
+        ar: `التقرير السنوي ${r.fiscal_year}`,
+      },
+    })),
+  }));
+}
 
 const copy = {
   en: {
@@ -358,6 +292,8 @@ function ReportSessionModal({
   isArabic,
   onClose,
   onNavigate,
+  onOpenSession,
+  openingSession,
   text,
 }: {
   company: Company | null;
@@ -365,6 +301,8 @@ function ReportSessionModal({
   isArabic: boolean;
   onClose: () => void;
   onNavigate: (reportId: string) => void;
+  onOpenSession: (reportId: string) => void;
+  openingSession: boolean;
   text: (typeof copy)['en'] | (typeof copy)['ar'];
 }) {
   if (!company || !selectedReportId) {
@@ -444,13 +382,15 @@ function ReportSessionModal({
                 >
                   <ChevronRight className="h-4 w-4" />
                 </button>
-                <Link
-                  href="/workspace/demo"
-                  className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--brand-alt)]"
+                <button
+                  type="button"
+                  disabled={openingSession}
+                  onClick={() => onOpenSession(selectedReport.id)}
+                  className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[var(--brand-alt)] disabled:opacity-60"
                 >
+                  {openingSession ? <Loader2 className="h-4 w-4 animate-spin" /> : <ExternalLink className="h-4 w-4" />}
                   {text.openSession}
-                  <ExternalLink className="h-4 w-4" />
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -626,6 +566,11 @@ export default function ReportsPage() {
   const { locale } = useAppPreferences();
   const isArabic = locale === 'ar';
   const text = copy[locale];
+  const router = useRouter();
+
+  const [companies, setCompanies] = useState<Company[]>([]);
+  const [loadingData, setLoadingData] = useState(true);
+  const [openingSession, setOpeningSession] = useState(false);
 
   const [query, setQuery] = useState('');
   const [sectorFilter, setSectorFilter] = useState('all');
@@ -635,14 +580,31 @@ export default function ReportsPage() {
   const [modalState, setModalState] = useState<{ companyId: string; reportId: string } | null>(null);
   const [openFilter, setOpenFilter] = useState<'sector' | 'year' | 'sort' | null>(null);
 
+  useEffect(() => {
+    getReports()
+      .then((data) => setCompanies(adaptCompanies(data)))
+      .catch(() => setCompanies([]))
+      .finally(() => setLoadingData(false));
+  }, []);
+
+  const handleOpenSession = useCallback(async (reportId: string) => {
+    setOpeningSession(true);
+    try {
+      const session = await createSession(reportId);
+      router.push(`/workspace/${session.id}`);
+    } catch {
+      setOpeningSession(false);
+    }
+  }, [router]);
+
   // Filters stay local for now. When the reports list gets large, move this to the API.
-  const sectors = useMemo(() => Array.from(new Set(companies.map((company) => company.sector[locale]))), [locale]);
+  const sectors = useMemo(() => Array.from(new Set(companies.map((company) => company.sector[locale]))), [companies, locale]);
   const years = useMemo(
     () =>
       Array.from(new Set(companies.flatMap((company) => company.reports.map((report) => report.year)))).sort(
         (a, b) => Number(b) - Number(a)
       ),
-    []
+    [companies]
   );
 
   const filteredCompanies = useMemo(() => {
@@ -668,7 +630,7 @@ export default function ReportsPage() {
       const bYear = Math.max(...b.reports.map((report) => Number(report.year)));
       return sortBy === 'newest' ? bYear - aYear : aYear - bYear;
     });
-  }, [locale, query, sectorFilter, sortBy, yearFilter]);
+  }, [companies, locale, query, sectorFilter, sortBy, yearFilter]);
 
   const selectedCompany = modalState ? companies.find((company) => company.id === modalState.companyId) ?? null : null;
   const selectedSortLabel =
@@ -765,7 +727,11 @@ export default function ReportsPage() {
             </div>
           </section>
 
-          {filteredCompanies.length > 0 ? (
+          {loadingData ? (
+            <section className="mt-10 flex justify-center py-16">
+              <Loader2 className="h-8 w-8 animate-spin text-[var(--brand)]" />
+            </section>
+          ) : filteredCompanies.length > 0 ? (
             <section className="relative z-10 mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {filteredCompanies.map((company) => (
                 <CompanyFolder
@@ -799,6 +765,8 @@ export default function ReportsPage() {
         isArabic={isArabic}
         onClose={() => setModalState(null)}
         onNavigate={(reportId) => setModalState((current) => (current ? { ...current, reportId } : current))}
+        onOpenSession={handleOpenSession}
+        openingSession={openingSession}
         text={text}
       />
     </div>
