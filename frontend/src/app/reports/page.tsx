@@ -24,7 +24,7 @@ import { FooterSection } from '@/components/landing/FooterSection';
 import { Navbar } from '@/components/layout/Navbar';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { xbShafigh } from '@/lib/fonts';
-import { getReports, createSession } from '@/lib/api';
+import { getReports, createSession, listSessions, type BackendSession } from '@/lib/api';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -135,6 +135,7 @@ const SECTOR_AR: Record<string, string> = {
   Energy: 'الطاقة',
   Technology: 'التقنية',
   Industrial: 'الصناعة',
+  Chemicals: 'البتروكيماويات',
   Healthcare: 'الرعاية الصحية',
   Insurance: 'التأمين',
   Retail: 'التجزئة',
@@ -168,6 +169,10 @@ function adaptCompanies(raw: any[]): Company[] {
 const copy = {
   en: {
     badge: 'Reports library',
+    conflictTitle: 'Session already exists',
+    conflictBody: 'You already have a session for this report. Would you like to continue where you left off or start fresh?',
+    conflictOpenExisting: 'Continue existing session',
+    conflictCreateNew: 'Start new session',
     title: 'Browse Reports',
     description:
       'Explore companies as report folders, hover to preview annual files, and open the session you want to work in.',
@@ -192,6 +197,10 @@ const copy = {
   },
   ar: {
     badge: 'مكتبة التقارير',
+    conflictTitle: 'توجد جلسة موجودة بالفعل',
+    conflictBody: 'لديك جلسة موجودة لهذا التقرير. هل تريد متابعة من حيث توقفت أم البدء من جديد؟',
+    conflictOpenExisting: 'متابعة الجلسة الحالية',
+    conflictCreateNew: 'بدء جلسة جديدة',
     title: 'تصفح التقارير',
     description:
       'استعرض الشركات على شكل مجلدات تقارير، وعاين الملفات السنوية عند المرور عليها، ثم افتح الجلسة التي تريد العمل فيها.',
@@ -571,6 +580,8 @@ export default function ReportsPage() {
   const [companies, setCompanies] = useState<Company[]>([]);
   const [loadingData, setLoadingData] = useState(true);
   const [openingSession, setOpeningSession] = useState(false);
+  const [userSessions, setUserSessions] = useState<BackendSession[]>([]);
+  const [sessionConflict, setSessionConflict] = useState<{ reportId: string; sessionId: string } | null>(null);
 
   const [query, setQuery] = useState('');
   const [sectorFilter, setSectorFilter] = useState('all');
@@ -585,9 +596,15 @@ export default function ReportsPage() {
       .then((data) => setCompanies(adaptCompanies(data)))
       .catch(() => setCompanies([]))
       .finally(() => setLoadingData(false));
+    listSessions().then(setUserSessions).catch(() => {});
   }, []);
 
   const handleOpenSession = useCallback(async (reportId: string) => {
+    const existing = userSessions.find((s) => s.reports?.id === reportId);
+    if (existing) {
+      setSessionConflict({ reportId, sessionId: existing.id });
+      return;
+    }
     setOpeningSession(true);
     try {
       const session = await createSession(reportId);
@@ -595,7 +612,24 @@ export default function ReportsPage() {
     } catch {
       setOpeningSession(false);
     }
-  }, [router]);
+  }, [router, userSessions]);
+
+  const handleOpenExistingSession = useCallback(() => {
+    if (sessionConflict) router.push(`/workspace/${sessionConflict.sessionId}`);
+  }, [router, sessionConflict]);
+
+  const handleForceNewSession = useCallback(async () => {
+    if (!sessionConflict) return;
+    const { reportId } = sessionConflict;
+    setSessionConflict(null);
+    setOpeningSession(true);
+    try {
+      const session = await createSession(reportId);
+      router.push(`/workspace/${session.id}`);
+    } catch {
+      setOpeningSession(false);
+    }
+  }, [router, sessionConflict]);
 
   // Filters stay local for now. When the reports list gets large, move this to the API.
   const sectors = useMemo(() => Array.from(new Set(companies.map((company) => company.sector[locale]))), [companies, locale]);
@@ -769,6 +803,36 @@ export default function ReportsPage() {
         openingSession={openingSession}
         text={text}
       />
+
+      {sessionConflict ? (
+        <div className="fixed inset-0 z-[90] flex items-center justify-center bg-slate-950/45 px-4 backdrop-blur-sm" onClick={() => setSessionConflict(null)}>
+          <div
+            className={cn('w-full max-w-md overflow-hidden rounded-[2rem] bg-[var(--card-strong)] p-8 shadow-[var(--shadow-lg)]', isArabic ? 'text-right' : 'text-left')}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className={cn('text-xl font-bold', isArabic ? `${xbShafigh.className} arabic-display` : 'display-heading')}>
+              {text.conflictTitle}
+            </h3>
+            <p className="mt-3 text-sm leading-7 text-[var(--muted-foreground)]">{text.conflictBody}</p>
+            <div className={cn('mt-6 flex gap-3', isArabic ? 'flex-row-reverse' : '')}>
+              <button
+                type="button"
+                onClick={handleOpenExistingSession}
+                className="flex-1 rounded-xl bg-[var(--brand)] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[var(--brand-alt)]"
+              >
+                {text.conflictOpenExisting}
+              </button>
+              <button
+                type="button"
+                onClick={handleForceNewSession}
+                className="flex-1 rounded-xl border border-[var(--border)] px-4 py-3 text-sm font-semibold text-[var(--foreground)] transition hover:border-[var(--brand)]/40"
+              >
+                {text.conflictCreateNew}
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

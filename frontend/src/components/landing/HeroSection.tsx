@@ -1,12 +1,14 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { siteCopy } from '@/lib/site-copy';
 import { xbShafigh } from '@/lib/fonts';
 import { LaamLogoAnimation, LaamLogoAnimationRef } from '@/components/landing/LaamLogoAnimation';
+import { supabase } from '@/lib/supabase';
+import { listSessions } from '@/lib/api';
 
 export function HeroSection() {
   const { locale, theme, mounted } = useAppPreferences();
@@ -17,6 +19,15 @@ export function HeroSection() {
   const animRef = useRef<LaamLogoAnimationRef>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const hasEntered = useRef(false);
+  const [primaryHref, setPrimaryHref] = useState('/register');
+
+  useEffect(() => {
+    supabase.auth.getUser().then(async ({ data }) => {
+      if (!data.user) return;
+      const sessions = await listSessions().catch(() => []);
+      setPrimaryHref(sessions.length > 0 ? `/workspace/${sessions[0].id}` : '/reports');
+    });
+  }, []);
 
   // Replay the logo when the user comes back to the hero.
   // First observer fire is skipped because the animation already runs on load.
@@ -89,7 +100,7 @@ export function HeroSection() {
           {copy.secondaryCta}
         </Link>
         <Link
-          href="/register"
+          href={primaryHref}
           className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition hover:opacity-90"
           style={{
             background: 'linear-gradient(135deg, #18a078 0%, #12705a 100%)',

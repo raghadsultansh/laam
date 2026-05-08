@@ -7,6 +7,7 @@ import { Chrome } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { AuthShell } from '@/components/auth/AuthShell';
 import { supabase } from '@/lib/supabase';
+import { listSessions } from '@/lib/api';
 
 const loginCopy = {
   en: {
@@ -52,8 +53,12 @@ export function LoginForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setLoading(true);
     setError('');
+    if (!email.trim() || !password) {
+      setError(isArabic ? 'يرجى ملء جميع الحقول.' : 'Please fill in all fields.');
+      return;
+    }
+    setLoading(true);
 
     const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
 
@@ -63,13 +68,18 @@ export function LoginForm() {
       return;
     }
 
-    router.push('/reports');
+    const sessions = await listSessions().catch(() => []);
+    if (sessions.length > 0) {
+      router.push(`/workspace/${sessions[0].id}`);
+    } else {
+      router.push('/reports');
+    }
   }
 
   async function handleGoogle() {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/reports` },
+      options: { redirectTo: `${window.location.origin}/auth/callback` },
     });
   }
 
@@ -100,7 +110,6 @@ export function LoginForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={copy.emailPlaceholder}
-            required
             className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
           />
         </div>
@@ -112,7 +121,6 @@ export function LoginForm() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={copy.passwordPlaceholder}
-            required
             className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
           />
         </div>
@@ -124,7 +132,7 @@ export function LoginForm() {
         </div>
 
         {error ? (
-          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600 dark:bg-red-950/40 dark:text-red-400">
+          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700 dark:bg-red-900/50 dark:text-red-100">
             {error}
           </p>
         ) : null}

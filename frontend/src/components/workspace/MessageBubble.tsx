@@ -3,12 +3,17 @@
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import type { Source } from '@/lib/api';
 
+const CITATION_RE = /\[Page[:\s]+\d+\s*\|[^\]]*\]/g;
+
 function extractFinalAnswer(raw: string): string {
-  const marker = raw.indexOf('**Final Answer**:');
-  if (marker !== -1) return raw.slice(marker + '**Final Answer**:'.length).trim();
-  const marker2 = raw.indexOf('Final Answer:');
-  if (marker2 !== -1) return raw.slice(marker2 + 'Final Answer:'.length).trim();
-  return raw;
+  let text = raw;
+  const marker = text.indexOf('**Final Answer**:');
+  if (marker !== -1) text = text.slice(marker + '**Final Answer**:'.length).trim();
+  else {
+    const marker2 = text.indexOf('Final Answer:');
+    if (marker2 !== -1) text = text.slice(marker2 + 'Final Answer:'.length).trim();
+  }
+  return text.replace(CITATION_RE, '').replace(/\s{2,}/g, ' ').trim();
 }
 
 export function MessageBubble({
@@ -28,7 +33,7 @@ export function MessageBubble({
   const displayText = isUser ? message : extractFinalAnswer(message);
 
   return (
-    <div className={`flex w-full ${isUser ? 'justify-end' : 'justify-start'}`}>
+    <div dir="ltr" className={`flex w-full ${isUser ? 'justify-end' : 'justify-start'}`}>
       <div
         className={`max-w-[82%] rounded-[1.4rem] px-4 py-3 text-sm leading-7 shadow-[var(--shadow-sm)] ${
           isUser

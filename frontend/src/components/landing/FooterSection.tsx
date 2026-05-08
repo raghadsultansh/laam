@@ -36,7 +36,7 @@ export function FooterSection() {
             {copy.about}
           </Link>
           <Link
-            href="/contact"
+            href="/about#contact"
             className="text-sm font-semibold text-[var(--muted-foreground)] transition hover:text-[var(--foreground)]"
           >
             {copy.contact}

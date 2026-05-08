@@ -4,7 +4,13 @@ import { ibmPlexSans, ibmPlexSansArabic, lora, xbShafigh } from '@/lib/fonts';
 
 export const metadata = {
   title: 'LAAM – AI for Financial Reports | لامّ للتقارير المالية',
-  description: 'AI-powered platform for reading and analysing Saudi IFRS financial reports. Ask questions, extract insights, and explore dashboards — without reading hundreds of pages.',
+  description: 'Understand annual financial reports without reading every page. Ask questions, extract insights, and explore dashboards in one workspace.',
+  icons: {
+    icon: [
+      { url: '/brand/GP logo light english name vertical.svg', media: '(prefers-color-scheme: light)' },
+      { url: '/brand/GP logo dark english name vertical.svg',  media: '(prefers-color-scheme: dark)'  },
+    ],
+  },
 };
 
 export default function RootLayout({

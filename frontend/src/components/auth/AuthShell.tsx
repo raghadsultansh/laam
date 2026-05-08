@@ -1,6 +1,8 @@
 'use client';
 
+import { useRef } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
+import { LaamLogoAnimation, LaamLogoAnimationRef } from '@/components/landing/LaamLogoAnimation';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { xbShafigh } from '@/lib/fonts';
 
@@ -8,45 +10,85 @@ export function AuthShell({
   title,
   subtitle,
   children,
-  contentWidthClassName = 'max-w-[430px]',
+  contentWidthClassName = 'max-w-[420px]',
 }: {
   title: string;
   subtitle: string;
   children: React.ReactNode;
   contentWidthClassName?: string;
 }) {
-  const { locale } = useAppPreferences();
+  const { locale, theme, mounted } = useAppPreferences();
   const isArabic = locale === 'ar';
+  const isDark = !mounted || theme === 'dark';
+  const animRef = useRef<LaamLogoAnimationRef>(null);
 
-  // Shared wrapper for login/register so both pages keep the same donor-style layout.
+  const panelBg = isDark
+    ? 'linear-gradient(145deg, #0e1f32 0%, #091725 45%, #050f1c 100%)'
+    : 'linear-gradient(135deg, #f4f1ea 0%, #ede9e1 55%, #e7e3d9 100%)';
+
+  const glowStyle = isArabic
+    ? isDark
+      ? `radial-gradient(ellipse 54% 90% at 22% 50%, rgba(36,196,150,0.38) 0%, rgba(24,160,120,0.18) 42%, transparent 70%)`
+      : `radial-gradient(ellipse 54% 90% at 22% 50%, rgba(36,196,150,0.50) 0%, rgba(28,172,132,0.28) 38%, rgba(24,160,120,0.10) 58%, transparent 74%)`
+    : isDark
+      ? `radial-gradient(ellipse 54% 90% at 78% 50%, rgba(36,196,150,0.38) 0%, rgba(24,160,120,0.18) 42%, transparent 70%)`
+      : `radial-gradient(ellipse 54% 90% at 78% 50%, rgba(36,196,150,0.50) 0%, rgba(28,172,132,0.28) 38%, rgba(24,160,120,0.10) 58%, transparent 74%)`;
+
   return (
     <div className="min-h-screen bg-[var(--background)]">
       <Navbar />
 
-      <main className="relative overflow-hidden px-4 py-8 md:px-6 md:py-10">
-        <div className="pointer-events-none absolute inset-0">
-          <div className={`absolute h-[60rem] w-[60rem] top-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(18,112,90,0.12),rgba(18,112,90,0.08)_40%,transparent_68%)] ${isArabic ? '-left-[24rem]' : '-right-[24rem]'}`} />
-          <div className={`absolute h-[46rem] w-[46rem] top-1/2 -translate-y-1/2 rounded-full border border-[rgba(18,112,90,0.08)] ${isArabic ? '-left-[9rem]' : '-right-[9rem]'}`} />
-          <div className={`absolute top-1/2 h-[36rem] w-[36rem] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(18,112,90,0.07),transparent_72%)] blur-2xl ${isArabic ? 'left-[12%]' : 'right-[12%]'}`} />
-          <div className={`absolute h-3 w-3 top-[24%] rounded-full bg-[rgba(18,112,90,0.12)] ${isArabic ? 'left-[6%]' : 'right-[6%]'}`} />
-          <div className={`absolute h-3 w-3 bottom-[18%] rounded-full bg-[rgba(18,112,90,0.12)] ${isArabic ? 'left-[11%]' : 'right-[11%]'}`} />
-          <div className="absolute left-[44%] top-[48%] h-3 w-3 rounded-full bg-[rgba(18,112,90,0.12)]" />
-        </div>
+      <main className="px-4 py-8 md:px-6 md:py-10">
+        <div className="mx-auto max-w-[1280px]">
+          <div
+            className="relative overflow-hidden rounded-[2.2rem]"
+            style={{
+              background: panelBg,
+              border: isDark ? '1px solid rgba(255,255,255,0.07)' : '1px solid rgba(0,0,0,0.08)',
+              boxShadow: isDark
+                ? '0 32px 80px rgba(0,0,0,0.50), 0 0 120px rgba(18,112,90,0.09)'
+                : '0 20px 60px rgba(0,0,0,0.12)',
+              minHeight: 'calc(100vh - 10rem)',
+            }}
+          >
+            {/* Green hue behind animation side */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0"
+              style={{ background: glowStyle }}
+            />
 
-        <div className={`relative mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1280px] items-center ${isArabic ? 'justify-start' : 'justify-end'}`}>
-          <div className={`${contentWidthClassName} ${isArabic ? 'pr-8 md:pr-10 text-right' : 'pl-8 md:pl-10 text-left'}`}>
-            <div className={isArabic ? 'text-right' : 'text-left'}>
-              <h2
-                className={`text-3xl font-bold tracking-tight text-[var(--foreground)] md:text-[2.5rem] ${
-                  isArabic ? `${xbShafigh.className} arabic-display` : 'display-heading'
-                }`}
+            <div
+              dir={isArabic ? 'rtl' : 'ltr'}
+              className="relative z-10 flex min-h-[calc(100vh-10rem)] flex-col items-stretch lg:flex-row"
+            >
+              {/* Form panel — always first in DOM so RTL pushes it to the right automatically */}
+              <div className="flex flex-1 items-center justify-center px-8 py-12 lg:max-w-[520px]">
+                <div className={`w-full ${contentWidthClassName} ${isArabic ? 'text-right' : 'text-left'}`}>
+                  <h2
+                    className={`text-3xl font-bold tracking-tight md:text-[2.5rem] ${
+                      isDark ? 'text-white/92' : 'text-slate-900/90'
+                    } ${isArabic ? `${xbShafigh.className} arabic-display` : 'display-heading'}`}
+                  >
+                    {title}
+                  </h2>
+                  <p className={`mt-2 text-sm leading-7 ${isDark ? 'text-white/50' : 'text-slate-700/60'}`}>
+                    {subtitle}
+                  </p>
+                  <div className="mt-7">{children}</div>
+                </div>
+              </div>
+
+              {/* Animation panel — always second in DOM so RTL pushes it to the left automatically */}
+              {/* dir="ltr" prevents RTL from mirroring the LAAM letter order */}
+              <div
+                dir="ltr"
+                className="hidden cursor-pointer items-center justify-center lg:flex lg:flex-1"
+                onMouseEnter={() => animRef.current?.replay()}
               >
-                {title}
-              </h2>
-              <p className="mt-2 text-sm leading-7 text-[var(--muted-foreground)]">{subtitle}</p>
+                <LaamLogoAnimation ref={animRef} />
+              </div>
             </div>
-
-            <div className="mt-7">{children}</div>
           </div>
         </div>
       </main>

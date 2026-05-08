@@ -61,12 +61,20 @@ export function RegisterForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setError('');
+    if (!fullName.trim() || !email.trim() || !password) {
+      setError(isArabic ? 'يرجى ملء جميع الحقول.' : 'Please fill in all fields.');
+      return;
+    }
     if (password !== confirmPassword) {
-      setError('Passwords do not match');
+      setError(isArabic ? 'كلمتا المرور غير متطابقتين.' : 'Passwords do not match.');
+      return;
+    }
+    if (password.length < 8) {
+      setError(isArabic ? 'كلمة المرور يجب أن تكون 8 أحرف على الأقل.' : 'Password must be at least 8 characters.');
       return;
     }
     setLoading(true);
-    setError('');
 
     const { error: authError } = await supabase.auth.signUp({
       email,
@@ -87,7 +95,7 @@ export function RegisterForm() {
   async function handleGoogle() {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/reports` },
+      options: { redirectTo: `${window.location.origin}/auth/callback` },
     });
   }
 
@@ -130,7 +138,6 @@ export function RegisterForm() {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             placeholder={copy.fullNamePlaceholder}
-            required
             className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
           />
         </div>
@@ -142,7 +149,6 @@ export function RegisterForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={copy.emailPlaceholder}
-            required
             className="h-12 w-full rounded-xl border border-[var(--border)] bg-[var(--card-strong)] px-4 text-sm text-[var(--foreground)] outline-none transition placeholder:text-[var(--muted-foreground)] focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand-soft)]"
           />
         </div>
@@ -174,7 +180,7 @@ export function RegisterForm() {
         </div>
 
         {error ? (
-          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600 dark:bg-red-950/40 dark:text-red-400">
+          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700 dark:bg-red-900/50 dark:text-red-100">
             {error}
           </p>
         ) : null}

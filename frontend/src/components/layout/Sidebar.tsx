@@ -1,13 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Clock3, FileUp, FolderOpen, LayoutDashboard, LogOut, PanelLeftClose, PanelLeftOpen, Plus, Settings2 } from 'lucide-react';
+import { Check, Clock3, FileUp, FolderOpen, LayoutDashboard, LogOut, MoreHorizontal, PanelLeftClose, PanelLeftOpen, Pencil, Plus, Settings2, Trash2 } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { Logo } from '@/components/Logo';
 import { xbShafigh } from '@/lib/fonts';
-import { listSessions, type BackendSession } from '@/lib/api';
+import { listSessions, updateSessionTitle, deleteSession, type BackendSession } from '@/lib/api';
 import { supabase } from '@/lib/supabase';
 
 export function Sidebar({
@@ -25,10 +25,50 @@ export function Sidebar({
   const isArabic = locale === 'ar';
   const router = useRouter();
   const [sessions, setSessions] = useState<BackendSession[]>([]);
+  const [userName, setUserName] = useState('');
+  const [menuOpenId, setMenuOpenId] = useState<string | null>(null);
+  const [renamingId, setRenamingId] = useState<string | null>(null);
+  const [renameValue, setRenameValue] = useState('');
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     listSessions().then(setSessions).catch(() => {});
+    supabase.auth.getUser().then(({ data }) => {
+      setUserName(data.user?.user_metadata?.full_name || data.user?.email || '');
+    });
   }, []);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    if (!menuOpenId) return;
+    function handleClick(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setMenuOpenId(null);
+      }
+    }
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [menuOpenId]);
+
+  async function handleRename(sessionId: string) {
+    const trimmed = renameValue.trim();
+    if (!trimmed) return;
+    try {
+      await updateSessionTitle(sessionId, trimmed);
+      setSessions((prev) => prev.map((s) => s.id === sessionId ? { ...s, title: trimmed } : s));
+    } catch { /* keep old title on error */ }
+    setRenamingId(null);
+    setMenuOpenId(null);
+  }
+
+  async function handleDelete(sessionId: string) {
+    setMenuOpenId(null);
+    try {
+      await deleteSession(sessionId);
+      setSessions((prev) => prev.filter((s) => s.id !== sessionId));
+      if (currentSessionId === sessionId) router.push('/reports');
+    } catch { /* ignore */ }
+  }
 
   async function handleLogout() {
     await supabase.auth.signOut();
@@ -63,7 +103,7 @@ export function Sidebar({
 
   if (collapsed) {
     const compactItems = [
-      { label: copy.newSession, icon: Plus, href: undefined, onClick: undefined, primary: true },
+      { label: copy.newSession, icon: Plus, href: undefined, onClick: onUploadClick, primary: true },
       { label: copy.browseReports, icon: FolderOpen, href: '/reports', onClick: undefined },
       { label: copy.uploadReport, icon: FileUp, href: undefined, onClick: onUploadClick },
     ];
@@ -146,10 +186,14 @@ export function Sidebar({
         </button>
       </div>
 
-      <p className="text-xs text-[var(--muted-foreground)] px-3 mt-2">{copy.profileRole}</p>
+      {userName ? (
+        <p className="text-xs font-semibold text-[var(--foreground)] px-3 mt-2 truncate">
+          {isArabic ? `مرحبًا، ${userName}` : `Welcome, ${userName}`}
+        </p>
+      ) : null}
 
       <div className="mt-2 px-3 space-y-2">
-        <button className="flex w-full items-center gap-3 rounded-[1.1rem] bg-[var(--brand)] px-4 py-3 text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]">
+        <button onClick={onUploadClick} className="flex w-full items-center gap-3 rounded-[1.1rem] bg-[var(--brand)] px-4 py-3 text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]">
           <Plus className="h-4 w-4" />
           {copy.newSession}
         </button>
@@ -187,22 +231,75 @@ export function Sidebar({
               const subtitle = company
                 ? `${company.name_en}${reportYear ? ` ${reportYear}` : ''}`
                 : reportYear || (isArabic ? 'تقرير' : 'Report');
+              const isMenuOpen = menuOpenId === session.id;
+              const isRenaming = renamingId === session.id;
 
               return (
-                <Link
+                <div
                   key={session.id}
-                  href={`/workspace/${session.id}`}
-                  className={`block rounded-[1.2rem] border px-4 py-3 transition ${
+                  className={`group relative rounded-[1.2rem] border transition ${
                     isActive
                       ? 'border-transparent bg-[var(--brand-soft)]'
                       : 'border-transparent bg-[var(--card-strong)]/58 hover:bg-[var(--background)]'
                   }`}
                 >
-                  <p className={`text-sm font-semibold text-[var(--foreground)] ${isArabic ? `${xbShafigh.className} arabic-display` : ''}`}>
-                    {session.title}
-                  </p>
-                  <p className="mt-1 text-xs text-[var(--muted-foreground)]">{subtitle}</p>
-                </Link>
+                  <Link href={`/workspace/${session.id}`} className={`block px-4 py-3 ${isArabic ? 'pl-10' : 'pr-10'}`}>
+                    {isRenaming ? (
+                      <div className="flex items-center gap-1" onClick={(e) => e.preventDefault()}>
+                        <input
+                          autoFocus
+                          value={renameValue}
+                          onChange={(e) => setRenameValue(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter') handleRename(session.id);
+                            if (e.key === 'Escape') { setRenamingId(null); setMenuOpenId(null); }
+                          }}
+                          className="w-full rounded-lg bg-[var(--background)] px-2 py-0.5 text-sm font-semibold text-[var(--foreground)] outline-none ring-1 ring-[var(--brand)]"
+                        />
+                        <button type="button" onClick={() => handleRename(session.id)} className="shrink-0 text-[var(--brand)]">
+                          <Check className="h-3.5 w-3.5" />
+                        </button>
+                      </div>
+                    ) : (
+                      <p className={`text-sm font-semibold text-[var(--foreground)] truncate ${isArabic ? `${xbShafigh.className} arabic-display` : ''}`}>
+                        {session.title}
+                      </p>
+                    )}
+                    <p className="mt-1 text-xs text-[var(--muted-foreground)]">{subtitle}</p>
+                  </Link>
+
+                  {/* Three-dot menu button */}
+                  <div className={`absolute top-2.5 ${isArabic ? 'left-2' : 'right-2'}`} ref={isMenuOpen ? menuRef : null}>
+                    <button
+                      type="button"
+                      onClick={(e) => { e.preventDefault(); setMenuOpenId(isMenuOpen ? null : session.id); }}
+                      className={`grid h-7 w-7 place-content-center rounded-xl text-[var(--muted-foreground)] transition hover:bg-[var(--background)] hover:text-[var(--foreground)] ${isMenuOpen ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
+                    >
+                      <MoreHorizontal className="h-3.5 w-3.5" />
+                    </button>
+
+                    {isMenuOpen && (
+                      <div className={`absolute top-8 z-50 min-w-[140px] overflow-hidden rounded-[1rem] border border-[var(--border)] bg-[var(--card-strong)] shadow-[var(--shadow-lg)] ${isArabic ? 'left-0' : 'right-0'}`}>
+                        <button
+                          type="button"
+                          onClick={(e) => { e.preventDefault(); setRenamingId(session.id); setRenameValue(session.title); setMenuOpenId(null); }}
+                          className="flex w-full items-center gap-2.5 px-4 py-2.5 text-sm text-[var(--foreground)] transition hover:bg-[var(--background)]"
+                        >
+                          <Pencil className="h-3.5 w-3.5 text-[var(--muted-foreground)]" />
+                          {isArabic ? 'إعادة التسمية' : 'Rename'}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={(e) => { e.preventDefault(); handleDelete(session.id); }}
+                          className="flex w-full items-center gap-2.5 px-4 py-2.5 text-sm text-red-600 transition hover:bg-red-50 hover:text-red-700 dark:text-red-400 dark:hover:bg-red-900/40 dark:hover:text-red-200"
+                        >
+                          <Trash2 className="h-3.5 w-3.5" />
+                          {isArabic ? 'حذف' : 'Delete'}
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
               );
             })}
 

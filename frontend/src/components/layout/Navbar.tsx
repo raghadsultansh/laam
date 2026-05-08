@@ -1,13 +1,28 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Globe, Moon, Sun } from 'lucide-react';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { siteCopy } from '@/lib/site-copy';
+import { supabase } from '@/lib/supabase';
+import { listSessions } from '@/lib/api';
 
 export function Navbar() {
   const { locale, theme, mounted, toggleLocale, toggleTheme } = useAppPreferences();
   const copy = siteCopy[locale];
+  const isArabic = locale === 'ar';
+  const [userName, setUserName] = useState('');
+  const [workspaceHref, setWorkspaceHref] = useState('/reports');
+
+  useEffect(() => {
+    supabase.auth.getUser().then(async ({ data }) => {
+      if (!data.user) return;
+      setUserName(data.user.user_metadata?.full_name || data.user.email || '');
+      const sessions = await listSessions().catch(() => []);
+      setWorkspaceHref(sessions.length > 0 ? `/workspace/${sessions[0].id}` : '/reports');
+    });
+  }, []);
   // Logo files are named by the mode they should be used in.
   // Arabic uses the text-right lockup, English uses text-left.
   const logoSrc = theme === 'dark'
@@ -51,19 +66,34 @@ export function Navbar() {
             {mounted ? theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
           </button>
 
-          <Link
-            href="/login"
-            className="hidden rounded-xl px-4 py-2.5 text-sm font-semibold text-[var(--muted-foreground)] transition hover:text-[var(--foreground)] md:inline-flex"
-          >
-            {copy.nav.signIn}
-          </Link>
-
-          <Link
-            href="/register"
-            className="inline-flex rounded-xl bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]"
-          >
-            {copy.nav.tryNow}
-          </Link>
+          {userName ? (
+            <>
+              <span className="hidden text-sm font-medium text-[var(--muted-foreground)] md:inline" dir={isArabic ? 'rtl' : 'ltr'}>
+                {isArabic ? `مرحبًا، ${userName}` : `Welcome, ${userName}`}
+              </span>
+              <Link
+                href={workspaceHref}
+                className="inline-flex rounded-xl bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]"
+              >
+                {isArabic ? 'مساحة العمل' : 'Workspace'}
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link
+                href="/login"
+                className="hidden rounded-xl px-4 py-2.5 text-sm font-semibold text-[var(--muted-foreground)] transition hover:text-[var(--foreground)] md:inline-flex"
+              >
+                {copy.nav.signIn}
+              </Link>
+              <Link
+                href="/register"
+                className="inline-flex rounded-xl bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]"
+              >
+                {copy.nav.tryNow}
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </header>

@@ -15,10 +15,10 @@ class UpdateTitleRequest(BaseModel):
 
 
 def _build_session_title(report_id: str) -> str:
-    """Auto-generates session title from company name + fiscal year."""
+    """Auto-generates session title from company name + fiscal year, falling back to file name."""
     result = (
         supabase.table("reports")
-        .select("fiscal_year, title, companies(name_en)")
+        .select("fiscal_year, title, file_name, companies(name_en)")
         .eq("id", report_id)
         .single()
         .execute()
@@ -30,6 +30,9 @@ def _build_session_title(report_id: str) -> str:
     year = report.get("fiscal_year", "")
     if company_name and year:
         return f"{company_name} {year}"
+    file_name = report.get("file_name") or ""
+    if file_name:
+        return file_name.rsplit(".", 1)[0] if "." in file_name else file_name
     return report.get("title") or "New Session"
 
 

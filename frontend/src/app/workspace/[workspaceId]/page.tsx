@@ -25,6 +25,7 @@ export default function WorkspacePage({
   const [showRightPanel, setShowRightPanel] = useState(false);
   const [showUpload, setShowUpload] = useState(false);
   const [session, setSession] = useState<BackendSession | null>(null);
+  const [sessionTitle, setSessionTitle] = useState<string | undefined>(undefined);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [latestSources, setLatestSources] = useState<Source[]>([]);
   const [highlightedSourceIndex, setHighlightedSourceIndex] = useState<number | undefined>(undefined);
@@ -41,7 +42,7 @@ export default function WorkspacePage({
 
   const report = session?.reports ?? null;
   const company = report?.companies ?? null;
-  const sessionTitle = session?.title ?? undefined;
+  const resolvedSessionTitle = sessionTitle ?? session?.title ?? undefined;
   const reportLabel = company
     ? `${isArabic ? company.name_ar || company.name_en : company.name_en} ${report?.fiscal_year ?? ''}`
     : report?.fiscal_year
@@ -101,7 +102,12 @@ export default function WorkspacePage({
           <div className={`-mt-8 grid min-h-0 flex-1 gap-4 transition-[grid-template-columns] duration-300 ${showRightPanel ? 'xl:grid-cols-[minmax(0,1fr)_340px]' : 'xl:grid-cols-[minmax(0,1fr)_56px]'}`}>
             <section className="flex min-h-0 min-w-0 flex-col">
               <div className={isArabic ? 'pl-72' : 'pr-72'}>
-                <WorkspaceHeader title={sessionTitle} reportLabel={reportLabel} />
+                <WorkspaceHeader
+                title={resolvedSessionTitle}
+                reportLabel={reportLabel}
+                sessionId={sessionId}
+                onRenamed={setSessionTitle}
+              />
               </div>
 
               <div className="mb-3 mt-1 inline-flex rounded-[1.15rem] bg-[color:var(--card)]/68 p-1 shadow-[var(--shadow-sm)] backdrop-blur-xl">
