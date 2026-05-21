@@ -7,7 +7,7 @@ import { Check, Clock3, FileUp, FolderOpen, LayoutDashboard, LogOut, MoreHorizon
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { Logo } from '@/components/Logo';
 import { xbShafigh } from '@/lib/fonts';
-import { listSessions, updateSessionTitle, deleteSession, type BackendSession } from '@/lib/api';
+import { listSessions, updateSessionTitle, deleteSession, createSession, type BackendSession } from '@/lib/api';
 import { supabase } from '@/lib/supabase';
 
 export function Sidebar({
@@ -70,6 +70,24 @@ export function Sidebar({
     } catch { /* ignore */ }
   }
 
+  async function handleNewSession() {
+    // Find the report attached to the current workspace session
+    const currentSession = sessions.find((s) => s.id === currentSessionId);
+    const reportId = currentSession?.reports?.id;
+    if (!reportId) {
+      // No current report — let user pick one
+      router.push('/reports');
+      return;
+    }
+    try {
+      const newSession = await createSession(reportId);
+      setSessions((prev) => [...prev, newSession]);
+      router.push(`/workspace/${newSession.id}`);
+    } catch {
+      router.push('/reports');
+    }
+  }
+
   async function handleLogout() {
     await supabase.auth.signOut();
     router.push('/');
@@ -103,7 +121,7 @@ export function Sidebar({
 
   if (collapsed) {
     const compactItems = [
-      { label: copy.newSession, icon: Plus, href: undefined, onClick: onUploadClick, primary: true },
+      { label: copy.newSession, icon: Plus, href: undefined, onClick: handleNewSession, primary: true },
       { label: copy.browseReports, icon: FolderOpen, href: '/reports', onClick: undefined },
       { label: copy.uploadReport, icon: FileUp, href: undefined, onClick: onUploadClick },
     ];
@@ -161,7 +179,7 @@ export function Sidebar({
           <Link href="/settings" className="grid h-10 w-10 place-content-center rounded-2xl text-[var(--muted-foreground)] transition hover:bg-[var(--background)] hover:text-[var(--foreground)]" title={copy.settings}>
             <Settings2 className="h-4 w-4" />
           </Link>
-          <button className="grid h-10 w-10 place-content-center rounded-2xl text-[var(--muted-foreground)] transition hover:bg-[var(--background)] hover:text-[var(--foreground)]" title={copy.logout}>
+          <button type="button" onClick={handleLogout} className="grid h-10 w-10 place-content-center rounded-2xl text-[var(--muted-foreground)] transition hover:bg-[var(--background)] hover:text-[var(--foreground)]" title={copy.logout}>
             <LogOut className="h-4 w-4" />
           </button>
         </div>
@@ -193,7 +211,11 @@ export function Sidebar({
       ) : null}
 
       <div className="mt-2 px-3 space-y-2">
-        <button onClick={onUploadClick} className="flex w-full items-center gap-3 rounded-[1.1rem] bg-[var(--brand)] px-4 py-3 text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]">
+        <button
+          type="button"
+          onClick={handleNewSession}
+          className="flex w-full items-center gap-3 rounded-[1.1rem] bg-[var(--brand)] px-4 py-3 text-sm font-semibold text-white shadow-[var(--shadow-sm)] transition hover:bg-[var(--brand-alt)]"
+        >
           <Plus className="h-4 w-4" />
           {copy.newSession}
         </button>
@@ -228,8 +250,11 @@ export function Sidebar({
               const isActive = session.id === currentSessionId;
               const company = session.reports?.companies;
               const reportYear = session.reports?.fiscal_year ?? '';
-              const subtitle = company
-                ? `${company.name_en}${reportYear ? ` ${reportYear}` : ''}`
+              const companyName = company
+                ? (isArabic ? (company.name_ar || company.name_en) : company.name_en)
+                : null;
+              const subtitle = companyName
+                ? `${companyName}${reportYear ? ` ${reportYear}` : ''}`
                 : reportYear || (isArabic ? 'تقرير' : 'Report');
               const isMenuOpen = menuOpenId === session.id;
               const isRenaming = renamingId === session.id;

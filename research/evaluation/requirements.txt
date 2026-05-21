@@ -1,0 +1,7 @@
+ragas
+datasets
+pandas
+openpyxl
+python-dotenv
+langchain-core
+rank-bm25

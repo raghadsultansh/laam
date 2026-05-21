@@ -76,7 +76,7 @@ async def list_sessions(user: dict = Depends(get_current_user)):
     """Returns all sessions for the logged-in user, newest first."""
     result = (
         supabase.table("sessions")
-        .select("id, title, is_saved, created_at, updated_at, last_message_at, reports(id, status, fiscal_year, companies(name_en, logo_url))")
+        .select("id, title, is_saved, created_at, updated_at, last_message_at, reports(id, status, fiscal_year, companies(name_en, name_ar, logo_url))")
         .eq("user_id", user["id"])
         .order("updated_at", desc=True)
         .execute()

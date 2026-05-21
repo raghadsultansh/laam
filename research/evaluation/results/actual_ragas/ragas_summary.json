@@ -1,0 +1,12 @@
+{
+  "evaluated_at": "2026-05-12 12:47:36",
+  "questions_in_answer_file": 100,
+  "questions_scored_by_ragas": 100,
+  "average_response_seconds": 19.5976,
+  "faithfulness": 0.4534,
+  "answer_relevancy": 0.8011,
+  "context_precision": 0.5094,
+  "context_recall": 0.46,
+  "answer_correctness": 0.3882,
+  "ragas_accuracy_percent": 38.82
+}

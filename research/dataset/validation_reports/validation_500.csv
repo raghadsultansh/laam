@@ -1,0 +1,501 @@
+row_id,answer_type,validation_status,validation_issues,issue_count,hard_fail_count
+tatqa_004608,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'18,925', '3', '6,308.33'}",1,0
+tatqa_009215,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'7,302.5'}",1,0
+tatqa_006685,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '90.65'}",1,0
+tatqa_000546,arithmetic,pass,,0,0
+tatqa_008026,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'11.5'},1,0
+tatqa_006974,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,832'}",1,0
+tatqa_002626,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11.7', '100'}",1,0
+tatqa_004717,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6.8', '100'}",1,0
+tatqa_010229,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1.035042322', '100'}",1,0
+tatqa_000916,arithmetic,pass,,0,0
+tatqa_008543,arithmetic,pass,,0,0
+tatqa_007695,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6', '4.96', '100'}",1,0
+tatqa_004861,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008074,arithmetic,pass,,0,0
+tatqa_012296,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005273,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001068,arithmetic,pass,,0,0
+tatqa_001589,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'43,698'}",1,0
+tatqa_006591,arithmetic,pass,,0,0
+tatqa_000898,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,469'}",1,0
+tatqa_006332,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'211,700'}",1,0
+tatqa_004613,arithmetic,pass,,0,0
+tatqa_011690,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'212', '100'}",1,0
+tatqa_009630,arithmetic,pass,,0,0
+tatqa_001397,arithmetic,pass,,0,0
+tatqa_012290,arithmetic,pass,,0,0
+tatqa_010504,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'16,599,083'}",1,0
+tatqa_003030,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000054,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'98', '100'}",1,0
+tatqa_002668,arithmetic,pass,,0,0
+tatqa_002004,arithmetic,pass,,0,0
+tatqa_009846,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012246,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'241'},1,0
+tatqa_007539,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'6.0'},1,0
+tatqa_008976,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '227'}",1,0
+tatqa_006239,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,246'}",1,0
+tatqa_010355,arithmetic,pass,,0,0
+tatqa_012013,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,005', '1300', '1000', '3015'}",1,0
+tatqa_008610,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4.65', '100'}",1,0
+tatqa_009366,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,183,867'}",1,0
+tatqa_000767,arithmetic,pass,,0,0
+tatqa_007647,arithmetic,pass,,0,0
+tatqa_005345,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'55,653'}",1,0
+tatqa_011714,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'33.57'},1,0
+tatqa_003713,arithmetic,pass,,0,0
+tatqa_005087,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '734'}",1,0
+tatqa_008615,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,439'}",1,0
+tatqa_003850,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'177'},1,0
+tatqa_001020,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'13.27', '1.5', '100'}",1,0
+tatqa_008856,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'24.207', '100'}",1,0
+tatqa_006656,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,101.5'}",1,0
+tatqa_002663,arithmetic,pass,,0,0
+tatqa_012571,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,465'}",1,0
+tatqa_013219,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'62,410'}",1,0
+tatqa_001301,arithmetic,pass,,0,0
+tatqa_010878,arithmetic,pass,,0,0
+tatqa_006191,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,444'}",1,0
+tatqa_008520,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4.93827', '4', '100'}",1,0
+tatqa_011492,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'20,094'}",1,0
+tatqa_005154,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'63,267.5'}",1,0
+tatqa_005026,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'55.609', '100'}",1,0
+tatqa_006199,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'221'},1,0
+tatqa_008986,arithmetic,pass,,0,0
+tatqa_000714,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'244.5'},1,0
+tatqa_002976,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'47.87', '100'}",1,0
+tatqa_000023,arithmetic,pass,,0,0
+tatqa_004553,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,157', '149.6765847', '100'}",1,0
+tatqa_008265,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'19.99931172', '100'}",1,0
+tatqa_002188,arithmetic,pass,,0,0
+tatqa_000671,arithmetic,pass,,0,0
+tatqa_012524,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'17,099.994', '100'}",1,0
+tatqa_009827,arithmetic,pass,,0,0
+tatqa_009695,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,341'}",1,0
+tatqa_010500,arithmetic,pass,,0,0
+tatqa_002368,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'49,087'}",1,0
+tatqa_011174,arithmetic,pass,,0,0
+tatqa_012410,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000082,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'435'},1,0
+tatqa_008922,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004895,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'380,498'}",1,0
+tatqa_003251,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'18,138'}",1,0
+tatqa_004541,arithmetic,pass,,0,0
+tatqa_001128,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'183.7'},1,0
+tatqa_006776,arithmetic,pass,,0,0
+tatqa_008140,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,572'}",1,0
+tatqa_005346,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'27,829'}",1,0
+tatqa_008099,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'197', '100'}",1,0
+tatqa_002538,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'2.5415'},1,0
+tatqa_010306,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004450,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'89,731'}",1,0
+tatqa_005712,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'12,413,745.5'}",1,0
+tatqa_005801,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,210'}",1,0
+tatqa_001475,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'398,713,772.5'}",1,0
+tatqa_004607,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'90.86844601', '100'}",1,0
+tatqa_003448,arithmetic,pass,,0,0
+tatqa_002638,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'64,309'}",1,0
+tatqa_006241,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,584'}",1,0
+tatqa_002920,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'456,868'}",1,0
+tatqa_010600,arithmetic,pass,,0,0
+tatqa_000696,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'168.0', '100'}",1,0
+tatqa_013003,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15,018', '100'}",1,0
+tatqa_013191,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'60'},1,0
+tatqa_012222,arithmetic,pass,,0,0
+tatqa_006025,arithmetic,pass,,0,0
+tatqa_009677,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,825'}",1,0
+tatqa_007077,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6.77', '100'}",1,0
+tatqa_002968,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002488,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'46'},1,0
+tatqa_000833,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,083', '3,027.67'}",1,0
+tatqa_006270,arithmetic,pass,,0,0
+tatqa_008272,arithmetic,pass,,0,0
+tatqa_006168,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'159,998.5'}",1,0
+tatqa_002628,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2.7', '100'}",1,0
+tatqa_003376,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,660'}",1,0
+tatqa_009142,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'727', '100'}",1,0
+tatqa_003893,arithmetic,pass,,0,0
+tatqa_010235,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,266'}",1,0
+tatqa_011352,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001289,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001692,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'22.6804', '11.0', '100'}",1,0
+tatqa_009365,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,658,414'}",1,0
+tatqa_005644,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,758'}",1,0
+tatqa_001757,arithmetic,pass,,0,0
+tatqa_000185,arithmetic,pass,,0,0
+tatqa_002878,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,444'}",1,0
+tatqa_002051,arithmetic,pass,,0,0
+tatqa_002722,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'12324'},1,0
+tatqa_012253,arithmetic,pass,,0,0
+tatqa_010216,arithmetic,pass,,0,0
+tatqa_006373,arithmetic,pass,,0,0
+tatqa_002886,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2.902173913', '100'}",1,0
+tatqa_007562,arithmetic,pass,,0,0
+tatqa_003310,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,484.1', '2024'}",1,0
+tatqa_010146,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'72.2', '100'}",1,0
+tatqa_006107,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'6218'},1,0
+tatqa_004500,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'12.56', '1,257'}",1,0
+tatqa_012650,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005389,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005629,arithmetic,pass,,0,0
+tatqa_000760,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'67'},1,0
+tatqa_007473,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,000'}",1,0
+tatqa_013143,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'70,056', '100'}",1,0
+tatqa_007754,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012843,arithmetic,pass,,0,0
+tatqa_010988,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'91.72', '100'}",1,0
+tatqa_009539,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,070'}",1,0
+tatqa_011418,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'301'},1,0
+tatqa_001398,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002693,arithmetic,pass,,0,0
+tatqa_011305,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'17.1', '100'}",1,0
+tatqa_000948,arithmetic,pass,,0,0
+tatqa_001847,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'39.15', '100'}",1,0
+tatqa_000778,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'67,423'}",1,0
+tatqa_005545,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000040,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,452'}",1,0
+tatqa_005909,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'441'},1,0
+tatqa_012170,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'506,195'}",1,0
+tatqa_008934,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,111', '100'}",1,0
+tatqa_002939,arithmetic,pass,,0,0
+tatqa_010909,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11,082'}",1,0
+tatqa_010602,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1.1', '1.65', '100'}",1,0
+tatqa_012723,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'782'},1,0
+tatqa_001193,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003617,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'5.0'},1,0
+tatqa_006151,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,037'}",1,0
+tatqa_000196,arithmetic,pass,,0,0
+tatqa_007113,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '950'}",1,0
+tatqa_012337,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,614'}",1,0
+tatqa_010687,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'99.05', '100'}",1,0
+tatqa_009030,arithmetic,pass,,0,0
+tatqa_000850,arithmetic,pass,,0,0
+tatqa_006155,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'16,903'}",1,0
+tatqa_010847,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,610', '19,220'}",1,0
+tatqa_013059,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000400,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,034.9'}",1,0
+tatqa_003046,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,444'}",1,0
+tatqa_002092,arithmetic,pass,,0,0
+tatqa_005597,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010789,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'14.29', '100'}",1,0
+tatqa_003556,arithmetic,pass,,0,0
+tatqa_012332,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001440,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,509'}",1,0
+tatqa_010530,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,217', '100'}",1,0
+tatqa_001961,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004173,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4.04', '100'}",1,0
+tatqa_010282,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'964.0'},1,0
+tatqa_010362,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'24,551', '100'}",1,0
+tatqa_003839,arithmetic,pass,,0,0
+tatqa_001414,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002832,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'106,498'}",1,0
+tatqa_002807,arithmetic,pass,,0,0
+tatqa_011220,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'49,264'}",1,0
+tatqa_013221,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'13,824'}",1,0
+tatqa_000966,arithmetic,pass,,0,0
+tatqa_009251,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'230'},1,0
+tatqa_003899,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'273'},1,0
+tatqa_001931,arithmetic,pass,,0,0
+tatqa_010969,arithmetic,pass,,0,0
+tatqa_005341,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'684,028'}",1,0
+tatqa_002603,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'111,162'}",1,0
+tatqa_005495,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'12,656', '5,000', '100'}",1,0
+tatqa_001684,arithmetic,pass,,0,0
+tatqa_012319,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'57,094'}",1,0
+tatqa_010669,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '50', '5.57475'}",1,0
+tatqa_009420,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000798,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'1.93'},1,0
+tatqa_009318,arithmetic,pass,,0,0
+tatqa_002406,arithmetic,pass,,0,0
+tatqa_006480,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'97,371.5'}",1,0
+tatqa_000312,arithmetic,pass,,0,0
+tatqa_008260,count,pass,,0,0
+tatqa_007155,count,pass,,0,0
+tatqa_004835,count,pass,,0,0
+tatqa_010835,count,pass,,0,0
+tatqa_002783,count,pass,,0,0
+tatqa_000442,count,pass,,0,0
+tatqa_005207,count,pass,"COUNT_PREFILTER_WARNING: Values used has 3 bullet(s), equal to gold count (3) - possible pre-filtering",1,1
+tatqa_007244,count,pass,,0,0
+tatqa_007809,count,pass,,0,0
+tatqa_001697,count,pass,,0,0
+tatqa_000335,count,pass,,0,0
+tatqa_004462,count,pass,,0,0
+tatqa_011494,multi-span,pass,,0,0
+tatqa_003105,multi-span,pass,,0,0
+tatqa_006659,multi-span,pass,,0,0
+tatqa_003759,multi-span,pass,,0,0
+tatqa_010767,multi-span,pass,,0,0
+tatqa_012197,multi-span,pass,,0,0
+tatqa_012953,multi-span,pass,,0,0
+tatqa_003349,multi-span,pass,,0,0
+tatqa_005692,multi-span,pass,,0,0
+tatqa_010338,multi-span,pass,,0,0
+tatqa_002040,multi-span,pass,,0,0
+tatqa_012696,multi-span,pass,,0,0
+tatqa_004786,multi-span,pass,,0,0
+tatqa_012664,multi-span,pass,,0,0
+tatqa_001632,multi-span,pass,,0,0
+tatqa_012708,multi-span,pass,,0,0
+tatqa_009153,multi-span,pass,,0,0
+tatqa_009284,multi-span,pass,,0,0
+tatqa_002917,multi-span,pass,,0,0
+tatqa_001844,multi-span,pass,,0,0
+tatqa_009417,multi-span,pass,,0,0
+tatqa_007565,multi-span,pass,,0,0
+tatqa_001652,multi-span,pass,,0,0
+tatqa_001934,multi-span,pass,,0,0
+tatqa_002753,multi-span,pass,,0,0
+tatqa_003817,multi-span,pass,,0,0
+tatqa_004311,multi-span,pass,,0,0
+tatqa_007283,multi-span,pass,,0,0
+tatqa_003194,multi-span,pass,,0,0
+tatqa_000223,multi-span,pass,,0,0
+tatqa_008238,multi-span,pass,,0,0
+tatqa_012058,multi-span,pass,,0,0
+tatqa_004005,multi-span,pass,,0,0
+tatqa_001868,multi-span,pass,,0,0
+tatqa_006166,multi-span,pass,,0,0
+tatqa_010513,multi-span,pass,,0,0
+tatqa_000356,multi-span,pass,,0,0
+tatqa_001322,multi-span,pass,,0,0
+tatqa_005066,multi-span,pass,,0,0
+tatqa_007992,multi-span,pass,,0,0
+tatqa_007002,multi-span,pass,,0,0
+tatqa_002605,multi-span,pass,,0,0
+tatqa_003173,multi-span,pass,,0,0
+tatqa_012509,multi-span,pass,,0,0
+tatqa_007086,multi-span,pass,,0,0
+tatqa_011523,multi-span,pass,,0,0
+tatqa_007867,multi-span,pass,,0,0
+tatqa_000261,multi-span,pass,,0,0
+tatqa_004304,multi-span,pass,,0,0
+tatqa_009924,multi-span,pass,,0,0
+tatqa_005738,multi-span,pass,,0,0
+tatqa_002715,multi-span,pass,,0,0
+tatqa_004792,multi-span,pass,,0,0
+tatqa_000267,multi-span,pass,,0,0
+tatqa_008461,multi-span,pass,,0,0
+tatqa_000482,multi-span,pass,,0,0
+tatqa_006856,multi-span,pass,,0,0
+tatqa_006884,multi-span,pass,,0,0
+tatqa_001959,multi-span,pass,,0,0
+tatqa_009405,multi-span,pass,,0,0
+tatqa_001059,multi-span,pass,,0,0
+tatqa_012603,multi-span,pass,,0,0
+tatqa_001406,span,pass,,0,0
+tatqa_012868,span,pass,,0,0
+tatqa_010728,span,pass,,0,0
+tatqa_010856,span,pass,,0,0
+tatqa_005745,span,pass,,0,0
+tatqa_010810,span,pass,,0,0
+tatqa_003482,span,pass,,0,0
+tatqa_001719,span,pass,,0,0
+tatqa_000469,span,pass,,0,0
+tatqa_003632,span,pass,,0,0
+tatqa_003595,span,pass,,0,0
+tatqa_012543,span,pass,,0,0
+tatqa_011240,span,pass,,0,0
+tatqa_004413,span,pass,,0,0
+tatqa_002714,span,pass,,0,0
+tatqa_004045,span,pass,,0,0
+tatqa_010948,span,pass,,0,0
+tatqa_009722,span,pass,,0,0
+tatqa_000225,span,pass,,0,0
+tatqa_002439,span,pass,,0,0
+tatqa_007346,span,pass,,0,0
+tatqa_009073,span,pass,,0,0
+tatqa_008156,span,pass,,0,0
+tatqa_008221,span,pass,,0,0
+tatqa_000309,span,pass,,0,0
+tatqa_010480,span,pass,,0,0
+tatqa_004496,span,pass,,0,0
+tatqa_005165,span,pass,,0,0
+tatqa_010660,span,pass,,0,0
+tatqa_002169,span,pass,,0,0
+tatqa_004335,span,pass,,0,0
+tatqa_001713,span,pass,,0,0
+tatqa_011674,span,pass,,0,0
+tatqa_001346,span,pass,,0,0
+tatqa_012934,span,pass,,0,0
+tatqa_010071,span,pass,,0,0
+tatqa_012334,span,fail,HARD_FAIL: missing stop token '<|im_end|>',1,1
+tatqa_010635,span,pass,,0,0
+tatqa_008709,span,pass,,0,0
+tatqa_005415,span,pass,,0,0
+tatqa_001593,span,pass,,0,0
+tatqa_008505,span,pass,,0,0
+tatqa_007740,span,pass,,0,0
+tatqa_010438,span,pass,,0,0
+tatqa_001375,span,pass,,0,0
+tatqa_004040,span,pass,,0,0
+tatqa_006050,span,pass,,0,0
+tatqa_004893,span,pass,,0,0
+tatqa_010631,span,pass,,0,0
+tatqa_005816,span,pass,,0,0
+tatqa_008039,span,pass,,0,0
+tatqa_008306,span,pass,,0,0
+tatqa_004695,span,pass,,0,0
+tatqa_002107,span,pass,,0,0
+tatqa_010016,span,pass,,0,0
+tatqa_007909,span,pass,,0,0
+tatqa_008930,span,pass,,0,0
+tatqa_012333,span,pass,,0,0
+tatqa_004051,span,pass,,0,0
+tatqa_005037,span,pass,,0,0
+tatqa_010471,span,pass,,0,0
+tatqa_007103,span,pass,,0,0
+tatqa_011621,span,pass,,0,0
+tatqa_000619,span,pass,,0,0
+tatqa_004298,span,pass,,0,0
+tatqa_013121,span,pass,,0,0
+tatqa_001155,span,pass,,0,0
+tatqa_011626,span,pass,,0,0
+tatqa_013061,span,pass,,0,0
+tatqa_012394,span,pass,,0,0
+tatqa_000945,span,pass,,0,0
+tatqa_008426,span,pass,,0,0
+tatqa_006336,span,pass,,0,0
+tatqa_004394,span,pass,,0,0
+tatqa_011752,span,pass,,0,0
+tatqa_008038,span,pass,,0,0
+tatqa_010317,span,pass,,0,0
+tatqa_008612,span,pass,,0,0
+tatqa_000375,span,pass,,0,0
+tatqa_003938,span,pass,,0,0
+tatqa_008977,span,pass,,0,0
+tatqa_001738,span,pass,,0,0
+tatqa_004839,span,pass,,0,0
+tatqa_005483,span,pass,,0,0
+tatqa_004630,span,pass,,0,0
+tatqa_008919,span,pass,,0,0
+tatqa_005277,span,pass,,0,0
+tatqa_011465,span,pass,,0,0
+tatqa_000181,span,fail,CITATION_LEAK: contains 'on page',1,1
+tatqa_001556,span,pass,,0,0
+tatqa_005896,span,pass,,0,0
+tatqa_002829,span,pass,,0,0
+tatqa_004875,span,pass,,0,0
+tatqa_010955,span,pass,,0,0
+tatqa_006074,span,pass,,0,0
+tatqa_011958,span,pass,,0,0
+tatqa_008044,span,pass,,0,0
+tatqa_001435,span,pass,,0,0
+tatqa_006111,span,pass,,0,0
+tatqa_009464,span,pass,,0,0
+tatqa_009392,span,pass,,0,0
+tatqa_008318,span,pass,,0,0
+tatqa_010225,span,pass,,0,0
+tatqa_007602,span,pass,,0,0
+tatqa_007145,span,pass,,0,0
+tatqa_010435,span,pass,,0,0
+tatqa_008155,span,pass,,0,0
+tatqa_004888,span,pass,,0,0
+tatqa_009771,span,pass,,0,0
+tatqa_003578,span,pass,,0,0
+tatqa_002787,span,pass,,0,0
+tatqa_001869,span,pass,,0,0
+tatqa_006159,span,pass,,0,0
+tatqa_000374,span,pass,,0,0
+tatqa_005937,span,pass,,0,0
+tatqa_005181,span,pass,,0,0
+tatqa_002625,span,pass,,0,0
+tatqa_011549,span,pass,,0,0
+tatqa_005565,span,pass,,0,0
+tatqa_004071,span,pass,,0,0
+tatqa_010636,span,pass,,0,0
+tatqa_002629,span,pass,,0,0
+tatqa_005102,span,pass,,0,0
+tatqa_010899,span,pass,,0,0
+tatqa_008304,span,pass,,0,0
+tatqa_005938,span,pass,,0,0
+tatqa_012111,span,pass,,0,0
+tatqa_005429,span,pass,,0,0
+tatqa_010903,span,pass,,0,0
+tatqa_005135,span,pass,,0,0
+tatqa_006940,span,pass,,0,0
+tatqa_004201,span,pass,,0,0
+tatqa_006062,span,pass,,0,0
+tatqa_012537,span,pass,,0,0
+tatqa_006760,span,pass,,0,0
+tatqa_008803,span,pass,,0,0
+tatqa_006189,span,pass,,0,0
+tatqa_000031,span,pass,,0,0
+tatqa_011795,span,pass,,0,0
+tatqa_012358,span,pass,,0,0
+tatqa_010027,span,pass,,0,0
+tatqa_000417,span,pass,,0,0
+tatqa_007279,span,pass,,0,0
+tatqa_006948,span,pass,,0,0
+tatqa_003559,span,pass,,0,0
+tatqa_001498,span,pass,,0,0
+tatqa_011620,span,pass,,0,0
+tatqa_007547,span,pass,,0,0
+tatqa_012161,span,pass,,0,0
+tatqa_000398,span,pass,,0,0
+tatqa_008228,span,pass,,0,0
+tatqa_012428,span,pass,,0,0
+tatqa_003217,span,pass,,0,0
+tatqa_011585,span,pass,,0,0
+tatqa_012089,span,pass,,0,0
+tatqa_009255,span,pass,,0,0
+tatqa_000177,span,pass,,0,0
+tatqa_006130,span,pass,,0,0
+tatqa_000427,span,pass,,0,0
+tatqa_002755,span,pass,,0,0
+tatqa_011579,span,pass,,0,0
+tatqa_009349,span,pass,,0,0
+tatqa_000397,span,pass,,0,0
+tatqa_002545,span,pass,,0,0
+tatqa_009458,span,pass,,0,0
+tatqa_001327,span,pass,,0,0
+tatqa_006694,span,pass,,0,0
+tatqa_003985,span,pass,,0,0
+tatqa_003490,span,pass,,0,0
+tatqa_006558,span,pass,,0,0
+tatqa_001503,span,pass,,0,0
+tatqa_002785,span,pass,,0,0
+tatqa_012507,span,pass,,0,0
+tatqa_006056,span,pass,,0,0
+tatqa_010165,span,pass,,0,0
+tatqa_009910,span,pass,,0,0
+tatqa_002125,span,pass,,0,0
+tatqa_004256,span,pass,,0,0
+tatqa_003321,span,pass,,0,0
+tatqa_009442,span,pass,,0,0
+tatqa_001356,span,pass,,0,0
+tatqa_007392,span,pass,,0,0
+tatqa_002235,span,pass,,0,0
+tatqa_009218,span,pass,,0,0
+tatqa_004563,span,pass,,0,0
+tatqa_002725,span,pass,,0,0
+tatqa_010719,span,pass,,0,0
+tatqa_005679,span,pass,,0,0
+tatqa_001221,span,pass,,0,0
+tatqa_007226,span,pass,,0,0
+tatqa_009715,span,pass,,0,0
+tatqa_000050,span,pass,,0,0
+tatqa_003735,span,pass,,0,0
+tatqa_008009,span,pass,,0,0
+tatqa_008984,span,pass,,0,0
+tatqa_000928,span,pass,,0,0
+tatqa_007806,span,pass,,0,0
+tatqa_012251,span,pass,,0,0
+tatqa_003693,span,pass,,0,0
+tatqa_003476,span,pass,,0,0
+tatqa_007206,span,pass,,0,0
+tatqa_011469,span,pass,,0,0
+tatqa_001993,span,pass,,0,0
+tatqa_011134,span,pass,,0,0
+tatqa_005906,span,pass,,0,0
+tatqa_010330,span,pass,,0,0
+tatqa_000567,span,pass,,0,0
+tatqa_010147,span,pass,,0,0
+tatqa_012178,span,pass,,0,0
+tatqa_009470,span,pass,,0,0
+tatqa_010882,span,pass,,0,0
+tatqa_008175,span,pass,,0,0
+tatqa_003429,span,pass,,0,0
+tatqa_004016,span,pass,,0,0
+tatqa_003493,span,pass,,0,0
+tatqa_000032,span,pass,,0,0

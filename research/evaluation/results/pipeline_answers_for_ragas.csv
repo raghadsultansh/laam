@@ -1,0 +1,731 @@
+﻿id,question,answer,contexts,ground_truth,company,language,type,difficulty,report,doc_hash,response_seconds,error
+Q002,How did MD Labs' operational volume of processed tests change year-over-year in 2025?,"**Reasoning & Calculations**:
+The document states that MD Labs processed more than 20 million tests in 2025, which represents a 33% increase from 2024. To determine the operational volume change, we need to understand the percentage increase formula: `((New - Old) / Old) * 100 = Percentage Increase`. Here, the percentage increase is given as 33%. Therefore, if we let the number of tests processed in 2024 be X, then:
+
+`((20 million - X) / X) * 100 = 33`
+
+Solving for X gives us the number of tests processed in 2024. Rearranging the equation:
+
+`20 million - X = 0.33 * X`
+
+`20 million = 1.33 * X`
+
+`X = 20 million / 1.33`
+
+`X ≈ 15.04 million`
+
+Thus, approximately 15.04 million tests were processed in 2024. The increase in the number of tests from 2024 to 2025 is:
+
+`20 million - 15.04 million ≈ 4.96 million`
+
+**Final Answer**:
+MD Labs' operational volume of processed tests increased by approximately 4.96 million tests from 2024 to 2025, representing a 33% increase year-over-year [Page 59 | Section: Advancing Excellence at Scale].","[""We processed more than 20 million tests in 2025, a 33% increase from 2024, driven by continued demand and the addition of over 500 new specialized tests. This performance reflects a long-term trajectory of strategic growth.""]",It increased by 33% to more than 20 million tests.,Alhabib Medical Group,en,Year-over-year comparison,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,40.8932,
+Q004,What was the year-over-year growth percentage for HMG's net profit in 2025?,"**Reasoning & Calculations**:
+- The net profit for FY 2025 is given as 2.4, and for FY 2024, it is 2.3. 
+- To calculate the year-over-year growth percentage for net profit, use the formula: `((New - Old) / Old) * 100`.
+- Plugging in the values: `((2.4 - 2.3) / 2.3) * 100 = (0.1 / 2.3) * 100 ≈ 4.35%`.
+- However, the provided document states the growth percentage for FY 2025 as 3.7%.
+
+**Final Answer**:
+The year-over-year growth percentage for HMG's net profit in 2025 was 3.7% [Page: 41 | Section: Financial Review].","[""Revenue, FY 2025 = 13.7. Revenue, FY 2024 = 11.2. Revenue, FY 2023 = 9.5. Growth%, FY 2025 = 22.4%. Growth%, FY 2024 = 17.8%. Growth%, FY 2023 = 14.4%. EBITDA, FY 2025 = 3.5. EBITDA, FY 2024 = 3.0. EBITDA, FY 2023 = 2.5. Growth%, FY 2025 = 17.9%. Growth%, FY 2024 = 17.6%. Growth%, FY 2023 = 18.5%. E"", ""Revenue, 2025 = 13,706.9. Revenue, 2024 = 11,200.4. Revenue, Change (+) or (-) = 2,506.5. Revenue, Percentage Change = 22.4%. Cost of revenue, 2025 = 9,499.9. Cost of revenue, 2024 = 7,456.2. Cost of revenue, Change (+) or (-) = 2,043.7. Cost of revenue, Percentage Change = 27.4%. Gross profit, 2025""]",3.7%,Alhabib Medical Group,en,Year-over-year comparison,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,18.363,
+Q005,How did the number of Flow Medical's Total Technical Transactions change year-over-year from 2024 to 2025?,I do not have enough information to answer this based on the provided document.,[],"Increased from 72,734 to 96,978.",Alhabib Medical Group,en,Year-over-year comparison,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,13.199,
+Q006,"Did the Return on Assets (ROA) increase or decrease from 2024 to 2025, and what was the 2025 value?","**Reasoning & Calculations**:
+- Return on Assets (ROA) is calculated as Net Income divided by Total Assets.
+- For 2024, the Profit attributable to equity holders of the parent (Net Income) is 2,315.3, and Total Assets are 20,557.9.
+- ROA for 2024 = \( \frac{2,315.3}{20,557.9} \).
+- For 2025, the Profit attributable to equity holders of the parent (Net Income) is 2,401.5, and Total Assets are 23,205.0.
+- ROA for 2025 = \( \frac{2,401.5}{23,205.0} \).
+- Calculate ROA for both years:
+  - ROA 2024 = \( \frac{2,315.3}{20,557.9} \approx 0.1126 \) or 11.26%
+  - ROA 2025 = \( \frac{2,401.5}{23,205.0} \approx 0.1035 \) or 10.35%
+- Compare the ROA values: 11.26% in 2024 and 10.35% in 2025, indicating a decrease.
+
+**Final Answer**:
+The Return on Assets (ROA) decreased from 2024 to 2025, with the 2025 value being 10.35% [Page 43 | Section: Key Financial Information and KPIs].","[""Statement of income, 2025 = . Statement of income, 2024 = . Statement of income, 2023 = . Revenue, 2025 = 13,706.9. Revenue, 2024 = 11,200.4. Revenue, 2023 = 9,508.4. Gross profit, 2025 = 4,207.0. Gross profit, 2024 = 3,744.3. Gross profit, 2023 = 3,270.0. Operating income, 2025 = 2,619.0. Operating""]",It decreased to 10.97%.,Alhabib Medical Group,en,Year-over-year comparison,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,17.5802,
+Q007,How did the EBITDA margin change from FY 2024 to FY 2025?,"**Reasoning & Calculations**:
+- According to the provided document, the EBITDA margin for FY 2024 is 26.6%, and for FY 2025, it is 25.6%.
+- To determine the change in EBITDA margin from FY 2024 to FY 2025, we calculate the difference between the two percentages: 25.6% - 26.6% = -1.0%.
+- This indicates a decrease in the EBITDA margin by 1.0 percentage point from FY 2024 to FY 2025.
+
+**Final Answer**:
+The EBITDA margin decreased by 1.0 percentage point from FY 2024 to FY 2025 [Page: 41 | Section: Financial Review].","[""Revenue, FY 2025 = 13.7. Revenue, FY 2024 = 11.2. Revenue, FY 2023 = 9.5. Growth%, FY 2025 = 22.4%. Growth%, FY 2024 = 17.8%. Growth%, FY 2023 = 14.4%. EBITDA, FY 2025 = 3.5. EBITDA, FY 2024 = 3.0. EBITDA, FY 2023 = 2.5. Growth%, FY 2025 = 17.9%. Growth%, FY 2024 = 17.6%. Growth%, FY 2023 = 18.5%. E""]",It decreased from 26.6% to 25.6%.,Alhabib Medical Group,en,Year-over-year comparison,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,14.4765,
+Q008,How did the gross profit for the Pharmacies segment change year-over-year from 2024 to 2025?,"**Reasoning & Calculations**:
+- The gross profit for the Pharmacies segment in 2024 was 700 [Page: 127 | Section: 6 Segment Information].
+- The gross profit for the Pharmacies segment in 2025 was 869 [Page: 127 | Section: 6 Segment Information].
+- To calculate the year-over-year change in gross profit, use the formula: `((New - Old) / Old) * 100`.
+- Substituting the values: `((869 - 700) / 700) * 100 = (169 / 700) * 100 ≈ 24.14%`.
+
+**Final Answer**:
+The gross profit for the Pharmacies segment increased by approximately 24.14% from 2024 to 2025 [Page: 127 | Section: 6 Segment Information].","[""For the year ended 31 December 2025, Hospitals / Healthcare Facilities = . For the year ended 31 December 2025, Pharmacies = . For the year ended 31 December 2025, Solutions / Others = . For the year ended 31 December 2025, Total = . Revenue, Hospitals / Healthcare Facilities = 10,600. Revenue, Phar""]",It increased from SAR 700 million to SAR 869 million.,Alhabib Medical Group,en,Table interpretation,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,13.3205,
+Q009,What is the calculated difference in Net Income between 2025 and 2024 in SAR millions?,"**Reasoning & Calculations**:
+- According to the provided evidence, the net income for 2025 is 2,401.5 SAR million, and for 2024, it is 2,315.3 SAR million.
+- To find the difference in net income between 2025 and 2024, we subtract the net income of 2024 from that of 2025.
+- Calculation: \( 2,401.5 - 2,315.3 = 86.2 \) SAR million.
+
+**Final Answer**:
+The calculated difference in Net Income between 2025 and 2024 is 86.2 SAR million [Page: 111 | Section: 10.2 Profit and Loss Comparison].","[""Revenue, 2025 = 13,706.9. Revenue, 2024 = 11,200.4. Revenue, Change (+) or (-) = 2,506.5. Revenue, Percentage Change = 22.4%. Cost of revenue, 2025 = 9,499.9. Cost of revenue, 2024 = 7,456.2. Cost of revenue, Change (+) or (-) = 2,043.7. Cost of revenue, Percentage Change = 27.4%. Gross profit, 2025""]",SAR 86.2 million,Alhabib Medical Group,en,Calculation or reasoning,Hard,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,14.9992,
+Q010,"Based on the consolidated statement of financial position, what is the Working Capital (Total current assets minus Total current liabilities) for 2025?","**Reasoning & Calculations**:
+- To calculate the Working Capital for 2025, we need to subtract the Total Current Liabilities from the Total Current Assets for the year 2025.
+- From the provided evidence, the Total Current Assets for 2025 is $5,427,270,670 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].
+- The Total Current Liabilities for 2025 is $4,718,655,328 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].
+- The formula for Working Capital is: 
+  \[
+  \text{Working Capital} = \text{Total Current Assets} - \text{Total Current Liabilities}
+  \]
+- Substituting the values:
+  \[
+  \text{Working Capital} = 5,427,270,670 - 4,718,655,328 = 708,615,342
+  \]
+
+**Final Answer**:
+The Working Capital for 2025 is $708,615,342 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].","[""Current assets, 2025 = 5,427.3. Current assets, 2024 = 5,319.4. Current assets, 2023 = 4,137.8. Current assets, 2022 = 4,160.5. Current assets, 2021 = 4,133.4. Non-current assets, 2025 = 17,777.7. Non-current assets, 2024 = 15,238.5. Non-current assets, 2023 = 11,660.2. Non-current assets, 2022 = 8,"", ""Assets, Note = . Assets, 31 December 2025 $ = . Assets, 31 December 2024 $ = . Current assets, Note = . Current assets, 31 December 2025 $ = . Current assets, 31 December 2024 $ = . Cash and cash equivalents, Note = 7. Cash and cash equivalents, 31 December 2025 $ = 2,281,635,206. Cash and cash equi""]","SAR 708,615,342",Alhabib Medical Group,en,Calculation or reasoning,Hard,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,15.6239,
+Q011,"What is the total estimated project cost for the new Tabuk, Al-Jubail, and Dammam hospitals combined?","**Reasoning & Calculations**:
+- The total estimated project cost for the hospital in Al-Jubail is approximately 0.6 billion [Page: 104 | Section: First: Hospitals].
+- The total estimated project cost for the hospital in Dammam is approximately 1 billion [Page: 104 | Section: First: Hospitals].
+- The total estimated project cost for the hospital in Tabuk is approximately 0.5 billion [Page: 104 | Section: First: Hospitals].
+- To find the combined total estimated project cost, sum the individual costs: 
+  \[
+  0.6 \text{ billion} + 1 \text{ billion} + 0.5 \text{ billion} = 2.1 \text{ billion}
+  \]
+
+**Final Answer**:
+The total estimated project cost for the new hospitals in Tabuk, Al-Jubail, and Dammam combined is approximately 2.1 billion. [Page: 104 | Section: First: Hospitals]","[""HMG's ownership,  = 100%. Total estimated project cost,  = Around % 0.6 billion. Location,  = Al-Dafi neighborhood, Al-Farouq South District, Jubail Industrial City, KSA. Number of beds,  = +200*. Construction phase,  = Construction works. Expected completion,  = 2029""]",SAR 2.1 billion,Alhabib Medical Group,en,Calculation or reasoning,Hard,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,14.5258,
+Q012,What percentage of total 2025 revenue came from the Kingdom of Saudi Arabia?,"**Reasoning & Calculations**:
+- According to the provided document, the total revenue for 2025 is 13,707.
+- The revenue from the Kingdom of Saudi Arabia (KSA) for 2025 is 13,100.
+- To find the percentage of total revenue that came from KSA, use the formula: \((\text{Revenue from KSA} / \text{Total Revenue}) \times 100\).
+- Plugging in the numbers: \((13,100 / 13,707) \times 100\).
+
+**Final Answer**:
+- The percentage of total 2025 revenue that came from the Kingdom of Saudi Arabia is approximately 95.57% [Page: 111 | Section: 10.3].","[""2025, Revenue = 13,707. 2025, KSA = 13,100. 2025, Outside KSA = 607""]",95.57%,Alhabib Medical Group,en,Calculation or reasoning,Hard,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,13.9818,
+Q013,What is the calculated difference between total assets and total liabilities as of 31 December 2025?,"**Reasoning & Calculations**:
+- According to the provided document, the total assets as of 31 December 2025 are $23,204,946,364 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].
+- The total liabilities as of the same date are $14,776,266,748 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].
+- To find the difference between total assets and total liabilities, we subtract the total liabilities from the total assets: 
+  \[
+  23,204,946,364 - 14,776,266,748 = 8,428,679,616
+  \]
+
+**Final Answer**:
+The calculated difference between total assets and total liabilities as of 31 December 2025 is $8,428,679,616 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].","[""Assets, Note = . Assets, 31 December 2025 $ = . Assets, 31 December 2024 $ = . Current assets, Note = . Current assets, 31 December 2025 $ = . Current assets, 31 December 2024 $ = . Cash and cash equivalents, Note = 7. Cash and cash equivalents, 31 December 2025 $ = 2,281,635,206. Cash and cash equi""]","SAR 8,428,679,616",Alhabib Medical Group,en,Calculation or reasoning,Hard,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,13.4639,
+Q014,How does HMG mitigate the risk of delayed collections from insurance companies and the Ministry of Health?,I do not have enough information to answer this based on the provided document.,[],"Through proactive monitoring and negotiation by its subsidiary, Taswyat Management.",Alhabib Medical Group,en,Risk and strategy understanding,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,12.008,
+Q015,What step did HMG take in 2025 to ensure compliance with the KSA Personal Data Protection Law (PDPL)?,"**Reasoning & Calculations**:
+HMG took specific steps in 2025 to ensure compliance with the Kingdom of Saudi Arabia Personal Data Protection Law (PDPL). According to the provided evidence, HMG established a dedicated Data Privacy function with a clear mandate to oversee compliance with the PDPL. This function was responsible for actively monitoring, assessing, and responding to data-privacy-related requirements, inquiries, and incidents. The effectiveness of these measures is demonstrated by the fact that there were zero data breaches reported for the year 2025. This indicates that HMG's efforts were successful in aligning with regulatory requirements and improving patient data protection practices.
+
+**Final Answer**:
+HMG ensured compliance with the KSA Personal Data Protection Law (PDPL) in 2025 by establishing a dedicated Data Privacy function to oversee compliance, resulting in zero data breaches for the year [Page 73 | Section Privacy and Data Stewardship].","[""During 2025, HMG strengthened its data privacy governance through the establishment of a dedicated Data Privacy function, with a clear mandate to oversee compliance with the Kingdom of Saudi Arabia Personal Data Protection Law (PDPL). Throughout the year, the function actively monitored, assessed an""]",Established a dedicated Data Privacy function to oversee compliance.,Alhabib Medical Group,en,Risk and strategy understanding,Hard,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,16.6914,
+Q016,What is HMG's environmental goal regarding Scope 1 and Scope 2 emissions?,I do not have enough information to answer this based on the provided document.,[],To achieve Scope 1 and Scope 2 carbon reduction targets through a finalized de-carbonization plan.,Alhabib Medical Group,en,Risk and strategy understanding,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,12.8572,
+Q017,What is the core business activity of the subsidiary Flow Medical Company?,"**Reasoning & Calculations**:
+The core business activity of Flow Medical Company is mentioned in multiple pieces of evidence. Evidence 1 states that Flow Medical Company is a fully integrated healthcare technology and technical solutions provider, specializing in medical equipment management and turnkey solutions. Evidence 2 and Evidence 3 further confirm that Flow Medical Company manages advanced medical equipment and provides medical equipment maintenance services. Additionally, Evidence 4 reiterates that Flow Medical Company was launched for managing medical equipment.
+
+**Final Answer**:
+The core business activity of the subsidiary Flow Medical Company is managing and maintaining medical equipment. [Page 13 | Section: Flow Medical Solutions], [Page 33 | Section: Innovative healthcare solutions], [Page 79 | Section: 2.1.3 Solutions sector/Others], [Page 6 | Section: Flow Medical Company and Taswyat Management].","[""Flow Medical Company is a fully integrated healthcare technology and technical solutions provider, specializing in medical equipment management, and turnkey solutions. Established to oversee sophisticated medical assets, Flow ensures the seamless operation of medical infrastructure across the region"", ""HMG embraces innovation by partnering with public and private institutions to develop and expand digital services and integrate global best practices. Through our subsidiary Cloud Solutions, we develop applications for our medical facilities and offer tailored solutions for other providers. Our Flow"", ""The Group provides several other healthcare and support services to both the Group and external parties through the operation and management of the Medical Diagnostic Laboratories Company and the Home Healthcare Company, which provide home healthcare services. In addition, the Group provides health"", ""We launched Flow Medical Company for managing medical equipment and Taswyat Management for end-to-end healthcare revenue cycle management services.""]",Medical equipment maintenance.,Alhabib Medical Group,en,Segment/business-unit analysis,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,16.5996,
+Q018,Which HMG subsidiary provides revenue cycle management services?,"**Reasoning & Calculations**:
+The context document specifies that HMG has a subsidiary named Taswyat Management, which provides comprehensive end-to-end healthcare revenue cycle management services. This information is directly stated in the provided evidence.
+
+**Final Answer**:
+Taswyat Management provides revenue cycle management services. [Page: 33 | Section: Innovative healthcare solutions]","[""HMG embraces innovation by partnering with public and private institutions to develop and expand digital services and integrate global best practices. Through our subsidiary Cloud Solutions, we develop applications for our medical facilities and offer tailored solutions for other providers. Our Flow""]",Taswyat Management Company.,Alhabib Medical Group,en,Segment/business-unit analysis,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,12.548,
+Q019,What is the AuxQ system and how does it improve laboratory operations?,"**Reasoning & Calculations**:
+The AuxQ system is a laboratory robotic system developed by MD Labs in collaboration with Flow Medical, powered by Abbott's AlinIQ AMS technology. It automates the pre-analytical phase of diagnostics, which includes tasks such as sample registration, barcode scanning, sorting, uncapping, and transferring samples to analytical devices. This system operates continuously without human intervention, which reduces turnaround time, minimizes errors, and allows clinical teams to focus more on patient care. The introduction of AuxQ represents a significant advancement in laboratory operations by enhancing the speed, accuracy, and efficiency of diagnostic processes.
+
+**Final Answer**:
+The AuxQ system is an innovative laboratory robotic system that automates the pre-analytical phase of diagnostics, improving laboratory operations by reducing turnaround time, minimizing errors, and increasing efficiency and accuracy. It was developed by MD Labs in collaboration with Flow Medical and is powered by Abbott's AlinIQ AMS technology [Page 59 | Section: Advancing Excellence at Scale] [Page 32 | Section: Driving Digital and Operational Excellence Across HMG Solutions].","[""2025 marked a year of transformative growth for MD Labs with the launch of the first-of-its-kind laboratory robotic system, AuxQ, powered by Abbott's AlinIQ AMS technology, in collaboration with Flow Medical. Developed and tested in leading international labs, AuxQ automates the critical pre-analyti"", ""Flow Medical Solutions also made significant progress, launching the region's first Robotic Surgery Training Center, establishing a state of the art hub that enhances surgical capabilities nationwide and reinforces HMG's leadership in robotic and minimally invasive procedures. We further introduced""]",AuxQ is a laboratory robotic system that automates the pre-analytical phase of diagnostics without human intervention to reduce turnaround time and minimize errors.,Alhabib Medical Group,en,Evidence-based summary,Hard,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,13.334,
+Q020,What is the goal of the Dr. Sulaiman Al Habib College for Knowledge launched in 2025?,"**Reasoning & Calculations**:
+The goal of the Dr. Sulaiman Al Habib College for Knowledge, as outlined in the provided documents, is multifaceted. The College was launched to develop a self-sustaining national talent pipeline in the healthcare sector, focusing on competency-based learning and global benchmarking. It aims to elevate healthcare services by ensuring graduates achieve exceptional academic and professional competencies that align with the evolving needs of the health sector and labor market. Additionally, the College is designed to support the Kingdom's future healthcare needs and is aligned with Vision 2030, reflecting a commitment to developing national healthcare talent and strengthening the sector's future capacity.
+
+**Final Answer**:
+The goal of the Dr. Sulaiman Al Habib College for Knowledge, launched in 2025, is to develop a self-sustaining national talent pipeline in healthcare, focusing on competency-based learning and global benchmarking to meet the Kingdom's future healthcare needs and align with Vision 2030. [Page 65 | Section: Raising a new generation of care], [Page 14 | Section: HMG College for Knowledge], [Page 32 | Section: Investing in people and future capability], [Page 26 | Section: Investing in national capability and future talent].","[""HMG achieved a historic milestone in 2025 with the launch of Dr. Sulaiman Al Habib College for Knowledge, marking the beginning of a self-sustaining national talent pipeline grounded in competency-based learning, global benchmarking and aligned workforce development for the Kingdom's future nursing"", ""Dr. Sulaiman Al Habib College for Knowledge was established to reflect the Group's vision of being an active partner in developing highly qualified national healthcare professionals. The College aims to elevate healthcare services by providing a distinguished educational model designed to ensure gra"", ""People remain at the heart of everything we do. A key milestone of the year was the launch of Dr. Sulaiman Al Habib College for Knowledge, a landmark initiative that reflects our longterm commitment to developing national healthcare talent. By combining academic rigor with hands-on clinical exposure"", ""In line with Vision 2030, one of the most significant milestones of the year was the inauguration of Dr. Sulaiman Al Habib College for Knowledge, a landmark step in building a national talent pipeline. The College admitted approximately 100 students in its inaugural year and was established around c""]",To develop future healthcare professionals and build a national talent pipeline.,Alhabib Medical Group,en,Evidence-based summary,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,14.3055,
+Q021,What was Al Rajhi Bank's net income after Zakat in 2024?,"**Reasoning & Calculations**:
+- According to Evidence 1, Al Rajhi Bank's net income after Zakat in 2024 was SAR 19.7 billion [Page: 50 | Section: Profitability].
+- Evidence 2 corroborates this figure, stating that the bank achieved its highest net income after Zakat since establishment, totaling SAR 19.7 billion [Page: 21 | Section: chairman's statement].
+- Evidence 3 also confirms the net income after Zakat for 2024 as SAR 19.7 billion [Page: 16 | Section: Commitment to Vision 2030].
+
+**Final Answer**:
+Al Rajhi Bank's net income after Zakat in 2024 was SAR 19.7 billion [Page: 50 | Section: Profitability; Page: 21 | Section: chairman's statement; Page: 16 | Section: Commitment to Vision 2030].","[""alrajhi bank delivered the highest net income after Zakat since its establishment in 2024, amounting to SAR 19.7 Bn. with a strong 18.7% YoY increase. In addition, the bank continued to deliver industry leading return metrics, with a steady Return on Risk-Weighted Assets (RORWA) at 3.49%, Return on"", ""the bank maintains a solid proportion of high-quality liquid assets, with a liquidity coverage ratio (LCR) of 120%. In line with the Kingdom's transformative changes and the major development renaissance spanning all sectors, we are also proud to report that alrajhi bank achieved its highest net inc"", ""Net income after Zakat 2024 SAR 19.7 Bn. 2023 - SAR 16.62 Bn.""]",SAR 19.7 billion,Al Rajhi Bank,en,Direct factual retrieval,Easy,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,13.7891,
+Q022,What was the total value of assets for Al Rajhi Bank at the end of 2024?,"**Reasoning & Calculations**:
+The total value of assets for Al Rajhi Bank at the end of 2024 is directly provided in the context. According to the consolidated statement of financial position, the total assets for 2024 are listed as SAR 974,386,656,000. This figure is explicitly stated and does not require any additional calculations.
+
+**Final Answer**:
+The total value of assets for Al Rajhi Bank at the end of 2024 was SAR 974,386,656,000 [Page 282 | Section: consolidated statement of financial position].","[""The year in review saw alrajhi bank reaching yet another major milestone as we are about to reach SAR 1 trillion. in total assets, closing 2024 with assets amounting to SAR 974 Bn., a 20.6% YoY growth. The bank's asset quality continued to lead the market with 96.9% of our financing portfolio fallin"", ""Assets, Notes = . Assets, 2024 (SAR '000) = . Assets, 2023 (SAR '000) = . Cash and balances with central banks, Notes = 4. Cash and balances with central banks, 2024 (SAR '000) = 53,244,710. Cash and balances with central banks, 2023 (SAR '000) = 41,767,641. Due from banks and other financial instit""]",SAR 974 billion,Al Rajhi Bank,en,Direct factual retrieval,Easy,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,15.3364,
+Q023,What was Al Rajhi Bank's Cost-to-Income Ratio in 2024?,"**Reasoning & Calculations**:
+- The Cost-to-Income Ratio is calculated as Total Operating Expenses divided by Total Operating Income.
+- From the provided evidence, the Total Operating Expenses for 2024 are SAR 10,087,408,000 [Page: 19 | Section: five-year summary].
+- The Total Operating Income for 2024 is SAR 32,055,303,000 [Page: 19 | Section: five-year summary].
+- The formula for the Cost-to-Income Ratio is: \((\text{Total Operating Expenses} / \text{Total Operating Income}) \times 100\).
+- Substituting the values: \((10,087,408 / 32,055,303) \times 100 = 31.47\%\).
+
+**Final Answer**:
+Al Rajhi Bank's Cost-to-Income Ratio in 2024 was 31.47% [Page: 19 | Section: five-year summary].","[""Operating results for the year, SAR '000, 2024 = . Operating results for the year, SAR '000, 2023 = . Operating results for the year, SAR '000, 2022 = . Operating results for the year, SAR '000, 2021 = . Operating results for the year, SAR '000, 2020 = . Net financing and investment income, 2024 = 2"", ""Income, Notes = . Income, 2024 (SAR '000) = . Income, 2023 (SAR '000) = . Gross financing and investment income, Notes = 23. Gross financing and investment income, 2024 (SAR '000) = 47,018,123. Gross financing and investment income, 2023 (SAR '000) = 38,737,616. Gross financing and investment return""]",31.49%,Al Rajhi Bank,en,Financial metric lookup,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,14.0437,
+Q024,What was the year-over-year growth percentage for Al Rajhi Bank's mortgage financing in 2024?,"**Reasoning & Calculations**:
+The provided document states that Al Rajhi Bank's mortgage financing grew by 13.8% year-over-year (YoY) in FY 2024. This information is directly mentioned in the context, so no additional calculations are necessary.
+
+**Final Answer**:
+The year-over-year growth percentage for Al Rajhi Bank's mortgage financing in 2024 was 13.8% [Page: 48 | Section: An overview].","[""In FY 2024, our balance sheet recorded a growth of 20.6% YoY. The growth was mainly driven by alrajhi's financing portfolio growing at 16.7% YoY, reaching to SAR 693 Bn. Mortgage has grown 13.8% YoY, and represents almost 38% of our total financing portfolio, as well as 55% of our retail book. Addit""]",13.8%,Al Rajhi Bank,en,Year-over-year comparison,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,13.6409,
+Q025,"According to the income statement summary, what were the total operating expenses in 2024?","**Reasoning & Calculations**:
+- The total operating expenses for 2024 are directly provided in the context.
+- According to the evidence, the total operating expenses for 2024 are listed as 10,087,408 SAR '000.
+
+**Final Answer**:
+The total operating expenses in 2024 were 10,087,408 SAR '000 [Page: 284 | Section: consolidated statement of income].","[""Income, Notes = . Income, 2024 (SAR '000) = . Income, 2023 (SAR '000) = . Gross financing and investment income, Notes = 23. Gross financing and investment income, 2024 (SAR '000) = 47,018,123. Gross financing and investment income, 2023 (SAR '000) = 38,737,616. Gross financing and investment return"", ""Income, 2024 SAR '000 = . Income, 2023 SAR '000 = . Income, 2022 SAR '000 = . Income, 2021 SAR '000 = . Income, 2020 SAR '000 = . Gross financing and investment income, 2024 SAR '000 = 47,018,123. Gross financing and investment income, 2023 SAR '000 = 38,737,616. Gross financing and investment incom""]","SAR 10,087,408 thousand",Al Rajhi Bank,en,Table interpretation,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,12.7558,
+Q026,"Based on the five-year summary table, what was the earnings per share in 2024?","**Reasoning & Calculations**:
+- The earnings per share (EPS) for 2024 is directly provided in the context.
+- Evidence 1 and Evidence 2 both state that the earnings per share for 2024 is SAR 4.67.
+- Evidence 3 confirms this by stating the basic and diluted earnings per share (in SAR) for 2024 is 4.67.
+
+**Final Answer**:
+The earnings per share in 2024 was SAR 4.67 [Page 16 | Section: Commitment to Vision 2030] and [Page 19 | Section: five-year summary].","[""Earnings per share 2024 SAR 4.67 2023 - SAR 3.95"", ""Operating results for the year, SAR '000, 2024 = . Operating results for the year, SAR '000, 2023 = . Operating results for the year, SAR '000, 2022 = . Operating results for the year, SAR '000, 2021 = . Operating results for the year, SAR '000, 2020 = . Net financing and investment income, 2024 = 2"", ""Net income for the period attributable to shareholder of the Bank, 2024 = 19,722,206. Net income for the period attributable to shareholder of the Bank, 2023 = 16,621,159. Less: equity Sukuk Costs, 2024 = (1,035,867). Less: equity Sukuk Costs, 2023 = (820,678). Net income after equity Sukuk payments""]",SAR 4.67,Al Rajhi Bank,en,Table interpretation,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,14.7827,
+Q027,"Based on the 2024 financial position, what is the difference between total assets and total liabilities?","**Reasoning & Calculations**:
+- According to the provided context, the total assets for 2024 are SAR 974,386,656 [Page: 282 | Section: consolidated statement of financial position].
+- The total liabilities for 2024 are SAR 851,247,425 [Page: 283 | Section: consolidated statement of financial position].
+- To find the difference between total assets and total liabilities, subtract the total liabilities from the total assets: 
+  \[
+  \text{Difference} = \text{Total Assets} - \text{Total Liabilities} = 974,386,656 - 851,247,425 = 123,139,231
+  \]
+
+**Final Answer**:
+The difference between total assets and total liabilities for 2024 is SAR 123,139,231 [Page: 282 | Section: consolidated statement of financial position] and [Page: 283 | Section: consolidated statement of financial position].","[""Liabilities and equity, Notes = . Liabilities and equity, 2024 (SAR '000) = . Liabilities and equity, 2023 (SAR '000) = . Liabilities, Notes = . Liabilities, 2024 (SAR '000) = . Liabilities, 2023 (SAR '000) = . Due to banks, Saudi Central Bank and other financial institutions, Notes = 15. Due to ban"", ""Assets, Notes = . Assets, 2024 (SAR '000) = . Assets, 2023 (SAR '000) = . Cash and balances with central banks, Notes = 4. Cash and balances with central banks, 2024 (SAR '000) = 53,244,710. Cash and balances with central banks, 2023 (SAR '000) = 41,767,641. Due from banks and other financial instit""]","SAR 123,139,231 thousand",Al Rajhi Bank,en,Calculation or reasoning,Hard,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,16.6246,
+Q028,What is the name of the new corporate strategy rolled out by Al Rajhi Bank in 2024?,"**Reasoning & Calculations**:
+The context documents provide multiple references to the new corporate strategy implemented by Al Rajhi Bank in 2024. Evidence 1 mentions the launch of the 'harmonize the group' strategy in 2024, which focuses on collaboration, integration, and digital transformation. Evidence 2 further elaborates on this strategy, describing it as comprising four pillars aimed at creating an ecosystem of financial services. Evidence 3 and Evidence 4 also refer to the 'harmonize the group' strategy, emphasizing its role in enhancing customer experience and integrating banking products and services into a seamless digital ecosystem.
+
+**Final Answer**:
+The name of the new corporate strategy rolled out by Al Rajhi Bank in 2024 is 'harmonize the group' strategy. [Page 22 | Section: chairman's statement], [Page 34 | Section: strategic direction], [Page 184 | Section: customer relationship management], [Page 25 | Section: managing director and chief executive officer's review].","[""By presenting this report, we also reaffirm our commitment to the continued application of corporate governance principles, adhering to regulatory guidelines on disclosure and transparency, providing greater value to our stakeholders, and strengthening communication with our customers. After complet"", ""In 2024, we rolled out the new 'harmonize the group' strategy; with the aim of creating strong, seamless connections between the bank's various business verticals as well as with our subsidiaries; to create an 'ecosystem' of financial services. The comprehensive new strategy comprises four pillars;"", ""With the launch of alrajhi bank's new 'harmonize the group' strategy at the onset of 2024, the Marketing and Customer Experience Group took on the responsibility of communicating the concept and positioning of the strategy to its customers during the year in review. The bank focused on a digitally-d"", ""In 2024, alrajhi bank commenced the implementation of its 'harmonize the group' strategy, bringing together an ecosystem of banking and financial solutions to service both retail and corporate customers, while elevating the benchmark for customer experience. This strategy integrates all banking prod""]",harmonize the group,Al Rajhi Bank,en,Risk and strategy understanding,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,17.4061,
+Q029,What is cited as the top near-term risk for banks around the world?,"**Reasoning & Calculations**:
+- The provided context documents discuss the risks faced by banks globally. 
+- Evidence 1 explicitly states that cybersecurity is the top near-term risk for banks around the world, highlighting the increase in cyberattacks and data breaches in 2024.
+- Evidence 2 supports this by mentioning that cyber risk, along with financial crime, is a top concern for the Risk Group of alrajhi bank, indicating its significance in the broader banking sector.
+
+**Final Answer**:
+Cybersecurity is cited as the top near-term risk for banks around the world [Page: 30 | Section: Cybersecurity].","[""Cybersecurity remains the top near-term risks for banks around the world, with banks as well as corporate organisations across the world suffering from a growing number of cyberattacks and data breaches in 2024."", ""By the nature of its operation, alrajhi bank is exposed to a number of risks conventionally, which it manages through a robust risk management framework. Various other external and internal factors also affect the bank's risk profile on an ongoing basis, with the Risk Group identifying risks and unc""]",Cybersecurity,Al Rajhi Bank,en,Risk and strategy understanding,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,13.8691,
+Q030,What was the market share of the Retail Banking Group in personal finance at the close of 2024?,"**Reasoning & Calculations**:
+The document provides specific information about the market share of the Retail Banking Group in personal finance at the close of 2024. According to the evidence, the Retail Banking Group maintained a 41.6% market share in personal finance.
+
+**Final Answer**:
+The market share of the Retail Banking Group in personal finance at the close of 2024 was 41.6% [Page: 55 | Section: Retail banking group offering].","[""In 2024, we sustained our position as the market leader in retail financing in the Kingdom during the year in review; our leading position in personal finance was maintained by holding 41.6% of the market share. We retained a robust presence in the auto leasing sector, holding a significant 40.3% sh""]",41.6%,Al Rajhi Bank,en,Segment/business-unit analysis,Hard,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,36.2904,
+Q031,What was the Saudization rate at Al Rajhi Bank in 2024?,"**Reasoning & Calculations**:
+The evidence provided in the context document states that Al Rajhi Bank achieved a 98% Saudisation rate in 2024. This information is directly mentioned in the text, which highlights the bank's focus on hiring, investing in, and retaining skilled local talent as part of its compliance with the Nitaqat policy. The document specifies that the bank's HR policy prioritizes Saudi nationals for hiring, contributing to this high Saudisation rate.
+
+**Final Answer**:
+The Saudisation rate at Al Rajhi Bank in 2024 was 98% [Page 158 | Section: Saudisation].","[""In compliance with the Nitaqat policy to transform the Saudi labour market, alrajhi bank's talent attraction and retention strategy continued to be powered with Saudisation objectives at its core; in 2024, the bank achieved a remarkable 98% Saudisation rate by focusing on hiring, investing in, and r""]",98%,Al Rajhi Bank,en,Direct factual retrieval,Easy,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,24.4741,
+Q032,What was Al Rajhi Bank's Return on Average Equity (ROE) in 2024?,"**Reasoning & Calculations**:
+- The Return on Average Equity (ROE) for Al Rajhi Bank in 2024 is directly provided in the context.
+- According to the evidence, the ROE for 2024 is listed as 21.06%.
+
+**Final Answer**:
+- Al Rajhi Bank's Return on Average Equity (ROE) in 2024 was 21.06% [Page: 19 | Section: five-year summary].","[""alrajhi bank delivered the highest net income after Zakat since its establishment in 2024, amounting to SAR 19.7 Bn. with a strong 18.7% YoY increase. In addition, the bank continued to deliver industry leading return metrics, with a steady Return on Risk-Weighted Assets (RORWA) at 3.49%, Return on"", ""Operating results for the year, SAR '000, 2024 = . Operating results for the year, SAR '000, 2023 = . Operating results for the year, SAR '000, 2022 = . Operating results for the year, SAR '000, 2021 = . Operating results for the year, SAR '000, 2020 = . Net financing and investment income, 2024 = 2""]",21.06%,Al Rajhi Bank,en,Financial metric lookup,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,25.0569,
+Q033,What were Al Rajhi Bank's customer deposits in 2024 according to the financial position summary?,"**Reasoning & Calculations**:
+- According to the consolidated statement of financial position, Al Rajhi Bank's customer deposits for 2024 are listed as SAR 628,238,501,000 [Page: 283 | Section: consolidated statement of financial position].
+- This figure is corroborated by the detailed breakdown of customer deposits, which also totals SAR 628,238,501,000 for 2024 [Page: 346 | Section: 16 Customers' deposits].
+
+**Final Answer**:
+Al Rajhi Bank's customer deposits in 2024 were SAR 628,238,501,000 [Page: 283 | Section: consolidated statement of financial position].","[""Total liabilities of alrajhi bank stood at SAR 851 Bn. at the end of the reporting period, a YoY increase of 21.4%. We recorded a notable SAR 55 Bn. increase in our customer deposits in 2024 to reach SAR 628 Bn., a YoY growth of 9.6%. Demand and other non-profit bearing deposits made up almost 73.4%"", ""Demand deposits and call accounts, 2024 (SAR '000) = 446,437,107. Demand deposits and call accounts, 2023 (SAR '000) = 352,107,825. Customers' time investments, 2024 (SAR '000) = 167,091,393. Customers' time investments, 2023 (SAR '000) = 207,981,393. Other customer accounts, 2024 (SAR '000) = 14,71"", ""Liabilities and equity, Notes = . Liabilities and equity, 2024 (SAR '000) = . Liabilities and equity, 2023 (SAR '000) = . Liabilities, Notes = . Liabilities, 2024 (SAR '000) = . Liabilities, 2023 (SAR '000) = . Due to banks, Saudi Central Bank and other financial institutions, Notes = 15. Due to ban""]","SAR 628,238,501 thousand",Al Rajhi Bank,en,Table interpretation,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,26.9663,
+Q035,What was the difference in the Digital to Manual ratio for transactions in 2024?,"**Reasoning & Calculations**:
+The evidence provided states that the Digital to Manual ratio for transactions reached 95:5 at the close of the year from a baseline ratio of 94:6. To find the difference in the Digital to Manual ratio for transactions in 2024, we need to calculate the change from the baseline ratio to the end-of-year ratio.
+
+The baseline ratio is 94:6, and the end-of-year ratio is 95:5. The difference in the digital component of the ratio is calculated as follows:
+
+Digital component difference = End-of-year digital ratio - Baseline digital ratio = 95 - 94 = 1
+
+The difference in the manual component of the ratio is:
+
+Manual component difference = Baseline manual ratio - End-of-year manual ratio = 6 - 5 = 1
+
+Thus, the difference in the Digital to Manual ratio is 1:1.
+
+**Final Answer**:
+The difference in the Digital to Manual ratio for transactions in 2024 was 1:1. [Page: 40 | Section: strategic direction]","[""The progress of the expanding digital capabilities is measured by the Digital : Manual ratio, which has reached 95:5 at the close of the year from a baseline ratio of 94:6. The metric to measure the progress of customer-centric digital journeys is the number of group and open banking APIs, which has""]",95 to 5,Al Rajhi Bank,en,Calculation or reasoning,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,32.3247,
+Q036,What is one of the key strategic objectives under the Business to Business (B2B) pillar?,"**Reasoning & Calculations**:
+The provided context documents focus on the strategic objectives of alrajhi's Business to Business (B2B) pillar. Evidence 1 and Evidence 2 both highlight a key strategic objective related to large corporate clients. Specifically, Evidence 1 mentions the objective to ""Become the 'House Bank' of Large Corporates"" by offering a wide range of products and services. Similarly, Evidence 2 states the objective to ""Become the 'Main Bank' of Large Corporates,"" emphasizing alrajhi's role as a comprehensive partner in corporate banking beyond simple transactions.
+
+**Final Answer**:
+One of the key strategic objectives under the Business to Business (B2B) pillar is to ""Become the 'Main Bank' of Large Corporates"" [Page: 37 | Section: Business to business (B2B)].","[""One of the key objectives of the B2B pillar is to 'Become the 'House Bank' of Large Corporates'. Beyond the core corporate banking solution, CBG offered corporate customers a broader set of products and services leveraging alrajhi group synergies; Trade Finance and Treasury products to facilitate fo"", ""The second strategic pillar focuses on alrajhi's corporate consumer segments. One of our three key strategic objectives here is to 'Become the 'Main Bank' of Large Corporates . Over the past few years, alrajhi bank has grown in repute as a highly sought-after partner in Corporate Banking, by offerin""]",Become the 'Main Bank' of large corporates.,Al Rajhi Bank,en,Risk and strategy understanding,Hard,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,25.2988,
+Q037,How much did the subsidiary Emkan contribute to operating income in 2024?,"**Reasoning & Calculations**:
+The provided document does not specify the exact contribution of the subsidiary Emkan to the operating income in 2024. While it mentions Emkan's market position and product innovations, it does not provide any numerical data or percentage related to its contribution to operating income.
+
+**Final Answer**:
+I do not have enough information to answer this based on the provided document.","[""On the subsidiary front, alrajhi bank's subsidiaries demonstrated strong performance indicators throughout 2024. Al Rajhi Capital retained its top position in terms of trading value on the Tadawul securities market and advanced to second place in assets under management (AUM), recording an impressiv""]","SAR 2,302,739 thousand",Al Rajhi Bank,en,Segment/business-unit analysis,Hard,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,21.0348,
+Q038,What acquisitions or new establishments did Al Rajhi make in the fintech sector in 2024?,"**Reasoning & Calculations**:
+- According to the provided documents, in 2024, Al Rajhi Bank made significant moves in the fintech sector. 
+- Evidence 1 states that Al Rajhi Bank acquired a 65% stake in the 'Drahim' application, a personal financial management and automated investment platform [Page: 97 | Section: drahim].
+- Evidence 2 confirms this acquisition and further mentions the establishment of 'neotek', a company for digital financial solutions [Page: 25 | Section: managing director and chief executive officer's review].
+- Evidence 3 reiterates the acquisition of Drahim and the establishment of Neotek, highlighting their roles in the bank's fintech strategy [Page: 40 | Section: strategic direction].
+
+**Final Answer**:
+In 2024, Al Rajhi Bank acquired a 65% stake in the 'Drahim' application and established 'neotek' for digital financial solutions [Page: 97 | Section: drahim; Page: 25 | Section: managing director and chief executive officer's review; Page: 40 | Section: strategic direction].","[""In September 2024, alrajhi bank acquired a 65% stake in the 'Drahim' application, a leading personal financial management (PFM) and automated investment platform licensed by SAMA within the FinTech Lab, and the Capital Market Authority's regulatory environment. The acquisition marks the first of its"", ""In 2024, alrajhi bank commenced the implementation of its 'harmonize the group' strategy, bringing together an ecosystem of banking and financial solutions to service both retail and corporate customers, while elevating the benchmark for customer experience. This strategy integrates all banking prod"", ""alrajhi bank's FinTech investments also fall under this pillar. As Open Banking starts to redefine Saudi Arabia's banking landscape, alrajhi bank's financialservices ecosystem has been complemented by our payments company Neoleap, the newly established data aggregation fintech Neotek, and Drahim, a""]",Acquired a 65% stake in Drahim and established neotek.,Al Rajhi Bank,en,Evidence-based summary,Hard,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,21.1491,
+Q039,What sustainable financing instrument did Al Rajhi Bank launch in the global markets in 2024?,"**Reasoning & Calculations**:
+- According to Evidence 1, Al Rajhi Bank launched its first sustainable capital sukuk issuance in 2024, valued at USD 1 billion. This issuance is part of the bank's USD-denominated AT1 issuance in global markets [Page: 21 | Section: chairman's statement].
+- Evidence 2 confirms that Al Rajhi Bank issued a sustainable additional capital (AT1) sukuk in 2024, with a size of USD 1 billion, marking its first AT1 issuance in the global debt market in US dollars [Page: 63 | Section: Diversifying funding sources].
+- Evidence 3 provides details about a U.S. dollar denominated senior unsecured sustainable sukuk issued in March 2024, amounting to USD 1 billion, with a 5-year maturity and a profit rate of 5.047%. This issuance is part of a USD 4 billion sukuk programme and is listed on the London Stock Exchange's International Securities Market [Page: 347 | Section: 17 Sukuk Issued].
+
+**Final Answer**:
+Al Rajhi Bank launched a sustainable additional capital (AT1) sukuk in the global markets in 2024, valued at USD 1 billion. [Page: 21 | Section: chairman's statement; Page: 63 | Section: Diversifying funding sources].","[""Reaffirming its regional and international leadership in issuing sustainable sukuk and supporting global efforts to mitigate the negative impacts of climate change, alrajhi bank reached a significant milestone in 2024 with the successful launch of its first sustainable capital sukuk issuance, valued"", ""The Treasury Group continued to strengthen the bank's balance sheet structure and support liquidity requirements by diversifying funding sources. During the reporting period, Treasury tapped into both local and international debt capital markets, while continuing to leverage alternative funding tool"", ""During March 2024, the Bank successfully issued U.S. dollar denominated senior unsecured sustainable Sukuk, amounting to USD 1 billion (SAR 3.75 billion) with 5-years maturity and a profit rate of 5.047% and redeemable prior to scheduled maturity date in certain cases. The Sukuk represents Al Rajhi""]",A USD 1 billion AT1 Sustainable Sukuk.,Al Rajhi Bank,en,Evidence-based summary,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,23.6545,
+Q040,How does Al Rajhi Bank mitigate concentration risk?,"**Reasoning & Calculations**:
+The provided evidence outlines two main strategies employed by Al Rajhi Bank to mitigate concentration risk. First, the bank leverages its geographical diversity and a loyal customer base to provide stability against external impacts, as noted in Evidence 1. This approach helps in spreading risk across different regions and customer segments, reducing the potential impact of localized economic or political changes. Second, the bank manages its credit risk exposure through diversification of its financing activities. This involves ensuring that there is no undue concentration of risks with individuals or groups of customers in specific geographical locations or economic sectors, as described in Evidence 2. By diversifying its portfolio across various business segments, industries, and wallet sizes, the bank reduces its sensitivity to adverse developments affecting any particular industry or region.
+
+**Final Answer**:
+Al Rajhi Bank mitigates concentration risk by leveraging geographical diversity and a loyal customer base to provide stability, and by diversifying its financing activities to avoid undue concentration of risks in specific geographical locations or economic sectors. [Page 263 | Section: Concentration risk] and [Page 378 | Section: (b) Risk limit control and mitigation policies].","[""The bank's geographical diversity and loyal patronage of its varied customer base mitigates concentration risk by providing greater stability in the face of external impacts. In 2024, Corporate Banking enjoyed the advantage of a welldiversified portfolio across different emerging business segments,"", ""Concentrations of credit risks arise when a number of customers are engaged in similar business activities, activities in the same geographic region, or have similar economic features that would cause their ability to meet contractual obligations to be similarly affected by changes in economic, poli""]",Through geographical diversity and a loyal varied customer base.,Al Rajhi Bank,en,Risk and strategy understanding,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,25.3821,
+Q041,What was the amount of gross financing and advances for SNB in 2024?,"**Reasoning & Calculations**:
+The context document provides information on ""Financing and advances, net"" for the years 2023 and 2024. However, it does not specify the ""gross financing and advances"" for SNB in 2024. The net figures provided are:
+- Financing and advances, net, 2024 = 654,252,346
+- Financing and advances, net, 2023 = 601,527,454
+
+Since the document only provides net figures and does not mention gross figures, I cannot determine the gross financing and advances for 2024.
+
+**Final Answer**:
+I do not have enough information to answer this based on the provided document.","[""Assets, 2024 = . Assets, 2023 = . Due from banks and other financial institutions, net (note 5), 2024 = 21,088,423. Due from banks and other financial institutions, net (note 5), 2023 = 34,563,457. Investments (note 32.2 (a)), 2024 = 261,821,377. Investments (note 32.2 (a)), 2023 = 239,665,292. Fina""]","SAR 664,657 million",SNB,en,Direct factual retrieval,Easy,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,27.8486,
+Q042,What was the Expected Credit Loss (ECL) allowance recorded against financing and advances in 2024?,"**Reasoning & Calculations**:
+The Expected Credit Loss (ECL) allowance recorded against financing and advances as of 31 December 2024 is detailed in the provided evidence. According to the data, the ECL allowance is broken down into three stages:
+
+- Stage 1: SAR 2,245,042
+- Stage 2: SAR 1,443,336
+- Stage 3: SAR 6,716,846
+
+The total ECL allowance is the sum of these three stages:
+
+\[ \text{Total ECL allowance} = \text{Stage 1} + \text{Stage 2} + \text{Stage 3} \]
+
+\[ \text{Total ECL allowance} = 2,245,042 + 1,443,336 + 6,716,846 = 10,405,224 \]
+
+This total matches the figure provided for the ECL allowance as of 31 December 2024.
+
+**Final Answer**:
+The Expected Credit Loss (ECL) allowance recorded against financing and advances in 2024 was SAR 10,405,224. [Page: 52 | Section: 7 FINANCING AND ADVANCES, NET (continued)]","[""Expected Credit Loss allowance against financing and advances, Details of Key audit matter = As at 31 December 2024, the Group's gross financing and advances amounted to SAR 664,657 million (2023: SAR 611,803 million), [including purchased or originated credit impaired loans ('POCI') amounting to SA"", ""At 1 January 2024, Expected credit loss allowance.Stage 1 = 1,920,617. At 1 January 2024, Expected credit loss allowance.Stage 2 = 3,189,822. At 1 January 2024, Expected credit loss allowance.Stage 3 = 5,164,865. At 1 January 2024, Expected credit loss allowance.Total = 10,275,304. Net impairment ch""]","SAR 10,405 million",SNB,en,Direct factual retrieval,Easy,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,21.3462,
+Q043,What was the Common Equity Tier 1 Capital (CET1) for SNB in 2024?,"**Reasoning & Calculations**:
+The Common Equity Tier 1 Capital (CET1) for SNB in 2024 is directly provided in the context document. According to the evidence, the CET1 for 2024 is listed as 132,619,766. There is no need for additional calculations as the exact figure is explicitly stated.
+
+**Final Answer**:
+The Common Equity Tier 1 Capital (CET1) for SNB in 2024 was 132,619,766. [Page: 109 | Section: Capital adequacy ratio]","[""Risk Weighted Assets, 2024 = . Risk Weighted Assets, 2023 = . Credit risk, 2024 = 684,824,163. Credit risk, 2023 = 646,191,640. Operational risk, 2024 = 39,309,946. Operational risk, 2023 = 37,283,015. Market risk, 2024 = 30,196,171. Market risk, 2023 = 20,381,430. Total Pillar-1 - risk weighted ass""]","SAR 132,619,766 thousand",SNB,en,Financial metric lookup,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,13.6545,
+Q044,How did the total operating income for the Retail segment change from 2023 to 2024?,"**Reasoning & Calculations**:
+The provided document does not specify the total operating income for the Retail segment separately. It only provides the total operating income for the years 2023 and 2024 without segment-specific details. Therefore, I cannot determine the change in total operating income for the Retail segment from 2023 to 2024 based on the given information.
+
+**Final Answer**:
+I do not have enough information to answer this based on the provided document.","[""Summarised statement of financial position, 2024 = . Summarised statement of financial position, 2023 = . Financing and advances, net, 2024 = 16,367,751. Financing and advances, net, 2023 = 14,948,930. Other assets, 2024 = 12,730,744. Other assets, 2023 = 13,851,873. Liabilities, 2024 = 27,155,799.""]","It increased from SAR 15,869,623 thousand to SAR 16,870,889 thousand.",SNB,en,Year-over-year comparison,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,13.2942,
+Q045,"According to the operating segments table, what were the total assets for the Wholesale segment in 2024?",I do not have enough information to answer this based on the provided document.,[],"SAR 620,428,745 thousand",SNB,en,Table interpretation,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,13.721,
+Q046,"Based on the impairment testing table, how much goodwill was allocated to the Retail Cash Generating Unit?","**Reasoning & Calculations**:
+- The context provided includes two pieces of evidence that mention the allocation of goodwill to different Cash Generating Units (CGUs).
+- Evidence 1 specifies that the Retail CGU has goodwill allocated amounting to 25,647,455.
+- Evidence 2 confirms that SAR 25.6 billion of the goodwill was allocated to the Retail CGU as part of the goodwill impairment assessment related to the Samba Financial Group merger.
+
+**Final Answer**:
+- The amount of goodwill allocated to the Retail Cash Generating Unit is 25,647,455. [Page: 113 | Section: (41.2) Impairment testing of goodwill]","[""Cash Generating Unit, 1 = Goodwill allocated. Retail, 1 = 25,647,455. Wholesale, 1 = 8,359,327. , 1 = 34,006,782"", ""Goodwill impairment assessment, Details of Key audit matter = Goodwill amounting to SAR 34 billion was recognised in the consolidated statement of financial position relating to the Samba Financial Group merger. This merger took effect on 1 April 2021. IFRSs require that the Bank determine if the re""]","SAR 25,647,455 thousand",SNB,en,Table interpretation,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,20.7098,
+Q047,What were the total Pillar-1 risk weighted assets for SNB in 2024?,"**Reasoning & Calculations**:
+The document provides the total Pillar-1 risk weighted assets for SNB in 2024 as 754,330,280. This information is directly stated in the context without the need for any additional calculations or assumptions.
+
+**Final Answer**:
+The total Pillar-1 risk weighted assets for SNB in 2024 were 754,330,280. [Page: 109 | Section: Capital adequacy ratio]","[""Risk Weighted Assets, 2024 = . Risk Weighted Assets, 2023 = . Credit risk, 2024 = 684,824,163. Credit risk, 2023 = 646,191,640. Operational risk, 2024 = 39,309,946. Operational risk, 2023 = 37,283,015. Market risk, 2024 = 30,196,171. Market risk, 2023 = 20,381,430. Total Pillar-1 - risk weighted ass""]","SAR 754,330,280 thousand",SNB,en,Calculation or reasoning,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,14.2687,
+Q048,How does SNB control and monitor its credit risk exposures?,"**Reasoning & Calculations**:
+The Group employs several strategies to control and monitor its credit risk exposures. These include:
+
+1. **Monitoring and Limiting Exposures**: The Group monitors credit exposures and limits transactions with specific counterparties. It sets risk limits and monitors adherence to these limits on a daily basis [Page: 80 | Section: 32 CREDIT RISK].
+
+2. **Diversification and Collateral**: The Group diversifies its financing activities to avoid undue concentration of risks and takes security when appropriate. It seeks additional collateral when impairment indicators are noticed and periodically monitors the market value of collateral [Page: 81 | Section: 32 CREDIT RISK (continued)].
+
+3. **Trading Activities**: For trading activities, the Group manages credit exposure by monitoring credit limits, entering into master netting agreements, and collateral arrangements. It may also close out transactions or assign them to other counterparties to mitigate risk [Page: 80 | Section: 32 CREDIT RISK].
+
+4. **Derivatives**: The Group assesses counterparties for derivatives using the same techniques as for its financing activities to control credit risk [Page: 80 | Section: 32 CREDIT RISK].
+
+**Final Answer**:
+SNB controls and monitors its credit risk exposures by setting and monitoring credit limits, diversifying financing activities, taking collateral, and using netting agreements. It also assesses counterparties for derivatives similarly to its financing activities [Page: 80 | Section: 32 CREDIT RISK; Page: 81 | Section: 32 CREDIT RISK (continued)].","[""The Group attempts to control credit risk by monitoring credit exposures, limiting transactions with specific counterparties, and continually assessing the creditworthiness of counterparties. The Group's risk management policies are designed to identify risks and to set appropriate risk limits and t"", ""The Group also manages its credit risk exposure through the diversification of financing activities to ensure that there is no undue concentration of risks with individuals or groups of customers in specific locations or businesses. It also takes security when appropriate. The Group also seeks addit""]","By monitoring credit limits, entering into master netting agreements, limiting exposure duration, taking collateral, and using internal/external ratings.",SNB,en,Risk and strategy understanding,Hard,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,25.6961,
+Q049,What is the impact of a 1% increase in the discount rate on the defined benefit obligation?,I do not have enough information to answer this based on the provided document.,[],"SAR 125,833 thousand",SNB,en,Risk and strategy understanding,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,20.8649,
+Q051,What was SNB's consolidated total assets at the end of 2024?,"**Reasoning & Calculations**:
+- The question asks for SNB's consolidated total assets at the end of 2024.
+- The provided context documents contain data for total assets for different segments and the total for the years 2023 and 2024.
+- According to the evidence, the total assets for 2024 are listed as follows:
+  - Total assets, Retail = 428,302,756
+  - Total assets, Wholesale = 620,428,745
+  - Total assets, Capital Market = 23,347,686
+  - Total assets, International = 32,075,453
+  - Total assets, Total = 1,104,154,640
+- The consolidated total assets for SNB at the end of 2024 is directly provided as 1,104,154,640.
+
+**Final Answer**:
+SNB's consolidated total assets at the end of 2024 were 1,104,154,640. [Page: 78 | Section: 30 OPERATING SEGMENTS (continued)]","[""Total assets, Retail = 428,302,756. Total assets, Wholesale = 620,428,745. Total assets, Capital Market = 23,347,686. Total assets, International = 32,075,453. Total assets, Total = 1,104,154,640. Total liabilities, Retail = 354,065,421. Total liabilities, Wholesale = 517,142,244. Total liabilities,"", ""Statement of financial position assets, Retail = 346,285,924. Statement of financial position assets, Wholesale = 597,128,110. Statement of financial position assets, Capital Market = 4,176,707. Statement of financial position assets, International = 23,954,820. Statement of financial position asset""]","SAR 1,104,154,640 thousand",SNB,en,Direct factual retrieval,Easy,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,225.7269,
+Q054,How did SNB's final dividend per share change from May 2023 to Feb 2025?,"**Reasoning & Calculations**:
+- According to the provided document, SNB's final dividend per share in May 2023 was SAR 0.60 [Page: 76 | Section: 28 DIVIDEND].
+- The final dividend per share in February 2025 is stated as SAR 1.00 [Page: 76 | Section: 28 DIVIDEND].
+- To calculate the change in the final dividend per share from May 2023 to February 2025, we use the formula for percentage change: `((New - Old) / Old) * 100`.
+- Substituting the values: `((1.00 - 0.60) / 0.60) * 100 = (0.40 / 0.60) * 100 = 66.67%`.
+
+**Final Answer**:
+SNB's final dividend per share increased by 66.67% from May 2023 to February 2025 [Page: 76 | Section: 28 DIVIDEND].","[""Feb 2025, Amount (SAR per share) = 1.00. Feb 2025, Total Payout Net of Zakat = 6,000,000. Feb 2025, Type = Final. Feb 2025, Status = To be paid. Aug 2024, Amount (SAR per share) = 0.90. Aug 2024, Total Payout Net of Zakat = 5,400,000. Aug 2024, Type = Interim. Aug 2024, Status = Paid. May 2024, Amou""]",Increased from SAR 0.60 to SAR 1.00 per share.,SNB,en,Year-over-year comparison,Hard,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,13.8779,
+Q055,What is the difference between Total Assets and Total Liabilities in the 2024 segment reporting?,"**Reasoning & Calculations**:
+- From the provided evidence, the Total Assets for 2024 are given as 944,170,110 [Page: 81 | Section: (32.1) Maximum credit exposure].
+- The Total undiscounted financial liabilities for 2024 are given as 918,462,577 [Page: 97 | Section: (34.1) Analysis of undiscounted financial liabilities by remaining contractual maturities].
+- To find the difference between Total Assets and Total Liabilities, we subtract the Total Liabilities from the Total Assets: 
+  \[
+  944,170,110 - 918,462,577 = 25,707,533
+  \]
+
+**Final Answer**:
+The difference between Total Assets and Total Liabilities in the 2024 segment reporting is 25,707,533. [Page: 81 | Section: (32.1) Maximum credit exposure] and [Page: 97 | Section: (34.1) Analysis of undiscounted financial liabilities by remaining contractual maturities].","[""Assets, 2024 = . Assets, 2023 = . Due from banks and other financial institutions, net (note 5), 2024 = 21,088,423. Due from banks and other financial institutions, net (note 5), 2023 = 34,563,457. Investments (note 32.2 (a)), 2024 = 261,821,377. Investments (note 32.2 (a)), 2023 = 239,665,292. Fina"", ""2024, On demand = . 2024, Less than 3 months = . 2024, 3 to 12 months = . 2024, 1 to 5 years = . 2024, Over 5 years = . 2024, Total = . Due to banks, Saudi Central Bank and other financial institutions, On demand = 2,145,396. Due to banks, Saudi Central Bank and other financial institutions, Less th""]","SAR 193,275,261 thousand",SNB,en,Calculation or reasoning,Hard,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,16.3709,
+Q056,How does SNB determine the recoverable amount of a Cash Generating Unit for goodwill impairment?,"**Reasoning & Calculations**:
+The Saudi National Bank (SNB) determines the recoverable amount of a Cash Generating Unit (CGU) for goodwill impairment using the value-in-use (VIU) calculations. This involves estimating future cash flows and discounting them to their present value. The cash flow projections are based on financial budgets approved by the Board of Directors. The VIU model incorporates significant judgments and estimates, including cash flow projections, long-term growth rates, and discount rates. The process involves comparing the carrying value of each CGU, including the goodwill, to its recoverable amount. If the carrying amount exceeds the recoverable amount, an impairment loss is recognized. However, in the assessment conducted, no impairment charge was identified. The auditors also assessed the strategic/operating plan, the reasonableness of assumptions, and the sensitivity of the VIU model to key assumptions [Page 4 | Section: Independent Auditors' Report].
+
+**Final Answer**:
+SNB determines the recoverable amount of a CGU for goodwill impairment using value-in-use calculations, which involve discounted cash flow models based on financial budgets approved by the Board of Directors. This process includes significant judgments and estimates related to cash flow projections, long-term growth rates, and discount rates [Page 4 | Section: Independent Auditors' Report].","[""An impairment loss is recognised if the carrying amount of an asset or its cash-generating unit (CGU) exceeds its recoverable amount. The recoverable amount of an asset or cash-generating unit is the greater of its value in use and its fair value less costs to sell. In assessing value in use, the es"", ""Goodwill impairment assessment, Details of Key audit matter = Goodwill amounting to SAR 34 billion was recognised in the consolidated statement of financial position relating to the Samba Financial Group merger. This merger took effect on 1 April 2021. IFRSs require that the Bank determine if the re""]",Based on value-in-use calculations using a Discounted Cash Flow model and approved financial budgets.,SNB,en,Risk and strategy understanding,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,17.6407,
+Q057,What was the income for the year before Zakat and income tax for the International segment in 2024?,"**Reasoning & Calculations**:
+The provided context document does not contain specific numerical data or details regarding the income for the year before Zakat and income tax for the International segment in 2024. The document only mentions that the Group's total assets, liabilities, operating income, expenses, and net income are segmented by business segments, but it does not provide the actual figures or breakdowns for these segments.
+
+**Final Answer**:
+I do not have enough information to answer this based on the provided document.","[""(30.1) The Group's total assets and liabilities at year end, its operating income and expenses (total and main items) and net income for the year before Zakat and income tax, by business segments, are as follows:""]","A loss of SAR 111,908 thousand.",SNB,en,Segment/business-unit analysis,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,13.2746,
+Q058,How does SNB incorporate forward-looking information into its ECL measurement?,"**Reasoning & Calculations**:
+The SNB incorporates forward-looking information into its Expected Credit Loss (ECL) measurement by considering both the assessment of significant credit risk deterioration and the measurement of ECLs. This process involves the integration of macroeconomic factors such as unemployment, GDP growth, inflation, profit rates, and house prices. The Group formulates a 'base case' scenario and develops additional economic scenarios, considering the relative probabilities of each outcome. This approach is informed by advice from the Group's Economics Department and external forecasts from governmental bodies, monetary authorities, and selected private sector and academic forecasters. Additionally, predicted relationships between key indicators and default and loss rates are developed based on historical data analysis over the past 10 to 15 years. The Bank uses a below base case near-term forecast in its ECL model, which is based on updated information available at the reporting date.
+
+**Final Answer**:
+SNB incorporates forward-looking information into its ECL measurement by using macroeconomic factors and forecasts from internal and external sources to assess credit risk deterioration and measure ECLs. It develops a 'base case' scenario and additional scenarios, considering their probabilities, and uses historical data to predict relationships between key indicators and default rates. The Bank applies a below base case near-term forecast in its ECL model based on updated information at the reporting date [Page 88 | Section (v) Incorporation of forward looking information], [Page 34 | Section (3.24) Expected credit loss (ECL) (continued)].","[""The Group incorporates forward-looking information into both its assessment of whether the credit risk of an instrument has increased significantly since its initial recognition and its measurement of ECL. Based on advice from the Group's Economics Department experts and consideration of a variety o"", ""The Group also considers the forward-looking information in its assessment of significant deterioration in credit risk since origination as well as the measurement of ECLs. The forwardlooking information will include the elements such as macroeconomic factors (e.g., unemployment, GDP growth, inflati""]","By formulating base, upside, and downside scenarios using macroeconomic indicators like GDP and unemployment rate.",SNB,en,Evidence-based summary,Hard,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,17.7756,
+Q059,What major debt issuance did SNB complete in 2024 to support its capital?,"**Reasoning & Calculations**:
+- The context provides information on two major debt-related activities by SNB in 2024.
+- Evidence 1 details the issuance of debt securities amounting to 38,170,612 in 2024 [Page: 69 | Section: (14.1)].
+- Evidence 2 mentions the issuance of additional Tier 1 Sukuk amounting to SAR 6 billion in 2024 [Page: 76 | Section: 27 TIER 1 SUKUK].
+- Both activities are significant, but the issuance of Tier 1 Sukuk is specifically highlighted as a capital support measure, given its nature as a capital instrument under regulatory frameworks.
+
+**Final Answer**:
+SNB completed a major debt issuance in 2024 by issuing additional Tier 1 Sukuk amounting to SAR 6 billion to support its capital [Page: 76 | Section: 27 TIER 1 SUKUK].","[""Balance at beginning of the year, 2024 = 20,265,905. Balance at beginning of the year, 2023 = 15,996,422. Debt securities issued, 2024 = 38,170,612. Debt securities issued, 2023 = 8,512,565. Debt securities payment, 2024 = (11,729,173). Debt securities payment, 2023 = (4,716,911). Foreign currency t"", ""During 2024, the Bank issued, through a Shariah compliant arrangement, additional Tier 1 Sukuk, amounting to SAR 6 billion (SAR-denominated).These arrangements were approved by the regulatory authorities and Board of Directors of the Bank.""]",Issued an additional Tier 1 Sukuk amounting to SAR 6 billion.,SNB,en,Evidence-based summary,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,17.1444,
+Q060,What is the assumption behind a 1-day holding period in Market Risk VaR modeling?,"**Reasoning & Calculations**:
+The assumption behind a 1-day holding period in Market Risk VaR modeling is that it is possible to hedge or dispose of positions within a one-day horizon. This is considered a realistic assumption in most cases. However, it may not hold true in situations where there is severe market illiquidity for a prolonged period. This assumption is critical as it underpins the ability to manage risk effectively within the specified time frame.
+
+**Final Answer**:
+The assumption behind a 1-day holding period in Market Risk VaR modeling is that positions can be hedged or disposed of within one day, although this may not be feasible during periods of severe market illiquidity [Page 91 | Section 33 MARKET RISK].","[""- i) A 1-day holding period assumes that it is possible to hedge or dispose of positions within one day horizon. This is considered to be a realistic assumption in most of the cases but may not be the case in situations in which there is severe market illiquidity for a prolonged period.\n2. ii) A 99%""]",That it is possible to hedge or dispose of positions within one day.,SNB,en,Risk and strategy understanding,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,31.284,
+Q061,What was Saudi Aramco's net income for 2024?,"**Reasoning & Calculations**:
+- The net income for Saudi Aramco for the year 2024 is explicitly stated in the provided evidence.
+- According to Evidence 1, the net income for the full year 2024 is ﷼ 398.4 billion, which is equivalent to $106.2 billion [Page: 10 | Section: Dear shareholders,].
+- This is corroborated by Evidence 2, which lists the net income for the year ended December 31, 2024, as SAR 398,422 million and USD 106,246 million [Page: 44 | Section: Earnings before interest, income taxes and zakat (EBIT)].
+
+**Final Answer**:
+Saudi Aramco's net income for 2024 was ﷼ 398.4 billion ($106.2 billion) [Page: 10 | Section: Dear shareholders,].","[""For 2024, the Company recorded strong earnings and cash flows and posted net income of ﷼ 398.4 billion ($106.2 billion) for the full year."", ""Net income, SAR Year ended December 31.2024 = 398,422. Net income, SAR Year ended December 31.2023 = 454,764. Net income, USD* Year ended December 31.2024 = 106,246. Net income, USD* Year ended December 31.2023 = 121,271. Finance income, SAR Year ended December 31.2024 = (20,254). Finance income, SA""]",SAR 398.4 billion ($106.2 billion),Saudi Aramco,en,Direct factual retrieval,Easy,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,18.7129,
+Q062,What was Aramco's total hydrocarbon production in 2024?,"**Reasoning & Calculations**:
+The document provides the total hydrocarbon production for Aramco for the year ended December 31, 2024, as well as for the year ended December 31, 2023. According to the evidence, the total hydrocarbon production for the year ended December 31, 2024, was 12,403 mboed (thousand barrels of oil equivalent per day).
+
+**Final Answer**:
+Aramco's total hydrocarbon production in 2024 was 12,403 mboed. [Page: 48 | Section: Upstream hydrocarbon production]","[""Total liquids 1,  = mbpd. Total liquids 1, Year ended December 31.2024 = 10,292. Total liquids 1, Year ended December 31.2023 = 10,682. Total liquids 1, change = (3.7)%. Total gas 2,  = mmscfd. Total gas 2, Year ended December 31.2024 = 10,833. Total gas 2, Year ended December 31.2023 = 10,672. Tota""]",12.4 mmboed,Saudi Aramco,en,Direct factual retrieval,Easy,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,16.8552,
+Q063,What was Saudi Aramco's gearing ratio at the end of 2024?,"**Reasoning & Calculations**:
+- The evidence provided in the context documents indicates that Saudi Aramco's gearing ratio at the end of 2024 was 4.5%.
+- This information is directly stated in both Evidence 1 and Evidence 2, confirming the gearing ratio as of December 31, 2024.
+
+**Final Answer**:
+Saudi Aramco's gearing ratio at the end of 2024 was 4.5% [Page: 45 | Section: Gearing] [Page: 34 | Section: Dear shareholders,].","[""Aramco's gearing ratio was 4.5% as at December 31, 2024, compared to (6.3)% as at December 31, 2023. The increase in gearing was principally driven by the change in net debt (cash) position mainly reflecting operating cash inflows, partially offset by dividend payments and capital expenditures durin"", ""Our business demonstrated its resiliency with net income of ﷼ 398.4 billion ($106.2 billion) and a free cash flow of ﷼ 320.0 billion ($85.3 billion) for the full year ended December 31, 2024. At 20.2%, our ROACE also remains ahead of the average of our peers. Our gearing ratio also remained healthy""]",4.5%,Saudi Aramco,en,Financial metric lookup,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,15.9553,
+Q064,By what percentage did total dividends paid by Aramco change year-over-year in 2024?,"**Reasoning & Calculations**:
+- According to the evidence, in 2024, Aramco paid total dividends of ﷼ 465.9 billion ($124.2 billion) [Page: 10 | Section: Dear shareholders].
+- The total dividends paid in 2024 represent an increase of 27.0% from 2023 [Page: 10 | Section: Dear shareholders].
+- Therefore, the year-over-year percentage change in total dividends paid by Aramco in 2024 is explicitly stated as 27.0%.
+
+**Final Answer**:
+The total dividends paid by Aramco increased by 27.0% year-over-year in 2024 [Page: 10 | Section: Dear shareholders].","[""Specific to the fourth quarter of 2024, the Board of Directors declared a base dividend of ﷼ 79.3 billion ($21.14 billion), and a performance-linked dividend of ﷼ 0.8 billion ($0.22 billion) based on full-year results of 2024. In 2024, we paid total dividends of ﷼ 465.9 billion ($124.2 billion), rep"", ""Our strong results have once again enabled us to increase total dividend distributions to our shareholders. In 2024, our shareholders collectively received ﷼ 465.9 billion ($124.2 billion) in dividends, up 27.0% from the total dividends received in 2023. This included base dividends of ﷼ 304.3 billi""]",Increased by 27.0%,Saudi Aramco,en,Year-over-year comparison,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,14.9882,
+Q065,"According to the Upstream financial results table, what was the EBIT for the year ended December 31, 2024?","**Reasoning & Calculations**:
+The provided context from the document specifies the Earnings before interest, income taxes, and zakat (EBIT) for the year ended December 31, 2024. According to the evidence, the EBIT for 2024 was ﷼ 801,047, which is equivalent to $213,613. This information is directly extracted from the text and does not require any additional calculations or interpretations.
+
+**Final Answer**:
+The EBIT for the year ended December 31, 2024, was ﷼ 801,047 ($213,613) [Page: 48 | Section: Upstream hydrocarbon production].","[""Earnings before interest, income taxes and zakat (EBIT) for the year ended December 31, 2024, totaled ﷼ 801,047 ($213,613), compared to ﷼ 863,549 ($230,280) in 2023. The decrease in EBIT resulted primarily from lower volumes sold and lower crude oil prices, partly offset by lower crude oil productio""]","SAR 801,047 million",Saudi Aramco,en,Table interpretation,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,14.0095,
+Q066,"Based on the Downstream financial results table, what were the capital expenditures on a cash basis in 2024?","**Reasoning & Calculations**:
+- The context document provides specific financial data for different segments, including the Downstream segment.
+- For the year 2024, the capital expenditures on a cash basis for the Downstream segment are explicitly listed.
+- The value given for the Downstream capital expenditures on a cash basis in 2024 is 38,989.
+
+**Final Answer**:
+The capital expenditures on a cash basis for the Downstream segment in 2024 were 38,989. [Page: 188 | Section: 4. Operating segments]","[""2024, Upstream = . 2024, Downstream = . 2024, Corporate = . 2024, Eliminations = . 2024, Consolidated = . External revenue, Upstream = 719,157. External revenue, Downstream = 917,044. External revenue, Corporate = 1,098. External revenue, Eliminations = -. External revenue, Consolidated = 1,637,299.""]","SAR 38,989 million",Saudi Aramco,en,Table interpretation,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,15.8063,
+Q067,What is the difference in Free cash flow between 2023 and 2024 in USD?,"**Reasoning & Calculations**:
+- According to the provided evidence, the Free cash flow for the year 2024 in USD is $85,333, and for the year 2023, it is $101,202 [Page: 44 | Section: Free cash flow].
+- To find the difference in Free cash flow between 2023 and 2024 in USD, we subtract the 2024 value from the 2023 value: 
+  \[
+  101,202 - 85,333 = 15,869
+  \]
+
+**Final Answer**:
+The difference in Free cash flow between 2023 and 2024 in USD is $15,869 [Page: 44 | Section: Free cash flow].","[""Free cash flow in 2024 was ﷼ 319,998 ($85,333) compared to ﷼ 379,506 ($101,202), in 2023, a decrease of ﷼ 59,508 ($15,869) or 15.7%. This decrease largely reflects lower operating cash flows mainly due to lower earnings, partially offset by a reduction in cash paid for the settlement of income, zaka""]","A decrease of $15,869 million",Saudi Aramco,en,Calculation or reasoning,Hard,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,12.8222,
+Q068,What is Aramco's ambition regarding Scope 1 and 2 greenhouse gas emissions?,"**Reasoning & Calculations**:
+Aramco's ambition regarding Scope 1 and 2 greenhouse gas emissions is consistently mentioned across multiple pieces of evidence. The company aims to achieve net-zero Scope 1 and Scope 2 greenhouse gas emissions by 2050 across its wholly-owned operated assets. This ambition is part of a broader strategy to support the Kingdom of Saudi Arabia's 2060 net-zero goal. Aramco plans to achieve this through various measures, including improving energy efficiency, reducing flaring and methane emissions, investing in renewable energy, carbon capture and storage, and developing offsetting programs. These efforts are aligned with the company's focus on maintaining low lifting costs and lower upstream carbon intensity compared to its peers.
+
+**Final Answer**:
+Aramco's ambition is to achieve net-zero Scope 1 and Scope 2 greenhouse gas emissions by 2050 across its wholly-owned operated assets. This goal is supported by initiatives such as improving energy efficiency, reducing emissions, investing in renewables, and carbon capture and storage. [Page 63 | Section: Cogeneration units, Wasit Gas Plant, Saudi Arabia], [Page 66 | Section: Climate change and the energy transition], [Page 172 | Section: Net zero ambition and the energy transition], [Page 11 | Section: Preparing for the future], [Page 77 | Section: Economic or political developments in Asia].","[""Aramco's ambition is to achieve net-zero Scope 1 and Scope 2 greenhouse gas (GHG) emissions across its wholly-owned operated assets by 2050. To achieve its GHG emissions mitigation, the Company focuses on energy efficiency, reduced flaring and methane emissions, carbon capture and storage, increased"", ""Aramco recognizes the need to reduce GHG emissions from its oil and gas operations and has an ambition to achieve net-zero Scope 1 and Scope 2 greenhouse gas emissions by 2050 across whollyowned operated assets. The Company also has a target to reduce its upstream carbon intensity by 15% by 2035 aga"", ""Saudi Aramco's ambition is to achieve net-zero Scope 1 and Scope 2 greenhouse gas emissions by 2050 across its wholly-owned operated assets. Low lifting costs and lower upstream carbon intensity, associated with the production of both oil and gas, compared to its peers, facilitates Saudi Aramco to c"", ""Back in 2021, we announced our ambition for net-zero Scope 1 and Scope 2 greenhouse gas emissions from wholly-owned operated assets by 2050. Our efforts toward achieving this ambition remain on track through a variety of pathways, including improving the energy efficiency of our operations. During t"", ""In line with the Kingdom's announced aims and the Saudi Green Initiative Forum, Aramco announced its ambition to achieve net-zero Scope 1 and Scope 2 GHG emissions across its whollyowned operated assets by 2050 to support the Kingdom's 2060 net-zero goal through the circular carbon economy approach""]",To achieve net-zero across wholly-owned operated assets by 2050.,Saudi Aramco,en,Risk and strategy understanding,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,14.6945,
+Q069,"What external factors can affect international crude oil supply, demand, and prices?","**Reasoning & Calculations**:
+The external factors affecting international crude oil supply, demand, and prices are detailed in the provided context. These factors include:
+
+1. Market expectations regarding future supply, demand, and pricing of petroleum products.
+2. Global economic and political conditions, including geopolitical events that impact international trade and trade routes.
+3. Production level decisions by oil-producing states, particularly those that are members of OPEC.
+4. Natural disasters and public health pandemics or epidemics, which can affect supply, demand, and general economic conditions.
+5. Technological advancements in crude oil exploration, production, and transportation.
+6. Capital investments by oil and gas companies in exploration, development, and production of crude oil reserves.
+7. The impact of climate change on the demand and price of hydrocarbons.
+8. Changes in environmental or other regulations applicable to crude oil and the energy industry.
+9. Prices and availability of alternative energies, including renewable energy.
+10. Electrification of transportation and technological developments in electric vehicle fuel cells.
+11. Weather conditions affecting supply and demand.
+12. Fluctuations in the value of the U.S. Dollar, as crude oil is globally priced in this currency.
+13. Crude oil trading activities.
+
+**Final Answer**:
+External factors affecting international crude oil supply, demand, and prices include market expectations, geopolitical events, OPEC production decisions, natural disasters, technological advancements, capital investments, climate change, regulatory changes, alternative energy prices, transportation electrification, weather conditions, U.S. Dollar fluctuations, and trading activities [Page 76 | Section: Crude oil supply and demand].","[""-  Market expectations with respect to future supply, demand and price of petroleum and petroleum products;\n-  Global economic and political conditions and geopolitical events, including any that impact international trade (including trade routes);\n-  Decisions regarding production levels by the Kin""]","Global economic conditions, weather, competition, GHG limits, and geopolitical instability.",Saudi Aramco,en,Risk and strategy understanding,Hard,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,11.5746,
+Q070,Which Aramco operating segment includes the SABIC Fujian Petrochemical Complex?,"**Reasoning & Calculations**:
+The SABIC Fujian Petrochemical Complex is part of an integrated refining and petrochemical complex in China. According to the context, downstream activities of Saudi Aramco include refining and petrochemical manufacturing, among other activities [Page: 188 | Section: 4. Operating segments]. The development of the integrated refining and petrochemical complex in Fujian province, China, is mentioned as part of Aramco's downstream investment portfolio [Page: 15 | Section: Integrated refining and petrochemical groundbreaking]. Therefore, the SABIC Fujian Petrochemical Complex falls under the Downstream segment of Aramco's operations.
+
+**Final Answer**:
+The SABIC Fujian Petrochemical Complex is included in Aramco's Downstream operating segment [Page: 188 | Section: 4. Operating segments].","[""For management purposes, Saudi Aramco is organized into business units based on the main types of activities. At December 31, 2024, Saudi Aramco had two reportable segments, Upstream and Downstream, with all other supporting functions aggregated into a Corporate segment. Upstream activities include"", ""Aramco, Sinopec, and Fujian Petrochemical broke ground on an integrated refining and petrochemical complex in China, further expanding Aramco's downstream investment portfolio in China and advancing its liquids-tochemicals strategy."", ""Aramco, in collaboration with Sinopec and Fujian Petrochemical Company Limited, has initiated the development of a new integrated refining and petrochemical complex in Fujian province, China. The facility is expected to include a 320 mbpd refinery along with a 1.5 mmtpa ethylene unit and a 300,000 t""]",The Downstream segment.,Saudi Aramco,en,Segment/business-unit analysis,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,14.9052,
+Q071,What was Aramco's upstream carbon intensity in 2024?,"**Reasoning & Calculations**:
+The provided documents discuss Aramco's upstream carbon intensity but do not specify the exact numerical value for 2024. Evidence 1 mentions that the upstream carbon intensity in 2024 remained in line with 2023 levels due to energy efficiency and other initiatives. However, it does not provide the specific carbon intensity figure for either year. Evidence 2 and Evidence 3 discuss the methodology used for calculating these figures but do not provide the actual numbers.
+
+**Final Answer**:
+I do not have enough information to answer this based on the provided document.","[""An important metric for Aramco is the carbon intensity of upstream operations, which is among the lowest of major crude oil and gas producers per barrel of oil equivalent and has been achieved through effective reservoir management, a low depletion rate operational model, and a focus on energy effic"", ""4.  The Company's Scope 2 emissions and upstream carbon intensity figures from 2022 to 2024 reflect the market-based calculation methodology that has been adopted, as per the GHG Protocol Scope 2 Guidance. The Scope 2 emissions and upstream carbon intensity figures of 2020 and 2021 reflect the locat""]",9.7 kg of CO2e/boe,Saudi Aramco,en,Direct factual retrieval,Easy,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,13.0264,
+Q072,What was the Return on Average Capital Employed (ROACE) for Aramco in 2024?,"**Reasoning & Calculations**:
+- The Return on Average Capital Employed (ROACE) for Aramco for the year ended December 31, 2024, is directly stated in the provided evidence.
+- According to Evidence 1, the ROACE for 2024 was 20.2%.
+- This figure is confirmed in Evidence 2, which also states that the ROACE for 2024 was 20.2%.
+
+**Final Answer**:
+The Return on Average Capital Employed (ROACE) for Aramco in 2024 was 20.2% [Page: 43 | Section: Return on average capital employed (ROACE); Page: 34 | Section: Dear shareholders,].","[""ROACE for the year ended December 31, 2024, was 20.2%, compared to 22.5% in 2023. The decrease in ROACE, calculated on a 12-month rolling basis, was mainly attributable to lower earnings largely driven by a decrease in revenue and other income related to sales, higher operating costs, as well as low"", ""Our business demonstrated its resiliency with net income of ﷼ 398.4 billion ($106.2 billion) and a free cash flow of ﷼ 320.0 billion ($85.3 billion) for the full year ended December 31, 2024. At 20.2%, our ROACE also remains ahead of the average of our peers. Our gearing ratio also remained healthy""]",20.2%,Saudi Aramco,en,Financial metric lookup,Easy,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,13.7442,
+Q073,"According to the summarized consolidated balance sheet, what were the total assets as of December 31, 2024?","**Reasoning & Calculations**:
+- According to the summarized consolidated balance sheet, the total assets as of December 31, 2024, are listed as 2,423,630.
+- This information is directly extracted from the provided context, specifically from the summarized consolidated balance sheet section.
+
+**Final Answer**:
+The total assets as of December 31, 2024, were 2,423,630. [Page: 126 | Section: Summarized consolidated balance sheet]","[""Total assets were ﷼ 2,423,630 ($646,301) as at December 31, 2024, compared to ﷼ 2,477,940 ($660,784) as at December 31, 2023. The change largely reflects a decrease in short-term investments, assets classified as held for sale and due from the Government. This was partially offset by an increase in"", ""Total assets, As at December 31.2024 = 2,423,630. Total assets, As at December 31.2023 = 2,477,940. Total assets, As at December 31.2022 = 2,492,924. Total assets, As at December 31.2021 = 2,162,690. Total assets, As at December 31.2020 = 1,914,261. Total liabilities, As at December 31.2024 = 772,27"", ""Assets, Note = . Assets, SAR.At December 31.2024 = . Assets, SAR.At December 31.2023 = . Assets, USD*.At December 31.2024 = . Assets, USD*.At December 31.2023 = . Non-current assets, Note = . Non-current assets, SAR.At December 31.2024 = . Non-current assets, SAR.At December 31.2023 = . Non-current""]","SAR 2,423,630 million",Saudi Aramco,en,Table interpretation,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,17.563,
+Q074,How did Aramco's Free Cash Flow change year-over-year in 2024?,"**Reasoning & Calculations**:
+- According to the provided evidence, Aramco's Free Cash Flow in 2024 was ﷼ 319,998 ($85,333), while in 2023 it was ﷼ 379,506 ($101,202) [Page: 44 | Section: Free cash flow].
+- The change in Free Cash Flow from 2023 to 2024 is calculated as follows:
+  - Change in Free Cash Flow (SAR) = 319,998 - 379,506 = -59,508
+  - Change in Free Cash Flow (USD) = 85,333 - 101,202 = -15,869
+- The percentage change in Free Cash Flow is calculated using the formula: `((New - Old) / Old) * 100`.
+  - Percentage change (SAR) = ((319,998 - 379,506) / 379,506) * 100 = -15.7%
+  - Percentage change (USD) = ((85,333 - 101,202) / 101,202) * 100 = -15.7%
+- The decrease in Free Cash Flow is attributed to lower operating cash flows due to lower earnings, partially offset by reduced cash paid for taxes and higher upstream capital expenditures [Page: 44 | Section: Free cash flow].
+
+**Final Answer**:
+Aramco's Free Cash Flow decreased by 15.7% year-over-year in 2024, from ﷼ 379,506 ($101,202) in 2023 to ﷼ 319,998 ($85,333) in 2024 [Page: 44 | Section: Free cash flow].","[""Free cash flow in 2024 was ﷼ 319,998 ($85,333) compared to ﷼ 379,506 ($101,202), in 2023, a decrease of ﷼ 59,508 ($15,869) or 15.7%. This decrease largely reflects lower operating cash flows mainly due to lower earnings, partially offset by a reduction in cash paid for the settlement of income, zaka"", ""Net cash provided by operating activities, SAR Year ended December 31.2024 = 508,888. Net cash provided by operating activities, SAR Year ended December 31.2023 = 537,814. Net cash provided by operating activities, USD* Year ended December 31.2024 = 135,704. Net cash provided by operating activities""]",Decreased by 15.7%,Saudi Aramco,en,Year-over-year comparison,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,21.1854,
+Q075,What is the sum of base and performance-linked dividends paid by Aramco in 2024?,"**Reasoning & Calculations**:
+- According to the provided evidence, Aramco paid base dividends totaling ﷼ 304.3 billion ($81.15 billion) in 2024 [Page: 39 | Section: Shareholder returns].
+- Additionally, Aramco paid performance-linked dividends totaling ﷼ 161.6 billion ($43.09 billion) in 2024 [Page: 39 | Section: Shareholder returns].
+- To find the sum of base and performance-linked dividends, we add these two amounts together: 
+  - Base dividends: ﷼ 304.3 billion
+  - Performance-linked dividends: ﷼ 161.6 billion
+  - Total dividends = ﷼ 304.3 billion + ﷼ 161.6 billion = ﷼ 465.9 billion
+
+**Final Answer**:
+The sum of base and performance-linked dividends paid by Aramco in 2024 is ﷼ 465.9 billion ($124.2 billion) [Page: 34 | Section: Providing value through cycles].","[""During 2024, the Company paid base dividends totaling ﷼ 304.3 billion ($81.15 billion). In addition to the base dividends, the Company paid performance-linked dividends consisting of the third, fourth, fifth, and sixth distribution of ﷼ 40.4 billion ($10.8 billion) each, which were paid in 2024 base"", ""Our strong results have once again enabled us to increase total dividend distributions to our shareholders. In 2024, our shareholders collectively received ﷼ 465.9 billion ($124.2 billion) in dividends, up 27.0% from the total dividends received in 2023. This included base dividends of ﷼ 304.3 billi""]",SAR 465.9 billion,Saudi Aramco,en,Calculation or reasoning,Hard,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,14.3422,
+Q076,What is the goal of Aramco's newly established New Energies organization?,"**Reasoning & Calculations**:
+The goal of Aramco's newly established New Energies organization is to contribute to the energy transition by focusing on lower carbon solutions. This organization consolidates three main verticals: Renewables, Hydrogen, and Carbon Capture and Storage (CCS). It aims to develop capabilities and revenues in strategic growth markets both locally and globally. The organization is part of Aramco's broader strategy to lower net carbon emissions and support the global energy transition. Specific targets include investing in renewable power generation, such as solar PV and wind projects, and developing a low-carbon hydrogen and ammonia business. Additionally, it aims to capture and store significant amounts of CO2 as part of its carbon capture initiatives.
+
+**Final Answer**:
+The goal of Aramco's New Energies organization is to advance the energy transition by focusing on lower carbon solutions, including renewables, hydrogen, and carbon capture and storage, to lower net carbon emissions and support global energy transition efforts. [Page: 66 | Section: New Energies Organization], [Page: 24 | Section: Lower-carbon initiatives], [Page: 28 | Section: Localization and promotion of national champions].","[""To ensure progress in its efforts to contribute to the energy transition, Aramco established the New Energies organization following the endorsement of the Company's long-term strategy to achieve its ambitions for lower carbon solutions to meet its GHG emissions mitigation ambition. New Energies has"", ""Aramco aims to lower the net carbon emissions of its operations and support the global energy transition through development of a New Energies business that includes renewable power generation and lower-carbon products and solutions across the energy, chemicals, and materials sectors."", ""support this strategy, the Company has established a New Energies organization to consolidate its lower-carbon businesses, focusing on renewable power generation, lower-carbon hydrogen, and carbon capture and storage. Aramco has ambitions to invest in up to 12 GW dc capacity of solar PV and wind pro""]","To nurture and capitalize on emerging opportunities in Renewables, Hydrogen, and Carbon Capture and Storage (CCS).",Saudi Aramco,en,Risk and strategy understanding,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,14.4765,
+Q077,What was the Corporate segment's EBIT in 2024?,"**Reasoning & Calculations**:
+- The EBIT (Earnings Before Interest and Taxes) for the Corporate segment in 2024 is directly provided in the context document.
+- According to the document, the earnings (losses) before interest, income taxes, and zakat for the Corporate segment in 2024 is (21,830).
+
+**Final Answer**:
+The Corporate segment's EBIT in 2024 was (21,830) [Page: 188 | Section: 4. Operating segments].","[""2024, Upstream = . 2024, Downstream = . 2024, Corporate = . 2024, Eliminations = . 2024, Consolidated = . External revenue, Upstream = 719,157. External revenue, Downstream = 917,044. External revenue, Corporate = 1,098. External revenue, Eliminations = -. External revenue, Consolidated = 1,637,299.""]","A loss of SAR 21,830 million",Saudi Aramco,en,Segment/business-unit analysis,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,13.1523,
+Q078,Why did Aramco's Upstream EBIT decrease in 2024?,"**Reasoning & Calculations**:
+- According to the provided evidence, Aramco's Upstream EBIT for the year ended December 31, 2024, was ﷼ 801,047 ($213,613), compared to ﷼ 863,549 ($230,280) in 2023. This indicates a decrease in EBIT.
+- The decrease in EBIT was primarily due to lower volumes sold and lower crude oil prices. These factors were partly offset by lower crude oil production royalties [Page: 48 | Section: Upstream hydrocarbon production].
+
+**Final Answer**:
+Aramco's Upstream EBIT decreased in 2024 primarily due to lower volumes sold and lower crude oil prices, which were partly offset by lower crude oil production royalties [Page: 48 | Section: Upstream hydrocarbon production].","[""Earnings before interest, income taxes and zakat (EBIT) for the year ended December 31, 2024, totaled ﷼ 801,047 ($213,613), compared to ﷼ 863,549 ($230,280) in 2023. The decrease in EBIT resulted primarily from lower volumes sold and lower crude oil prices, partly offset by lower crude oil productio"", ""2024, Upstream = . 2024, Downstream = . 2024, Corporate = . 2024, Eliminations = . 2024, Consolidated = . External revenue, Upstream = 719,157. External revenue, Downstream = 917,044. External revenue, Corporate = 1,098. External revenue, Eliminations = -. External revenue, Consolidated = 1,637,299.""]",Due to lower volumes sold and lower crude oil prices.,Saudi Aramco,en,Evidence-based summary,Hard,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,12.9702,
+Q079,What additions were announced to the Jafurah gas reserves in 2024?,"**Reasoning & Calculations**:
+- The context documents provide information about the additions to the Jafurah gas reserves.
+- Evidence 1 states that Aramco announced the addition of 15.0 trillion standard cubic feet (tscf) of raw gas and 2.0 billion stock tank barrels (bstb) of condensate as proven reserves at the Jafurah unconventional field.
+- Evidence 2 and Evidence 3 confirm these additions, specifying the amounts of raw gas and condensate added.
+
+**Final Answer**:
+The additions announced to the Jafurah gas reserves in 2024 were 15.0 tscf of raw gas and 2.0 bstb of condensate. [Page: 14 | Section: Jafurah gas reserves additions]","[""Aramco announced the addition of 15.0 tscf of raw gas and 2.0 bstb of condensate as proven reserves at the Jafurah unconventional field."", ""Jafurah additional proven raw gas reserves announced"", ""Jafurah additional proven condensate reserves announced""]",15.0 tscf of raw gas and 2.0 bstb of condensate.,Saudi Aramco,en,Evidence-based summary,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,10.5255,
+Q080,What is a risk to Aramco if operating cash flow is insufficient to cover capital expenditures?,"**Reasoning & Calculations**:
+The provided document indicates that Aramco's projects require significant capital expenditures. If the cash flow from operating activities and funds from external financial resources are insufficient to cover these capital expenditures, Aramco may need to reallocate available capital among its projects or modify its capital expenditure plans. This could lead to delays, cancellations, or deferrals of certain projects or capital expenditures. Such changes could materially and adversely affect Aramco's growth objectives, business, financial position, and results of operations.
+
+**Final Answer**:
+A risk to Aramco if operating cash flow is insufficient to cover capital expenditures is that it may have to reallocate capital, modify expenditure plans, and potentially delay or cancel projects, adversely affecting its growth objectives and financial position [Page 79 | Section: Delivery of current and future projects].","[""Furthermore, many of Aramco's projects require significant capital expenditures. If cash flow from operating activities and funds from external financial resources are not sufficient to cover Aramco's capital expenditure requirements, Aramco may be required to reallocate available capital among its""]","Aramco may have to reallocate capital, resulting in delays or cancellation of projects.",Saudi Aramco,en,Risk and strategy understanding,Medium,Saudi Aramco Annual Report 2024,2626b292eb4fd236ba9bbf0930794350d99146d161a30f993d731f36113dd1f6,15.6227,
+Q081,What was stc's net profit for the year 2024?,"**Reasoning & Calculations**:
+- According to the provided evidence, the net profit attributable to stc's equity holders of the parent company for the year 2024 is stated as 24,688,652.
+- Additionally, the total net profit for 2024, which includes both the equity holders of the parent company and non-controlling interests, is given as 24,916,243.
+- The evidence clearly states these figures without requiring further calculations.
+
+**Final Answer**:
+stc's net profit for the year 2024 was 24,916,243. [Page 73 | Section: Continuing operations]","[""stc achieved its highest revenues and net profit in its history for the year 2024 reaching 75.9 billion and 24.7 billion, with an increase of 5.7% and 85.7% (respectively)."", ""Revenues, 2024 Consolidated = 75,893,413. Revenues, 2023 Consolidated Revised = 71,777,161. Revenues, Difference = 4,116,252. Revenues, % = 5.7%. Cost of revenues, 2024 Consolidated = (38,593,003). Cost of revenues, 2023 Consolidated Revised = (37,037,095). Cost of revenues, Difference = (1,555,908)""]",SAR 24.69 billion,stc,en,Direct factual retrieval,Easy,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,15.3839,
+Q082,What was stc's total revenue in 2024?,"**Reasoning & Calculations**:
+- The total revenue for stc in 2024 is explicitly stated in multiple pieces of evidence.
+- Evidence 1 [Page: 74 | Section: Geographical analysis of standard service revenues at stc's level] mentions that stc achieved total revenues of 75,893,413 thousand in 2024.
+- Evidence 2 [Page: 120 | Section: 9. SEGMENT INFORMATION] confirms the total revenues for 2024 as 75,893,413.
+- Evidence 4 [Page: 73 | Section: Continuing operations] also states the consolidated revenues for 2024 as 75,893,413.
+
+**Final Answer**:
+stc's total revenue in 2024 was 75,893,413 thousand. [Page: 74 | Section: Geographical analysis of standard service revenues at stc's level], [Page: 120 | Section: 9. SEGMENT INFORMATION], [Page: 73 | Section: Continuing operations].","[""During the year 2024, stc achieved total revenues of & 75,893,413 thousand. Foreign investments at stc's level accounted for 12% of this total. The following table shows their geographical distribution:"", ""Revenues (1), 2024 = . Revenues (1), 2023 = . stc, 2024 = 49,643,893. stc, 2023 = 49,218,179. Channels, 2024 = 15,110,606. Channels, 2023 = 14,194,210. Solutions, 2024 = 12,063,897. Solutions, 2023 = 11,040,493. stc Kuwait, 2024 = 4,105,483. stc Kuwait, 2023 = 3,986,034. stc Bahrain, 2024 = 1,927,96"", ""stc achieved its highest revenues and net profit in its history for the year 2024 reaching 75.9 billion and 24.7 billion, with an increase of 5.7% and 85.7% (respectively)."", ""Revenues, 2024 Consolidated = 75,893,413. Revenues, 2023 Consolidated Revised = 71,777,161. Revenues, Difference = 4,116,252. Revenues, % = 5.7%. Cost of revenues, 2024 Consolidated = (38,593,003). Cost of revenues, 2023 Consolidated Revised = (37,037,095). Cost of revenues, Difference = (1,555,908)""]",SAR 75.89 billion,stc,en,Direct factual retrieval,Easy,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,15.4763,
+Q083,What was stc's EBITDA for the year 2024?,"**Reasoning & Calculations**:
+- EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) is calculated as follows:
+  \[
+  \text{EBITDA} = \text{Net Profit from Continuing Operations} + \text{Finance Cost} + \text{Zakat and Income Tax} + \text{Depreciation, Amortization, and Impairment}
+  \]
+- From the provided document, the relevant figures for 2024 are:
+  - Net Profit from Continuing Operations = 10,942,883
+  - Finance Cost = 1,233,679
+  - Zakat and Income Tax = 1,191,564
+  - Depreciation, Amortization, and Impairment = 9,499,963
+- Plugging these values into the formula:
+  \[
+  \text{EBITDA} = 10,942,883 + 1,233,679 + 1,191,564 + 9,499,963 = 22,868,089
+  \]
+
+**Final Answer**:
+stc's EBITDA for the year 2024 was 22,868,089. [Page: 120 | Section: 9. SEGMENT INFORMATION]","[""Revenues (1), 2024 = . Revenues (1), 2023 = . stc, 2024 = 49,643,893. stc, 2023 = 49,218,179. Channels, 2024 = 15,110,606. Channels, 2023 = 14,194,210. Solutions, 2024 = 12,063,897. Solutions, 2023 = 11,040,493. stc Kuwait, 2024 = 4,105,483. stc Kuwait, 2023 = 3,986,034. stc Bahrain, 2024 = 1,927,96""]",SAR 23.93 billion,stc,en,Financial metric lookup,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,14.8138,
+Q084,What was stc's year-over-year net profit growth in 2024?,"**Reasoning & Calculations**:
+- The context documents provide information on stc's financial performance for the year 2024.
+- Evidence 1 states that stc's net profit for 2024 was 24.7 billion, with an increase of 85.7%.
+- Evidence 2 and Evidence 3 confirm the net profit growth rate of 85.7% for the year 2024.
+- The year-over-year net profit growth is explicitly mentioned as 85.7% in all the provided evidence.
+
+**Final Answer**:
+stc's year-over-year net profit growth in 2024 was 85.7% [Page: 95 | Section: Conclusion], [Page: 17 | Section: GCEO's Message], [Page: 16 | Section: Chairman's Message].","[""stc achieved its highest revenues and net profit in its history for the year 2024 reaching 75.9 billion and 24.7 billion, with an increase of 5.7% and 85.7% (respectively)."", ""stc's focus on fostering innovation and improving customer experience also played a fundamental role in promoting sustainable growth, which contributed to the outstanding performance during 2024. The Group achieved a growth in revenues of 5.7%, operating profit of 9.6%, and net profit growth of 85.7"", ""We have achieved strong financial results for 2024. Our revenue growth stood at 5.7%, operating profit growth was 9.6%, and net profit growth landed at 85.7%. ' '""]",85.70%,stc,en,Year-over-year comparison,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,15.6124,
+Q085,"According to the segment revenues table, what was the revenue for the Channels segment in 2024?","**Reasoning & Calculations**:
+- The document provides segment information for various categories, including the Channels segment.
+- For the year 2024, the revenue for the Channels segment is explicitly listed as 15,110,606.
+
+**Final Answer**:
+- The revenue for the Channels segment in 2024 was 15,110,606. [Page: 120 | Section: 9. SEGMENT INFORMATION]","[""Revenues (1), 2024 = . Revenues (1), 2023 = . stc, 2024 = 49,643,893. stc, 2023 = 49,218,179. Channels, 2024 = 15,110,606. Channels, 2023 = 14,194,210. Solutions, 2024 = 12,063,897. Solutions, 2023 = 11,040,493. stc Kuwait, 2024 = 4,105,483. stc Kuwait, 2023 = 3,986,034. stc Bahrain, 2024 = 1,927,96""]","SAR 15,110,606 thousand",stc,en,Table interpretation,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,13.2541,
+Q086,"Based on the segment gross profit table, what was the gross profit for the Solutions segment in 2024?","**Reasoning & Calculations**:
+The provided document lists various financial figures for different segments for the years 2023 and 2024. The gross profit for the Solutions segment in 2024 is directly stated as 2,981,285. There is no need for additional calculations as the figure is explicitly provided.
+
+**Final Answer**:
+The gross profit for the Solutions segment in 2024 was 2,981,285 [Page: 120 | Section: Notes to the Consolidated Financial Statements].","[""stc, 2024 = 31,178,645. stc, 2023 = 29,973,976. Channels, 2024 = 3,365,489. Channels, 2023 = 3,083,568. Solutions, 2024 = 2,981,285. Solutions, 2023 = 2,792,163. stc Kuwait, 2024 = 2,019,660. stc Kuwait, 2023 = 2,061,419. stc Bahrain, 2024 = 949,684. stc Bahrain, 2023 = 878,634. Center 3, 2024 = 721""]","SAR 2,981,285 thousand",stc,en,Table interpretation,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,15.6049,
+Q087,What is the calculated Working Capital (Current Assets minus Current Liabilities) for 2024?,"**Reasoning & Calculations**:
+- To calculate the Working Capital, we use the formula: Working Capital = Current Assets - Current Liabilities.
+- From the provided document, the Current Assets for 31 December 2024 are 3,982,926.
+- The Current Liabilities for 31 December 2024 are 7,460,359.
+- Applying the formula: Working Capital = 3,982,926 - 7,460,359 = -3,477,433.
+
+**Final Answer**:
+The calculated Working Capital for 2024 is -3,477,433 [Page: 118 | Section: For the year ended 31 December 2024].","[""Statement of financial position, 31 December 2024 = . Current assets, 31 December 2024 = 3,982,926. Non-current assets, 31 December 2024 = 20,547,689. Current liabilities, 31 December 2024 = (7,460,359). Non-current liabilities, 31 December 2024 = (9,611,873)""]","SAR 33,810,869 thousand",stc,en,Calculation or reasoning,Hard,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,15.8985,
+Q088,What is stc's commitment regarding greenhouse gas emissions?,"**Reasoning & Calculations**:
+- The provided context documents contain two pieces of information regarding stc's commitment to greenhouse gas emissions.
+- Evidence 1 states that stc aims to achieve net zero emissions by 2050 as part of its climate strategy, which aligns with Saudi Vision 2030 and the Saudi Green Initiative [Page: 67 | Section: Environmental stewardship at stc].
+- Evidence 2 mentions that stc has pledged to achieve net zero emissions by 2060 as part of the 'KSA Sustainability Champions' program [Page: 19 | Section: A year of outstanding progress and achievements].
+
+**Final Answer**:
+stc has committed to achieving net zero emissions by 2050 as part of its climate strategy [Page: 67 | Section: Environmental stewardship at stc], and it has also pledged to achieve net zero emissions by 2060 through the 'KSA Sustainability Champions' program [Page: 19 | Section: A year of outstanding progress and achievements].","[""As a responsible digital and telecommunications leader, stc is committed to environmental stewardship by adopting sustainable technologies, conserving natural resources and driving positive ecological impact. In alignment with Saudi Vision 2030 and the Saudi Green Initiative (SGI), stc is advancing"", ""Additionally, stc placed significant focus on employee development, delivering extensive learning opportunities through specialized talent programs. Reinforcing its commitment to sustainability, stc joined the 'KSA Sustainability Champions' program, led by the Ministry of Economy and Planning, with""]",To reach net zero carbon by 2050.,stc,en,Risk and strategy understanding,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,13.3948,
+Q089,How does stc manage and limit its credit risk exposures?,"**Reasoning & Calculations**:
+stc manages and limits its credit risk exposures through several strategies as outlined in the provided documents. Firstly, stc has established guidelines and policies that restrict dealings to only creditworthy counterparties. These counterparties must have high investment-grade credit ratings from international credit rating agencies. Additionally, stc limits its exposure to any single counterparty by ensuring that the exposure does not exceed 30% of the counterparty's shareholders' equity. This approach helps in diversifying risk and preventing excessive reliance on any single entity. Furthermore, stc monitors its credit risk on a quarterly basis to ensure ongoing compliance and risk management.
+
+In relation to financial guarantees provided to subsidiaries, stc's maximum exposure is limited to the amount it may have to pay if a guarantee is called upon. However, there is no current indication of potential loss from these guarantees as per the latest financial statements.
+
+**Final Answer**:
+stc manages and limits its credit risk exposures by dealing only with creditworthy counterparties with high investment-grade ratings, limiting exposure to a single counterparty to 30% of its shareholders' equity, and conducting quarterly risk monitoring. Additionally, stc's exposure from financial guarantees is limited to the maximum potential payment, with no current indication of loss. [Page 26 | Section: Credit risk management]","[""stc has approved guidelines and policies that allow it to only deal with creditworthy counterparties and limits counterparty exposure. The guidelines and policies allow stc to invest only with those counterparties that high have investment grade credit ratings issued by international credit rating a""]",By investing only with high investment grade counterparties and limiting exposure to 30% of their shareholders' equity.,stc,en,Risk and strategy understanding,Hard,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,12.2326,
+Q090,What percentage of stc's total revenue was accounted for by foreign investments in 2024?,"**Reasoning & Calculations**:
+The document states that foreign investments at stc's level accounted for 12% of the total revenues in 2024. The total revenues for stc in 2024 were & 75,893,413 thousand. Therefore, the percentage of stc's total revenue accounted for by foreign investments is directly given as 12%.
+
+**Final Answer**:
+12% of stc's total revenue in 2024 was accounted for by foreign investments [Page 74 | Section: Geographical analysis of standard service revenues at stc's level].","[""During the year 2024, stc achieved total revenues of & 75,893,413 thousand. Foreign investments at stc's level accounted for 12% of this total. The following table shows their geographical distribution:""]",12%,stc,en,Segment/business-unit analysis,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,14.9559,
+Q091,What percentage stake did stc sell in TAWAL to PIF?,"**Reasoning & Calculations**:
+- The evidence provided in the documents indicates that stc sold a 51% stake in TAWAL to the Public Investment Fund (PIF).
+- Evidence 1 confirms the completion of selling a 51% stake of stc's shares in TAWAL to PIF [Page: 9 | Section: Completion of selling 51% of TAWAL].
+- Evidence 2 also states that PIF will acquire a 51% stake in TAWAL [Page: 9 | Section: Agreement with PIF for stake in TAWAL].
+- Evidence 3 reiterates that the definitive agreements for PIF's acquisition of a 51% stake in TAWAL have been signed [Page: 50 | Section: About TAWAL].
+
+**Final Answer**:
+stc sold a 51% stake in TAWAL to PIF [Page: 9 | Section: Completion of selling 51% of TAWAL; Page: 9 | Section: Agreement with PIF for stake in TAWAL; Page: 50 | Section: About TAWAL].","[""All procedures for selling 51% stake of stc's shares in TAWAL to PIF have been completed, after obtaining all necessary regulatory and commercial approvals."", ""The Public Investment Fund (PIF) and stc announced an agreement where PIF will acquire a 51% stake in Telecommunication Towers Company Limited (TAWAL), valued at USD 5.85 billion. Following this, stc and PIF will merge TAWAL with Golden Lattice Investment Company (GLIC), creating the region's larges"", ""On the KSA consolidation front, stc-PIF signed the definitive agreements for PIF's acquisition of a 51% stake in TAWAL. All activities for the TAWAL acquisition have been completed as at year-end 2024.""]",51%,stc,en,Direct factual retrieval,Easy,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,18.1029,
+Q093,What were stc Kuwait's net assets as of 31 December 2024 according to the subsidiaries table?,"**Reasoning & Calculations**:
+The document provides specific figures for stc Kuwait's net assets as of 31 December 2024. According to the evidence, the net assets for stc Kuwait are directly listed as 2,926,461. This figure is explicitly stated in the context and does not require any additional calculations or assumptions.
+
+**Final Answer**:
+stc Kuwait's net assets as of 31 December 2024 were 2,926,461. [Page: 133 | Section: Notes to the Consolidated Financial Statements]","[""Statement of financial position, As at 31 December 2024.stc Kuwait = . Statement of financial position, As at 31 December 2024.Solutions = . Current assets, As at 31 December 2024.stc Kuwait = 2,840,241. Current assets, As at 31 December 2024.Solutions = 10,358,690. Non-current assets, As at 31 Dece""]","SAR 2,926,461 thousand",stc,en,Table interpretation,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,29.115,
+Q094,How did stc's gross profit change year-over-year in 2024?,"**Reasoning & Calculations**:
+- The gross profit for 2024 is given as 37,300,410, and for 2023, it is 34,740,066 [Page: 120 | Section: Notes to the Consolidated Financial Statements].
+- To calculate the year-over-year (YoY) change in gross profit, we use the formula: `((New - Old) / Old) * 100`.
+- Substituting the values: `((37,300,410 - 34,740,066) / 34,740,066) * 100`.
+- This results in a change of 2,560,344 in absolute terms.
+- The percentage change is calculated as: `(2,560,344 / 34,740,066) * 100 = 7.4%`.
+
+**Final Answer**:
+stc's gross profit increased by 2,560,344, which is a 7.4% increase year-over-year in 2024 [Page: 73 | Section: Continuing operations].","[""stc, 2024 = 31,178,645. stc, 2023 = 29,973,976. Channels, 2024 = 3,365,489. Channels, 2023 = 3,083,568. Solutions, 2024 = 2,981,285. Solutions, 2023 = 2,792,163. stc Kuwait, 2024 = 2,019,660. stc Kuwait, 2023 = 2,061,419. stc Bahrain, 2024 = 949,684. stc Bahrain, 2023 = 878,634. Center 3, 2024 = 721"", ""Revenues, 2024 Consolidated = 75,893,413. Revenues, 2023 Consolidated Revised = 71,777,161. Revenues, Difference = 4,116,252. Revenues, % = 5.7%. Cost of revenues, 2024 Consolidated = (38,593,003). Cost of revenues, 2023 Consolidated Revised = (37,037,095). Cost of revenues, Difference = (1,555,908)""]",Increased by 7.37%,stc,en,Year-over-year comparison,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,19.3518,
+Q095,What was the total expected dividend per share for the year 2024 including regular and special dividends?,"**Reasoning & Calculations**:
+- According to the provided evidence, the total cash dividends for the year 2024 include both regular and special dividends.
+- The regular dividends per share for each quarter are as follows:
+  - Q1 2024: $0.40 per share
+  - Q2 2024: $0.40 per share
+  - Q3 2024: $0.40 per share
+  - Q4 2024: $0.55 per share
+- The total regular dividends per share for the year 2024 is calculated as: $0.40 + $0.40 + $0.40 + $0.55 = $1.75 per share.
+- Additionally, there is a special dividend of $2 per share for the year 2024.
+- Therefore, the total expected dividend per share for the year 2024, including both regular and special dividends, is: $1.75 (regular) + $2 (special) = $3.75 per share.
+
+**Final Answer**:
+The total expected dividend per share for the year 2024, including regular and special dividends, is $3.75 per share [Page: 94 | Section: The following is a breakdown of the 2024 distributions] and [Page: 17 | Section: GCEO's Message].","[""Cash dividends for Q1 2024, Total distribution ( $ million) = 2,000. Cash dividends for Q1 2024, Earnings per share ( $ ) = 0.40. Cash dividends for Q1 2024, Date of announcement = 08/05/2024. Cash dividends for Q1 2024, Due date = 21/05/2024. Cash dividends for Q1 2024, Payment date = 10/06/2024. C"", ""In light of the distinguished financial results achieved by the Group, stc's Board of Directors recommended distributing additional cash dividends for the fiscal year 2024 in the amount of & 2 per share, equivalent to & 10 billion, in addition to the distributions approved in the Company's policy th""]",SAR 3.75,stc,en,Calculation or reasoning,Hard,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,20.4995,
+Q096,What is the second pillar of stc's DARE 2.0 strategy for growth?,"**Reasoning & Calculations**:
+The provided context document mentions the 'Expand scale and scope' pillar as a growth engine for stc, focusing on new geographies, regional data hubs, and emerging areas such as cloud services, IT solutions, cybersecurity, IoT-enabled industry verticals, consumer solutions, and fintech. However, it does not specify what the second pillar of stc's DARE 2.0 strategy for growth is.
+
+**Final Answer**:
+I do not have enough information to answer this based on the provided document.","[""For growth, stc adopted the 'Expand scale and scope' pillar as a growth engine, targeting new geographies, establishing a regional data hub and expanding into emerging areas such as cloud services, IT solutions, cybersecurity, IoT-enabled industry verticals, consumer solutions and fintech.""]",Accelerate diversification from core telco.,stc,en,Risk and strategy understanding,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,26.5801,
+Q097,What was the revenue generated by the Sirar subsidiary in 2024?,"**Reasoning & Calculations**:
+- The document provides specific revenue figures for various subsidiaries for the year 2024.
+- According to the evidence, the revenue generated by the Sirar subsidiary in 2024 is explicitly listed as 732,675.
+
+**Final Answer**:
+The revenue generated by the Sirar subsidiary in 2024 was 732,675. [Page: 120 | Section: 9. SEGMENT INFORMATION]","[""Revenues (1), 2024 = . Revenues (1), 2023 = . stc, 2024 = 49,643,893. stc, 2023 = 49,218,179. Channels, 2024 = 15,110,606. Channels, 2023 = 14,194,210. Solutions, 2024 = 12,063,897. Solutions, 2023 = 11,040,493. stc Kuwait, 2024 = 4,105,483. stc Kuwait, 2023 = 3,986,034. stc Bahrain, 2024 = 1,927,96""]","SAR 732,675 thousand",stc,en,Segment/business-unit analysis,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,14.0898,
+Q098,What artificial intelligence solutions did stc launch to improve efficiency in 2024?,"**Reasoning & Calculations**:
+The provided document outlines several artificial intelligence solutions launched by stc to improve efficiency in 2024. These include:
+
+1. **Sawaher Platform**: This platform was launched in collaboration with Tahakom and SCAI to enhance security in Saudi cities by optimizing CCTV installation locations using AI, which aims to install 300,000 cameras over 10 years, reducing potential costs [Page: 36 | Section: Artificial intelligence (AI) domain accomplishments].
+
+2. **Soft-PAT Validation Automation**: The Soft-PAT validation process was upgraded with advanced AI tools to reduce human intervention and save processing time significantly [Page: 36 | Section: Artificial intelligence (AI) domain accomplishments].
+
+3. **Trench Quality Image Detection**: AI was used to process approximately 700,000 images across 65,000 work orders annually, streamlining validation, reducing costs, optimizing OPEX, and accelerating time-to-market (TTM) [Page: 36 | Section: Artificial intelligence (AI) domain accomplishments].
+
+4. **Launch of Gen AI in stc (stc Brain)**: This initiative introduced Gen AI assistants (Digital Co-workers) across various domains, achieving a productivity increase of up to 70% by conducting over 5,000 conversations through stc Brain, serving more than 10 sectors and 200+ users [Page: 36 | Section: Artificial intelligence (AI) domain accomplishments].
+
+**Final Answer**:
+stc launched several AI solutions to improve efficiency in 2024, including the Sawaher platform for optimizing CCTV installations, Soft-PAT validation automation, trench quality image detection, and the introduction of Gen AI assistants through stc Brain, which increased productivity by up to 70% [Page: 36 | Section: Artificial intelligence (AI) domain accomplishments].","[""-  Sawaher platform: Launched the Sawaher platform in collaboration with Tahakom and SCAI, leveraging AI to elevate security in Saudi cities and optimize CCTV installation locations with enhanced visibility, aiming to install 300,000 cameras over 10 years through identifying strong areas, leading to""]","stc Brain, stc GPT, a digital co-worker for IFRS compliance, and a call transcription co-worker.",stc,en,Evidence-based summary,Hard,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,16.144,
+Q099,What stake did stc acquire in the device trade-in platform NorthLadder?,"**Reasoning & Calculations**:
+The evidence provided in the document states that stc acquired a 12.5% stake in NorthLadder. This information is directly mentioned in the context, and no additional calculations or interpretations are necessary.
+
+**Final Answer**:
+stc acquired a 12.5% stake in the device trade-in platform NorthLadder [Page: 17 | Section: Driving Growth Through Strategic Investments].","[""Beyond acquisitions, we remain committed to fostering innovation and entrepreneurship. tali ventures, our & +1 billion innovation fund, continues to drive strategic investments in high-growth digital opportunities. A key highlight of the year was acquiring a 12.5% stake in NorthLadder, a leading dev""]",12.5%,stc,en,Evidence-based summary,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,13.2411,
+Q100,What is a key technology risk related to cybersecurity identified by stc?,I do not have enough information to answer this based on the provided document.,[],"The rise of advanced malware, DDOS botnets, and third-party access vulnerabilities.",stc,en,Risk and strategy understanding,Medium,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,7.8246,
+Q001,By what percentage did HMG's revenue grow year-over-year in 2025?,"**Reasoning & Calculations**:
+- According to the provided evidence, HMG's revenue for 2025 was 13,706.9, and for 2024 it was 11,200.4 [Page: 111 | Section: 10.2 Profit and Loss Comparison].
+- To calculate the year-over-year (YoY) revenue growth percentage, use the formula: `((New - Old) / Old) * 100`.
+- Plugging in the numbers: `((13,706.9 - 11,200.4) / 11,200.4) * 100 = 22.4%`.
+
+**Final Answer**:
+HMG's revenue grew by 22.4% year-over-year in 2025 [Page: 111 | Section: 10.2 Profit and Loss Comparison].","[""Revenue, 2025 = 13,706.9. Revenue, 2024 = 11,200.4. Revenue, Change (+) or (-) = 2,506.5. Revenue, Percentage Change = 22.4%. Cost of revenue, 2025 = 9,499.9. Cost of revenue, 2024 = 7,456.2. Cost of revenue, Change (+) or (-) = 2,043.7. Cost of revenue, Percentage Change = 27.4%. Gross profit, 2025"", ""Our financial performance in 2025 reflects the strength of our operating model and the scale we have built across the Group. During the year, revenue reached % 13.7 billion, representing growth of 22.4% year on year and a five-year CAGR of 17.3%. This growth was led by our Hospitals and Healthcare F"", ""Revenue, FY 2025 = 13.7. Revenue, FY 2024 = 11.2. Revenue, FY 2023 = 9.5. Growth%, FY 2025 = 22.4%. Growth%, FY 2024 = 17.8%. Growth%, FY 2023 = 14.4%. EBITDA, FY 2025 = 3.5. EBITDA, FY 2024 = 3.0. EBITDA, FY 2023 = 2.5. Growth%, FY 2025 = 17.9%. Growth%, FY 2024 = 17.6%. Growth%, FY 2023 = 18.5%. E""]",22.4%,Alhabib Medical Group,en,Year-over-year comparison,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,31.4318,
+Q003,How did HMG's total assets change from 2024 to 2025?,"**Reasoning & Calculations**:
+- According to the provided evidence, HMG's total assets for the year 2025 are $23,204,946,364, and for the year 2024, they are $20,557,929,072 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].
+- To calculate the change in total assets from 2024 to 2025, we use the formula for percentage change: `((New - Old) / Old) * 100`.
+- Plugging in the values: `((23,204,946,364 - 20,557,929,072) / 20,557,929,072) * 100`.
+- This results in a percentage change of approximately 12.87%.
+
+**Final Answer**:
+HMG's total assets increased by approximately 12.87% from 2024 to 2025 [Page: 116 | Section: Consolidated statement of financial position As at 31 December 2025].","[""Current assets, 2025 = 5,427.3. Current assets, 2024 = 5,319.4. Current assets, 2023 = 4,137.8. Current assets, 2022 = 4,160.5. Current assets, 2021 = 4,133.4. Non-current assets, 2025 = 17,777.7. Non-current assets, 2024 = 15,238.5. Non-current assets, 2023 = 11,660.2. Non-current assets, 2022 = 8,"", ""Assets, Note = . Assets, 31 December 2025 $ = . Assets, 31 December 2024 $ = . Current assets, Note = . Current assets, 31 December 2025 $ = . Current assets, 31 December 2024 $ = . Cash and cash equivalents, Note = 7. Cash and cash equivalents, 31 December 2025 $ = 2,281,635,206. Cash and cash equi""]",They increased by 13% from SAR 20.56 billion to SAR 23.20 billion.,Alhabib Medical Group,en,Year-over-year comparison,Medium,Alhabib Annual Report 2025,f91d4da10f70335810e5518e8d41764b73a16a511691c568ddcccd509856dfe3,16.0636,
+Q034,What was the year-over-year growth percentage for Corporate financing in 2024?,"**Reasoning & Calculations**:
+- The Corporate Mutajara financing for 2024 is SAR 9,245,266,000 and for 2023 is SAR 7,834,281,000 as per the provided document.
+- To calculate the year-over-year (YoY) growth percentage for Corporate financing, use the formula:  
+  \[
+  \text{YoY Growth Percentage} = \left( \frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \right) \times 100
+  \]
+- Plugging in the values:  
+  \[
+  \text{YoY Growth Percentage} = \left( \frac{9,245,266 - 7,834,281}{7,834,281} \right) \times 100
+  \]
+- Calculate the difference:  
+  \[
+  9,245,266 - 7,834,281 = 1,410,985
+  \]
+- Divide by the old value:  
+  \[
+  \frac{1,410,985}{7,834,281} \approx 0.1801
+  \]
+- Convert to percentage:  
+  \[
+  0.1801 \times 100 \approx 18.01\%
+  \]
+
+**Final Answer**:
+The year-over-year growth percentage for Corporate financing in 2024 was approximately 18.01% [Page: 354 | Section: 23 Net financing and investment income].","[""Financing, 2024 (SAR '000) = . Financing, 2023 (SAR '000) = . Corporate Mutajara, 2024 (SAR '000) = 9,245,266. Corporate Mutajara, 2023 (SAR '000) = 7,834,281. Installment sale, 2024 (SAR '000) = 28,237,720. Installment sale, 2023 (SAR '000) = 23,760,066. Murabaha, 2024 (SAR '000) = 2,296,592. Murab"", ""In FY 2024, our balance sheet recorded a growth of 20.6% YoY. The growth was mainly driven by alrajhi's financing portfolio growing at 16.7% YoY, reaching to SAR 693 Bn. Mortgage has grown 13.8% YoY, and represents almost 38% of our total financing portfolio, as well as 55% of our retail book. Addit""]",31.8%,Al Rajhi Bank,en,Year-over-year comparison,Medium,Al Rajhi Bank AR2024,25351fd0afd73cc5e012ae6913520560073965005eeaf76aa4a74121b74ca83e,16.9021,
+Q050,What were the total liabilities for the Capital Market segment in 2024?,I do not have enough information to answer this based on the provided document.,[],"SAR 11,287,548 thousand",SNB,en,Segment/business-unit analysis,Hard,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,14.0375,
+Q052,What was the basic earnings per share (EPS) for SNB in 2024?,"**Reasoning & Calculations**:
+- The document provides the basic earnings per share (EPS) for SNB in 2024.
+- According to the evidence, the basic EPS for 2024 is explicitly stated as 3.44 SAR.
+
+**Final Answer**:
+- The basic earnings per share (EPS) for SNB in 2024 was 3.44 SAR [Page: 76 | Section: 26 BASIC AND DILUTED EARNINGS PER SHARE].","[""Weighted-Average number of shares outstanding (in thousands), Basic EPS.2024 = 5,944,649. Weighted-Average number of shares outstanding (in thousands), Basic EPS.2023 = 5,947,986. Weighted-Average number of shares outstanding (in thousands), Diluted EPS.2024 = 5,952,973. Weighted-Average number of s""]",SAR 3.44,SNB,en,Financial metric lookup,Easy,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,16.9068,
+Q092,What was stc's Earnings Per Share (EPS) for 2024?,"**Reasoning & Calculations**:
+The Earnings Per Share (EPS) for 2024 is provided directly in the context document. The EPS is broken down into basic and diluted categories for different types of profits. For the net profit attributable to equity holders of the Parent Company, the basic EPS for 2024 is 4.95 Saudi Riyals, and the diluted EPS is 4.94 Saudi Riyals. These figures are explicitly stated in the document.
+
+**Final Answer**:
+The Earnings Per Share (EPS) for stc in 2024 is 4.95 Saudi Riyals (Basic) and 4.94 Saudi Riyals (Diluted) [Page: 140 | Section: 42. EARNINGS PER SHARE].","[""Net profit from continuing operations attributable to equity holders of the Parent Company, 2024 = 10,715,292. Net profit from continuing operations attributable to equity holders of the Parent Company, 2023 = 12,536,335. Net profit from discontinued operations attributable to equity holders of the""]",SAR 4.95,stc,en,Financial metric lookup,Easy,stc Annual Report 2024,89b4aadbc1620ac82410dcfda681b4e7c5c9c037c2fa9c275e55bcb2cd91d51d,28.6014,
+Q053,What was the cash and balances with central banks in 2024 according to the consolidated statement of financial position?,"**Reasoning & Calculations**:
+The document provides the total cash and balances with central banks for the year 2024. According to the evidence, the cash and balances with central banks in 2024 is explicitly stated as 42,119,698. There is no need for additional calculations as the figure is directly provided.
+
+**Final Answer**:
+The cash and balances with central banks in 2024 was 42,119,698. [Page: 41 | Section: 4 CASH AND BALANCES WITH CENTRAL BANKS]","[""Cash in hand, 2024 = 7,512,949. Cash in hand, 2023 = 7,079,884. Balances with SAMA:, 2024 = . Balances with SAMA:, 2023 = . Statutory deposit, 2024 = 34,602,533. Statutory deposit, 2023 = 34,687,418. Money market placements and current accounts, 2024 = 4,216. Money market placements and current acco""]","SAR 53,244,710 thousand",SNB,en,Table interpretation,Medium,SNB Report 2025,eaabe55f17423acffbeb13c6c95fa74da514a3e0098a5ca61354c05a6e3590cf,20.1596,

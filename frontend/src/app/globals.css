@@ -4,7 +4,7 @@
 
 :root {
   --radius: 0.75rem;
-  --background: #f6f8fa;
+  --background: #f1f5f9;
   --foreground: #0f172a;
   --card: rgba(255, 255, 255, 0.86);
   --card-strong: #ffffff;
@@ -276,6 +276,26 @@ html[lang='ar'] .arabic-display {
 
 .section-anchor {
   scroll-margin-top: 7rem;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
+}
+
+.dash-skeleton {
+  background: linear-gradient(90deg,
+    color-mix(in oklab, var(--card-strong) 100%, transparent) 25%,
+    color-mix(in oklab, var(--border) 60%, transparent) 50%,
+    color-mix(in oklab, var(--card-strong) 100%, transparent) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
 }
 
 @media (max-width: 768px) {

@@ -109,6 +109,12 @@ async def upload_report(
         raise HTTPException(status_code=400, detail="Only PDF files are accepted")
 
     file_bytes = await file.read()
+
+    # Magic bytes validation — real PDFs always start with %PDF (hex 25 50 44 46)
+    # Catches malware/executables renamed to .pdf regardless of file extension
+    if not file_bytes[:4] == b'%PDF':
+        raise HTTPException(status_code=400, detail="Invalid file: not a valid PDF document")
+
     doc_hash = _compute_sha256(file_bytes)
 
     # Check if this exact file already exists

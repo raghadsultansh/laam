@@ -1,0 +1,45 @@
+row_id,question,answer,answer_type,derivation,scale,answer_from,req_comparison,table_text,relevant_paragraphs_text,generation_model,generation_status,created_at,retry_count,reasoning_target,derived_answer,used_values,quality_notes,validation_status,validation_issues
+tatqa_012334,Why are the operating results for any quarter not necessarily indicative of results for any subsequent period?,volatility of the industries in which our customers operate,span,,,text,False,"|  |  | Quarter Ended |  |  |
+|  | December 31, 2019 | September 30, 2019 | June 30, 2019 | March 31, 2019 |
+| Sales, net | $  338,268 | $  175,127 | $ 134,810 | $ 140,743 |
+| Gross Profit | $112,295 | $73,491 | $64,126 | $65,740 |
+| Restructuring Expense | $1,418 | $152 | $1,795 | $1,673 |
+| Operating income | $22,202 | $9,390 | $11,005 | $11,791 |
+| Income from continuing operations, net of income taxes | $  10,479 | $  7,256 | $ 23,373 | $ 15,387 |
+| Loss (income) from discontinued operations, net of income taxes | $  (210) | $  375 | $ 8,324 | $ (9) |
+| Net Income | $  10,269 | $  7,631 | $ 31,697 | $ 15,378 |
+| Income from continuing operations attributable to noncontrolling interest | $  5 | $  10 | $ 11 | $ 8 |
+| Net income attributable to Advanced Energy Industries, Inc. | $  10,264 | $  7,621 | $ 31,686 | $ 15,370 |
+| Earnings (Loss) Per Share: |  |  |  |  |
+| Continuing Operations: |  |  |  |  |
+| Basic earnings per share | $  0.27 | $  0.19 | $ 0.61 | $ 0.40 |
+| Diluted earnings per share | $  0.27 | $  0.19 | $ 0.61 | $ 0.40 |
+| Discontinued Operations: |  |  |  |  |
+| Basic loss per share | $  (0.01) | $  0.01 | $ 0.22 | $ — |
+| Diluted loss per share | $  (0.01) | $  0.01 | $ 0.22 | $ — |
+| Net Income: |  |  |  |  |
+| Basic earnings per share | $  0.27 | $  0.20 | $ 0.83 | $ 0.40 |
+| Diluted earnings per share | $  0.27 | $  0.20 | $ 0.82 | $ 0.40 |","The following tables present unaudited quarterly results for each of the eight quarters in the periods ended December 31, 2019 and 2018, in thousands. We believe that all necessary adjustments have been included in the amounts stated below to present fairly such quarterly information. Due to the volatility of the industries in which our customers operate, the operating results for any quarter are not necessarily indicative of results for any subsequent period.",gemini-2.5-flash,success,2026-04-25T23:43:52.675763+00:00,0,"Reasoning & Calculations:
+Values used:
+- volatility of the industries in which our customers operate
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The operating results for any quarter are not necessarily indicative of results for any subsequent period due to the volatility of the industries in which our customers operate.
+<|im_end>",The operating results for any quarter are not necessarily indicative of results for any subsequent period due to the volatility of the industries in which our customers operate.,"[""volatility of the industries in which our customers operate""]",,fail,HARD_FAIL: missing stop token '<|im_end|>'
+tatqa_000181,Where can more details on each shares payment scheme be found?,in the Annual Report on Remuneration 2019 on pages 102 to 132,span,,,text,False,"|  | 2019 | 2018 |
+|  | £m | £m |
+| Performance Share Plan | 5.1 | 4.7 |
+| Employee Share Ownership Plan | 1.1 | 1.0 |
+| Total expense recognised in Income Statement | 6.2 | 5.7 |",Disclosures of the share-based payments offered to employees are set out below. More detail on each scheme is given in the Annual Report on Remuneration 2019 on pages 102 to 132. The charge to the Income Statement in respect of share-based payments is made up as follows:,gemini-2.5-flash,success,2026-04-25T23:50:08.910432+00:00,0,"Reasoning & Calculations:
+Values used:
+- in the Annual Report on Remuneration 2019 on pages 102 to 132
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+More details on each shares payment scheme can be found in the Annual Report on Remuneration 2019 on pages 102 to 132.
+<|im_end|>",in the Annual Report on Remuneration 2019 on pages 102 to 132,"[""in the Annual Report on Remuneration 2019 on pages 102 to 132""]",,fail,CITATION_LEAK: contains 'on page'

@@ -1,0 +1,14 @@
+{
+  "evaluated_at": "2026-05-12 10:19:42",
+  "questions": 100,
+  "answered": 100,
+  "failed": 0,
+  "average_response_seconds": 19.5976,
+  "answer_correctness_score": 0.6697,
+  "answer_relevance_score": 0.8547,
+  "faithfulness_proxy_score": 0.3186,
+  "context_precision_score": 0.7433,
+  "context_recall_score": 0.5219,
+  "overall_score": 0.6096,
+  "approximate_accuracy_percent": 60.96
+}

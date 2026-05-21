@@ -1,0 +1,41 @@
+row_id,question,answer,answer_type,derivation,scale,answer_from,req_comparison,table_text,relevant_paragraphs_text,generation_model,generation_status,created_at,retry_count,reasoning_target,derived_answer,used_values,quality_notes,validation_status,validation_issues
+tatqa_008779,Which years does the table provide information for total assets by reportable segment?,2019 | 2018,multi-span,,,table-text,False,"|  | March 31, |  |
+|  | 2019 | 2018 |
+| Total assets: |  |  |
+| Solid Capacitors | $794,402 | $704,851 |
+| Film and Electrolytic (1) | 219,711 | 240,968 |
+| MSA | 234,419 | 254,193 |
+| Corporate | 69,563 | 22,911 |
+|  | $1,318,095 | $1,222,923 |","The following tables summarize information for operating income (loss), depreciation and amortization, restructuring charges, gain (loss) on write down and disposal of long-lived assets, and capital expenditures by reportable segment for the fiscal years ended 2019, 2018 and 2017 and total assets by reportable segment for the fiscal years ended 2019 and 2018 (amounts in thousands): The following tables summarize information for operating income (loss), depreciation and amortization, restructuring charges, gain (loss) on write down and disposal of long-lived assets, and capital expenditures by reportable segment for the fiscal years ended 2019, 2018 and 2017 and total assets by reportable segment for the fiscal years ended 2019 and 2018 (amounts in thousands):",gemini-2.5-flash,fixed,2026-04-26T06:33:07.753663+00:00,1,"Reasoning & Calculations:
+Values used: 2019, 2018
+Calculation: No numerical calculation required.
+Analysis: No financial analysis required.
+Final Answer: 2019 | 2018<|im_end|>",2019 | 2018,"[""2019"", ""2018""]",Removed the phrase 'in the table' from 'Values used' to fix CITATION_LEAK. Simplified 'Values used' to only list the extracted values. Ensured 'Final Answer' matches 'gold_answer' and 'derived_answer'.,pass,
+tatqa_012647,For which years were the items that have been charged in arriving at profit before tax recorded in?,2019 | 2018,multi-span,,,table-text,False,"|  |  | 2019 | 2018 |
+|  | Notes | $ million | $ million |
+| Employee benefit costs | 8 | 220.5 | 208.9 |
+| Costs of inventories recognised as an expense |  | 81.6 | 79.8 |
+| Write-down of inventories to net realisable value | 19 | 1.6 | 0.1 |
+| Amortisation of intangible assets | 13 | 2.1 | 4.3 |
+| Depreciation of property, plant and equipment | 14 | 14.7 | 16.5 |
+| Depreciation of right-of-use assets | 15 | 7.5 | – |
+| Amortisation of assets recognised from costs to obtain a contract | 21 | 0.5 | 0.6 |
+| Operating leases – minimum lease payments |  | – | 8.5 |
+| Expenses relating to short-term leases and leases of low-value assets | 26 | 0.3 | – |
+| Product development costs |  | 96.5 | 96.9 |
+| Net foreign exchange loss |  | 0.6 | 0.6 |",The following items have been charged in arriving at profit before tax:,gemini-2.5-flash,fixed,2026-04-26T09:49:54.596708+00:00,1,"Reasoning & Calculations:
+The question asks for the years in which the items charged in arriving at profit before tax were recorded. The table displays these items across columns for the years 2019 and 2018.
+
+Values used:
+- 2019
+- 2018
+
+Calculation:
+No numerical calculation required.
+
+Analysis:
+No financial analysis required.
+
+Final Answer:
+The items that have been charged in arriving at profit before tax were recorded in 2019 and 2018.
+<|im_end|>",2019 | 2018,"[""2019"", ""2018""]",Removed the phrase 'in the table' from the 'Values used' section to fix CITATION_LEAK. The phrasing for multi-span is now concise and directly lists the years.,pass,

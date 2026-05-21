@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
-from app.api.v1 import auth, reports, sessions, chat
+from app.api.v1 import auth, reports, sessions, chat, dashboard, admin
 
 app = FastAPI(
     title="LAAM API",
@@ -21,6 +21,8 @@ app.include_router(auth.router, prefix="/api/v1", tags=["auth"])
 app.include_router(reports.router, prefix="/api/v1", tags=["reports"])
 app.include_router(sessions.router, prefix="/api/v1", tags=["sessions"])
 app.include_router(chat.router, prefix="/api/v1", tags=["chat"])
+app.include_router(dashboard.router, prefix="/api/v1", tags=["dashboard"])
+app.include_router(admin.router, prefix="/api/v1", tags=["admin"])
 
 
 @app.get("/health")

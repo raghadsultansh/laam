@@ -1,0 +1,18 @@
+{
+  "evaluated_at": "2026-05-12 06:43:33",
+  "dataset_size": 23,
+  "companies": [
+    "Al Rajhi Bank",
+    "Saudi Aramco"
+  ],
+  "top_k": 5,
+  "bm25_store": "C:\\Users\\rssh1\\Desktop\\GP website\\.claude\\worktrees\\nostalgic-chebyshev-baa26e\\backend\\app\\ai_pipeline\\bm25_store",
+  "precision_at_k": 0.6261,
+  "recall_at_k": 0.7329,
+  "mrr": 0.9275,
+  "avg_retrieval_seconds": 0.0713,
+  "english_precision_at_k": 0.6105,
+  "arabic_precision_at_k": 0.7,
+  "english_mrr": 0.9123,
+  "arabic_mrr": 1.0
+}

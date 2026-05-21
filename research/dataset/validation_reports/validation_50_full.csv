@@ -1,0 +1,51 @@
+row_id,answer_type,validation_status,validation_issues,issue_count,hard_fail_count
+tatqa_008074,arithmetic,pass,,0,0
+tatqa_010338,multi-span,pass,,0,0
+tatqa_011494,multi-span,pass,,0,0
+tatqa_000442,count,pass,,0,0
+tatqa_001589,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'43,698'}",1,0
+tatqa_007809,count,pass,,0,0
+tatqa_003482,span,pass,,0,0
+tatqa_010810,span,pass,,0,0
+tatqa_006659,multi-span,pass,,0,0
+tatqa_000898,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,469'}",1,0
+tatqa_004861,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.6666'}",1,0
+tatqa_008026,arithmetic,pass,,0,0
+tatqa_003349,multi-span,pass,,0,0
+tatqa_010229,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1.0350423', '100'}",1,0
+tatqa_000546,arithmetic,pass,,0,0
+tatqa_002626,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007155,count,pass,,0,0
+tatqa_005207,count,pass,,0,0
+tatqa_003759,multi-span,pass,,0,0
+tatqa_009215,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'7,302.5'}",1,0
+tatqa_007244,count,pass,,0,0
+tatqa_005273,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000916,arithmetic,pass,,0,0
+tatqa_001068,arithmetic,pass,,0,0
+tatqa_005745,span,pass,,0,0
+tatqa_010767,multi-span,pass,,0,0
+tatqa_003105,multi-span,pass,,0,0
+tatqa_004608,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3', '18,925'}",1,0
+tatqa_002783,count,pass,,0,0
+tatqa_001719,span,pass,,0,0
+tatqa_006974,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,832'}",1,0
+tatqa_003632,span,pass,,0,0
+tatqa_007695,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '6', '4.96'}",1,0
+tatqa_012953,multi-span,pass,,0,0
+tatqa_012868,span,pass,,0,0
+tatqa_006685,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010835,count,pass,,0,0
+tatqa_012197,multi-span,pass,,0,0
+tatqa_010856,span,pass,,0,0
+tatqa_008260,count,pass,,0,0
+tatqa_008543,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'172,781.33'}",1,0
+tatqa_010728,span,pass,,0,0
+tatqa_006591,arithmetic,pass,,0,0
+tatqa_001697,count,pass,,0,0
+tatqa_001406,span,pass,,0,0
+tatqa_004717,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11.7241379', '100'}",1,0
+tatqa_004835,count,pass,,0,0
+tatqa_012296,arithmetic,pass,,0,0
+tatqa_000469,span,pass,,0,0
+tatqa_005692,multi-span,pass,,0,0

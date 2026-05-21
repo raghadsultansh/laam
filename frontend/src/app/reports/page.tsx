@@ -649,8 +649,13 @@ export default function ReportsPage() {
       const matchesYear = yearFilter === 'all' || company.reports.some((report) => report.year === yearFilter);
       const matchesQuery =
         normalizedQuery.length === 0 ||
-        company.name[locale].toLowerCase().includes(normalizedQuery) ||
-        company.reports.some((report) => report.title[locale].toLowerCase().includes(normalizedQuery));
+        company.name.en.toLowerCase().includes(normalizedQuery) ||
+        company.name.ar.toLowerCase().includes(normalizedQuery) ||
+        company.reports.some(
+          (report) =>
+            report.title.en.toLowerCase().includes(normalizedQuery) ||
+            report.title.ar.toLowerCase().includes(normalizedQuery)
+        );
 
       return matchesSector && matchesYear && matchesQuery;
     });

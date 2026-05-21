@@ -303,7 +303,7 @@ export function UploadReportCard({ onClose }: { onClose: () => void }) {
               </div>
 
               {validationError ? (
-                <div className="mt-3 flex items-center gap-2 rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700 dark:bg-red-900/50 dark:text-red-100">
+                <div className="mt-3 flex items-center gap-2 rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-800 dark:bg-red-900/50 dark:text-red-200">
                   <AlertCircle className="h-4 w-4 shrink-0" />
                   {validationError}
                 </div>

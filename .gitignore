@@ -28,8 +28,13 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
+# Python venv lib dirs — scoped to avoid catching frontend/src/lib
+backend/lib/
+venv/lib/
+env/lib/
+ENV/lib/
+!frontend/src/lib/
 parts/
 sdist/
 var/

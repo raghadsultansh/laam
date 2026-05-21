@@ -20,7 +20,7 @@ async def get_messages(session_id: str, user: dict = Depends(get_optional_user))
         supabase.table("sessions")
         .select("chat_history, user_id, is_saved")
         .eq("id", session_id)
-        .single()
+        .maybe_single()
         .execute()
     )
     if not result.data:
@@ -48,7 +48,7 @@ async def chat(
         supabase.table("sessions")
         .select("id, user_id, is_saved, chat_history, reports(id, status, file_hash_sha256, qdrant_collection_id)")
         .eq("id", session_id)
-        .single()
+        .maybe_single()
         .execute()
     )
     if not session_result.data:
@@ -66,7 +66,6 @@ async def chat(
     if not doc_hash:
         raise HTTPException(status_code=400, detail="Report has not been indexed yet")
 
-    # Run the pipeline
     result = pipeline.answer_question(body.question, doc_hash=doc_hash)
     answer = result["answer"]
     sources = result["sources"]

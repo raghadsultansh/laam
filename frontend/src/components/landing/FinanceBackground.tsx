@@ -53,8 +53,8 @@ function computeGrid(): GridConfig {
   const cw = vw >= 1536 ? 82 : vw >= 1280 ? 76 : vw >= 1024 ? 70 : vw >= 768 ? 66 : 58;
   const ch = Math.round(cw * 1.44); // guaranteed portrait (e.g. 76×109px)
 
-  // Fill viewport; +1 row so cards always bleed to the bottom edge
-  const cols = Math.max(5, Math.floor((vw - 2 * PAD + GAP) / (cw + GAP)));
+  // Fill viewport; +1 col/row so cards always bleed past both edges
+  const cols = Math.max(5, Math.floor((vw - 2 * PAD + GAP) / (cw + GAP)) + 1);
   const rows = Math.max(6, Math.ceil((vh - 2 * PAD + GAP) / (ch + GAP)) + 1);
 
   return { cols, rows, cardW: cw, cardH: ch };
@@ -227,6 +227,8 @@ export function FinanceBackground() {
 
   // Global mouse listeners. The background lives behind the landing page, but we
   // still track the mouse here because the visible cards do not receive events.
+  // We bail out when the cursor is over .lp-surface (any UI content element) so
+  // the card repulsion effect never fires through glass/solid section surfaces.
   useEffect(() => {
     const onMove = (e: MouseEvent) => {
       mouseRef.current = { x: e.clientX, y: e.clientY };

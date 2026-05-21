@@ -1,0 +1,1178 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Actual RAGAS Evaluation</title><style>body{font-family:Arial,sans-serif;margin:32px;color:#17202a;line-height:1.45}.metric{display:inline-block;margin:8px 12px 8px 0;padding:12px 14px;border:1px solid #d8dee6;border-radius:8px}.metric b{display:block;font-size:22px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{border:1px solid #d8dee6;padding:8px;vertical-align:top}th{background:#f3f6f9}</style></head><body><h1>Actual RAGAS Evaluation Report</h1><p>Generated: 2026-05-12 12:47:36</p><div class='metric'>faithfulness<b>0.4534</b></div><div class='metric'>answer_relevancy<b>0.8011</b></div><div class='metric'>context_precision<b>0.5094</b></div><div class='metric'>context_recall<b>0.46</b></div><div class='metric'>answer_correctness<b>0.3882</b></div><h2>By Report</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>faithfulness</th>
+      <th>answer_relevancy</th>
+      <th>context_precision</th>
+      <th>context_recall</th>
+      <th>answer_correctness</th>
+    </tr>
+    <tr>
+      <th>report</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Al Rajhi Bank AR2024</th>
+      <td>0.5053</td>
+      <td>0.8972</td>
+      <td>0.6403</td>
+      <td>0.60</td>
+      <td>0.4156</td>
+    </tr>
+    <tr>
+      <th>Alhabib Annual Report 2025</th>
+      <td>0.3065</td>
+      <td>0.7471</td>
+      <td>0.3000</td>
+      <td>0.30</td>
+      <td>0.3341</td>
+    </tr>
+    <tr>
+      <th>SNB Report 2025</th>
+      <td>0.3855</td>
+      <td>0.6065</td>
+      <td>0.3250</td>
+      <td>0.25</td>
+      <td>0.3275</td>
+    </tr>
+    <tr>
+      <th>Saudi Aramco Annual Report 2024</th>
+      <td>0.6214</td>
+      <td>0.9021</td>
+      <td>0.7417</td>
+      <td>0.75</td>
+      <td>0.5096</td>
+    </tr>
+    <tr>
+      <th>stc Annual Report 2024</th>
+      <td>0.4481</td>
+      <td>0.8525</td>
+      <td>0.5403</td>
+      <td>0.40</td>
+      <td>0.3543</td>
+    </tr>
+  </tbody>
+</table><h2>Question Scores</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>report</th>
+      <th>difficulty</th>
+      <th>type</th>
+      <th>faithfulness</th>
+      <th>answer_relevancy</th>
+      <th>context_precision</th>
+      <th>context_recall</th>
+      <th>answer_correctness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q002</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.133333</td>
+      <td>0.833152</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.301703</td>
+    </tr>
+    <tr>
+      <td>Q004</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.330514</td>
+    </tr>
+    <tr>
+      <td>Q005</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.037115</td>
+    </tr>
+    <tr>
+      <td>Q006</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.000000</td>
+      <td>0.857745</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.457302</td>
+    </tr>
+    <tr>
+      <td>Q007</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.000000</td>
+      <td>0.951267</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.564143</td>
+    </tr>
+    <tr>
+      <td>Q008</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.142857</td>
+      <td>0.953007</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.536635</td>
+    </tr>
+    <tr>
+      <td>Q009</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.000000</td>
+      <td>0.821812</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.329099</td>
+    </tr>
+    <tr>
+      <td>Q010</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.166667</td>
+      <td>0.826009</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.261237</td>
+    </tr>
+    <tr>
+      <td>Q011</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.166667</td>
+      <td>0.966997</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.273760</td>
+    </tr>
+    <tr>
+      <td>Q012</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>1.000000</td>
+      <td>0.972227</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.348147</td>
+    </tr>
+    <tr>
+      <td>Q013</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.200000</td>
+      <td>0.909809</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.309578</td>
+    </tr>
+    <tr>
+      <td>Q014</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.500000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.031466</td>
+    </tr>
+    <tr>
+      <td>Q015</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Hard</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.500000</td>
+      <td>0.948055</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.492661</td>
+    </tr>
+    <tr>
+      <td>Q016</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.040550</td>
+    </tr>
+    <tr>
+      <td>Q017</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.714286</td>
+      <td>0.936149</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+      <td>0.283270</td>
+    </tr>
+    <tr>
+      <td>Q018</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.000000</td>
+      <td>0.322007</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.428133</td>
+    </tr>
+    <tr>
+      <td>Q019</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Hard</td>
+      <td>Evidence-based summary</td>
+      <td>0.357143</td>
+      <td>0.881282</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.652388</td>
+    </tr>
+    <tr>
+      <td>Q020</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Evidence-based summary</td>
+      <td>0.666667</td>
+      <td>0.915399</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.508450</td>
+    </tr>
+    <tr>
+      <td>Q021</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.833333</td>
+      <td>1.0</td>
+      <td>0.357467</td>
+    </tr>
+    <tr>
+      <td>Q022</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.400000</td>
+      <td>0.991207</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.375147</td>
+    </tr>
+    <tr>
+      <td>Q023</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Financial metric lookup</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.329412</td>
+    </tr>
+    <tr>
+      <td>Q024</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.800000</td>
+      <td>0.981985</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.328396</td>
+    </tr>
+    <tr>
+      <td>Q025</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.000000</td>
+      <td>0.844110</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.633943</td>
+    </tr>
+    <tr>
+      <td>Q026</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.714286</td>
+      <td>0.831971</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.782222</td>
+    </tr>
+    <tr>
+      <td>Q027</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.200000</td>
+      <td>0.907224</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.770054</td>
+    </tr>
+    <tr>
+      <td>Q028</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.888889</td>
+      <td>0.993669</td>
+      <td>0.638889</td>
+      <td>1.0</td>
+      <td>0.241532</td>
+    </tr>
+    <tr>
+      <td>Q029</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.666667</td>
+      <td>0.944965</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.337691</td>
+    </tr>
+    <tr>
+      <td>Q030</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Hard</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.750000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.593402</td>
+    </tr>
+    <tr>
+      <td>Q031</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.714286</td>
+      <td>0.990166</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.265806</td>
+    </tr>
+    <tr>
+      <td>Q032</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Financial metric lookup</td>
+      <td>0.000000</td>
+      <td>0.963206</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.455418</td>
+    </tr>
+    <tr>
+      <td>Q033</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.000000</td>
+      <td>0.947179</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.421193</td>
+    </tr>
+    <tr>
+      <td>Q035</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Calculation or reasoning</td>
+      <td>0.307692</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.199571</td>
+    </tr>
+    <tr>
+      <td>Q036</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Hard</td>
+      <td>Risk and strategy understanding</td>
+      <td>1.000000</td>
+      <td>0.842794</td>
+      <td>0.500000</td>
+      <td>1.0</td>
+      <td>0.383294</td>
+    </tr>
+    <tr>
+      <td>Q037</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Hard</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.200000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.076561</td>
+    </tr>
+    <tr>
+      <td>Q038</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Hard</td>
+      <td>Evidence-based summary</td>
+      <td>1.000000</td>
+      <td>0.902932</td>
+      <td>0.833333</td>
+      <td>1.0</td>
+      <td>0.675215</td>
+    </tr>
+    <tr>
+      <td>Q039</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Evidence-based summary</td>
+      <td>0.583333</td>
+      <td>0.803514</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.540245</td>
+    </tr>
+    <tr>
+      <td>Q040</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.666667</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.325009</td>
+    </tr>
+    <tr>
+      <td>Q041</td>
+      <td>SNB Report 2025</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.375000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.090278</td>
+    </tr>
+    <tr>
+      <td>Q042</td>
+      <td>SNB Report 2025</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.300000</td>
+      <td>0.967543</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.256169</td>
+    </tr>
+    <tr>
+      <td>Q043</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Financial metric lookup</td>
+      <td>0.000000</td>
+      <td>0.994172</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.339527</td>
+    </tr>
+    <tr>
+      <td>Q044</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.070984</td>
+    </tr>
+    <tr>
+      <td>Q045</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.055741</td>
+    </tr>
+    <tr>
+      <td>Q046</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.750000</td>
+      <td>0.888601</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.405582</td>
+    </tr>
+    <tr>
+      <td>Q047</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Calculation or reasoning</td>
+      <td>0.000000</td>
+      <td>0.993338</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.393583</td>
+    </tr>
+    <tr>
+      <td>Q048</td>
+      <td>SNB Report 2025</td>
+      <td>Hard</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.347826</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.845418</td>
+    </tr>
+    <tr>
+      <td>Q049</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.034056</td>
+    </tr>
+    <tr>
+      <td>Q051</td>
+      <td>SNB Report 2025</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.000000</td>
+      <td>0.994312</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.254256</td>
+    </tr>
+    <tr>
+      <td>Q054</td>
+      <td>SNB Report 2025</td>
+      <td>Hard</td>
+      <td>Year-over-year comparison</td>
+      <td>0.142857</td>
+      <td>0.914815</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.589656</td>
+    </tr>
+    <tr>
+      <td>Q055</td>
+      <td>SNB Report 2025</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.166667</td>
+      <td>0.876558</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.087430</td>
+    </tr>
+    <tr>
+      <td>Q056</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.166667</td>
+      <td>0.837544</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.416038</td>
+    </tr>
+    <tr>
+      <td>Q057</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Segment/business-unit analysis</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.082021</td>
+    </tr>
+    <tr>
+      <td>Q058</td>
+      <td>SNB Report 2025</td>
+      <td>Hard</td>
+      <td>Evidence-based summary</td>
+      <td>0.200000</td>
+      <td>0.849911</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.341239</td>
+    </tr>
+    <tr>
+      <td>Q059</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Evidence-based summary</td>
+      <td>0.428571</td>
+      <td>0.964353</td>
+      <td>0.500000</td>
+      <td>1.0</td>
+      <td>0.609458</td>
+    </tr>
+    <tr>
+      <td>Q060</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.833333</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.581136</td>
+    </tr>
+    <tr>
+      <td>Q061</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.625000</td>
+      <td>0.993479</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.633265</td>
+    </tr>
+    <tr>
+      <td>Q062</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.703369</td>
+    </tr>
+    <tr>
+      <td>Q063</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Financial metric lookup</td>
+      <td>0.750000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.388589</td>
+    </tr>
+    <tr>
+      <td>Q064</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>1.000000</td>
+      <td>0.969685</td>
+      <td>0.500000</td>
+      <td>1.0</td>
+      <td>0.747175</td>
+    </tr>
+    <tr>
+      <td>Q065</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.857143</td>
+      <td>0.765209</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.299692</td>
+    </tr>
+    <tr>
+      <td>Q066</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.400000</td>
+      <td>0.904368</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.519542</td>
+    </tr>
+    <tr>
+      <td>Q067</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>1.000000</td>
+      <td>0.986608</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.280944</td>
+    </tr>
+    <tr>
+      <td>Q068</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.857143</td>
+      <td>0.971703</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.318540</td>
+    </tr>
+    <tr>
+      <td>Q069</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.225806</td>
+      <td>0.968716</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.360480</td>
+    </tr>
+    <tr>
+      <td>Q070</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.400000</td>
+      <td>0.955192</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.550798</td>
+    </tr>
+    <tr>
+      <td>Q071</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.666667</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.636841</td>
+    </tr>
+    <tr>
+      <td>Q072</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Financial metric lookup</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.737491</td>
+    </tr>
+    <tr>
+      <td>Q073</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.500000</td>
+      <td>0.880640</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.348868</td>
+    </tr>
+    <tr>
+      <td>Q074</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.750000</td>
+      <td>0.907989</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.220465</td>
+    </tr>
+    <tr>
+      <td>Q075</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.375000</td>
+      <td>0.869578</td>
+      <td>0.500000</td>
+      <td>1.0</td>
+      <td>0.275070</td>
+    </tr>
+    <tr>
+      <td>Q076</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.700000</td>
+      <td>0.980780</td>
+      <td>0.833333</td>
+      <td>1.0</td>
+      <td>0.785239</td>
+    </tr>
+    <tr>
+      <td>Q077</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.000000</td>
+      <td>0.965658</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.351113</td>
+    </tr>
+    <tr>
+      <td>Q078</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Evidence-based summary</td>
+      <td>0.833333</td>
+      <td>0.957658</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.507407</td>
+    </tr>
+    <tr>
+      <td>Q079</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Evidence-based summary</td>
+      <td>0.800000</td>
+      <td>0.990648</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.672810</td>
+    </tr>
+    <tr>
+      <td>Q080</td>
+      <td>Saudi Aramco Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.687500</td>
+      <td>0.974034</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.853645</td>
+    </tr>
+    <tr>
+      <td>Q081</td>
+      <td>stc Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.659339</td>
+    </tr>
+    <tr>
+      <td>Q082</td>
+      <td>stc Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.805556</td>
+      <td>1.0</td>
+      <td>0.316465</td>
+    </tr>
+    <tr>
+      <td>Q083</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Financial metric lookup</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.104028</td>
+    </tr>
+    <tr>
+      <td>Q084</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.272172</td>
+    </tr>
+    <tr>
+      <td>Q085</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>1.000000</td>
+      <td>0.919489</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.585471</td>
+    </tr>
+    <tr>
+      <td>Q086</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.800000</td>
+      <td>0.939441</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.519841</td>
+    </tr>
+    <tr>
+      <td>Q087</td>
+      <td>stc Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.666667</td>
+      <td>0.891290</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.091298</td>
+    </tr>
+    <tr>
+      <td>Q088</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.000000</td>
+      <td>0.981789</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.511992</td>
+    </tr>
+    <tr>
+      <td>Q089</td>
+      <td>stc Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.285714</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.476983</td>
+    </tr>
+    <tr>
+      <td>Q090</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Segment/business-unit analysis</td>
+      <td>1.000000</td>
+      <td>0.986194</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.597784</td>
+    </tr>
+    <tr>
+      <td>Q091</td>
+      <td>stc Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Direct factual retrieval</td>
+      <td>1.000000</td>
+      <td>0.811868</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.330440</td>
+    </tr>
+    <tr>
+      <td>Q093</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.000000</td>
+      <td>0.926376</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.355377</td>
+    </tr>
+    <tr>
+      <td>Q094</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.000000</td>
+      <td>0.927622</td>
+      <td>1.000000</td>
+      <td>0.0</td>
+      <td>0.380944</td>
+    </tr>
+    <tr>
+      <td>Q095</td>
+      <td>stc Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Calculation or reasoning</td>
+      <td>0.300000</td>
+      <td>0.896773</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.190408</td>
+    </tr>
+    <tr>
+      <td>Q096</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.909091</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.108275</td>
+    </tr>
+    <tr>
+      <td>Q097</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.333333</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.420711</td>
+    </tr>
+    <tr>
+      <td>Q098</td>
+      <td>stc Annual Report 2024</td>
+      <td>Hard</td>
+      <td>Evidence-based summary</td>
+      <td>0.166667</td>
+      <td>0.975293</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.124326</td>
+    </tr>
+    <tr>
+      <td>Q099</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Evidence-based summary</td>
+      <td>0.000000</td>
+      <td>0.857159</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.591851</td>
+    </tr>
+    <tr>
+      <td>Q100</td>
+      <td>stc Annual Report 2024</td>
+      <td>Medium</td>
+      <td>Risk and strategy understanding</td>
+      <td>0.500000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.026189</td>
+    </tr>
+    <tr>
+      <td>Q001</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.333333</td>
+      <td>0.929224</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+      <td>0.238737</td>
+    </tr>
+    <tr>
+      <td>Q003</td>
+      <td>Alhabib Annual Report 2025</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.250000</td>
+      <td>0.918376</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.257436</td>
+    </tr>
+    <tr>
+      <td>Q034</td>
+      <td>Al Rajhi Bank AR2024</td>
+      <td>Medium</td>
+      <td>Year-over-year comparison</td>
+      <td>0.214286</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.220117</td>
+    </tr>
+    <tr>
+      <td>Q050</td>
+      <td>SNB Report 2025</td>
+      <td>Hard</td>
+      <td>Segment/business-unit analysis</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.054225</td>
+    </tr>
+    <tr>
+      <td>Q052</td>
+      <td>SNB Report 2025</td>
+      <td>Easy</td>
+      <td>Financial metric lookup</td>
+      <td>0.000000</td>
+      <td>0.993044</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.711772</td>
+    </tr>
+    <tr>
+      <td>Q092</td>
+      <td>stc Annual Report 2024</td>
+      <td>Easy</td>
+      <td>Financial metric lookup</td>
+      <td>0.000000</td>
+      <td>0.937470</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.422167</td>
+    </tr>
+    <tr>
+      <td>Q053</td>
+      <td>SNB Report 2025</td>
+      <td>Medium</td>
+      <td>Table interpretation</td>
+      <td>0.000000</td>
+      <td>0.856367</td>
+      <td>0.000000</td>
+      <td>0.0</td>
+      <td>0.332003</td>
+    </tr>
+  </tbody>
+</table></body></html>

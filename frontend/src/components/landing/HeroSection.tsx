@@ -59,7 +59,7 @@ export function HeroSection() {
 
   const panelBg = isDark
     ? 'linear-gradient(145deg, #0e1f32 0%, #091725 45%, #050f1c 100%)'
-    : 'linear-gradient(135deg, #f4f1ea 0%, #ede9e1 55%, #e7e3d9 100%)';
+    : 'linear-gradient(135deg, #f6f6f6 0%, #eaf4f2 55%, #e7e3d9 100%)';
 
   const panelBorder = isDark ? '1px solid rgba(255,255,255,0.07)' : '1px solid rgba(0,0,0,0.08)';
   const panelShadow = isDark
@@ -75,7 +75,7 @@ export function HeroSection() {
 
   // Text side of the hero. Copy comes from site-copy.ts.
   const textSection = (
-    <div className={`flex flex-col justify-center px-8 py-10 md:px-12 md:py-16 ${isArabic ? 'text-right' : 'text-left'}`}>
+    <div className={`flex flex-col justify-center px-5 py-8 sm:px-8 sm:py-10 md:px-12 md:py-16 ${isArabic ? 'text-right' : 'text-left'}`}>
       <span className="text-sm font-semibold" style={{ color: 'var(--brand)' }}>
         {copy.superTitle}
       </span>
@@ -87,7 +87,7 @@ export function HeroSection() {
         {copy.title}
       </h2>
 
-      <p className={isArabic ? 'mt-5 text-base leading-9' : 'mt-4 text-lg leading-8'} style={{ color: bodyColor }}>
+      <p className="mt-4 text-base leading-8" style={{ color: bodyColor }}>
         {copy.description}
       </p>
 
@@ -101,14 +101,16 @@ export function HeroSection() {
         </Link>
         <Link
           href={primaryHref}
+          dir="ltr"
           className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-white transition hover:opacity-90"
           style={{
             background: 'linear-gradient(135deg, #18a078 0%, #12705a 100%)',
             boxShadow: '0 0 24px rgba(18,112,90,0.38)',
           }}
         >
+          {isArabic && <ArrowRight className="h-4 w-4 rotate-180" />}
           {copy.primaryCta}
-          <ArrowRight className={`h-4 w-4 ${isArabic ? 'rotate-180' : ''}`} />
+          {!isArabic && <ArrowRight className="h-4 w-4" />}
         </Link>
       </div>
     </div>
@@ -117,7 +119,7 @@ export function HeroSection() {
   // Animation side. The glow is on the full panel so it does not get clipped.
   const animationSection = (
     <div
-      className="relative flex min-h-[360px] cursor-pointer items-center justify-center md:min-h-[460px]"
+      className="relative flex min-h-[220px] cursor-pointer items-center justify-center sm:min-h-[300px] md:min-h-[460px]"
       onMouseEnter={() => animRef.current?.replay()}
     >
       <div className="relative z-10">
@@ -127,7 +129,7 @@ export function HeroSection() {
   );
 
   return (
-    <section id="hero" ref={sectionRef} className="section-anchor px-4 pb-10 pt-6 md:px-6 md:pb-14 md:pt-8">
+    <section id="hero" ref={sectionRef} className="section-anchor px-4 pb-20 pt-6 md:px-6 md:pb-28 md:pt-8">
       <div className="mx-auto max-w-[1440px]">
         <div
           className="relative overflow-hidden rounded-[2.2rem]"

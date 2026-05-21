@@ -1,0 +1,270 @@
+<!doctype html><html><head><meta charset='utf-8'><title>RAG Evaluation Report</title><style>body{font-family:Arial,sans-serif;margin:32px;color:#17202a;line-height:1.45}h1,h2{margin-bottom:8px}.metric{display:inline-block;margin:8px 12px 8px 0;padding:12px 14px;border:1px solid #d8dee6;border-radius:8px}.metric b{display:block;font-size:22px}table{border-collapse:collapse;width:100%;font-size:13px;margin-top:16px}th,td{border:1px solid #d8dee6;padding:8px;vertical-align:top}th{background:#f3f6f9;text-align:left}code{background:#f3f6f9;padding:2px 4px;border-radius:4px}</style></head><body><h1>RAG Evaluation Report</h1><p>Generated: 2026-05-12 06:43:33</p><h2>Summary</h2><div class='metric'>Precision@k<b>0.6261</b></div><div class='metric'>Recall@k<b>0.7329</b></div><div class='metric'>MRR<b>0.9275</b></div><div class='metric'>Avg retrieval seconds<b>0.0713</b></div><p>Dataset: 23 questions across Al Rajhi Bank, Saudi Aramco. BM25 cache: <code>C:\Users\rssh1\Desktop\GP website\.claude\worktrees\nostalgic-chebyshev-baa26e\backend\app\ai_pipeline\bm25_store</code></p><h2>Question-Level Results</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>company</th>
+      <th>language</th>
+      <th>type</th>
+      <th>question</th>
+      <th>precision_at_k</th>
+      <th>recall_at_k</th>
+      <th>reciprocal_rank</th>
+      <th>top_pages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RJ-001</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>factual</td>
+      <td>What was Al Rajhi Bank's net income in 2024?</td>
+      <td>1.0</td>
+      <td>0.1724</td>
+      <td>1.0000</td>
+      <td>285; 284; 19; 105; 21</td>
+    </tr>
+    <tr>
+      <td>RJ-002</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>risk</td>
+      <td>What credit risk figure was reported for gross financing and advances in 2024?</td>
+      <td>0.0</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>50; 277; 304; 49; 284</td>
+    </tr>
+    <tr>
+      <td>RJ-003</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>risk</td>
+      <td>What was the gross investment amount in debt instruments subject to ECL in 2024?</td>
+      <td>0.4</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>307; 300; 288; 349; 33</td>
+    </tr>
+    <tr>
+      <td>RJ-004</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>policy</td>
+      <td>How much net income must be transferred to the statutory reserve?</td>
+      <td>0.8</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>348; 286; 288; 250; 290</td>
+    </tr>
+    <tr>
+      <td>RJ-005</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>risk</td>
+      <td>What risk types are included in Al Rajhi's Basel IV Pillar 1 calculation?</td>
+      <td>1.0</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>366; 402; 326; 243; 261</td>
+    </tr>
+    <tr>
+      <td>RJ-006</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>risk</td>
+      <td>What collateral types does Al Rajhi mention for reducing credit risk?</td>
+      <td>1.0</td>
+      <td>0.3125</td>
+      <td>1.0000</td>
+      <td>307; 377; 369; 368; 307</td>
+    </tr>
+    <tr>
+      <td>RJ-007</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>risk</td>
+      <td>What acceptable collateral types are listed for lending?</td>
+      <td>0.2</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>377; 307; 307; 369; 21</td>
+    </tr>
+    <tr>
+      <td>RJ-008</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>accounting</td>
+      <td>What are Stage 1, Stage 2, and Stage 3 financial instruments?</td>
+      <td>1.0</td>
+      <td>0.1923</td>
+      <td>1.0000</td>
+      <td>304; 305; 370; 304; 370</td>
+    </tr>
+    <tr>
+      <td>RJ-009</td>
+      <td>Al Rajhi Bank</td>
+      <td>en</td>
+      <td>descriptive</td>
+      <td>What forward-looking factors are used in Al Rajhi's ECL assessment?</td>
+      <td>0.2</td>
+      <td>1.0000</td>
+      <td>0.3333</td>
+      <td>372; 372; 100; 398; 296</td>
+    </tr>
+    <tr>
+      <td>RJ-010</td>
+      <td>Al Rajhi Bank</td>
+      <td>ar</td>
+      <td>factual</td>
+      <td>ما هو صافي دخل مصرف الراجحي في عام 2024؟</td>
+      <td>1.0</td>
+      <td>0.1724</td>
+      <td>1.0000</td>
+      <td>19; 284; 285; 16; 21</td>
+    </tr>
+    <tr>
+      <td>RJ-011</td>
+      <td>Al Rajhi Bank</td>
+      <td>ar</td>
+      <td>risk</td>
+      <td>ما أنواع المخاطر المستخدمة في حساب بازل 4 للركيزة الأولى؟</td>
+      <td>1.0</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>366; 402; 243; 261; 326</td>
+    </tr>
+    <tr>
+      <td>AR-001</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>factual</td>
+      <td>What was Aramco's net income in 2024?</td>
+      <td>0.4</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>10; 34; 169; 40; 43</td>
+    </tr>
+    <tr>
+      <td>AR-002</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>strategy</td>
+      <td>What is Aramco's vision?</td>
+      <td>1.0</td>
+      <td>0.7143</td>
+      <td>1.0000</td>
+      <td>4; 24; 10; 24; 4</td>
+    </tr>
+    <tr>
+      <td>AR-003</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>factual</td>
+      <td>How many hydrocarbon discoveries did Aramco announce in 2024 and what were they?</td>
+      <td>0.4</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>12; 51; 51; 26; 50</td>
+    </tr>
+    <tr>
+      <td>AR-004</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>factual</td>
+      <td>What crude oil maximum sustainable capacity did the Government direct Aramco to maintain?</td>
+      <td>1.0</td>
+      <td>0.8333</td>
+      <td>1.0000</td>
+      <td>26; 46; 12; 151; 46</td>
+    </tr>
+    <tr>
+      <td>AR-005</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>descriptive</td>
+      <td>How does Aramco use AI in operations?</td>
+      <td>0.2</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>13; 11; 24; 66; 28</td>
+    </tr>
+    <tr>
+      <td>AR-006</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>descriptive</td>
+      <td>What activities across the energy value chain does Aramco perform?</td>
+      <td>1.0</td>
+      <td>0.0758</td>
+      <td>1.0000</td>
+      <td>20; 52; 76; 58; 237</td>
+    </tr>
+    <tr>
+      <td>AR-007</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>strategy</td>
+      <td>Why are downstream investments important for Aramco?</td>
+      <td>0.6</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>20; 52; 57; 52; 136</td>
+    </tr>
+    <tr>
+      <td>AR-008</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>comparative</td>
+      <td>What drove oil demand growth in 2024 according to Aramco?</td>
+      <td>1.0</td>
+      <td>0.3846</td>
+      <td>1.0000</td>
+      <td>22; 54; 230; 27; 237</td>
+    </tr>
+    <tr>
+      <td>AR-009</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>factual</td>
+      <td>What was global petrochemical feedstock demand for hydrocarbon liquids in 2024?</td>
+      <td>0.2</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>22; 22; 22; 59; 192</td>
+    </tr>
+    <tr>
+      <td>AR-010</td>
+      <td>Saudi Aramco</td>
+      <td>en</td>
+      <td>factual</td>
+      <td>What was transport fuels hydrocarbon liquids demand in 2024?</td>
+      <td>0.2</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>22; 22; 22; 140; 59</td>
+    </tr>
+    <tr>
+      <td>AR-011</td>
+      <td>Saudi Aramco</td>
+      <td>ar</td>
+      <td>factual</td>
+      <td>ما هو صافي دخل أرامكو في عام 2024؟</td>
+      <td>0.4</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>10; 34; 40; 43; 166</td>
+    </tr>
+    <tr>
+      <td>AR-012</td>
+      <td>Saudi Aramco</td>
+      <td>ar</td>
+      <td>factual</td>
+      <td>كم عدد الاكتشافات الهيدروكربونية التي أعلنتها أرامكو في 2024؟</td>
+      <td>0.4</td>
+      <td>1.0000</td>
+      <td>1.0000</td>
+      <td>12; 51; 51; 50; 12</td>
+    </tr>
+  </tbody>
+</table></body></html>

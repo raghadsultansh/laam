@@ -3,6 +3,7 @@ Module for parsing PDF annual reports using Docling.
 Preserves document structure, tables, and multi-column layouts.
 """
 import concurrent.futures
+import time
 from pathlib import Path
 import pypdfium2 as pdfium
 
@@ -52,6 +53,7 @@ class AnnualReportParser:
         pdf.close()
         
         print(f"[*] Found {total_pages} pages. Processing in batches of {self.batch_size}...")
+        total_start = time.perf_counter()
         
         batches = []
         for start_page in range(1, total_pages + 1, self.batch_size):
@@ -92,12 +94,8 @@ class AnnualReportParser:
         print("[*] Merging all batches into a single document object...")
         # Use the official DoclingDocument.concatenate API to stitch things together
         final_doc = DoclingDocument.concatenate(parsed_docs)
-        print("[+] Merged successfully! Metadata and ordering preserved.")
-        
-        # Export to JSON for inspection
-        output_path = "extracted_docling.json"
-        with open(output_path, "w", encoding="utf-8") as f:
-            f.write(final_doc.model_dump_json(indent=2))
-        print(f"[+] Docling extraction saved to {output_path}")
-        
+
+        elapsed = time.perf_counter() - total_start
+        print(f"[+] Merged successfully! {total_pages} pages parsed in {elapsed:.1f}s ({elapsed/total_pages:.2f}s/page)")
+
         return final_doc

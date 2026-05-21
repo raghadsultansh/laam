@@ -53,6 +53,19 @@ export function QuestionInput({
             setValue(event.target.value);
             resizeTextarea();
           }}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' && !event.shiftKey) {
+              event.preventDefault();
+              const trimmed = value.trim();
+              if (trimmed && !disabled) {
+                onSubmit?.(trimmed);
+                setValue('');
+                requestAnimationFrame(() => {
+                  if (textareaRef.current) textareaRef.current.style.height = 'auto';
+                });
+              }
+            }
+          }}
           placeholder={
             isArabic
               ? 'اكتب سؤالك هنا حول التقرير أو قارن بين التقارير المرفقة...'

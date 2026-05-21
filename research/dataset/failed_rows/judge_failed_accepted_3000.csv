@@ -1,0 +1,23 @@
+row_id,question,answer,answer_type,derivation,scale,answer_from,req_comparison,table_text,relevant_paragraphs_text,generation_model,generation_status,created_at,retry_count,reasoning_target,derived_answer,used_values,quality_notes,validation_status,validation_issues,fix_instruction
+tatqa_000935,What was the change in the expense for share-based payment for  Stefan Ries  in 2019 from 2018?,1874,arithmetic," 2,646 - 772.0 ",thousand,table,False,"| € thousands | 2019 | 2018 |
+| Christian Klein (Co-CEO from 10/10/2019) | 1,925 | 442.2 |
+| Jennifer Morgan (Co-CEO from 10/10/2019) | 2,894 | 796.1 |
+| Robert Enslin (until 4/5/2019) | 3,480 | 727.0 |
+| Adaire Fox-Martin | 2,667 | 796.1 |
+| Michael Kleinemeier | 3,253 | 914.2 |
+| Bernd Leukert (until 3/31/2019) | 8,606 | 775.2 |
+| Bill McDermott (CEO until 10/10/2019, Executive Board member until 11/15/2019) | 14,689 | 2,155.8 |
+| Luka Mucic | 3,391 | 675.8 |
+| Jürgen Müller (from 1/1/2019) | 768 | - |
+| Stefan Ries | 2,646 | 772.0 |
+| Thomas Saueressig (from 11/1/2019) | 128 | - |
+| Total | 44,446.5 | 8,054.4 |","Total Expense for Share-Based Payment
+Total expense for the share-based payment plans of Executive Board members was determined in accordance with IFRS 2 (Share- Based Payments) and consists exclusively of obligations arising from Executive Board activities.",gemini-2.5-flash,fixed,2026-04-26T05:20:06.131763+00:00,1,"Reasoning & Calculations:
+Values used:
+- Expense for share-based payment for Stefan Ries in 2019: 2,646 thousand
+- Expense for share-based payment for Stefan Ries in 2018: 772.0 thousand
+Calculation:
+2,646 - 772.0 = 1874
+Analysis:
+The expense for share-based payment for Stefan Ries in 2019 was 2,646 thousand, and in 2018 it was 772.0 thousand. The change in expense is 1874 thousand.
+<|im_end|>",1874,"[""2,646"", ""772.0""]","Corrected the Calculation result format to '1874' (without comma) to match the gold answer. Reworded the Analysis to be a descriptive 2-sentence explanation, including the values used and the computed change, without explaining causes. The 'derived_answer' now directly matches the 'gold_answer' value '1874'.",fail,HARD_FAIL: missing 'Final Answer:' section,"Correct the arithmetic: 2,646 - 772.0 = 1,874. Update the Analysis and Final Answer to use 1,874 instead of 1,874 to match the gold answer value of 1874."

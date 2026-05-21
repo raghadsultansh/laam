@@ -1,0 +1,1 @@
+row_id,question,answer,answer_type,derivation,scale,table_text,relevant_paragraphs_text,reasoning_target,generation_model,generation_status,validation_status,validation_issues,retry_count,created_at,used_values,derived_answer,quality_notes

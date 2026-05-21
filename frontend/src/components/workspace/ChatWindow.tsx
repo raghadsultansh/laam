@@ -24,10 +24,12 @@ const defaultPrompts = {
 
 export function ChatWindow({
   sessionId,
+  reportLabel,
   onNewSources,
   onSourceClick,
 }: {
   sessionId: string;
+  reportLabel?: string;
   onNewSources?: (sources: Source[]) => void;
   onSourceClick?: (sources: Source[], index: number) => void;
 }) {
@@ -89,10 +91,15 @@ export function ChatWindow({
             <Loader2 className="h-6 w-6 animate-spin text-[var(--brand)]" />
           </div>
         ) : messages.length === 0 ? (
-          <div className="flex h-full items-center justify-center">
-            <p className="text-sm text-[var(--muted-foreground)]">
-              {isArabic ? 'لا توجد رسائل بعد. ابدأ بطرح سؤال.' : 'No messages yet. Ask your first question.'}
-            </p>
+          <div className="flex h-full flex-col justify-center gap-4 px-1 py-4">
+            <MessageBubble
+              role="assistant"
+              message={
+                isArabic
+                  ? `مرحبًا! أنا لامّ مساعدك لتحليل التقارير المالية${reportLabel ? ` لقد قمت بتحميل "${reportLabel}".` : '.'} يمكنك سؤالي عن الأداء المالي، الإيرادات، المخاطر، أو أي تفصيل آخر وارد في التقرير.`
+                  : `Hello! I'm LAAM, your financial report assistant.${reportLabel ? ` You've loaded "${reportLabel}".` : ''} Ask me anything about the financial performance, revenue, risks, or any detail from the report.`
+              }
+            />
           </div>
         ) : (
           messages.map((msg, i) => (

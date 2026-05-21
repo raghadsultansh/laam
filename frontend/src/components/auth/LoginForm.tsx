@@ -132,7 +132,7 @@ export function LoginForm() {
         </div>
 
         {error ? (
-          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700 dark:bg-red-900/50 dark:text-red-100">
+          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-800 dark:bg-red-900/50 dark:text-red-200">
             {error}
           </p>
         ) : null}

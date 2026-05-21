@@ -1,0 +1,29 @@
+row_id,question,answer,answer_type,derivation,scale,answer_from,req_comparison,table_text,relevant_paragraphs_text,generation_model,generation_status,created_at,retry_count,reasoning_target,derived_answer,used_values,quality_notes,validation_status,validation_issues
+tatqa_006659,"What years does the table provide information for the computation of basic and diluted earnings per share is as follows (in millions, except per share?",2019 | 2018 | 2017,multi-span,,,table-text,False,"|  |  | Year ended December 31, |  |
+|  | 2019 | 2018 | 2017 |
+| Basic: |  |  |  |
+| Net earnings attributable to Black Knight | $108.8 | $168.5 | $182.3 |
+| Shares used for basic net earnings per share: |  |  |  |
+| Weighted average shares of common stock outstanding | 147.7 | 147.6 | 88.7 |
+| Basic net earnings per share | $0.74 | $1.14 | $2.06 |
+| Diluted: |  |  |  |
+| Earnings before income taxes and equity in losses of unconsolidated affiliates |  |  | $192.4 |
+| Income tax benefit excluding the effect of noncontrolling interests |  |  | (32.2) |
+| Net earnings |  |  | $224.6 |
+| Net earnings attributable to Black Knight | $108.8 | $168.5 |  |
+| Shares used for diluted net earnings per share: |  |  |  |
+| Weighted average shares of common stock outstanding | 147.7 | 147.6 | 88.7 |
+| Dilutive effect of unvested restricted shares of common |  |  |  |
+| stock | 0.9 | 0.6 | 0.6 |
+| Weighted average shares of BKFS Class B common stock outstanding | — | — | 63.1 |
+| Weighted average shares of common stock, diluted | 148.6 | 148.2 | 152.4 |
+| Diluted net earnings per share | $0.73 | $1.14 | $1.47 |","The computation of basic and diluted earnings per share is as follows (in millions, except per share amounts):",gemini-2.5-flash,fixed,2026-04-25T22:34:38.041987+00:00,1,"Reasoning & Calculations:
+Values used:
+- Years: 2019, 2018, 2017
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The information for the computation of basic and diluted earnings per share is provided for the years 2019, 2018, and 2017.
+<|im_end|>",2019 | 2018 | 2017,"[""2019"", ""2018"", ""2017""]",Removed 'in the table' from 'Values used' and rephrased 'Final Answer' to avoid direct reference to 'table' to fix CITATION_LEAK. The gold answer remains unchanged. The analysis section for this non-arithmetic type is correctly set to 'No financial analysis required.'.,pass,

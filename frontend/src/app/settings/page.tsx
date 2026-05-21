@@ -89,7 +89,7 @@ export default function SettingsPage() {
 
   const panelBg = isDark
     ? 'linear-gradient(145deg, #0e1f32 0%, #091725 45%, #050f1c 100%)'
-    : 'linear-gradient(135deg, #f4f1ea 0%, #ede9e1 55%, #e7e3d9 100%)';
+    : 'linear-gradient(135deg, #f1f5f9 0%, #e8eef4 55%, #e2e8f0 100%)';
   const titleColor  = isDark ? 'rgba(255,255,255,0.92)' : 'rgba(15,23,42,0.90)';
   const mutedColor  = isDark ? 'rgba(255,255,255,0.42)' : 'rgba(15,23,42,0.46)';
   const statColor   = isDark ? 'rgba(255,255,255,0.86)' : 'rgba(15,23,42,0.86)';
@@ -427,7 +427,7 @@ export default function SettingsPage() {
 
               <button
                 onClick={handleLogout}
-                className="flex w-full items-center gap-3 rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700 shadow-[var(--shadow-sm)] transition hover:bg-red-100 dark:bg-red-900/50 dark:text-red-100 dark:hover:bg-red-900/70"
+                className="flex w-full items-center gap-3 rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-800 shadow-[var(--shadow-sm)] transition hover:bg-red-100 dark:bg-red-900/50 dark:text-red-200 dark:hover:bg-red-900/70"
               >
                 <LogOut className="h-4 w-4" />
                 {copy.logout}

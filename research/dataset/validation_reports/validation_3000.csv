@@ -1,0 +1,3001 @@
+row_id,answer_type,validation_status,validation_issues,issue_count,hard_fail_count
+tatqa_001009,span,pass,,0,0
+tatqa_003624,arithmetic,pass,,0,0
+tatqa_005693,span,pass,,0,0
+tatqa_003612,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '23.01'}",1,0
+tatqa_005606,span,pass,,0,0
+tatqa_008165,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011560,multi-span,pass,,0,0
+tatqa_008035,span,pass,,0,0
+tatqa_008633,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'87'},1,0
+tatqa_013078,span,pass,,0,0
+tatqa_000818,span,pass,,0,0
+tatqa_008544,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '6,702'}",1,0
+tatqa_012164,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '76,537'}",1,0
+tatqa_001208,span,pass,,0,0
+tatqa_012684,span,pass,,0,0
+tatqa_012019,arithmetic,pass,,0,0
+tatqa_010705,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010837,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004202,span,pass,,0,0
+tatqa_012784,span,pass,,0,0
+tatqa_005184,arithmetic,pass,,0,0
+tatqa_003743,arithmetic,pass,,0,0
+tatqa_007940,arithmetic,pass,,0,0
+tatqa_010797,span,pass,,0,0
+tatqa_002048,multi-span,pass,,0,0
+tatqa_003697,span,pass,,0,0
+tatqa_005056,span,pass,,0,0
+tatqa_000532,arithmetic,pass,,0,0
+tatqa_007719,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,577'}",1,0
+tatqa_008513,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'166,405'}",1,0
+tatqa_010926,arithmetic,pass,,0,0
+tatqa_000452,multi-span,pass,,0,0
+tatqa_001733,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'48'},1,0
+tatqa_009908,span,pass,,0,0
+tatqa_011186,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001744,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,952,433.33'}",1,0
+tatqa_001412,span,pass,,0,0
+tatqa_008586,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '18.36'}",1,0
+tatqa_007088,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003156,count,pass,,0,0
+tatqa_010186,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'403'},1,0
+tatqa_012338,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '14.68'}",1,0
+tatqa_010204,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'19,237.5'}",1,0
+tatqa_008261,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '235.5'}",1,0
+tatqa_011254,multi-span,pass,,0,0
+tatqa_010814,multi-span,pass,,0,0
+tatqa_004516,span,pass,,0,0
+tatqa_002244,arithmetic,pass,,0,0
+tatqa_002864,span,pass,,0,0
+tatqa_009998,multi-span,pass,,0,0
+tatqa_006997,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'25,576'}",1,0
+tatqa_011973,span,pass,,0,0
+tatqa_008068,arithmetic,pass,,0,0
+tatqa_000105,span,pass,,0,0
+tatqa_005317,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '81.71'}",1,0
+tatqa_006272,span,pass,,0,0
+tatqa_008017,multi-span,pass,,0,0
+tatqa_008854,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'610,563'}",1,0
+tatqa_001382,span,pass,,0,0
+tatqa_010921,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'52.6'},1,0
+tatqa_012326,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '9.7453'}",1,0
+tatqa_010842,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,989.5'}",1,0
+tatqa_000810,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005820,arithmetic,pass,,0,0
+tatqa_004711,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'7,957.9'}",1,0
+tatqa_000052,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2.99'}",1,0
+tatqa_012794,count,pass,,0,0
+tatqa_005720,multi-span,pass,,0,0
+tatqa_011009,multi-span,pass,,0,0
+tatqa_003904,arithmetic,pass,,0,0
+tatqa_012605,multi-span,pass,,0,0
+tatqa_001922,span,pass,,0,0
+tatqa_011407,span,pass,,0,0
+tatqa_004147,span,pass,,0,0
+tatqa_001206,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001864,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005487,span,pass,,0,0
+tatqa_004364,span,pass,,0,0
+tatqa_005726,span,pass,,0,0
+tatqa_009063,span,pass,,0,0
+tatqa_011933,span,pass,,0,0
+tatqa_002733,span,pass,,0,0
+tatqa_007563,arithmetic,pass,,0,0
+tatqa_002874,span,pass,,0,0
+tatqa_001563,span,pass,,0,0
+tatqa_003282,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'839.1'},1,0
+tatqa_004911,span,pass,,0,0
+tatqa_012184,multi-span,pass,,0,0
+tatqa_002822,span,pass,,0,0
+tatqa_006214,span,pass,,0,0
+tatqa_004998,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006805,count,pass,,0,0
+tatqa_012597,span,pass,,0,0
+tatqa_001871,count,pass,,0,0
+tatqa_012734,span,pass,,0,0
+tatqa_003348,arithmetic,pass,,0,0
+tatqa_000448,span,pass,,0,0
+tatqa_011770,span,pass,,0,0
+tatqa_003437,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'8.1'},1,0
+tatqa_012623,span,pass,,0,0
+tatqa_004532,span,pass,,0,0
+tatqa_007204,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004632,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,679'}",1,0
+tatqa_011116,multi-span,pass,,0,0
+tatqa_008944,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'272'},1,0
+tatqa_008969,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'3.20'},1,0
+tatqa_003766,span,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2018', '2019'}",1,0
+tatqa_009136,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'73,581'}",1,0
+tatqa_005785,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005756,multi-span,pass,,0,0
+tatqa_009817,span,pass,,0,0
+tatqa_007156,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010237,span,pass,,0,0
+tatqa_012051,span,pass,,0,0
+tatqa_013011,arithmetic,pass,,0,0
+tatqa_003589,span,pass,,0,0
+tatqa_003989,arithmetic,pass,,0,0
+tatqa_012764,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,183'}",1,0
+tatqa_003773,count,pass,,0,0
+tatqa_004009,span,pass,,0,0
+tatqa_007199,span,pass,,0,0
+tatqa_009755,count,pass,,0,0
+tatqa_012482,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'234'},1,0
+tatqa_000919,span,pass,,0,0
+tatqa_006619,arithmetic,pass,,0,0
+tatqa_006862,span,pass,,0,0
+tatqa_002716,span,pass,,0,0
+tatqa_008668,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,165,910'}",1,0
+tatqa_005244,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'167,917'}",1,0
+tatqa_006871,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,101'}",1,0
+tatqa_011176,span,pass,,0,0
+tatqa_005482,multi-span,pass,,0,0
+tatqa_000583,span,pass,,0,0
+tatqa_000813,span,pass,,0,0
+tatqa_008173,arithmetic,pass,,0,0
+tatqa_007780,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'37,063'}",1,0
+tatqa_000593,arithmetic,pass,,0,0
+tatqa_002593,span,pass,,0,0
+tatqa_010060,arithmetic,pass,,0,0
+tatqa_005759,span,pass,,0,0
+tatqa_003847,span,pass,,0,0
+tatqa_012438,count,pass,,0,0
+tatqa_007879,span,pass,,0,0
+tatqa_007759,span,pass,,0,0
+tatqa_002062,span,pass,,0,0
+tatqa_010745,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001942,span,pass,,0,0
+tatqa_009154,span,pass,,0,0
+tatqa_006609,span,pass,,0,0
+tatqa_002159,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'149,945', '29,989', '27,989'}",1,0
+tatqa_010142,span,pass,,0,0
+tatqa_007872,span,pass,,0,0
+tatqa_012446,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '64.70588'}",1,0
+tatqa_007901,span,pass,,0,0
+tatqa_009228,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1.9', '100'}",1,0
+tatqa_012441,span,pass,,0,0
+tatqa_001410,arithmetic,pass,,0,0
+tatqa_001736,span,pass,,0,0
+tatqa_009993,multi-span,pass,,0,0
+tatqa_005331,span,pass,,0,0
+tatqa_008202,span,pass,,0,0
+tatqa_004477,span,pass,,0,0
+tatqa_009911,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'11.5'},1,0
+tatqa_000270,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001694,span,pass,,0,0
+tatqa_011765,multi-span,pass,,0,0
+tatqa_006386,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'659,439.4', '3,297,197'}",1,0
+tatqa_002648,span,pass,,0,0
+tatqa_002122,span,pass,,0,0
+tatqa_004408,arithmetic,pass,,0,0
+tatqa_009037,span,pass,,0,0
+tatqa_005876,span,pass,,0,0
+tatqa_009081,multi-span,pass,,0,0
+tatqa_006465,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006984,span,pass,,0,0
+tatqa_001318,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'27,178.5'}",1,0
+tatqa_008569,span,pass,,0,0
+tatqa_005337,span,pass,,0,0
+tatqa_008333,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003620,span,pass,,0,0
+tatqa_008950,arithmetic,pass,,0,0
+tatqa_002925,span,pass,,0,0
+tatqa_008906,span,pass,,0,0
+tatqa_001984,span,pass,,0,0
+tatqa_011316,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000078,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004915,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001051,span,pass,,0,0
+tatqa_006755,multi-span,pass,,0,0
+tatqa_011081,multi-span,pass,,0,0
+tatqa_009798,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002610,arithmetic,pass,,0,0
+tatqa_012767,span,pass,,0,0
+tatqa_010614,arithmetic,pass,,0,0
+tatqa_008836,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3.8317757'}",1,0
+tatqa_000931,span,pass,,0,0
+tatqa_006321,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008029,span,pass,,0,0
+tatqa_009198,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,650'}",1,0
+tatqa_003108,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006314,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '6.64'}",1,0
+tatqa_005972,span,pass,,0,0
+tatqa_009515,arithmetic,pass,,0,0
+tatqa_001144,span,pass,,0,0
+tatqa_010827,span,pass,,0,0
+tatqa_003897,multi-span,pass,,0,0
+tatqa_008767,span,pass,,0,0
+tatqa_000716,span,pass,,0,0
+tatqa_007808,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,329'}",1,0
+tatqa_011710,span,pass,,0,0
+tatqa_007440,span,pass,,0,0
+tatqa_008211,span,pass,,0,0
+tatqa_010588,count,pass,,0,0
+tatqa_007240,span,pass,,0,0
+tatqa_000113,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,246'}",1,0
+tatqa_010439,arithmetic,pass,,0,0
+tatqa_009089,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009712,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009931,span,pass,,0,0
+tatqa_008420,span,pass,,0,0
+tatqa_005101,count,pass,,0,0
+tatqa_000349,multi-span,pass,,0,0
+tatqa_008285,arithmetic,pass,,0,0
+tatqa_000110,span,pass,,0,0
+tatqa_004924,multi-span,pass,,0,0
+tatqa_012729,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '75'}",1,0
+tatqa_011208,arithmetic,pass,,0,0
+tatqa_006918,span,pass,,0,0
+tatqa_013225,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'14,624', '43,872'}",1,0
+tatqa_001368,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9.4', '100'}",1,0
+tatqa_002763,multi-span,pass,,0,0
+tatqa_010774,span,pass,,0,0
+tatqa_008989,span,pass,,0,0
+tatqa_007946,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000233,arithmetic,pass,,0,0
+tatqa_006453,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'158,059', '474,177'}",1,0
+tatqa_010482,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006366,span,pass,,0,0
+tatqa_009451,span,pass,,0,0
+tatqa_001858,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '42.06'}",1,0
+tatqa_002834,span,pass,,0,0
+tatqa_006878,arithmetic,pass,,0,0
+tatqa_000604,span,pass,,0,0
+tatqa_008522,span,pass,,0,0
+tatqa_001643,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '33,766'}",1,0
+tatqa_011778,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'154,886'}",1,0
+tatqa_008085,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'17,489'}",1,0
+tatqa_001199,arithmetic,pass,,0,0
+tatqa_002993,arithmetic,pass,,0,0
+tatqa_008685,span,pass,,0,0
+tatqa_003466,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'45,118.5'}",1,0
+tatqa_012144,count,pass,,0,0
+tatqa_003881,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'406'},1,0
+tatqa_009054,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'16,094'}",1,0
+tatqa_007535,span,pass,,0,0
+tatqa_004508,span,pass,,0,0
+tatqa_000998,span,pass,,0,0
+tatqa_000104,span,pass,,0,0
+tatqa_000381,span,pass,,0,0
+tatqa_013234,span,pass,,0,0
+tatqa_008286,multi-span,pass,,0,0
+tatqa_010286,multi-span,pass,,0,0
+tatqa_001360,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'344'},1,0
+tatqa_000336,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009657,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'234,300.5'}",1,0
+tatqa_002491,span,pass,,0,0
+tatqa_004245,span,pass,,0,0
+tatqa_012941,span,pass,,0,0
+tatqa_000157,span,pass,,0,0
+tatqa_003222,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'148.51', '100'}",1,0
+tatqa_010754,span,pass,,0,0
+tatqa_012519,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '138.54'}",1,0
+tatqa_004954,span,pass,,0,0
+tatqa_003958,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '15.91'}",1,0
+tatqa_006973,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006795,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,168'}",1,0
+tatqa_002079,span,pass,,0,0
+tatqa_011071,arithmetic,pass,,0,0
+tatqa_002284,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'2.13508127'},1,0
+tatqa_000594,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002365,multi-span,pass,,0,0
+tatqa_006007,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'33'},1,0
+tatqa_001283,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'176,130'}",1,0
+tatqa_002664,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007443,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006736,span,pass,,0,0
+tatqa_006789,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '19.15'}",1,0
+tatqa_003075,span,pass,,0,0
+tatqa_007448,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'507'},1,0
+tatqa_012559,arithmetic,pass,,0,0
+tatqa_005122,span,pass,,0,0
+tatqa_007009,span,pass,,0,0
+tatqa_010524,multi-span,pass,,0,0
+tatqa_007554,multi-span,pass,,0,0
+tatqa_004631,span,pass,,0,0
+tatqa_012995,span,pass,,0,0
+tatqa_007450,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '79.25', '913'}",1,0
+tatqa_012971,span,pass,,0,0
+tatqa_004285,span,pass,,0,0
+tatqa_002063,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,990,692'}",1,0
+tatqa_012891,arithmetic,pass,,0,0
+tatqa_002352,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008760,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '7,092,233'}",1,0
+tatqa_005252,multi-span,pass,,0,0
+tatqa_007030,span,pass,,0,0
+tatqa_004092,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '257'}",1,0
+tatqa_000895,multi-span,pass,,0,0
+tatqa_004483,multi-span,pass,,0,0
+tatqa_004568,multi-span,pass,,0,0
+tatqa_004055,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002039,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'49'},1,0
+tatqa_004774,multi-span,pass,,0,0
+tatqa_010558,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,937,176'}",1,0
+tatqa_012592,span,pass,,0,0
+tatqa_005918,multi-span,pass,,0,0
+tatqa_011920,span,pass,,0,0
+tatqa_006793,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '23.31'}",1,0
+tatqa_000729,span,pass,,0,0
+tatqa_003583,span,pass,,0,0
+tatqa_011331,multi-span,pass,,0,0
+tatqa_000640,arithmetic,pass,,0,0
+tatqa_004693,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'2019'},1,0
+tatqa_010484,span,pass,,0,0
+tatqa_009787,span,pass,,0,0
+tatqa_009767,multi-span,pass,,0,0
+tatqa_012167,multi-span,pass,,0,0
+tatqa_001746,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'729,485.96', '2,952,433.33', '2,222,947.37'}",1,0
+tatqa_002503,span,pass,,0,0
+tatqa_003049,span,pass,,0,0
+tatqa_006868,span,pass,,0,0
+tatqa_009376,arithmetic,pass,,0,0
+tatqa_008628,arithmetic,pass,,0,0
+tatqa_005289,span,pass,,0,0
+tatqa_011126,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007718,arithmetic,pass,,0,0
+tatqa_008203,span,pass,,0,0
+tatqa_001718,span,pass,,0,0
+tatqa_010892,multi-span,pass,,0,0
+tatqa_004406,span,pass,,0,0
+tatqa_007487,multi-span,pass,,0,0
+tatqa_000993,span,pass,,0,0
+tatqa_002028,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2.299495232753785'}",1,0
+tatqa_001535,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006833,span,pass,,0,0
+tatqa_006017,arithmetic,pass,,0,0
+tatqa_002393,multi-span,pass,,0,0
+tatqa_004420,span,pass,,0,0
+tatqa_012484,arithmetic,pass,,0,0
+tatqa_009045,multi-span,pass,,0,0
+tatqa_000634,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009509,arithmetic,pass,,0,0
+tatqa_006792,span,pass,,0,0
+tatqa_009516,arithmetic,pass,,0,0
+tatqa_004737,span,pass,,0,0
+tatqa_012069,span,pass,,0,0
+tatqa_006602,arithmetic,pass,,0,0
+tatqa_009500,span,pass,,0,0
+tatqa_001770,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004495,span,pass,,0,0
+tatqa_004851,multi-span,pass,,0,0
+tatqa_007573,span,pass,,0,0
+tatqa_004671,span,pass,,0,0
+tatqa_008575,span,pass,,0,0
+tatqa_012758,arithmetic,pass,,0,0
+tatqa_002591,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007503,arithmetic,pass,,0,0
+tatqa_011338,span,pass,,0,0
+tatqa_010876,multi-span,pass,,0,0
+tatqa_010931,span,pass,,0,0
+tatqa_011194,span,pass,,0,0
+tatqa_001596,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001998,arithmetic,pass,,0,0
+tatqa_005851,span,pass,,0,0
+tatqa_003213,span,pass,,0,0
+tatqa_003875,arithmetic,pass,,0,0
+tatqa_000897,span,pass,,0,0
+tatqa_007107,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'43,369'}",1,0
+tatqa_001935,multi-span,pass,,0,0
+tatqa_002016,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'103,536'}",1,0
+tatqa_009333,multi-span,pass,,0,0
+tatqa_003748,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,919'}",1,0
+tatqa_011740,span,pass,,0,0
+tatqa_011263,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008662,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1,069'}",1,0
+tatqa_011498,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,171,074.5'}",1,0
+tatqa_011423,span,pass,,0,0
+tatqa_001281,span,pass,,0,0
+tatqa_012168,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '39.30'}",1,0
+tatqa_012434,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '37.73'}",1,0
+tatqa_004800,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'272'},1,0
+tatqa_000573,span,pass,,0,0
+tatqa_008137,span,pass,,0,0
+tatqa_000707,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011345,multi-span,pass,,0,0
+tatqa_011463,span,pass,,0,0
+tatqa_009253,multi-span,pass,,0,0
+tatqa_012074,arithmetic,pass,,0,0
+tatqa_003306,arithmetic,pass,,0,0
+tatqa_009305,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'39,529'}",1,0
+tatqa_011302,span,pass,,0,0
+tatqa_012607,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'5'},1,0
+tatqa_006129,span,pass,,0,0
+tatqa_003465,multi-span,pass,,0,0
+tatqa_005626,span,pass,,0,0
+tatqa_004263,span,pass,,0,0
+tatqa_004070,multi-span,pass,,0,0
+tatqa_002682,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009857,span,pass,,0,0
+tatqa_000935,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,874'}",1,0
+tatqa_007819,span,pass,,0,0
+tatqa_000489,multi-span,pass,,0,0
+tatqa_007582,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'437.3'},1,0
+tatqa_000585,multi-span,pass,,0,0
+tatqa_007459,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,622.5'}",1,0
+tatqa_000221,arithmetic,pass,,0,0
+tatqa_004876,multi-span,pass,,0,0
+tatqa_002653,multi-span,pass,,0,0
+tatqa_001902,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010293,multi-span,pass,,0,0
+tatqa_002364,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008435,arithmetic,pass,,0,0
+tatqa_010725,span,pass,,0,0
+tatqa_011058,count,pass,,0,0
+tatqa_008616,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'48'},1,0
+tatqa_010675,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003786,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '80.42'}",1,0
+tatqa_012272,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009574,arithmetic,pass,,0,0
+tatqa_006920,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'17.3'},1,0
+tatqa_002940,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001712,span,pass,,0,0
+tatqa_003283,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15,712'}",1,0
+tatqa_010678,span,pass,,0,0
+tatqa_011444,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.48566'}",1,0
+tatqa_006048,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'651,740'}",1,0
+tatqa_008958,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,051'}",1,0
+tatqa_002238,count,pass,,0,0
+tatqa_006148,span,pass,,0,0
+tatqa_000039,span,pass,,0,0
+tatqa_006606,arithmetic,pass,,0,0
+tatqa_013165,arithmetic,pass,,0,0
+tatqa_012112,span,pass,,0,0
+tatqa_010581,span,pass,,0,0
+tatqa_004497,multi-span,pass,,0,0
+tatqa_004300,span,pass,,0,0
+tatqa_004681,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '12.29'}",1,0
+tatqa_000249,span,pass,,0,0
+tatqa_005973,span,pass,,0,0
+tatqa_005670,arithmetic,pass,,0,0
+tatqa_006117,span,pass,,0,0
+tatqa_004224,span,pass,,0,0
+tatqa_003353,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010857,span,pass,,0,0
+tatqa_001790,multi-span,pass,,0,0
+tatqa_005835,multi-span,pass,,0,0
+tatqa_001971,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003780,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '6.19'}",1,0
+tatqa_010002,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11,014.5'}",1,0
+tatqa_001006,arithmetic,pass,,0,0
+tatqa_010241,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,216.5'}",1,0
+tatqa_007470,multi-span,pass,,0,0
+tatqa_009527,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'226'},1,0
+tatqa_005106,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,103'}",1,0
+tatqa_009803,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,247'}",1,0
+tatqa_007239,count,pass,"COUNT_PREFILTER_WARNING: Values used has 4 bullet(s), equal to gold count (4) - possible pre-filtering",1,1
+tatqa_007800,span,pass,,0,0
+tatqa_009388,arithmetic,pass,,0,0
+tatqa_009180,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '45.229681978798586'}",1,0
+tatqa_013185,arithmetic,pass,,0,0
+tatqa_007333,span,pass,,0,0
+tatqa_001175,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,005'}",1,0
+tatqa_010683,span,pass,,0,0
+tatqa_006642,span,pass,,0,0
+tatqa_012084,arithmetic,pass,,0,0
+tatqa_007997,span,pass,,0,0
+tatqa_008094,span,pass,,0,0
+tatqa_012877,span,pass,,0,0
+tatqa_001921,span,pass,,0,0
+tatqa_010385,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'904,266.5'}",1,0
+tatqa_012759,arithmetic,pass,,0,0
+tatqa_001555,span,pass,,0,0
+tatqa_000887,arithmetic,pass,,0,0
+tatqa_000085,span,pass,,0,0
+tatqa_012293,span,pass,,0,0
+tatqa_011046,span,pass,,0,0
+tatqa_010676,span,pass,,0,0
+tatqa_001887,span,pass,,0,0
+tatqa_011609,span,pass,,0,0
+tatqa_008728,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'31,163'}",1,0
+tatqa_009571,span,pass,,0,0
+tatqa_000304,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,741.5'}",1,0
+tatqa_011596,span,pass,,0,0
+tatqa_011553,span,pass,,0,0
+tatqa_006053,span,pass,,0,0
+tatqa_003554,span,pass,,0,0
+tatqa_001355,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '11.66'}",1,0
+tatqa_001236,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'56'},1,0
+tatqa_005960,span,pass,,0,0
+tatqa_005880,arithmetic,pass,,0,0
+tatqa_007758,span,pass,,0,0
+tatqa_010179,span,pass,,0,0
+tatqa_011959,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,293'}",1,0
+tatqa_006926,arithmetic,pass,,0,0
+tatqa_004429,span,pass,,0,0
+tatqa_006096,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'28,815,030,743'}",1,0
+tatqa_010846,span,pass,,0,0
+tatqa_005664,span,pass,,0,0
+tatqa_002106,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '575.0'}",1,0
+tatqa_012982,span,pass,,0,0
+tatqa_007546,arithmetic,pass,,0,0
+tatqa_008865,span,pass,,0,0
+tatqa_012384,arithmetic,pass,,0,0
+tatqa_011059,arithmetic,pass,,0,0
+tatqa_009927,span,pass,,0,0
+tatqa_009869,arithmetic,pass,,0,0
+tatqa_007169,span,pass,,0,0
+tatqa_009672,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '12.5'}",1,0
+tatqa_002979,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'45,057'}",1,0
+tatqa_007477,multi-span,pass,,0,0
+tatqa_002090,multi-span,pass,,0,0
+tatqa_001072,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000172,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '42.82'}",1,0
+tatqa_002343,span,pass,,0,0
+tatqa_010716,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'27'},1,0
+tatqa_010420,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'7,614'}",1,0
+tatqa_010107,multi-span,pass,,0,0
+tatqa_007790,span,pass,,0,0
+tatqa_002277,span,pass,,0,0
+tatqa_005320,span,pass,,0,0
+tatqa_000517,span,pass,,0,0
+tatqa_001772,span,pass,,0,0
+tatqa_010994,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '290.9'}",1,0
+tatqa_008177,count,pass,,0,0
+tatqa_001767,span,pass,,0,0
+tatqa_008086,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'300,405'}",1,0
+tatqa_010393,span,pass,,0,0
+tatqa_001125,multi-span,pass,,0,0
+tatqa_010538,span,pass,,0,0
+tatqa_013115,multi-span,pass,,0,0
+tatqa_006770,arithmetic,pass,,0,0
+tatqa_001190,span,pass,,0,0
+tatqa_009505,span,pass,,0,0
+tatqa_006735,arithmetic,pass,,0,0
+tatqa_004827,span,pass,,0,0
+tatqa_006042,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'17'},1,0
+tatqa_001626,count,pass,,0,0
+tatqa_011616,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001816,span,pass,,0,0
+tatqa_007919,span,pass,,0,0
+tatqa_002363,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11,246'}",1,0
+tatqa_011848,span,pass,,0,0
+tatqa_011475,span,pass,,0,0
+tatqa_009531,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'82,925'}",1,0
+tatqa_004417,multi-span,pass,,0,0
+tatqa_004386,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '32.48'}",1,0
+tatqa_010430,span,pass,,0,0
+tatqa_001492,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,171'}",1,0
+tatqa_012739,arithmetic,pass,,0,0
+tatqa_010693,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007186,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'21,715'}",1,0
+tatqa_008516,span,pass,,0,0
+tatqa_012119,span,pass,,0,0
+tatqa_002233,span,pass,,0,0
+tatqa_000730,arithmetic,pass,,0,0
+tatqa_001192,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'19,630.5'}",1,0
+tatqa_012754,span,pass,,0,0
+tatqa_012423,multi-span,pass,,0,0
+tatqa_001062,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '158'}",1,0
+tatqa_005490,count,pass,,0,0
+tatqa_000589,span,pass,,0,0
+tatqa_005099,arithmetic,pass,,0,0
+tatqa_012968,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'30,972'}",1,0
+tatqa_007020,span,pass,,0,0
+tatqa_006390,arithmetic,pass,,0,0
+tatqa_009428,span,pass,,0,0
+tatqa_004547,arithmetic,pass,,0,0
+tatqa_005351,arithmetic,pass,,0,0
+tatqa_011323,arithmetic,pass,,0,0
+tatqa_010735,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010374,arithmetic,pass,,0,0
+tatqa_010144,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15,449'}",1,0
+tatqa_000744,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'1.6018306636155605'},1,0
+tatqa_002702,span,pass,,0,0
+tatqa_004069,span,pass,,0,0
+tatqa_010314,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001041,multi-span,pass,,0,0
+tatqa_011507,span,pass,,0,0
+tatqa_001845,multi-span,pass,,0,0
+tatqa_008441,arithmetic,pass,,0,0
+tatqa_009289,span,pass,,0,0
+tatqa_005534,span,pass,,0,0
+tatqa_008322,span,pass,,0,0
+tatqa_006342,span,pass,,0,0
+tatqa_003206,multi-span,pass,,0,0
+tatqa_010492,multi-span,pass,,0,0
+tatqa_002772,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000967,span,pass,,0,0
+tatqa_007401,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,735,000'}",1,0
+tatqa_000187,span,pass,,0,0
+tatqa_003526,count,pass,,0,0
+tatqa_008872,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'26,439'}",1,0
+tatqa_000072,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012841,arithmetic,pass,,0,0
+tatqa_005985,multi-span,pass,,0,0
+tatqa_006495,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '4.74'}",1,0
+tatqa_000811,multi-span,pass,,0,0
+tatqa_001342,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'10.2'},1,0
+tatqa_007308,span,pass,,0,0
+tatqa_000995,span,pass,,0,0
+tatqa_009495,span,pass,,0,0
+tatqa_007576,span,pass,,0,0
+tatqa_011749,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003094,span,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'2018'},1,0
+tatqa_007365,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'90,756'}",1,0
+tatqa_010187,count,pass,"COUNT_PREFILTER_WARNING: Values used has 9 bullet(s), equal to gold count (9) - possible pre-filtering",1,1
+tatqa_002923,span,pass,,0,0
+tatqa_009195,multi-span,pass,,0,0
+tatqa_002580,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001841,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'701,399'}",1,0
+tatqa_005257,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'28.1'},1,0
+tatqa_003481,span,pass,,0,0
+tatqa_003936,arithmetic,pass,,0,0
+tatqa_009315,multi-span,pass,,0,0
+tatqa_006152,span,pass,,0,0
+tatqa_008208,span,pass,,0,0
+tatqa_012978,span,pass,,0,0
+tatqa_012206,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'20.1'},1,0
+tatqa_010896,count,pass,,0,0
+tatqa_011493,multi-span,pass,,0,0
+tatqa_008908,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,098'}",1,0
+tatqa_005479,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,545.67', '10,637'}",1,0
+tatqa_000140,span,pass,,0,0
+tatqa_010321,span,pass,,0,0
+tatqa_011823,span,pass,,0,0
+tatqa_010138,span,pass,,0,0
+tatqa_003814,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,233'}",1,0
+tatqa_010184,span,pass,,0,0
+tatqa_000773,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '13'}",1,0
+tatqa_008136,span,pass,,0,0
+tatqa_009594,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '17.33'}",1,0
+tatqa_002202,span,pass,,0,0
+tatqa_007189,multi-span,pass,,0,0
+tatqa_005818,multi-span,pass,,0,0
+tatqa_000824,span,pass,,0,0
+tatqa_000971,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'70,447'}",1,0
+tatqa_004446,arithmetic,pass,,0,0
+tatqa_008301,span,pass,,0,0
+tatqa_007702,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '26.32'}",1,0
+tatqa_001937,arithmetic,pass,,0,0
+tatqa_010141,span,pass,,0,0
+tatqa_010743,multi-span,pass,,0,0
+tatqa_012239,arithmetic,pass,,0,0
+tatqa_012310,span,pass,,0,0
+tatqa_001444,span,pass,,0,0
+tatqa_004729,span,pass,,0,0
+tatqa_011187,span,pass,,0,0
+tatqa_003438,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013170,span,pass,,0,0
+tatqa_003868,arithmetic,pass,,0,0
+tatqa_007941,span,pass,,0,0
+tatqa_005790,arithmetic,pass,,0,0
+tatqa_005636,span,pass,,0,0
+tatqa_000206,span,pass,,0,0
+tatqa_004867,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'60,066', '20,022'}",1,0
+tatqa_008651,arithmetic,pass,,0,0
+tatqa_011871,span,pass,,0,0
+tatqa_002403,span,pass,,0,0
+tatqa_011653,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'98,513'}",1,0
+tatqa_000782,span,pass,,0,0
+tatqa_012694,span,pass,,0,0
+tatqa_012201,span,pass,,0,0
+tatqa_011615,multi-span,pass,,0,0
+tatqa_002058,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,176'}",1,0
+tatqa_009667,span,pass,,0,0
+tatqa_006457,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'17'},1,0
+tatqa_008431,span,pass,,0,0
+tatqa_001187,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,056,106'}",1,0
+tatqa_004078,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013108,span,pass,,0,0
+tatqa_007794,multi-span,pass,,0,0
+tatqa_012935,span,pass,,0,0
+tatqa_012546,span,pass,,0,0
+tatqa_010443,span,pass,,0,0
+tatqa_008808,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003912,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,421'}",1,0
+tatqa_001761,span,pass,,0,0
+tatqa_007268,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'20,417'}",1,0
+tatqa_002839,span,pass,,0,0
+tatqa_013089,span,pass,,0,0
+tatqa_012896,count,pass,,0,0
+tatqa_001040,span,pass,,0,0
+tatqa_012228,span,pass,,0,0
+tatqa_002005,multi-span,pass,,0,0
+tatqa_002571,multi-span,pass,,0,0
+tatqa_012378,span,pass,,0,0
+tatqa_002732,span,pass,,0,0
+tatqa_011518,span,pass,,0,0
+tatqa_012021,span,pass,,0,0
+tatqa_011717,multi-span,pass,,0,0
+tatqa_009580,count,pass,,0,0
+tatqa_000610,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,491'}",1,0
+tatqa_008061,span,pass,,0,0
+tatqa_000390,arithmetic,pass,,0,0
+tatqa_004167,span,pass,,0,0
+tatqa_008093,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007387,span,pass,,0,0
+tatqa_000743,arithmetic,pass,,0,0
+tatqa_000726,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013094,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'17,209'}",1,0
+tatqa_004402,span,pass,,0,0
+tatqa_001273,span,pass,,0,0
+tatqa_002782,count,pass,,0,0
+tatqa_002657,arithmetic,pass,,0,0
+tatqa_004278,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5.15', '100'}",1,0
+tatqa_003391,span,pass,,0,0
+tatqa_006256,multi-span,pass,,0,0
+tatqa_007252,span,pass,,0,0
+tatqa_002586,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008753,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000438,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '131.42'}",1,0
+tatqa_002674,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.635368'}",1,0
+tatqa_007627,span,pass,,0,0
+tatqa_009878,span,pass,,0,0
+tatqa_001764,arithmetic,pass,,0,0
+tatqa_000934,count,pass,,0,0
+tatqa_006274,multi-span,pass,,0,0
+tatqa_012366,arithmetic,pass,,0,0
+tatqa_000728,span,pass,,0,0
+tatqa_005564,span,pass,,0,0
+tatqa_011918,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009856,span,pass,,0,0
+tatqa_003573,span,pass,,0,0
+tatqa_000161,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'7,356'}",1,0
+tatqa_011170,span,pass,,0,0
+tatqa_006399,arithmetic,pass,,0,0
+tatqa_001291,span,pass,,0,0
+tatqa_000066,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001348,arithmetic,pass,,0,0
+tatqa_011832,arithmetic,pass,,0,0
+tatqa_000463,span,pass,,0,0
+tatqa_009353,arithmetic,pass,,0,0
+tatqa_007393,multi-span,pass,,0,0
+tatqa_003995,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'346'},1,0
+tatqa_001647,multi-span,pass,,0,0
+tatqa_005109,span,pass,,0,0
+tatqa_001126,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'48.1', '100', '102.4'}",1,0
+tatqa_005230,span,pass,,0,0
+tatqa_006610,span,pass,,0,0
+tatqa_007032,span,pass,,0,0
+tatqa_010770,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'59,479'}",1,0
+tatqa_008708,span,pass,,0,0
+tatqa_004109,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005615,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,810,639,769'}",1,0
+tatqa_003915,multi-span,pass,,0,0
+tatqa_006675,arithmetic,pass,,0,0
+tatqa_001567,span,pass,,0,0
+tatqa_009155,arithmetic,pass,,0,0
+tatqa_009604,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'224,529'}",1,0
+tatqa_000572,span,pass,,0,0
+tatqa_001685,arithmetic,pass,,0,0
+tatqa_003015,multi-span,pass,,0,0
+tatqa_006989,span,pass,,0,0
+tatqa_006012,arithmetic,pass,,0,0
+tatqa_002932,span,pass,,0,0
+tatqa_007987,span,pass,,0,0
+tatqa_012390,arithmetic,pass,,0,0
+tatqa_003734,span,pass,,0,0
+tatqa_009651,span,pass,,0,0
+tatqa_012965,span,pass,,0,0
+tatqa_004189,span,pass,,0,0
+tatqa_006510,span,pass,,0,0
+tatqa_005247,arithmetic,pass,,0,0
+tatqa_012886,span,pass,,0,0
+tatqa_000411,multi-span,pass,,0,0
+tatqa_005585,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'738,588'}",1,0
+tatqa_003851,arithmetic,pass,,0,0
+tatqa_000749,arithmetic,pass,,0,0
+tatqa_000290,span,pass,,0,0
+tatqa_002327,arithmetic,pass,,0,0
+tatqa_011005,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1,737'}",1,0
+tatqa_004619,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'349'},1,0
+tatqa_010129,span,pass,,0,0
+tatqa_005788,span,pass,,0,0
+tatqa_007016,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009234,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '36.67'}",1,0
+tatqa_010343,arithmetic,pass,,0,0
+tatqa_009091,span,pass,,0,0
+tatqa_001615,span,pass,,0,0
+tatqa_001773,span,pass,,0,0
+tatqa_005914,span,pass,,0,0
+tatqa_006799,span,pass,,0,0
+tatqa_000575,arithmetic,pass,,0,0
+tatqa_013237,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,558'}",1,0
+tatqa_003203,arithmetic,pass,,0,0
+tatqa_009320,multi-span,pass,,0,0
+tatqa_007272,span,pass,,0,0
+tatqa_005619,span,pass,,0,0
+tatqa_008591,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'118'},1,0
+tatqa_003771,span,pass,,0,0
+tatqa_001913,span,pass,,0,0
+tatqa_003727,arithmetic,pass,,0,0
+tatqa_008829,span,pass,,0,0
+tatqa_003997,multi-span,pass,,0,0
+tatqa_012103,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'25,228'}",1,0
+tatqa_007529,multi-span,pass,,0,0
+tatqa_006377,span,pass,,0,0
+tatqa_004472,span,pass,,0,0
+tatqa_007179,arithmetic,pass,,0,0
+tatqa_006980,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'659,000'}",1,0
+tatqa_000264,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,913.25'}",1,0
+tatqa_002843,arithmetic,pass,,0,0
+tatqa_005705,span,pass,,0,0
+tatqa_010779,span,pass,,0,0
+tatqa_007079,multi-span,pass,,0,0
+tatqa_003670,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'37'},1,0
+tatqa_002895,span,pass,,0,0
+tatqa_010630,span,pass,,0,0
+tatqa_004187,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,162,802.5'}",1,0
+tatqa_002209,span,pass,,0,0
+tatqa_011678,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'16'},1,0
+tatqa_011909,span,pass,,0,0
+tatqa_005299,arithmetic,pass,,0,0
+tatqa_009997,span,pass,,0,0
+tatqa_001240,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,708'}",1,0
+tatqa_008661,span,pass,,0,0
+tatqa_007307,span,pass,,0,0
+tatqa_003565,span,pass,,0,0
+tatqa_000596,multi-span,pass,,0,0
+tatqa_012829,arithmetic,pass,,0,0
+tatqa_011448,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'58,064'}",1,0
+tatqa_000165,span,pass,,0,0
+tatqa_011341,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'41,837'}",1,0
+tatqa_007708,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '50.02'}",1,0
+tatqa_000486,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,396', '20,792'}",1,0
+tatqa_003754,arithmetic,pass,,0,0
+tatqa_011322,arithmetic,pass,,0,0
+tatqa_002045,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'12,500'}",1,0
+tatqa_009485,span,pass,,0,0
+tatqa_007024,span,pass,,0,0
+tatqa_006454,span,pass,,0,0
+tatqa_007716,span,pass,,0,0
+tatqa_005080,span,pass,,0,0
+tatqa_009748,span,pass,,0,0
+tatqa_007788,span,pass,,0,0
+tatqa_004708,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '209.5'}",1,0
+tatqa_004064,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,512'}",1,0
+tatqa_006720,span,pass,,0,0
+tatqa_009960,arithmetic,pass,,0,0
+tatqa_000717,span,pass,,0,0
+tatqa_004735,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,229'}",1,0
+tatqa_000351,multi-span,pass,,0,0
+tatqa_000879,multi-span,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'2'},1,0
+tatqa_006075,span,pass,,0,0
+tatqa_012309,span,pass,,0,0
+tatqa_003313,multi-span,pass,,0,0
+tatqa_004572,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000535,multi-span,pass,,0,0
+tatqa_008721,multi-span,pass,,0,0
+tatqa_004658,span,pass,,0,0
+tatqa_001425,span,pass,,0,0
+tatqa_007433,span,pass,,0,0
+tatqa_012079,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2.00'}",1,0
+tatqa_008578,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,170'}",1,0
+tatqa_010849,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'165'},1,0
+tatqa_006733,arithmetic,pass,,0,0
+tatqa_012354,span,pass,,0,0
+tatqa_000894,arithmetic,pass,,0,0
+tatqa_005613,span,pass,,0,0
+tatqa_010130,span,pass,,0,0
+tatqa_001143,span,pass,,0,0
+tatqa_009173,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '14.09'}",1,0
+tatqa_006463,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,717'}",1,0
+tatqa_011586,arithmetic,pass,,0,0
+tatqa_005391,span,pass,,0,0
+tatqa_010711,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'63.5', '120.5', '184'}",1,0
+tatqa_002110,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,116'}",1,0
+tatqa_002525,multi-span,pass,,0,0
+tatqa_002152,span,pass,,0,0
+tatqa_006520,multi-span,pass,,0,0
+tatqa_012547,arithmetic,pass,,0,0
+tatqa_010911,span,pass,,0,0
+tatqa_009445,multi-span,pass,,0,0
+tatqa_009565,multi-span,pass,,0,0
+tatqa_002151,multi-span,pass,,0,0
+tatqa_007797,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '17.00'}",1,0
+tatqa_000633,span,pass,,0,0
+tatqa_002137,multi-span,pass,,0,0
+tatqa_003249,span,pass,,0,0
+tatqa_002064,arithmetic,pass,,0,0
+tatqa_009068,span,pass,,0,0
+tatqa_000683,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003182,span,pass,,0,0
+tatqa_005323,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.6173'}",1,0
+tatqa_002680,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,817'}",1,0
+tatqa_010684,span,pass,,0,0
+tatqa_007138,span,pass,,0,0
+tatqa_003702,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '8.44'}",1,0
+tatqa_007973,span,pass,,0,0
+tatqa_004577,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '84.77'}",1,0
+tatqa_010925,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'713'},1,0
+tatqa_002639,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009732,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2.27'}",1,0
+tatqa_011332,span,pass,,0,0
+tatqa_012697,arithmetic,pass,,0,0
+tatqa_008798,span,pass,,0,0
+tatqa_001672,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,219'}",1,0
+tatqa_000851,arithmetic,pass,,0,0
+tatqa_011173,arithmetic,pass,,0,0
+tatqa_010578,arithmetic,pass,,0,0
+tatqa_003161,arithmetic,pass,,0,0
+tatqa_008445,span,pass,,0,0
+tatqa_005469,span,pass,,0,0
+tatqa_009782,span,pass,,0,0
+tatqa_008819,arithmetic,pass,,0,0
+tatqa_005945,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'257,368'}",1,0
+tatqa_004790,multi-span,pass,,0,0
+tatqa_011716,span,pass,,0,0
+tatqa_005608,span,pass,,0,0
+tatqa_002325,multi-span,pass,,0,0
+tatqa_009082,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001796,span,pass,,0,0
+tatqa_007911,arithmetic,pass,,0,0
+tatqa_008053,span,pass,,0,0
+tatqa_002634,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'4.9'},1,0
+tatqa_012653,span,pass,,0,0
+tatqa_011253,multi-span,pass,,0,0
+tatqa_012895,arithmetic,pass,,0,0
+tatqa_012227,multi-span,pass,,0,0
+tatqa_010115,arithmetic,pass,,0,0
+tatqa_006508,span,pass,,0,0
+tatqa_002316,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000991,multi-span,pass,,0,0
+tatqa_004628,span,pass,,0,0
+tatqa_003639,multi-span,pass,,0,0
+tatqa_000361,span,pass,,0,0
+tatqa_008755,multi-span,pass,,0,0
+tatqa_006529,span,pass,,0,0
+tatqa_011474,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004892,span,pass,,0,0
+tatqa_010601,count,pass,,0,0
+tatqa_008876,span,pass,,0,0
+tatqa_000731,arithmetic,pass,,0,0
+tatqa_008830,count,pass,,0,0
+tatqa_002964,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '15.36'}",1,0
+tatqa_007342,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2.830568720379147'}",1,0
+tatqa_003986,multi-span,pass,,0,0
+tatqa_007640,arithmetic,pass,,0,0
+tatqa_000327,span,pass,,0,0
+tatqa_001677,span,pass,,0,0
+tatqa_009057,multi-span,pass,,0,0
+tatqa_010619,span,pass,,0,0
+tatqa_009891,multi-span,pass,,0,0
+tatqa_012385,arithmetic,pass,,0,0
+tatqa_000712,span,pass,,0,0
+tatqa_007628,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007972,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'91'},1,0
+tatqa_011073,multi-span,pass,,0,0
+tatqa_008352,span,pass,,0,0
+tatqa_006247,arithmetic,pass,,0,0
+tatqa_006065,span,pass,,0,0
+tatqa_004740,arithmetic,pass,,0,0
+tatqa_001923,multi-span,pass,,0,0
+tatqa_010723,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '47.206'}",1,0
+tatqa_001706,span,pass,,0,0
+tatqa_003447,span,pass,,0,0
+tatqa_010662,arithmetic,pass,,0,0
+tatqa_011718,span,pass,,0,0
+tatqa_003371,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,206'}",1,0
+tatqa_000167,arithmetic,pass,,0,0
+tatqa_011610,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'22,007'}",1,0
+tatqa_001256,span,pass,,0,0
+tatqa_012840,span,pass,,0,0
+tatqa_011281,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005262,arithmetic,pass,,0,0
+tatqa_007273,span,pass,,0,0
+tatqa_005494,span,pass,,0,0
+tatqa_005770,span,pass,,0,0
+tatqa_007693,span,pass,,0,0
+tatqa_009379,span,pass,,0,0
+tatqa_005213,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'57'},1,0
+tatqa_006493,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'109'},1,0
+tatqa_007430,span,pass,,0,0
+tatqa_002654,span,pass,,0,0
+tatqa_007154,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'85'},1,0
+tatqa_007682,span,pass,,0,0
+tatqa_011847,span,pass,,0,0
+tatqa_011744,span,pass,,0,0
+tatqa_011473,arithmetic,pass,,0,0
+tatqa_003948,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'501,336'}",1,0
+tatqa_008877,span,pass,,0,0
+tatqa_001021,span,pass,,0,0
+tatqa_011665,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,614.2'}",1,0
+tatqa_010447,span,pass,,0,0
+tatqa_010489,span,pass,,0,0
+tatqa_010389,span,pass,,0,0
+tatqa_005359,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'33,571'}",1,0
+tatqa_008037,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,581,118'}",1,0
+tatqa_009659,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'41,240.5'}",1,0
+tatqa_005020,arithmetic,pass,,0,0
+tatqa_010668,arithmetic,pass,,0,0
+tatqa_006629,span,pass,,0,0
+tatqa_006991,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,291,438'}",1,0
+tatqa_010360,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010030,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3493.40', '1211.54', '2281.86'}",1,0
+tatqa_009707,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,238'}",1,0
+tatqa_008299,span,pass,,0,0
+tatqa_000638,span,pass,,0,0
+tatqa_003558,arithmetic,pass,,0,0
+tatqa_001905,span,pass,,0,0
+tatqa_012660,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,407'}",1,0
+tatqa_007098,multi-span,pass,,0,0
+tatqa_003507,span,pass,,0,0
+tatqa_004775,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,182'}",1,0
+tatqa_002681,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012050,span,pass,,0,0
+tatqa_007993,multi-span,pass,,0,0
+tatqa_007846,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'230,465'}",1,0
+tatqa_000911,multi-span,pass,,0,0
+tatqa_001470,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '276.92307'}",1,0
+tatqa_005012,multi-span,pass,,0,0
+tatqa_000929,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.7615'}",1,0
+tatqa_003631,multi-span,pass,,0,0
+tatqa_010523,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'488.0'},1,0
+tatqa_003235,span,pass,,0,0
+tatqa_001616,span,pass,,0,0
+tatqa_000695,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'168.0'},1,0
+tatqa_007396,arithmetic,pass,,0,0
+tatqa_005591,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'20,145.5'}",1,0
+tatqa_007051,arithmetic,pass,,0,0
+tatqa_007615,multi-span,pass,,0,0
+tatqa_012916,span,pass,,0,0
+tatqa_000373,span,pass,,0,0
+tatqa_004948,multi-span,pass,,0,0
+tatqa_004705,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,820'}",1,0
+tatqa_012587,span,pass,,0,0
+tatqa_010941,multi-span,pass,,0,0
+tatqa_000035,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'160'},1,0
+tatqa_009554,span,pass,,0,0
+tatqa_004348,arithmetic,pass,,0,0
+tatqa_010659,span,pass,,0,0
+tatqa_001777,span,pass,,0,0
+tatqa_005870,span,pass,,0,0
+tatqa_000459,span,pass,,0,0
+tatqa_001715,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4', '100'}",1,0
+tatqa_006069,span,pass,,0,0
+tatqa_001518,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.5271', '303.9'}",1,0
+tatqa_004720,span,pass,,0,0
+tatqa_011425,arithmetic,pass,,0,0
+tatqa_002707,span,pass,,0,0
+tatqa_006441,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,871,869'}",1,0
+tatqa_000457,span,pass,,0,0
+tatqa_001625,span,pass,,0,0
+tatqa_008330,span,pass,,0,0
+tatqa_007998,multi-span,pass,,0,0
+tatqa_001753,span,pass,,0,0
+tatqa_011298,span,pass,,0,0
+tatqa_000559,multi-span,pass,,0,0
+tatqa_002858,span,pass,,0,0
+tatqa_001894,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,468'}",1,0
+tatqa_010463,span,pass,,0,0
+tatqa_001640,span,pass,,0,0
+tatqa_012017,multi-span,pass,,0,0
+tatqa_005917,arithmetic,pass,,0,0
+tatqa_001067,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,742'}",1,0
+tatqa_008538,count,pass,,0,0
+tatqa_007536,span,pass,,0,0
+tatqa_013186,span,pass,,0,0
+tatqa_004033,span,pass,,0,0
+tatqa_010501,span,pass,,0,0
+tatqa_005034,multi-span,pass,,0,0
+tatqa_009731,arithmetic,pass,,0,0
+tatqa_006419,span,pass,,0,0
+tatqa_007743,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2335.0', '1069.5'}",1,0
+tatqa_000588,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2.08', '10.4'}",1,0
+tatqa_011335,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '7,382'}",1,0
+tatqa_007026,span,pass,,0,0
+tatqa_007137,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'29,122'}",1,0
+tatqa_005449,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'613,065'}",1,0
+tatqa_003441,span,pass,,0,0
+tatqa_003791,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'98,506'}",1,0
+tatqa_011659,arithmetic,pass,,0,0
+tatqa_001070,span,pass,,0,0
+tatqa_008412,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '10,708'}",1,0
+tatqa_003184,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'876'},1,0
+tatqa_006861,arithmetic,pass,,0,0
+tatqa_005710,multi-span,pass,,0,0
+tatqa_003730,span,pass,,0,0
+tatqa_006135,span,pass,,0,0
+tatqa_009010,arithmetic,pass,,0,0
+tatqa_007833,count,pass,,0,0
+tatqa_008464,arithmetic,pass,,0,0
+tatqa_012320,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'182,813.67'}",1,0
+tatqa_003345,span,pass,,0,0
+tatqa_001835,arithmetic,pass,,0,0
+tatqa_003417,span,pass,,0,0
+tatqa_009842,span,pass,,0,0
+tatqa_008706,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009152,span,pass,,0,0
+tatqa_004715,span,pass,,0,0
+tatqa_011354,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007641,arithmetic,pass,,0,0
+tatqa_011470,span,pass,,0,0
+tatqa_004273,span,pass,,0,0
+tatqa_008945,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,870'}",1,0
+tatqa_006749,span,pass,,0,0
+tatqa_002942,span,pass,,0,0
+tatqa_008554,span,pass,,0,0
+tatqa_009769,span,pass,,0,0
+tatqa_004788,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'45,965'}",1,0
+tatqa_008756,multi-span,pass,,0,0
+tatqa_007807,span,pass,,0,0
+tatqa_003083,arithmetic,pass,,0,0
+tatqa_002463,span,pass,,0,0
+tatqa_002793,multi-span,pass,,0,0
+tatqa_009501,span,pass,,0,0
+tatqa_001679,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,655'}",1,0
+tatqa_003314,span,pass,,0,0
+tatqa_003579,span,pass,,0,0
+tatqa_004297,span,pass,,0,0
+tatqa_010887,multi-span,pass,,0,0
+tatqa_003811,span,pass,,0,0
+tatqa_005689,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'20,413'}",1,0
+tatqa_008619,span,pass,,0,0
+tatqa_009144,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012002,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '9,167,500'}",1,0
+tatqa_002562,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009629,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'27,716.25'}",1,0
+tatqa_013067,span,pass,,0,0
+tatqa_009348,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001898,multi-span,pass,,0,0
+tatqa_004505,span,pass,,0,0
+tatqa_008394,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '12.51'}",1,0
+tatqa_000752,span,pass,,0,0
+tatqa_005761,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '90.5'}",1,0
+tatqa_000890,span,pass,,0,0
+tatqa_011542,span,pass,,0,0
+tatqa_012479,multi-span,pass,,0,0
+tatqa_011624,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '47.17'}",1,0
+tatqa_012560,arithmetic,pass,,0,0
+tatqa_013156,span,pass,,0,0
+tatqa_000273,multi-span,pass,,0,0
+tatqa_005924,multi-span,pass,,0,0
+tatqa_000211,span,pass,,0,0
+tatqa_004859,arithmetic,pass,,0,0
+tatqa_005291,arithmetic,pass,,0,0
+tatqa_007991,multi-span,pass,,0,0
+tatqa_013023,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '16.45'}",1,0
+tatqa_010021,multi-span,pass,,0,0
+tatqa_006242,span,pass,,0,0
+tatqa_012158,span,pass,,0,0
+tatqa_004471,span,pass,,0,0
+tatqa_001117,span,pass,,0,0
+tatqa_004434,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002447,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,320'}",1,0
+tatqa_001060,span,pass,,0,0
+tatqa_006531,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'90.2364', '100'}",1,0
+tatqa_008614,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,882'}",1,0
+tatqa_001856,span,pass,,0,0
+tatqa_004186,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'184,416'}",1,0
+tatqa_007834,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001096,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11.4218965399405', '100', '157,426'}",1,0
+tatqa_007335,arithmetic,pass,,0,0
+tatqa_003453,span,pass,,0,0
+tatqa_004716,arithmetic,pass,,0,0
+tatqa_008045,multi-span,pass,,0,0
+tatqa_002995,span,pass,,0,0
+tatqa_003925,span,pass,,0,0
+tatqa_009621,span,pass,,0,0
+tatqa_005009,span,pass,,0,0
+tatqa_007964,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000289,span,pass,,0,0
+tatqa_001524,arithmetic,pass,,0,0
+tatqa_012348,count,pass,,0,0
+tatqa_000703,span,pass,,0,0
+tatqa_000504,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002433,multi-span,pass,,0,0
+tatqa_010628,multi-span,pass,,0,0
+tatqa_012455,span,pass,,0,0
+tatqa_004194,arithmetic,pass,,0,0
+tatqa_006424,span,pass,,0,0
+tatqa_008874,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003462,arithmetic,pass,,0,0
+tatqa_003869,arithmetic,pass,,0,0
+tatqa_001623,span,pass,,0,0
+tatqa_001441,span,pass,,0,0
+tatqa_011168,arithmetic,pass,,0,0
+tatqa_003375,span,pass,,0,0
+tatqa_010617,arithmetic,pass,,0,0
+tatqa_004704,arithmetic,pass,,0,0
+tatqa_004411,span,pass,,0,0
+tatqa_011860,span,pass,,0,0
+tatqa_001050,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'81.97'},1,0
+tatqa_002747,arithmetic,pass,,0,0
+tatqa_008917,span,pass,,0,0
+tatqa_012376,multi-span,pass,,0,0
+tatqa_010386,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'29,773'}",1,0
+tatqa_011216,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '12,664'}",1,0
+tatqa_006422,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,425'}",1,0
+tatqa_007140,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,384', '5,384.0'}",1,0
+tatqa_005350,span,pass,,0,0
+tatqa_006156,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15,460'}",1,0
+tatqa_006248,span,pass,,0,0
+tatqa_002262,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,277'}",1,0
+tatqa_001938,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002487,span,pass,,0,0
+tatqa_012771,span,pass,,0,0
+tatqa_006106,multi-span,pass,,0,0
+tatqa_012581,span,pass,,0,0
+tatqa_010956,arithmetic,pass,,0,0
+tatqa_003076,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009874,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'13.0925', '52.37'}",1,0
+tatqa_013053,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'423,531'}",1,0
+tatqa_012364,span,pass,,0,0
+tatqa_008247,arithmetic,pass,,0,0
+tatqa_003969,span,pass,,0,0
+tatqa_004556,arithmetic,pass,,0,0
+tatqa_002506,span,pass,,0,0
+tatqa_001377,span,pass,,0,0
+tatqa_002889,span,pass,,0,0
+tatqa_010462,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '7.4'}",1,0
+tatqa_001897,multi-span,pass,,0,0
+tatqa_009362,multi-span,pass,,0,0
+tatqa_005413,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '43.09978'}",1,0
+tatqa_008077,span,pass,,0,0
+tatqa_009108,span,pass,,0,0
+tatqa_012966,multi-span,pass,,0,0
+tatqa_001797,span,pass,,0,0
+tatqa_007869,arithmetic,pass,,0,0
+tatqa_001416,arithmetic,pass,,0,0
+tatqa_010908,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'857,238'}",1,0
+tatqa_006485,span,pass,,0,0
+tatqa_007329,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,942'}",1,0
+tatqa_004960,multi-span,pass,,0,0
+tatqa_008928,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'115,275'}",1,0
+tatqa_002242,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011903,span,pass,,0,0
+tatqa_011756,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,993'}",1,0
+tatqa_001016,span,pass,,0,0
+tatqa_007590,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'48'},1,0
+tatqa_003533,arithmetic,pass,,0,0
+tatqa_002949,span,pass,,0,0
+tatqa_012810,span,pass,,0,0
+tatqa_005941,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005588,span,pass,,0,0
+tatqa_009836,span,pass,,0,0
+tatqa_010924,multi-span,pass,,0,0
+tatqa_010788,arithmetic,pass,,0,0
+tatqa_012644,multi-span,pass,,0,0
+tatqa_006978,multi-span,pass,,0,0
+tatqa_003949,span,pass,,0,0
+tatqa_006534,span,pass,,0,0
+tatqa_010845,span,pass,,0,0
+tatqa_009105,multi-span,pass,,0,0
+tatqa_012202,span,pass,,0,0
+tatqa_010350,arithmetic,pass,,0,0
+tatqa_009777,multi-span,pass,,0,0
+tatqa_008342,span,pass,,0,0
+tatqa_001896,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '6.1784999999999995'}",1,0
+tatqa_008779,multi-span,fail,CITATION_LEAK: contains 'in the table',1,1
+tatqa_002622,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,742.7'}",1,0
+tatqa_005859,span,pass,,0,0
+tatqa_002331,multi-span,pass,,0,0
+tatqa_006212,span,pass,,0,0
+tatqa_000330,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008083,span,pass,,0,0
+tatqa_004616,span,pass,,0,0
+tatqa_000522,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000704,span,pass,,0,0
+tatqa_001537,span,pass,,0,0
+tatqa_007651,span,pass,,0,0
+tatqa_012750,span,pass,,0,0
+tatqa_006869,span,pass,,0,0
+tatqa_009972,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '42.17'}",1,0
+tatqa_001600,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '47.800'}",1,0
+tatqa_012502,span,pass,,0,0
+tatqa_000305,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'303'},1,0
+tatqa_006078,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'465,779'}",1,0
+tatqa_012230,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003880,span,pass,,0,0
+tatqa_010009,span,pass,,0,0
+tatqa_011466,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'167,008'}",1,0
+tatqa_013036,span,pass,,0,0
+tatqa_006330,span,pass,,0,0
+tatqa_004370,span,pass,,0,0
+tatqa_011661,span,pass,,0,0
+tatqa_003421,span,pass,,0,0
+tatqa_002236,count,pass,"COUNT_PREFILTER_WARNING: Values used has 4 bullet(s), equal to gold count (4) - possible pre-filtering",1,1
+tatqa_003613,span,pass,,0,0
+tatqa_001780,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'134.1'},1,0
+tatqa_000862,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004523,span,pass,,0,0
+tatqa_005935,arithmetic,pass,,0,0
+tatqa_002762,multi-span,pass,,0,0
+tatqa_005196,arithmetic,pass,,0,0
+tatqa_001811,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2,653', '1.1142377'}",1,0
+tatqa_005764,span,pass,,0,0
+tatqa_005234,span,pass,,0,0
+tatqa_007837,span,pass,,0,0
+tatqa_002620,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,507.56'}",1,0
+tatqa_004024,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,076'}",1,0
+tatqa_009052,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007124,arithmetic,pass,,0,0
+tatqa_000359,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,126'}",1,0
+tatqa_004889,span,pass,,0,0
+tatqa_000497,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'34,467', '8,616.75'}",1,0
+tatqa_012698,arithmetic,pass,,0,0
+tatqa_010680,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '78.3916'}",1,0
+tatqa_004102,arithmetic,pass,,0,0
+tatqa_001299,multi-span,pass,,0,0
+tatqa_000141,span,pass,,0,0
+tatqa_000540,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'185.6'},1,0
+tatqa_010354,span,pass,,0,0
+tatqa_012211,arithmetic,pass,,0,0
+tatqa_005869,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '15.38'}",1,0
+tatqa_009592,span,pass,,0,0
+tatqa_010514,multi-span,pass,,0,0
+tatqa_001743,span,pass,,0,0
+tatqa_000197,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '7.407407407407407'}",1,0
+tatqa_010226,span,pass,,0,0
+tatqa_000453,span,pass,,0,0
+tatqa_011070,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,626'}",1,0
+tatqa_008112,multi-span,pass,,0,0
+tatqa_001954,multi-span,pass,,0,0
+tatqa_009387,span,pass,,0,0
+tatqa_012878,span,pass,,0,0
+tatqa_005302,span,pass,,0,0
+tatqa_008500,arithmetic,pass,,0,0
+tatqa_011085,span,pass,,0,0
+tatqa_003618,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.85185'}",1,0
+tatqa_010349,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005550,arithmetic,pass,,0,0
+tatqa_002587,span,pass,,0,0
+tatqa_009191,arithmetic,pass,,0,0
+tatqa_002485,span,pass,,0,0
+tatqa_003093,multi-span,pass,,0,0
+tatqa_012491,span,pass,,0,0
+tatqa_000219,span,pass,,0,0
+tatqa_010339,span,pass,,0,0
+tatqa_003711,span,pass,,0,0
+tatqa_001497,multi-span,pass,,0,0
+tatqa_007164,span,pass,,0,0
+tatqa_010109,arithmetic,pass,,0,0
+tatqa_003878,span,pass,,0,0
+tatqa_009496,arithmetic,pass,,0,0
+tatqa_007999,span,pass,,0,0
+tatqa_002038,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'335'},1,0
+tatqa_012957,arithmetic,pass,,0,0
+tatqa_007495,multi-span,pass,,0,0
+tatqa_012041,span,pass,,0,0
+tatqa_011668,span,pass,,0,0
+tatqa_004277,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'50'},1,0
+tatqa_004379,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,200'}",1,0
+tatqa_007831,span,pass,,0,0
+tatqa_005164,span,pass,,0,0
+tatqa_010915,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009139,span,pass,,0,0
+tatqa_000626,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '49.83'}",1,0
+tatqa_011190,span,pass,,0,0
+tatqa_012806,count,pass,"COUNT_PREFILTER_WARNING: Values used has 3 bullet(s), equal to gold count (3) - possible pre-filtering",1,1
+tatqa_012530,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'51,408.33'}",1,0
+tatqa_007202,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'15.7'},1,0
+tatqa_011200,span,pass,,0,0
+tatqa_000996,span,pass,,0,0
+tatqa_008256,span,pass,,0,0
+tatqa_008761,multi-span,pass,,0,0
+tatqa_012969,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012958,span,pass,,0,0
+tatqa_000256,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3.8095238095238093'}",1,0
+tatqa_011279,span,pass,,0,0
+tatqa_009169,multi-span,pass,,0,0
+tatqa_003653,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'23,413'}",1,0
+tatqa_006647,span,pass,,0,0
+tatqa_011374,span,pass,,0,0
+tatqa_000521,count,pass,,0,0
+tatqa_003048,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008788,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,336,515'}",1,0
+tatqa_002234,span,pass,,0,0
+tatqa_010271,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '61.40'}",1,0
+tatqa_006883,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'39,141'}",1,0
+tatqa_003302,span,pass,,0,0
+tatqa_005176,span,pass,,0,0
+tatqa_001123,span,pass,,0,0
+tatqa_010935,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'42,002'}",1,0
+tatqa_005731,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '5.35'}",1,0
+tatqa_007410,span,pass,,0,0
+tatqa_000679,span,pass,,0,0
+tatqa_010258,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003392,span,pass,,0,0
+tatqa_002649,span,pass,,0,0
+tatqa_001093,multi-span,pass,,0,0
+tatqa_010689,span,pass,,0,0
+tatqa_004332,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013025,span,pass,,0,0
+tatqa_012974,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,772'}",1,0
+tatqa_004950,arithmetic,pass,,0,0
+tatqa_005804,multi-span,pass,,0,0
+tatqa_013239,span,pass,,0,0
+tatqa_001533,multi-span,pass,,0,0
+tatqa_007638,span,pass,,0,0
+tatqa_007415,span,pass,,0,0
+tatqa_003704,span,pass,,0,0
+tatqa_004520,span,pass,,0,0
+tatqa_006598,span,pass,,0,0
+tatqa_000348,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '457'}",1,0
+tatqa_009317,arithmetic,pass,,0,0
+tatqa_011388,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003634,count,pass,,0,0
+tatqa_002570,multi-span,pass,,0,0
+tatqa_010217,span,pass,,0,0
+tatqa_003385,multi-span,pass,,0,0
+tatqa_000675,span,pass,,0,0
+tatqa_012032,arithmetic,pass,,0,0
+tatqa_010026,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009682,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,264,288'}",1,0
+tatqa_000188,span,pass,,0,0
+tatqa_007391,span,pass,,0,0
+tatqa_004333,multi-span,pass,,0,0
+tatqa_007774,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'12,987'}",1,0
+tatqa_000422,span,pass,,0,0
+tatqa_007063,span,pass,,0,0
+tatqa_013148,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,597'}",1,0
+tatqa_002473,span,pass,,0,0
+tatqa_003610,span,pass,,0,0
+tatqa_002239,span,pass,,0,0
+tatqa_011491,multi-span,pass,,0,0
+tatqa_011412,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003026,span,pass,,0,0
+tatqa_007778,multi-span,pass,,0,0
+tatqa_006466,span,pass,,0,0
+tatqa_011906,arithmetic,pass,,0,0
+tatqa_000450,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011258,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000657,span,pass,,0,0
+tatqa_006045,span,pass,,0,0
+tatqa_012835,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,507.5'}",1,0
+tatqa_003751,span,pass,,0,0
+tatqa_002945,count,pass,,0,0
+tatqa_010154,span,pass,,0,0
+tatqa_006360,multi-span,pass,,0,0
+tatqa_012033,span,pass,,0,0
+tatqa_008827,multi-span,pass,,0,0
+tatqa_009952,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,417'}",1,0
+tatqa_005183,span,pass,,0,0
+tatqa_004620,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3.400416'}",1,0
+tatqa_009283,multi-span,pass,,0,0
+tatqa_006194,span,pass,,0,0
+tatqa_001401,span,pass,,0,0
+tatqa_003571,span,pass,,0,0
+tatqa_009498,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,657.5'}",1,0
+tatqa_002551,span,pass,,0,0
+tatqa_003879,multi-span,pass,,0,0
+tatqa_006346,span,pass,,0,0
+tatqa_012124,span,pass,,0,0
+tatqa_012954,multi-span,pass,,0,0
+tatqa_003649,span,pass,,0,0
+tatqa_013106,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,148'}",1,0
+tatqa_006951,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '27.91'}",1,0
+tatqa_012566,arithmetic,pass,,0,0
+tatqa_000384,count,pass,,0,0
+tatqa_001688,span,pass,,0,0
+tatqa_012056,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'31.5327', '102.4542', '70.9215', '51.2271'}",1,0
+tatqa_010193,arithmetic,pass,,0,0
+tatqa_013158,span,pass,,0,0
+tatqa_005094,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008131,span,pass,,0,0
+tatqa_001106,span,pass,,0,0
+tatqa_000380,multi-span,pass,,0,0
+tatqa_005039,count,pass,,0,0
+tatqa_000024,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002193,span,pass,,0,0
+tatqa_006119,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,332'}",1,0
+tatqa_008257,multi-span,pass,,0,0
+tatqa_004751,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006335,multi-span,pass,,0,0
+tatqa_003409,span,pass,,0,0
+tatqa_004106,span,pass,,0,0
+tatqa_006607,arithmetic,pass,,0,0
+tatqa_006034,span,pass,,0,0
+tatqa_000061,span,pass,,0,0
+tatqa_005454,count,pass,,0,0
+tatqa_006569,multi-span,pass,,0,0
+tatqa_010576,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'1.42'},1,0
+tatqa_000263,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'98.9'},1,0
+tatqa_013116,multi-span,pass,,0,0
+tatqa_005082,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,021'}",1,0
+tatqa_006879,span,pass,,0,0
+tatqa_005831,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'38,949'}",1,0
+tatqa_003736,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'23,000'}",1,0
+tatqa_001586,multi-span,pass,,0,0
+tatqa_001651,span,pass,,0,0
+tatqa_010281,span,pass,,0,0
+tatqa_008308,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'15'},1,0
+tatqa_005333,arithmetic,pass,,0,0
+tatqa_001819,span,pass,,0,0
+tatqa_001539,span,pass,,0,0
+tatqa_001439,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005954,span,pass,,0,0
+tatqa_011543,span,pass,,0,0
+tatqa_003188,span,pass,,0,0
+tatqa_009557,arithmetic,pass,,0,0
+tatqa_007264,arithmetic,pass,,0,0
+tatqa_011329,arithmetic,pass,,0,0
+tatqa_013047,arithmetic,pass,,0,0
+tatqa_012871,arithmetic,pass,,0,0
+tatqa_006262,span,pass,,0,0
+tatqa_011435,span,pass,,0,0
+tatqa_009751,span,pass,,0,0
+tatqa_009643,multi-span,pass,,0,0
+tatqa_011853,span,pass,,0,0
+tatqa_011289,span,pass,,0,0
+tatqa_005078,multi-span,pass,,0,0
+tatqa_004252,count,pass,,0,0
+tatqa_010051,span,pass,,0,0
+tatqa_003529,span,pass,,0,0
+tatqa_007844,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'514,435'}",1,0
+tatqa_007066,span,pass,,0,0
+tatqa_000037,span,pass,,0,0
+tatqa_000854,span,pass,,0,0
+tatqa_010674,arithmetic,pass,,0,0
+tatqa_004562,span,pass,,0,0
+tatqa_000175,multi-span,pass,,0,0
+tatqa_005315,count,pass,,0,0
+tatqa_005361,span,pass,,0,0
+tatqa_007572,span,pass,,0,0
+tatqa_010183,span,pass,,0,0
+tatqa_003661,span,pass,,0,0
+tatqa_002161,span,pass,,0,0
+tatqa_000025,span,pass,,0,0
+tatqa_001863,multi-span,pass,,0,0
+tatqa_001460,span,pass,,0,0
+tatqa_006001,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010450,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012365,span,pass,,0,0
+tatqa_008631,multi-span,pass,,0,0
+tatqa_003798,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3.61', '1,313'}",1,0
+tatqa_011461,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'45,067,712'}",1,0
+tatqa_012152,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'34,212', '17,106'}",1,0
+tatqa_003946,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'269,861'}",1,0
+tatqa_004470,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '8.41'}",1,0
+tatqa_011204,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'14.2'},1,0
+tatqa_000200,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'81,826'}",1,0
+tatqa_005231,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'7,588'}",1,0
+tatqa_002589,span,pass,,0,0
+tatqa_012805,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004367,multi-span,pass,,0,0
+tatqa_009586,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'32'},1,0
+tatqa_012897,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '150.0'}",1,0
+tatqa_013055,span,pass,,0,0
+tatqa_002530,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'28,427'}",1,0
+tatqa_010334,span,pass,,0,0
+tatqa_006684,span,pass,,0,0
+tatqa_011641,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'94,752'}",1,0
+tatqa_001487,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '5.428881650379913'}",1,0
+tatqa_007497,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002647,span,pass,,0,0
+tatqa_010353,multi-span,pass,,0,0
+tatqa_006223,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '123'}",1,0
+tatqa_000227,arithmetic,pass,,0,0
+tatqa_002071,span,pass,,0,0
+tatqa_005064,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'178'},1,0
+tatqa_012755,span,pass,,0,0
+tatqa_001138,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'127,457'}",1,0
+tatqa_008577,span,pass,,0,0
+tatqa_005205,span,pass,,0,0
+tatqa_004748,span,pass,,0,0
+tatqa_010653,span,pass,,0,0
+tatqa_013150,span,pass,,0,0
+tatqa_010461,span,pass,,0,0
+tatqa_006237,span,pass,,0,0
+tatqa_003410,span,pass,,0,0
+tatqa_010007,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,566.33'}",1,0
+tatqa_006253,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000251,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'144'},1,0
+tatqa_002410,arithmetic,pass,,0,0
+tatqa_009210,arithmetic,pass,,0,0
+tatqa_010302,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'18.2'},1,0
+tatqa_004905,span,pass,,0,0
+tatqa_007492,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,766', '676'}",1,0
+tatqa_011006,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,450'}",1,0
+tatqa_006762,multi-span,pass,,0,0
+tatqa_010322,span,pass,,0,0
+tatqa_002416,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000710,span,pass,,0,0
+tatqa_010855,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006652,multi-span,pass,,0,0
+tatqa_005780,span,pass,,0,0
+tatqa_011960,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '73.07'}",1,0
+tatqa_012526,span,pass,,0,0
+tatqa_002619,multi-span,pass,,0,0
+tatqa_003236,span,pass,,0,0
+tatqa_003765,multi-span,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'29', '28', '30'}",1,0
+tatqa_007201,span,pass,,0,0
+tatqa_011664,arithmetic,pass,,0,0
+tatqa_009895,span,pass,,0,0
+tatqa_012110,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'437,689'}",1,0
+tatqa_003418,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,713.29'}",1,0
+tatqa_007054,span,pass,,0,0
+tatqa_011156,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '4.45'}",1,0
+tatqa_010985,span,pass,,0,0
+tatqa_007715,multi-span,pass,,0,0
+tatqa_000738,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '7.73671096345515'}",1,0
+tatqa_009431,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002483,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'597,502'}",1,0
+tatqa_005943,multi-span,pass,,0,0
+tatqa_010212,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '84.807256'}",1,0
+tatqa_009456,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005092,span,pass,,0,0
+tatqa_005290,span,pass,,0,0
+tatqa_006860,arithmetic,pass,,0,0
+tatqa_012555,multi-span,pass,,0,0
+tatqa_003387,multi-span,pass,,0,0
+tatqa_010783,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001542,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002112,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012068,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.11809'}",1,0
+tatqa_007675,span,pass,,0,0
+tatqa_007518,span,pass,,0,0
+tatqa_010259,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012421,span,pass,,0,0
+tatqa_006181,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '19.8'}",1,0
+tatqa_002728,arithmetic,pass,,0,0
+tatqa_004135,multi-span,pass,,0,0
+tatqa_011401,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,182.5'}",1,0
+tatqa_013182,span,pass,,0,0
+tatqa_003041,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'1.5'},1,0
+tatqa_003436,span,pass,,0,0
+tatqa_000156,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009628,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,961'}",1,0
+tatqa_000678,arithmetic,pass,,0,0
+tatqa_000092,span,pass,,0,0
+tatqa_006723,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013151,span,pass,,0,0
+tatqa_000331,span,pass,,0,0
+tatqa_012517,arithmetic,pass,,0,0
+tatqa_010133,arithmetic,pass,,0,0
+tatqa_002727,span,pass,,0,0
+tatqa_013048,span,pass,,0,0
+tatqa_012191,span,pass,,0,0
+tatqa_000439,multi-span,pass,,0,0
+tatqa_005157,span,pass,,0,0
+tatqa_002662,multi-span,pass,,0,0
+tatqa_001270,span,pass,,0,0
+tatqa_000802,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008548,arithmetic,pass,,0,0
+tatqa_008198,multi-span,pass,,0,0
+tatqa_001925,arithmetic,pass,,0,0
+tatqa_012905,span,pass,,0,0
+tatqa_004095,span,pass,,0,0
+tatqa_004236,span,pass,,0,0
+tatqa_008335,multi-span,pass,,0,0
+tatqa_010079,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,099'}",1,0
+tatqa_011728,span,pass,,0,0
+tatqa_011496,arithmetic,pass,,0,0
+tatqa_012521,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010244,multi-span,pass,,0,0
+tatqa_012532,span,pass,,0,0
+tatqa_006779,span,pass,,0,0
+tatqa_010833,span,pass,,0,0
+tatqa_011817,multi-span,pass,,0,0
+tatqa_001124,span,pass,,0,0
+tatqa_006154,multi-span,pass,,0,0
+tatqa_009985,span,pass,,0,0
+tatqa_001828,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,897'}",1,0
+tatqa_009792,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000525,span,pass,,0,0
+tatqa_000875,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,700', '1,233.33'}",1,0
+tatqa_011171,span,pass,,0,0
+tatqa_004926,arithmetic,pass,,0,0
+tatqa_008145,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'239,424'}",1,0
+tatqa_001363,multi-span,pass,,0,0
+tatqa_009583,span,pass,,0,0
+tatqa_005923,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008998,arithmetic,pass,,0,0
+tatqa_000325,span,pass,,0,0
+tatqa_007805,multi-span,pass,,0,0
+tatqa_000445,span,pass,,0,0
+tatqa_000248,span,pass,,0,0
+tatqa_009476,span,pass,,0,0
+tatqa_007195,span,pass,,0,0
+tatqa_004196,span,pass,,0,0
+tatqa_004225,span,pass,,0,0
+tatqa_010731,span,pass,,0,0
+tatqa_003297,span,pass,,0,0
+tatqa_010262,span,pass,,0,0
+tatqa_008770,span,pass,,0,0
+tatqa_013098,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,033.3'}",1,0
+tatqa_012038,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009384,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008533,span,pass,,0,0
+tatqa_012407,span,pass,,0,0
+tatqa_011099,span,pass,,0,0
+tatqa_009752,span,pass,,0,0
+tatqa_006315,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012286,span,pass,,0,0
+tatqa_004743,multi-span,pass,,0,0
+tatqa_004143,span,pass,,0,0
+tatqa_008595,multi-span,pass,,0,0
+tatqa_001748,span,pass,,0,0
+tatqa_007008,multi-span,pass,,0,0
+tatqa_008470,arithmetic,pass,,0,0
+tatqa_007787,span,pass,,0,0
+tatqa_005033,span,pass,,0,0
+tatqa_000146,span,pass,,0,0
+tatqa_012099,span,pass,,0,0
+tatqa_006864,span,pass,,0,0
+tatqa_010975,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'137'},1,0
+tatqa_012037,arithmetic,pass,,0,0
+tatqa_007668,span,pass,,0,0
+tatqa_010888,span,pass,,0,0
+tatqa_010990,span,pass,,0,0
+tatqa_012735,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '8.1'}",1,0
+tatqa_004515,multi-span,pass,,0,0
+tatqa_008215,span,pass,,0,0
+tatqa_004150,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'138,419'}",1,0
+tatqa_005024,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008065,span,pass,,0,0
+tatqa_006972,span,pass,,0,0
+tatqa_004466,span,pass,,0,0
+tatqa_004310,multi-span,pass,,0,0
+tatqa_011501,span,pass,,0,0
+tatqa_008449,span,pass,,0,0
+tatqa_004152,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'801,904.5'}",1,0
+tatqa_011572,span,pass,,0,0
+tatqa_001292,span,pass,,0,0
+tatqa_000793,span,pass,,0,0
+tatqa_000424,count,pass,,0,0
+tatqa_006626,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'528'},1,0
+tatqa_002856,arithmetic,pass,,0,0
+tatqa_000016,span,pass,,0,0
+tatqa_000496,multi-span,pass,,0,0
+tatqa_012683,span,pass,,0,0
+tatqa_009801,span,pass,,0,0
+tatqa_010694,multi-span,pass,,0,0
+tatqa_007285,span,pass,,0,0
+tatqa_007177,span,pass,,0,0
+tatqa_011696,arithmetic,pass,,0,0
+tatqa_000420,span,pass,,0,0
+tatqa_011325,span,pass,,0,0
+tatqa_004416,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '41.95'}",1,0
+tatqa_002373,multi-span,pass,,0,0
+tatqa_009673,span,pass,,0,0
+tatqa_012673,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '9.19'}",1,0
+tatqa_007816,arithmetic,pass,,0,0
+tatqa_012106,span,pass,,0,0
+tatqa_007955,span,pass,,0,0
+tatqa_004502,span,pass,,0,0
+tatqa_009774,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,270'}",1,0
+tatqa_006698,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,750'}",1,0
+tatqa_011405,span,pass,,0,0
+tatqa_008404,count,pass,,0,0
+tatqa_007436,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003296,span,pass,,0,0
+tatqa_010065,multi-span,pass,,0,0
+tatqa_011451,multi-span,pass,,0,0
+tatqa_002729,arithmetic,pass,,0,0
+tatqa_012856,span,pass,,0,0
+tatqa_012122,arithmetic,pass,,0,0
+tatqa_012096,arithmetic,pass,,0,0
+tatqa_005902,multi-span,pass,,0,0
+tatqa_010414,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'170,555'}",1,0
+tatqa_003473,arithmetic,pass,,0,0
+tatqa_008774,span,pass,,0,0
+tatqa_005439,span,pass,,0,0
+tatqa_002918,multi-span,pass,,0,0
+tatqa_001390,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'120,768'}",1,0
+tatqa_003919,span,pass,,0,0
+tatqa_012116,span,pass,,0,0
+tatqa_010923,span,pass,,0,0
+tatqa_003037,span,pass,,0,0
+tatqa_009639,span,pass,,0,0
+tatqa_010436,span,pass,,0,0
+tatqa_005833,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007046,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15,422'}",1,0
+tatqa_007118,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'506.8'},1,0
+tatqa_004476,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'96,511'}",1,0
+tatqa_001929,span,pass,,0,0
+tatqa_004545,span,pass,,0,0
+tatqa_009172,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011712,count,pass,,0,0
+tatqa_008716,count,pass,,0,0
+tatqa_005729,span,pass,,0,0
+tatqa_008805,multi-span,pass,,0,0
+tatqa_001349,count,pass,,0,0
+tatqa_008375,arithmetic,pass,,0,0
+tatqa_003581,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,558'}",1,0
+tatqa_003154,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009203,span,pass,,0,0
+tatqa_004012,arithmetic,pass,,0,0
+tatqa_002184,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '87.15'}",1,0
+tatqa_009467,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '29.89'}",1,0
+tatqa_000988,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,114.5'}",1,0
+tatqa_012226,span,pass,,0,0
+tatqa_012898,span,pass,,0,0
+tatqa_000090,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '23.2476'}",1,0
+tatqa_011395,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004824,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'406'},1,0
+tatqa_011202,span,pass,,0,0
+tatqa_012086,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11.8075', '47.23'}",1,0
+tatqa_001162,count,pass,,0,0
+tatqa_000465,multi-span,pass,,0,0
+tatqa_000555,span,pass,,0,0
+tatqa_012048,span,pass,,0,0
+tatqa_010574,span,pass,,0,0
+tatqa_004614,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'57', '7,251', '12,806'}",1,0
+tatqa_011026,span,pass,,0,0
+tatqa_002910,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'12'},1,0
+tatqa_006697,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,525'}",1,0
+tatqa_001557,span,pass,,0,0
+tatqa_012654,count,pass,,0,0
+tatqa_003193,span,pass,,0,0
+tatqa_000152,span,pass,,0,0
+tatqa_001015,span,pass,,0,0
+tatqa_009804,span,pass,,0,0
+tatqa_005468,span,pass,,0,0
+tatqa_011875,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'92,101.5'}",1,0
+tatqa_012679,span,pass,,0,0
+tatqa_007112,arithmetic,pass,,0,0
+tatqa_001742,span,pass,,0,0
+tatqa_013184,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,036.5'}",1,0
+tatqa_000545,arithmetic,pass,,0,0
+tatqa_009236,multi-span,pass,,0,0
+tatqa_007060,span,pass,,0,0
+tatqa_011290,span,pass,,0,0
+tatqa_001499,arithmetic,pass,,0,0
+tatqa_008790,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008305,span,pass,,0,0
+tatqa_003821,count,pass,,0,0
+tatqa_012105,span,pass,,0,0
+tatqa_010897,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002980,multi-span,pass,,0,0
+tatqa_006124,multi-span,pass,,0,0
+tatqa_002175,span,pass,,0,0
+tatqa_008718,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003294,arithmetic,pass,,0,0
+tatqa_006729,span,pass,,0,0
+tatqa_002542,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15,433,633.5'}",1,0
+tatqa_004758,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,648'}",1,0
+tatqa_006138,arithmetic,pass,,0,0
+tatqa_002464,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007838,arithmetic,pass,,0,0
+tatqa_002052,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009160,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,223', '8,446'}",1,0
+tatqa_005215,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000953,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'74'},1,0
+tatqa_003190,arithmetic,pass,,0,0
+tatqa_006894,multi-span,pass,,0,0
+tatqa_005340,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'239,236'}",1,0
+tatqa_008793,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001821,span,pass,,0,0
+tatqa_003023,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'260,244', '130,122'}",1,0
+tatqa_009844,count,pass,,0,0
+tatqa_007502,span,pass,,0,0
+tatqa_009851,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011818,span,pass,,0,0
+tatqa_012947,span,pass,,0,0
+tatqa_001333,multi-span,pass,,0,0
+tatqa_000769,span,pass,,0,0
+tatqa_008152,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'289,586'}",1,0
+tatqa_001771,multi-span,pass,,0,0
+tatqa_007757,multi-span,pass,,0,0
+tatqa_010163,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '29.23'}",1,0
+tatqa_001799,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'1057.3'},1,0
+tatqa_006765,span,pass,,0,0
+tatqa_004255,span,pass,,0,0
+tatqa_010952,span,pass,,0,0
+tatqa_011132,span,pass,,0,0
+tatqa_011893,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2,800'}",1,0
+tatqa_003625,span,pass,,0,0
+tatqa_011576,arithmetic,pass,,0,0
+tatqa_002251,span,pass,,0,0
+tatqa_002614,span,pass,,0,0
+tatqa_007295,span,pass,,0,0
+tatqa_010944,arithmetic,pass,,0,0
+tatqa_000254,span,pass,,0,0
+tatqa_010399,span,pass,,0,0
+tatqa_010359,multi-span,pass,,0,0
+tatqa_009346,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,419'}",1,0
+tatqa_005841,span,pass,,0,0
+tatqa_002270,multi-span,pass,,0,0
+tatqa_010543,span,pass,,0,0
+tatqa_003382,arithmetic,pass,,0,0
+tatqa_012556,multi-span,pass,,0,0
+tatqa_009308,span,pass,,0,0
+tatqa_003002,multi-span,pass,,0,0
+tatqa_003978,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '5.6', '96.55'}",1,0
+tatqa_013189,arithmetic,pass,,0,0
+tatqa_012943,multi-span,pass,,0,0
+tatqa_002232,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '74.6031746031746'}",1,0
+tatqa_008130,span,pass,,0,0
+tatqa_002128,count,pass,"COUNT_PREFILTER_WARNING: Values used has 3 bullet(s), equal to gold count (3) - possible pre-filtering",1,1
+tatqa_006219,multi-span,pass,,0,0
+tatqa_002527,span,pass,,0,0
+tatqa_006486,span,pass,,0,0
+tatqa_003889,span,pass,,0,0
+tatqa_009599,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,505'}",1,0
+tatqa_001276,arithmetic,pass,,0,0
+tatqa_004442,span,pass,,0,0
+tatqa_004326,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,824.5', '6,979', '665', '1,330', '3,489.5'}",1,0
+tatqa_004745,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'13,903'}",1,0
+tatqa_011814,span,pass,,0,0
+tatqa_010000,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,481'}",1,0
+tatqa_000539,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15.5', '29.0'}",1,0
+tatqa_002769,multi-span,pass,,0,0
+tatqa_006113,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'49,700'}",1,0
+tatqa_001860,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '37.56'}",1,0
+tatqa_000214,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,269'}",1,0
+tatqa_001588,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'21,337.5'}",1,0
+tatqa_000571,multi-span,pass,,0,0
+tatqa_000650,span,pass,,0,0
+tatqa_000558,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010940,span,pass,,0,0
+tatqa_006469,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'401.26'},1,0
+tatqa_010453,multi-span,pass,,0,0
+tatqa_001201,span,pass,,0,0
+tatqa_010933,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '7.22'}",1,0
+tatqa_005857,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,417.5'}",1,0
+tatqa_005548,multi-span,pass,,0,0
+tatqa_008171,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007028,arithmetic,pass,,0,0
+tatqa_005858,span,pass,,0,0
+tatqa_010880,span,pass,,0,0
+tatqa_010739,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002790,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,348', '100'}",1,0
+tatqa_006537,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'35'},1,0
+tatqa_001989,span,pass,,0,0
+tatqa_002186,span,pass,,0,0
+tatqa_013005,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009576,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'240,107', '80,035.67', '3'}",1,0
+tatqa_001005,multi-span,pass,,0,0
+tatqa_011157,span,pass,,0,0
+tatqa_007420,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'12,606'}",1,0
+tatqa_000530,span,pass,,0,0
+tatqa_010224,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007795,multi-span,pass,,0,0
+tatqa_002398,arithmetic,pass,,0,0
+tatqa_012234,span,pass,,0,0
+tatqa_002799,span,pass,,0,0
+tatqa_003815,arithmetic,pass,,0,0
+tatqa_011251,arithmetic,pass,,0,0
+tatqa_010889,arithmetic,pass,,0,0
+tatqa_004474,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,431'}",1,0
+tatqa_000144,span,pass,,0,0
+tatqa_002546,span,pass,,0,0
+tatqa_012047,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'132,826,798'}",1,0
+tatqa_004698,arithmetic,pass,,0,0
+tatqa_011761,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'34'},1,0
+tatqa_006145,arithmetic,pass,,0,0
+tatqa_007944,span,pass,,0,0
+tatqa_003883,span,pass,,0,0
+tatqa_007034,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'390,238'}",1,0
+tatqa_002941,span,pass,,0,0
+tatqa_007749,span,pass,,0,0
+tatqa_000607,multi-span,pass,,0,0
+tatqa_002492,span,pass,,0,0
+tatqa_007875,arithmetic,pass,,0,0
+tatqa_013245,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '37.59'}",1,0
+tatqa_010119,span,pass,,0,0
+tatqa_003123,span,pass,,0,0
+tatqa_004559,span,pass,,0,0
+tatqa_011733,span,pass,,0,0
+tatqa_013231,arithmetic,pass,,0,0
+tatqa_006132,span,pass,,0,0
+tatqa_006536,arithmetic,pass,,0,0
+tatqa_006797,span,pass,,0,0
+tatqa_006570,multi-span,pass,,0,0
+tatqa_005521,arithmetic,pass,,0,0
+tatqa_007934,span,pass,,0,0
+tatqa_000903,span,pass,,0,0
+tatqa_004172,span,pass,,0,0
+tatqa_007512,span,pass,,0,0
+tatqa_003514,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000687,span,pass,,0,0
+tatqa_011830,span,pass,,0,0
+tatqa_011211,span,pass,,0,0
+tatqa_000237,span,pass,,0,0
+tatqa_012175,arithmetic,pass,,0,0
+tatqa_002667,span,pass,,0,0
+tatqa_004017,span,pass,,0,0
+tatqa_003527,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,350'}",1,0
+tatqa_009987,multi-span,pass,,0,0
+tatqa_003343,span,pass,,0,0
+tatqa_003402,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006504,multi-span,pass,,0,0
+tatqa_009812,span,pass,,0,0
+tatqa_003763,span,pass,,0,0
+tatqa_009867,multi-span,pass,,0,0
+tatqa_010957,arithmetic,pass,,0,0
+tatqa_003452,multi-span,pass,,0,0
+tatqa_005248,arithmetic,pass,,0,0
+tatqa_011308,span,pass,,0,0
+tatqa_010681,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'67,576'}",1,0
+tatqa_005875,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '38.54'}",1,0
+tatqa_002351,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'102,879'}",1,0
+tatqa_012514,span,pass,,0,0
+tatqa_003621,span,pass,,0,0
+tatqa_000186,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007528,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'170,658'}",1,0
+tatqa_001618,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'136'},1,0
+tatqa_002635,span,pass,,0,0
+tatqa_003207,span,pass,,0,0
+tatqa_012820,multi-span,pass,,0,0
+tatqa_008118,span,pass,,0,0
+tatqa_001130,span,pass,,0,0
+tatqa_000985,span,pass,,0,0
+tatqa_000341,arithmetic,pass,,0,0
+tatqa_003218,span,pass,,0,0
+tatqa_007303,multi-span,pass,,0,0
+tatqa_007862,arithmetic,pass,,0,0
+tatqa_010773,span,pass,,0,0
+tatqa_001361,count,pass,,0,0
+tatqa_001916,span,pass,,0,0
+tatqa_008588,span,pass,,0,0
+tatqa_012798,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'13,407'}",1,0
+tatqa_003956,span,pass,,0,0
+tatqa_001732,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,270'}",1,0
+tatqa_000727,span,pass,,0,0
+tatqa_010093,multi-span,pass,,0,0
+tatqa_001940,span,pass,,0,0
+tatqa_005999,span,pass,,0,0
+tatqa_012531,span,pass,,0,0
+tatqa_010863,span,pass,,0,0
+tatqa_005808,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11,974'}",1,0
+tatqa_011361,span,pass,,0,0
+tatqa_009151,span,pass,,0,0
+tatqa_007690,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009224,span,pass,,0,0
+tatqa_004448,multi-span,pass,,0,0
+tatqa_003816,arithmetic,pass,,0,0
+tatqa_002178,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012716,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'39,249'}",1,0
+tatqa_002115,multi-span,pass,,0,0
+tatqa_008358,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '61.14'}",1,0
+tatqa_013173,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011602,span,pass,,0,0
+tatqa_009380,span,pass,,0,0
+tatqa_001987,span,pass,,0,0
+tatqa_005130,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000490,arithmetic,pass,,0,0
+tatqa_005408,span,pass,,0,0
+tatqa_012149,multi-span,pass,,0,0
+tatqa_000846,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '72.11'}",1,0
+tatqa_009544,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'78.8'},1,0
+tatqa_007121,span,pass,,0,0
+tatqa_011414,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'18,764'}",1,0
+tatqa_004592,span,pass,,0,0
+tatqa_006198,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,286'}",1,0
+tatqa_006898,span,pass,,0,0
+tatqa_011162,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006228,arithmetic,pass,,0,0
+tatqa_003357,span,pass,,0,0
+tatqa_004570,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'41,226,898'}",1,0
+tatqa_006278,span,pass,,0,0
+tatqa_005599,span,pass,,0,0
+tatqa_005874,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'25'},1,0
+tatqa_009415,span,pass,,0,0
+tatqa_004747,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '10.81', '2,830'}",1,0
+tatqa_010584,arithmetic,pass,,0,0
+tatqa_001315,span,pass,,0,0
+tatqa_006614,span,pass,,0,0
+tatqa_010135,span,pass,,0,0
+tatqa_008959,span,pass,,0,0
+tatqa_008120,span,pass,,0,0
+tatqa_012629,multi-span,pass,,0,0
+tatqa_009701,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,374.5'}",1,0
+tatqa_009831,span,pass,,0,0
+tatqa_005802,count,pass,,0,0
+tatqa_002424,arithmetic,pass,,0,0
+tatqa_012793,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '256'}",1,0
+tatqa_002309,arithmetic,pass,,0,0
+tatqa_008418,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '18.59'}",1,0
+tatqa_005373,span,pass,,0,0
+tatqa_001673,arithmetic,pass,,0,0
+tatqa_010111,span,pass,,0,0
+tatqa_000506,span,pass,,0,0
+tatqa_010485,multi-span,pass,,0,0
+tatqa_007380,span,pass,,0,0
+tatqa_008119,multi-span,pass,,0,0
+tatqa_009784,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'31.67'},1,0
+tatqa_006802,multi-span,pass,,0,0
+tatqa_003139,span,pass,,0,0
+tatqa_006952,span,pass,,0,0
+tatqa_013235,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,461'}",1,0
+tatqa_003793,span,pass,,0,0
+tatqa_001483,span,pass,,0,0
+tatqa_003928,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,628.1'}",1,0
+tatqa_000121,span,pass,,0,0
+tatqa_004114,span,pass,,0,0
+tatqa_000130,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,288'}",1,0
+tatqa_005128,span,pass,,0,0
+tatqa_005025,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010570,count,pass,,0,0
+tatqa_008732,span,pass,,0,0
+tatqa_011306,span,pass,,0,0
+tatqa_001430,span,pass,,0,0
+tatqa_003501,span,pass,,0,0
+tatqa_009754,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,842.6'}",1,0
+tatqa_012861,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'19', '21'}",1,0
+tatqa_003980,span,pass,,0,0
+tatqa_000168,arithmetic,pass,,0,0
+tatqa_008253,count,pass,,0,0
+tatqa_005854,span,pass,,0,0
+tatqa_009807,span,pass,,0,0
+tatqa_003362,span,pass,,0,0
+tatqa_005476,multi-span,pass,,0,0
+tatqa_007859,span,pass,,0,0
+tatqa_003545,count,pass,,0,0
+tatqa_009002,span,pass,,0,0
+tatqa_012443,span,pass,,0,0
+tatqa_006596,arithmetic,pass,,0,0
+tatqa_008167,span,pass,,0,0
+tatqa_006192,arithmetic,pass,,0,0
+tatqa_008071,span,pass,,0,0
+tatqa_000814,span,pass,,0,0
+tatqa_011117,multi-span,pass,,0,0
+tatqa_006673,arithmetic,pass,,0,0
+tatqa_006724,span,pass,,0,0
+tatqa_011982,span,pass,,0,0
+tatqa_001160,span,pass,,0,0
+tatqa_006532,span,pass,,0,0
+tatqa_000277,multi-span,pass,,0,0
+tatqa_005886,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009309,multi-span,pass,,0,0
+tatqa_012177,span,pass,,0,0
+tatqa_010213,span,pass,,0,0
+tatqa_011459,multi-span,pass,,0,0
+tatqa_002512,span,pass,,0,0
+tatqa_001895,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,889'}",1,0
+tatqa_010253,span,pass,,0,0
+tatqa_006924,span,pass,,0,0
+tatqa_000886,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'196,941'}",1,0
+tatqa_013040,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000075,span,pass,,0,0
+tatqa_003677,arithmetic,pass,,0,0
+tatqa_006817,span,pass,,0,0
+tatqa_005390,span,pass,,0,0
+tatqa_009950,multi-span,pass,,0,0
+tatqa_005795,arithmetic,pass,,0,0
+tatqa_002033,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '9,305'}",1,0
+tatqa_002329,span,pass,,0,0
+tatqa_006796,span,pass,,0,0
+tatqa_011210,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,328'}",1,0
+tatqa_008531,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'33,443'}",1,0
+tatqa_006089,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '7.93'}",1,0
+tatqa_001943,arithmetic,pass,,0,0
+tatqa_007490,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'676', '2,255', '3.3357988', '2,931', '100'}",1,0
+tatqa_012321,span,pass,,0,0
+tatqa_002431,span,pass,,0,0
+tatqa_004929,multi-span,pass,,0,0
+tatqa_008419,span,pass,,0,0
+tatqa_002043,multi-span,pass,,0,0
+tatqa_000112,span,pass,,0,0
+tatqa_003580,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'25,907'}",1,0
+tatqa_007676,arithmetic,pass,,0,0
+tatqa_004918,multi-span,pass,,0,0
+tatqa_011467,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'241,437.5'}",1,0
+tatqa_002361,span,pass,,0,0
+tatqa_002247,multi-span,pass,,0,0
+tatqa_001074,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004193,arithmetic,pass,,0,0
+tatqa_001262,span,pass,,0,0
+tatqa_006389,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008014,arithmetic,pass,,0,0
+tatqa_001376,span,pass,,0,0
+tatqa_004679,arithmetic,pass,,0,0
+tatqa_004374,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009947,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,160'}",1,0
+tatqa_002644,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'13,482'}",1,0
+tatqa_005005,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '9'}",1,0
+tatqa_005967,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'31.3'},1,0
+tatqa_003546,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '52.11'}",1,0
+tatqa_007193,span,pass,,0,0
+tatqa_008700,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '43.33'}",1,0
+tatqa_011296,span,pass,,0,0
+tatqa_012053,multi-span,pass,,0,0
+tatqa_008210,multi-span,pass,,0,0
+tatqa_003128,span,pass,,0,0
+tatqa_007421,span,pass,,0,0
+tatqa_005451,span,pass,,0,0
+tatqa_012681,span,pass,,0,0
+tatqa_012004,span,pass,,0,0
+tatqa_009271,span,pass,,0,0
+tatqa_002170,span,pass,,0,0
+tatqa_012535,count,pass,,0,0
+tatqa_006941,multi-span,pass,,0,0
+tatqa_001103,arithmetic,pass,,0,0
+tatqa_002504,span,pass,,0,0
+tatqa_009159,multi-span,pass,,0,0
+tatqa_012989,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'532'},1,0
+tatqa_005498,span,pass,,0,0
+tatqa_005377,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002461,span,pass,,0,0
+tatqa_003563,arithmetic,pass,,0,0
+tatqa_003593,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,635'}",1,0
+tatqa_001599,span,pass,,0,0
+tatqa_000392,span,pass,,0,0
+tatqa_012329,span,pass,,0,0
+tatqa_004396,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '49.10'}",1,0
+tatqa_010667,arithmetic,pass,,0,0
+tatqa_000632,span,pass,,0,0
+tatqa_006657,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,276'}",1,0
+tatqa_006317,span,pass,,0,0
+tatqa_009302,span,pass,,0,0
+tatqa_006492,span,pass,,0,0
+tatqa_001340,span,pass,,0,0
+tatqa_000620,span,pass,,0,0
+tatqa_003292,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '14.7'}",1,0
+tatqa_009533,multi-span,pass,,0,0
+tatqa_005966,span,pass,,0,0
+tatqa_010575,span,pass,,0,0
+tatqa_005558,span,pass,,0,0
+tatqa_000944,span,pass,,0,0
+tatqa_008364,arithmetic,pass,,0,0
+tatqa_012419,multi-span,pass,,0,0
+tatqa_012740,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'40'},1,0
+tatqa_011479,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.78'}",1,0
+tatqa_003714,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '85.71'}",1,0
+tatqa_005559,multi-span,pass,,0,0
+tatqa_006742,span,pass,,0,0
+tatqa_002760,arithmetic,pass,,0,0
+tatqa_008511,span,pass,,0,0
+tatqa_009071,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'417,422.5'}",1,0
+tatqa_012921,arithmetic,pass,,0,0
+tatqa_003109,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '21.60'}",1,0
+tatqa_002776,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'19,027', '6,342.33'}",1,0
+tatqa_005725,arithmetic,pass,,0,0
+tatqa_009816,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '9.63'}",1,0
+tatqa_006013,arithmetic,pass,,0,0
+tatqa_007255,span,pass,,0,0
+tatqa_011018,count,pass,"COUNT_PREFILTER_WARNING: Values used has 10 bullet(s), equal to gold count (10) - possible pre-filtering",1,1
+tatqa_012563,span,pass,,0,0
+tatqa_007659,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'9.8'},1,0
+tatqa_005540,span,pass,,0,0
+tatqa_004781,count,pass,"COUNT_PREFILTER_WARNING: Values used has 4 bullet(s), equal to gold count (4) - possible pre-filtering",1,1
+tatqa_001890,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001883,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,505', '2,144'}",1,0
+tatqa_004283,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,438.21'}",1,0
+tatqa_007677,arithmetic,pass,,0,0
+tatqa_007010,arithmetic,pass,,0,0
+tatqa_006506,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'2.4'},1,0
+tatqa_005000,span,pass,,0,0
+tatqa_005799,span,pass,,0,0
+tatqa_010858,span,pass,,0,0
+tatqa_001830,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,521'}",1,0
+tatqa_002882,span,pass,,0,0
+tatqa_002286,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'4.10'},1,0
+tatqa_004845,multi-span,pass,,0,0
+tatqa_003151,span,pass,,0,0
+tatqa_001121,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001387,multi-span,pass,,0,0
+tatqa_006472,span,pass,,0,0
+tatqa_006175,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.51'}",1,0
+tatqa_011595,span,pass,,0,0
+tatqa_009504,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007457,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'355'},1,0
+tatqa_011538,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,149.67', '27,449'}",1,0
+tatqa_004161,span,pass,,0,0
+tatqa_000625,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'21,827.3', '7,275.77'}",1,0
+tatqa_010029,span,pass,,0,0
+tatqa_009996,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011972,arithmetic,pass,,0,0
+tatqa_008341,span,pass,,0,0
+tatqa_002623,span,pass,,0,0
+tatqa_002414,span,pass,,0,0
+tatqa_005713,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'929,445'}",1,0
+tatqa_001491,span,pass,,0,0
+tatqa_009164,span,pass,,0,0
+tatqa_004721,arithmetic,pass,,0,0
+tatqa_004149,span,pass,,0,0
+tatqa_001205,arithmetic,pass,,0,0
+tatqa_001964,multi-span,pass,,0,0
+tatqa_009532,span,pass,,0,0
+tatqa_012078,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'24,360'}",1,0
+tatqa_011003,span,pass,,0,0
+tatqa_012183,span,pass,,0,0
+tatqa_007069,span,pass,,0,0
+tatqa_012494,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006782,arithmetic,pass,,0,0
+tatqa_011477,span,pass,,0,0
+tatqa_006521,span,pass,,0,0
+tatqa_000444,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '39.05'}",1,0
+tatqa_002826,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '50.04'}",1,0
+tatqa_008181,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'15,837'}",1,0
+tatqa_003967,span,pass,,0,0
+tatqa_004723,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001025,arithmetic,pass,,0,0
+tatqa_000795,multi-span,pass,,0,0
+tatqa_008492,span,pass,,0,0
+tatqa_004163,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'21,085'}",1,0
+tatqa_008336,multi-span,pass,,0,0
+tatqa_012015,span,pass,,0,0
+tatqa_002869,multi-span,pass,,0,0
+tatqa_005667,span,pass,,0,0
+tatqa_001939,span,pass,,0,0
+tatqa_007624,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '54.59'}",1,0
+tatqa_002814,span,pass,,0,0
+tatqa_012908,arithmetic,pass,,0,0
+tatqa_002018,span,pass,,0,0
+tatqa_010459,span,pass,,0,0
+tatqa_007142,span,pass,,0,0
+tatqa_002267,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'75,000'}",1,0
+tatqa_010740,arithmetic,pass,,0,0
+tatqa_002135,arithmetic,pass,,0,0
+tatqa_005180,span,pass,,0,0
+tatqa_009134,span,pass,,0,0
+tatqa_007984,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'17,020'}",1,0
+tatqa_007431,arithmetic,pass,,0,0
+tatqa_002083,span,pass,,0,0
+tatqa_010324,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,249'}",1,0
+tatqa_002854,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,937'}",1,0
+tatqa_012955,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'7.00'},1,0
+tatqa_007359,span,pass,,0,0
+tatqa_007405,multi-span,pass,,0,0
+tatqa_006087,span,pass,,0,0
+tatqa_002912,span,pass,,0,0
+tatqa_005950,span,pass,,0,0
+tatqa_007133,span,pass,,0,0
+tatqa_001995,span,pass,,0,0
+tatqa_005939,arithmetic,pass,,0,0
+tatqa_007613,multi-span,pass,,0,0
+tatqa_010813,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013052,span,pass,,0,0
+tatqa_004701,span,pass,,0,0
+tatqa_003008,span,pass,,0,0
+tatqa_010352,span,pass,,0,0
+tatqa_011666,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,614.2', '1,851.75', '3'}",1,0
+tatqa_000042,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,342'}",1,0
+tatqa_005138,span,pass,,0,0
+tatqa_003001,multi-span,pass,,0,0
+tatqa_001490,span,pass,,0,0
+tatqa_004048,multi-span,pass,,0,0
+tatqa_005242,span,pass,,0,0
+tatqa_003611,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'106,434'}",1,0
+tatqa_012403,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '12.524457'}",1,0
+tatqa_003406,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'250'},1,0
+tatqa_005568,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,135'}",1,0
+tatqa_006623,span,pass,,0,0
+tatqa_012611,span,pass,,0,0
+tatqa_009608,multi-span,pass,,0,0
+tatqa_002445,span,pass,,0,0
+tatqa_001674,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'130,741'}",1,0
+tatqa_004314,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '5.09'}",1,0
+tatqa_008387,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'9,557'}",1,0
+tatqa_011227,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,182.67'}",1,0
+tatqa_005805,span,pass,,0,0
+tatqa_001645,span,pass,,0,0
+tatqa_005838,count,pass,,0,0
+tatqa_011528,arithmetic,pass,,0,0
+tatqa_003849,span,pass,,0,0
+tatqa_008236,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'297,000'}",1,0
+tatqa_005908,span,pass,,0,0
+tatqa_013222,span,pass,,0,0
+tatqa_001352,span,pass,,0,0
+tatqa_009050,span,pass,,0,0
+tatqa_003674,span,pass,,0,0
+tatqa_011028,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'6.2'},1,0
+tatqa_012123,span,pass,,0,0
+tatqa_010069,span,pass,,0,0
+tatqa_005292,arithmetic,pass,,0,0
+tatqa_006381,arithmetic,pass,,0,0
+tatqa_011531,multi-span,pass,,0,0
+tatqa_007917,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'107,630'}",1,0
+tatqa_004714,multi-span,pass,,0,0
+tatqa_007162,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3.19'}",1,0
+tatqa_010095,span,pass,,0,0
+tatqa_008991,span,pass,,0,0
+tatqa_008885,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'1752'},1,0
+tatqa_011453,span,pass,,0,0
+tatqa_003882,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008266,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '4.76'}",1,0
+tatqa_006095,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'28,814,473,078'}",1,0
+tatqa_004104,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002035,span,pass,,0,0
+tatqa_003477,multi-span,pass,,0,0
+tatqa_004312,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'43,920'}",1,0
+tatqa_004909,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,818'}",1,0
+tatqa_003389,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,429,543.5'}",1,0
+tatqa_006157,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004200,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011617,arithmetic,pass,,0,0
+tatqa_011457,multi-span,pass,,0,0
+tatqa_003797,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'109,444'}",1,0
+tatqa_006999,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009188,multi-span,pass,,0,0
+tatqa_001927,span,pass,,0,0
+tatqa_003913,multi-span,pass,,0,0
+tatqa_011102,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '16.2'}",1,0
+tatqa_002840,span,pass,,0,0
+tatqa_004749,multi-span,pass,,0,0
+tatqa_013019,span,pass,,0,0
+tatqa_006363,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005420,multi-span,pass,,0,0
+tatqa_012661,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'17,757.5'}",1,0
+tatqa_008787,span,pass,,0,0
+tatqa_008778,arithmetic,pass,,0,0
+tatqa_005269,arithmetic,pass,,0,0
+tatqa_004258,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2.15'}",1,0
+tatqa_001313,span,pass,,0,0
+tatqa_004664,span,pass,,0,0
+tatqa_002852,span,pass,,0,0
+tatqa_012568,span,pass,,0,0
+tatqa_006595,arithmetic,pass,,0,0
+tatqa_013107,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'16,074'}",1,0
+tatqa_009208,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'67.63', '100'}",1,0
+tatqa_003628,arithmetic,pass,,0,0
+tatqa_005209,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'2.0'},1,0
+tatqa_001573,multi-span,pass,,0,0
+tatqa_008129,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'16,831'}",1,0
+tatqa_013155,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000379,span,pass,,0,0
+tatqa_005554,span,pass,,0,0
+tatqa_009873,span,pass,,0,0
+tatqa_006696,span,pass,,0,0
+tatqa_012279,multi-span,pass,,0,0
+tatqa_008243,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000239,arithmetic,pass,,0,0
+tatqa_012628,span,pass,,0,0
+tatqa_001569,multi-span,pass,,0,0
+tatqa_007286,span,pass,,0,0
+tatqa_004829,span,pass,,0,0
+tatqa_004587,span,pass,,0,0
+tatqa_006338,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,751'}",1,0
+tatqa_009575,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'27.8057', '55.6114', '24.2138', '100', '24,170', '31.3976', '15,006'}",1,0
+tatqa_008267,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '39.99999'}",1,0
+tatqa_002481,span,pass,,0,0
+tatqa_007222,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'232,490'}",1,0
+tatqa_011706,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,148,032'}",1,0
+tatqa_012802,span,pass,,0,0
+tatqa_001973,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,786'}",1,0
+tatqa_000154,span,pass,,0,0
+tatqa_005225,span,pass,,0,0
+tatqa_006320,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,395'}",1,0
+tatqa_001042,count,pass,,0,0
+tatqa_004014,arithmetic,pass,,0,0
+tatqa_011905,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_006528,multi-span,pass,,0,0
+tatqa_008981,arithmetic,pass,,0,0
+tatqa_001078,span,pass,,0,0
+tatqa_002953,span,pass,,0,0
+tatqa_003259,multi-span,pass,,0,0
+tatqa_001389,multi-span,pass,,0,0
+tatqa_013164,span,pass,,0,0
+tatqa_002019,span,pass,,0,0
+tatqa_004822,span,pass,,0,0
+tatqa_004744,multi-span,pass,,0,0
+tatqa_011011,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'20.3'},1,0
+tatqa_001298,multi-span,pass,,0,0
+tatqa_006190,span,pass,,0,0
+tatqa_010569,span,pass,,0,0
+tatqa_002311,multi-span,pass,,0,0
+tatqa_001710,arithmetic,pass,,0,0
+tatqa_004791,multi-span,pass,,0,0
+tatqa_009186,arithmetic,pass,,0,0
+tatqa_008939,arithmetic,pass,,0,0
+tatqa_000791,arithmetic,pass,,0,0
+tatqa_010782,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003045,span,pass,,0,0
+tatqa_012796,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,361,188'}",1,0
+tatqa_011434,span,pass,,0,0
+tatqa_002893,span,pass,,0,0
+tatqa_008205,arithmetic,pass,,0,0
+tatqa_001649,arithmetic,pass,,0,0
+tatqa_010991,span,pass,,0,0
+tatqa_008783,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'19,774'}",1,0
+tatqa_003383,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '10.5318'}",1,0
+tatqa_009823,multi-span,pass,,0,0
+tatqa_003555,span,pass,,0,0
+tatqa_003006,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'47,869'}",1,0
+tatqa_010963,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'31,837'}",1,0
+tatqa_008780,span,pass,,0,0
+tatqa_007742,arithmetic,pass,,0,0
+tatqa_002902,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '941'}",1,0
+tatqa_000224,span,pass,,0,0
+tatqa_011236,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,547', '1,273.5'}",1,0
+tatqa_008837,arithmetic,pass,,0,0
+tatqa_010831,arithmetic,pass,,0,0
+tatqa_002133,span,pass,,0,0
+tatqa_003252,span,pass,,0,0
+tatqa_005381,span,pass,,0,0
+tatqa_003344,arithmetic,pass,,0,0
+tatqa_011105,multi-span,pass,,0,0
+tatqa_008625,span,pass,,0,0
+tatqa_003279,span,pass,,0,0
+tatqa_001122,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005525,span,pass,,0,0
+tatqa_003028,count,pass,,0,0
+tatqa_000198,span,pass,,0,0
+tatqa_008097,arithmetic,pass,,0,0
+tatqa_001220,span,pass,,0,0
+tatqa_012588,span,pass,,0,0
+tatqa_009441,multi-span,pass,,0,0
+tatqa_001265,arithmetic,pass,,0,0
+tatqa_005577,span,pass,,0,0
+tatqa_002293,span,pass,,0,0
+tatqa_005410,span,pass,,0,0
+tatqa_001812,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3.6'}",1,0
+tatqa_009075,multi-span,pass,,0,0
+tatqa_010090,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,735'}",1,0
+tatqa_003643,span,pass,,0,0
+tatqa_008654,span,pass,,0,0
+tatqa_010170,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3.01'}",1,0
+tatqa_013017,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '21.38'}",1,0
+tatqa_006914,arithmetic,pass,,0,0
+tatqa_012442,multi-span,pass,,0,0
+tatqa_011098,multi-span,pass,,0,0
+tatqa_000150,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_011012,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '11.63'}",1,0
+tatqa_002724,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012344,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'36,360'}",1,0
+tatqa_004942,multi-span,pass,,0,0
+tatqa_009560,span,pass,,0,0
+tatqa_002144,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'31,078'}",1,0
+tatqa_012659,span,pass,,0,0
+tatqa_008890,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010496,multi-span,pass,,0,0
+tatqa_007234,arithmetic,pass,,0,0
+tatqa_011057,span,pass,,0,0
+tatqa_009125,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'51,120,847.5'}",1,0
+tatqa_004360,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,272'}",1,0
+tatqa_010945,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'3,769'}",1,0
+tatqa_004437,multi-span,pass,,0,0
+tatqa_005589,span,pass,,0,0
+tatqa_013187,span,pass,,0,0
+tatqa_003981,span,pass,,0,0
+tatqa_000807,multi-span,pass,,0,0
+tatqa_009914,span,pass,,0,0
+tatqa_011375,span,pass,,0,0
+tatqa_012255,multi-span,pass,,0,0
+tatqa_002117,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'129,717.5'}",1,0
+tatqa_013140,span,pass,,0,0
+tatqa_010156,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'17.0'},1,0
+tatqa_008946,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010703,span,pass,,0,0
+tatqa_004166,span,pass,,0,0
+tatqa_003352,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005803,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2.88606', '100'}",1,0
+tatqa_012721,multi-span,pass,,0,0
+tatqa_009684,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_002303,span,pass,,0,0
+tatqa_002430,span,pass,,0,0
+tatqa_004510,span,pass,,0,0
+tatqa_011181,span,pass,,0,0
+tatqa_004709,span,pass,,0,0
+tatqa_001252,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'47'},1,0
+tatqa_009033,span,pass,,0,0
+tatqa_008603,count,pass,,0,0
+tatqa_009609,multi-span,pass,,0,0
+tatqa_004691,arithmetic,pass,,0,0
+tatqa_007974,span,pass,,0,0
+tatqa_012942,span,pass,,0,0
+tatqa_007836,span,pass,,0,0
+tatqa_008817,span,pass,,0,0
+tatqa_003485,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,436'}",1,0
+tatqa_001513,span,pass,,0,0
+tatqa_003317,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001735,span,pass,,0,0
+tatqa_006221,span,pass,,0,0
+tatqa_000946,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001445,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,617'}",1,0
+tatqa_000553,span,pass,,0,0
+tatqa_003864,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '10.2'}",1,0
+tatqa_007619,multi-span,pass,,0,0
+tatqa_000413,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'21,661'}",1,0
+tatqa_005073,span,pass,,0,0
+tatqa_002597,arithmetic,pass,,0,0
+tatqa_004305,multi-span,pass,,0,0
+tatqa_000456,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '414,248', '20.7124'}",1,0
+tatqa_008424,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005771,arithmetic,pass,,0,0
+tatqa_008993,arithmetic,pass,,0,0
+tatqa_003077,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000964,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'271,351'}",1,0
+tatqa_010452,arithmetic,pass,,0,0
+tatqa_010811,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,198'}",1,0
+tatqa_012024,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003848,span,pass,,0,0
+tatqa_003873,multi-span,pass,,0,0
+tatqa_001523,arithmetic,pass,,0,0
+tatqa_012371,span,pass,,0,0
+tatqa_005807,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'17,183'}",1,0
+tatqa_011985,span,pass,,0,0
+tatqa_003983,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'250'},1,0
+tatqa_011762,arithmetic,pass,,0,0
+tatqa_009103,span,pass,,0,0
+tatqa_003830,span,pass,,0,0
+tatqa_001302,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '9.57'}",1,0
+tatqa_008641,span,pass,,0,0
+tatqa_001222,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004546,arithmetic,pass,,0,0
+tatqa_010777,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,034.77'}",1,0
+tatqa_000788,span,pass,,0,0
+tatqa_012557,span,pass,,0,0
+tatqa_003117,span,pass,,0,0
+tatqa_004056,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013028,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'255'},1,0
+tatqa_007923,arithmetic,pass,,0,0
+tatqa_004456,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,201,283', '2,402,566'}",1,0
+tatqa_009024,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '2076.315789473684'}",1,0
+tatqa_005243,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'39,182'}",1,0
+tatqa_010312,arithmetic,pass,,0,0
+tatqa_006717,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'170'},1,0
+tatqa_007390,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000418,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003651,multi-span,pass,,0,0
+tatqa_006406,span,pass,,0,0
+tatqa_005774,span,pass,,0,0
+tatqa_006632,arithmetic,pass,,0,0
+tatqa_006847,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005957,arithmetic,pass,,0,0
+tatqa_009969,span,pass,,0,0
+tatqa_007674,span,pass,,0,0
+tatqa_000235,span,pass,,0,0
+tatqa_011128,span,pass,,0,0
+tatqa_007305,arithmetic,pass,,0,0
+tatqa_012163,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'37,811'}",1,0
+tatqa_005975,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'340'},1,0
+tatqa_003706,arithmetic,pass,,0,0
+tatqa_007593,span,pass,,0,0
+tatqa_008851,span,pass,,0,0
+tatqa_005147,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11,062.5'}",1,0
+tatqa_003101,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,869'}",1,0
+tatqa_003232,arithmetic,pass,,0,0
+tatqa_007067,span,pass,,0,0
+tatqa_011650,span,pass,,0,0
+tatqa_002543,arithmetic,pass,,0,0
+tatqa_011581,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'33,835'}",1,0
+tatqa_010623,span,pass,,0,0
+tatqa_013163,span,pass,,0,0
+tatqa_003922,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'117,385'}",1,0
+tatqa_010593,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,060,317.49', '936,464.99', '1,123,852.50'}",1,0
+tatqa_012302,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010934,span,pass,,0,0
+tatqa_010534,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'511'},1,0
+tatqa_002967,span,pass,,0,0
+tatqa_011118,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,904,063'}",1,0
+tatqa_007039,span,pass,,0,0
+tatqa_011637,span,pass,,0,0
+tatqa_012061,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005072,span,pass,,0,0
+tatqa_005120,span,pass,,0,0
+tatqa_003126,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'112,730'}",1,0
+tatqa_005443,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010609,multi-span,pass,,0,0
+tatqa_005543,span,pass,,0,0
+tatqa_007276,arithmetic,pass,,0,0
+tatqa_000621,multi-span,pass,,0,0
+tatqa_010699,arithmetic,pass,,0,0
+tatqa_009303,span,pass,,0,0
+tatqa_013168,multi-span,pass,,0,0
+tatqa_002796,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001711,span,pass,,0,0
+tatqa_004503,span,pass,,0,0
+tatqa_011301,span,pass,,0,0
+tatqa_004673,span,pass,,0,0
+tatqa_002274,arithmetic,pass,,0,0
+tatqa_000910,span,pass,,0,0
+tatqa_000629,span,pass,,0,0
+tatqa_012120,arithmetic,pass,,0,0
+tatqa_005174,span,pass,,0,0
+tatqa_009168,arithmetic,pass,,0,0
+tatqa_008652,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001919,arithmetic,pass,,0,0
+tatqa_008676,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'157,850'}",1,0
+tatqa_009238,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'238,937'}",1,0
+tatqa_007047,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'146,790', '48,930'}",1,0
+tatqa_012295,arithmetic,pass,,0,0
+tatqa_000847,span,pass,,0,0
+tatqa_006076,span,pass,,0,0
+tatqa_008446,arithmetic,pass,,0,0
+tatqa_002246,span,pass,,0,0
+tatqa_006231,span,pass,,0,0
+tatqa_005374,span,pass,,0,0
+tatqa_000300,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010579,span,pass,,0,0
+tatqa_010273,span,pass,,0,0
+tatqa_001446,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,073'}",1,0
+tatqa_009876,arithmetic,pass,,0,0
+tatqa_005536,span,pass,,0,0
+tatqa_007978,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007910,arithmetic,pass,,0,0
+tatqa_009472,span,pass,,0,0
+tatqa_006442,span,pass,,0,0
+tatqa_002132,multi-span,pass,,0,0
+tatqa_003544,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,278'}",1,0
+tatqa_002883,span,pass,,0,0
+tatqa_006137,arithmetic,pass,,0,0
+tatqa_000568,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'378,717'}",1,0
+tatqa_001489,span,pass,,0,0
+tatqa_009632,span,pass,,0,0
+tatqa_003068,span,pass,,0,0
+tatqa_004798,span,pass,,0,0
+tatqa_001394,span,pass,,0,0
+tatqa_003627,span,pass,,0,0
+tatqa_011002,multi-span,pass,,0,0
+tatqa_004320,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'6'},1,0
+tatqa_002651,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'84.1'},1,0
+tatqa_003137,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'38,100', '87,743'}",1,0
+tatqa_003885,span,pass,,0,0
+tatqa_012452,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_009418,span,pass,,0,0
+tatqa_004986,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'161,149'}",1,0
+tatqa_011939,arithmetic,pass,,0,0
+tatqa_001479,multi-span,pass,,0,0
+tatqa_004761,span,pass,,0,0
+tatqa_005864,multi-span,pass,,0,0
+tatqa_012743,span,pass,,0,0
+tatqa_007820,count,pass,,0,0
+tatqa_010222,span,pass,,0,0
+tatqa_010995,multi-span,pass,,0,0
+tatqa_007580,arithmetic,pass,,0,0
+tatqa_012523,span,pass,,0,0
+tatqa_012155,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,138,267'}",1,0
+tatqa_003717,span,pass,,0,0
+tatqa_007095,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'16.79'},1,0
+tatqa_011500,span,pass,,0,0
+tatqa_013242,span,pass,,0,0
+tatqa_007866,span,pass,,0,0
+tatqa_012006,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004678,span,pass,,0,0
+tatqa_003757,span,pass,,0,0
+tatqa_012468,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'9'},1,0
+tatqa_001086,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_013134,multi-span,pass,,0,0
+tatqa_003003,multi-span,pass,,0,0
+tatqa_003723,multi-span,pass,,0,0
+tatqa_010936,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'201,939'}",1,0
+tatqa_004674,arithmetic,pass,,0,0
+tatqa_006761,multi-span,pass,,0,0
+tatqa_006449,span,pass,,0,0
+tatqa_007555,span,pass,,0,0
+tatqa_005604,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'5'},1,0
+tatqa_002777,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'12,333'}",1,0
+tatqa_008726,span,pass,,0,0
+tatqa_011657,multi-span,pass,,0,0
+tatqa_010383,span,pass,,0,0
+tatqa_005118,span,pass,,0,0
+tatqa_003894,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004190,span,pass,,0,0
+tatqa_009249,multi-span,pass,,0,0
+tatqa_012562,span,pass,,0,0
+tatqa_003262,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'4.0'},1,0
+tatqa_000301,span,pass,,0,0
+tatqa_010092,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '10,735'}",1,0
+tatqa_012291,span,pass,,0,0
+tatqa_004900,span,pass,,0,0
+tatqa_009858,span,pass,,0,0
+tatqa_000376,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'28,454'}",1,0
+tatqa_010706,multi-span,pass,,0,0
+tatqa_011789,multi-span,pass,,0,0
+tatqa_011681,span,pass,,0,0
+tatqa_008637,span,pass,,0,0
+tatqa_006840,span,pass,,0,0
+tatqa_006284,span,pass,,0,0
+tatqa_007971,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'23'},1,0
+tatqa_008311,span,pass,,0,0
+tatqa_013110,span,pass,,0,0
+tatqa_010089,span,pass,,0,0
+tatqa_003189,span,pass,,0,0
+tatqa_003089,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,054'}",1,0
+tatqa_004979,span,pass,,0,0
+tatqa_009559,span,pass,,0,0
+tatqa_005844,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,718'}",1,0
+tatqa_005571,multi-span,pass,,0,0
+tatqa_012850,span,pass,,0,0
+tatqa_000283,multi-span,pass,,0,0
+tatqa_001783,span,pass,,0,0
+tatqa_009850,span,pass,,0,0
+tatqa_010035,arithmetic,pass,,0,0
+tatqa_005956,span,pass,,0,0
+tatqa_007236,span,pass,,0,0
+tatqa_011310,arithmetic,pass,,0,0
+tatqa_002142,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11,758', '5,826', '53', '5,879', '106'}",1,0
+tatqa_002750,arithmetic,pass,,0,0
+tatqa_002594,span,pass,,0,0
+tatqa_005264,span,pass,,0,0
+tatqa_010765,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '3,245', '3.09'}",1,0
+tatqa_004784,span,pass,,0,0
+tatqa_009648,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'482,100'}",1,0
+tatqa_007328,arithmetic,pass,,0,0
+tatqa_005977,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_008526,arithmetic,pass,,0,0
+tatqa_005899,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'30'},1,0
+tatqa_012288,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'447'},1,0
+tatqa_005114,span,pass,,0,0
+tatqa_005266,multi-span,pass,,0,0
+tatqa_002517,span,pass,,0,0
+tatqa_010989,multi-span,pass,,0,0
+tatqa_011800,span,pass,,0,0
+tatqa_011033,span,pass,,0,0
+tatqa_008673,span,pass,,0,0
+tatqa_000118,arithmetic,pass,,0,0
+tatqa_001670,multi-span,pass,,0,0
+tatqa_012467,span,pass,,0,0
+tatqa_012918,span,pass,,0,0
+tatqa_006872,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'229'},1,0
+tatqa_009566,multi-span,pass,,0,0
+tatqa_012340,span,pass,,0,0
+tatqa_000720,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_007953,arithmetic,pass,,0,0
+tatqa_006008,span,pass,,0,0
+tatqa_007131,arithmetic,pass,,0,0
+tatqa_003891,multi-span,pass,,0,0
+tatqa_002926,count,pass,"COUNT_PREFILTER_WARNING: Values used has 5 bullet(s), equal to gold count (5) - possible pre-filtering",1,1
+tatqa_005057,span,pass,,0,0
+tatqa_008498,span,pass,,0,0
+tatqa_008542,multi-span,pass,,0,0
+tatqa_002977,span,pass,,0,0
+tatqa_000959,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_005068,span,pass,,0,0
+tatqa_003999,multi-span,pass,,0,0
+tatqa_005344,span,pass,,0,0
+tatqa_010644,arithmetic,pass,,0,0
+tatqa_003762,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003976,count,pass,,0,0
+tatqa_009328,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'432,094'}",1,0
+tatqa_012818,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,072,216'}",1,0
+tatqa_003326,multi-span,pass,,0,0
+tatqa_004232,multi-span,pass,,0,0
+tatqa_010818,arithmetic,pass,,0,0
+tatqa_012264,count,pass,,0,0
+tatqa_001172,span,pass,,0,0
+tatqa_011737,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '90'}",1,0
+tatqa_002768,span,pass,,0,0
+tatqa_005054,span,pass,,0,0
+tatqa_005515,count,pass,,0,0
+tatqa_009272,multi-span,pass,,0,0
+tatqa_006768,multi-span,pass,,0,0
+tatqa_010419,span,pass,,0,0
+tatqa_009386,multi-span,pass,,0,0
+tatqa_011645,span,pass,,0,0
+tatqa_002919,multi-span,pass,,0,0
+tatqa_007770,multi-span,pass,,0,0
+tatqa_002119,multi-span,pass,,0,0
+tatqa_001353,span,pass,,0,0
+tatqa_000781,span,pass,,0,0
+tatqa_002691,multi-span,pass,,0,0
+tatqa_012662,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.18124477'}",1,0
+tatqa_001482,arithmetic,pass,,0,0
+tatqa_000883,span,pass,,0,0
+tatqa_009859,multi-span,pass,,0,0
+tatqa_005194,span,pass,,0,0
+tatqa_010328,span,pass,,0,0
+tatqa_007499,span,pass,,0,0
+tatqa_011038,span,pass,,0,0
+tatqa_007223,span,pass,,0,0
+tatqa_007779,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'37,080.8'}",1,0
+tatqa_010423,span,pass,,0,0
+tatqa_002831,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'5,400'}",1,0
+tatqa_003204,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'2,099'}",1,0
+tatqa_009979,multi-span,pass,,0,0
+tatqa_000602,span,pass,,0,0
+tatqa_000723,span,pass,,0,0
+tatqa_002012,span,pass,,0,0
+tatqa_001045,span,pass,,0,0
+tatqa_007171,span,pass,,0,0
+tatqa_005448,arithmetic,pass,,0,0
+tatqa_002952,arithmetic,pass,,0,0
+tatqa_006848,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012748,span,pass,,0,0
+tatqa_004248,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '525'}",1,0
+tatqa_010744,multi-span,pass,,0,0
+tatqa_008894,span,pass,,0,0
+tatqa_000240,arithmetic,pass,,0,0
+tatqa_007744,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_004043,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'11,753.8'}",1,0
+tatqa_001552,span,pass,,0,0
+tatqa_010164,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '66.15'}",1,0
+tatqa_011449,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'68,325.5'}",1,0
+tatqa_012408,span,pass,,0,0
+tatqa_011285,span,pass,,0,0
+tatqa_007832,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'320,607'}",1,0
+tatqa_010254,span,pass,,0,0
+tatqa_009741,multi-span,pass,,0,0
+tatqa_010525,span,pass,,0,0
+tatqa_002987,arithmetic,pass,,0,0
+tatqa_012647,multi-span,fail,CITATION_LEAK: contains 'in the table',1,1
+tatqa_009459,span,pass,,0,0
+tatqa_010533,span,pass,,0,0
+tatqa_006250,span,pass,,0,0
+tatqa_010756,span,pass,,0,0
+tatqa_008388,arithmetic,pass,,0,0
+tatqa_000848,span,pass,,0,0
+tatqa_001022,span,pass,,0,0
+tatqa_005778,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'10,719'}",1,0
+tatqa_002350,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'103,528'}",1,0
+tatqa_009397,span,pass,,0,0
+tatqa_006518,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'21,680'}",1,0
+tatqa_009343,span,pass,,0,0
+tatqa_002124,span,pass,,0,0
+tatqa_006193,span,pass,,0,0
+tatqa_000838,span,pass,,0,0
+tatqa_006901,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,302,968', '434,322.67'}",1,0
+tatqa_004169,span,pass,,0,0
+tatqa_005653,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '18.1'}",1,0
+tatqa_002408,multi-span,pass,,0,0
+tatqa_011732,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '12.608695652173912'}",1,0
+tatqa_002521,span,pass,,0,0
+tatqa_002959,multi-span,pass,,0,0
+tatqa_008627,arithmetic,pass,,0,0
+tatqa_004309,multi-span,pass,,0,0
+tatqa_008649,span,pass,,0,0
+tatqa_004479,span,pass,,0,0
+tatqa_008133,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'19,823'}",1,0
+tatqa_000229,multi-span,pass,,0,0
+tatqa_007061,span,pass,,0,0
+tatqa_009209,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'244.15', '488.3'}",1,0
+tatqa_013157,span,pass,,0,0
+tatqa_000250,arithmetic,pass,,0,0
+tatqa_009612,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_010867,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_012219,span,pass,,0,0
+tatqa_005605,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '13.89'}",1,0
+tatqa_001431,span,pass,,0,0
+tatqa_006139,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '83.7'}",1,0
+tatqa_004338,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '52.78'}",1,0
+tatqa_001102,arithmetic,pass,,0,0
+tatqa_011587,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'76'},1,0
+tatqa_009344,span,pass,,0,0
+tatqa_001159,span,pass,,0,0
+tatqa_004164,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'6,338'}",1,0
+tatqa_010643,count,pass,,0,0
+tatqa_011004,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '4.72'}",1,0
+tatqa_000120,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'1.4'},1,0
+tatqa_003637,span,pass,,0,0
+tatqa_000047,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_000608,span,pass,,0,0
+tatqa_002860,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,594'}",1,0
+tatqa_003054,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,987.33'}",1,0
+tatqa_006383,multi-span,pass,,0,0
+tatqa_010161,span,pass,,0,0
+tatqa_007108,span,pass,,0,0
+tatqa_001403,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'67,750.5'}",1,0
+tatqa_002341,multi-span,pass,,0,0
+tatqa_000371,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'1,897'}",1,0
+tatqa_009181,span,pass,,0,0
+tatqa_012926,arithmetic,pass,,0,0
+tatqa_008033,multi-span,pass,,0,0
+tatqa_012551,span,pass,,0,0
+tatqa_013217,span,pass,,0,0
+tatqa_011330,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_003833,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'9'},1,0
+tatqa_000069,span,pass,,0,0
+tatqa_011061,multi-span,pass,,0,0
+tatqa_009111,multi-span,pass,,0,0
+tatqa_012242,span,pass,,0,0
+tatqa_011673,multi-span,pass,,0,0
+tatqa_008515,span,pass,,0,0
+tatqa_001195,span,pass,,0,0
+tatqa_005086,span,pass,,0,0
+tatqa_010019,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'835,662'}",1,0
+tatqa_006905,span,pass,,0,0
+tatqa_006930,span,pass,,0,0
+tatqa_000370,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'53'},1,0
+tatqa_000217,span,pass,,0,0
+tatqa_007081,count,pass,,0,0
+tatqa_003174,span,pass,,0,0
+tatqa_007423,span,pass,,0,0
+tatqa_002665,span,pass,,0,0
+tatqa_001428,arithmetic,pass,,0,0
+tatqa_003542,multi-span,pass,,0,0
+tatqa_000499,span,pass,,0,0
+tatqa_007209,count,pass,,0,0
+tatqa_009664,span,pass,,0,0
+tatqa_007933,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'263,725'}",1,0
+tatqa_004280,span,pass,,0,0
+tatqa_002206,arithmetic,pass,,0,0
+tatqa_003892,span,pass,,0,0
+tatqa_004085,arithmetic,pass,,0,0
+tatqa_003688,span,pass,,0,0
+tatqa_003750,span,pass,,0,0
+tatqa_001306,span,pass,,0,0
+tatqa_000155,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'8,170'}",1,0
+tatqa_000618,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'593,530'}",1,0
+tatqa_009541,span,pass,,0,0
+tatqa_011980,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'117,082'}",1,0
+tatqa_011464,span,pass,,0,0
+tatqa_008374,arithmetic,pass,,0,0
+tatqa_000563,arithmetic,pass,,0,0
+tatqa_007653,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'140'},1,0
+tatqa_009128,span,pass,,0,0
+tatqa_003010,arithmetic,pass,,0,0
+tatqa_005063,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'52'},1,0
+tatqa_001039,span,pass,,0,0
+tatqa_007981,span,pass,,0,0
+tatqa_000921,multi-span,pass,,0,0
+tatqa_004868,span,pass,,0,0
+tatqa_002524,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'4,612.5'}",1,0
+tatqa_010938,multi-span,pass,,0,0
+tatqa_001601,arithmetic,pass,,0,0
+tatqa_009703,span,pass,,0,0
+tatqa_011339,span,pass,,0,0
+tatqa_003440,multi-span,pass,,0,0
+tatqa_012374,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'27,535'}",1,0
+tatqa_004144,arithmetic,pass,,0,0
+tatqa_003808,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'392'},1,0
+tatqa_007650,span,pass,,0,0
+tatqa_007835,multi-span,pass,,0,0
+tatqa_002201,arithmetic,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,0
+tatqa_001914,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'59,481'}",1,0
+tatqa_005305,count,pass,,0,0
+tatqa_000462,arithmetic,pass,"NUMBER_GROUNDING_WARNING: unverified numbers {'100', '1.41'}",1,0

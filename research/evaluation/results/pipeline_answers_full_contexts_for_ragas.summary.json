@@ -1,0 +1,8 @@
+{
+  "answers": 100,
+  "total_contexts": 166,
+  "matched_contexts": 166,
+  "match_rate": 1.0,
+  "bm25_store": "C:\\Users\\rssh1\\Desktop\\GP website\\.claude\\worktrees\\nostalgic-chebyshev-baa26e\\backend\\app\\ai_pipeline\\bm25_store",
+  "output": "C:\\Users\\rssh1\\Desktop\\GP website\\RAGAS\\results\\pipeline_answers_full_contexts_for_ragas.csv"
+}

@@ -18,7 +18,7 @@ const registerCopy = {
     confirmPassword: 'Confirm Password',
     fullNamePlaceholder: 'Enter your full name',
     emailPlaceholder: 'name@example.com',
-    passwordPlaceholder: 'Create a password',
+    passwordPlaceholder: 'Min 8 chars, uppercase, symbol',
     confirmPasswordPlaceholder: 'Re-enter your password',
     submit: 'Create Account',
     google: 'Sign up with Google',
@@ -35,7 +35,7 @@ const registerCopy = {
     confirmPassword: 'تأكيد كلمة المرور',
     fullNamePlaceholder: 'أدخل الاسم الكامل',
     emailPlaceholder: 'name@example.com',
-    passwordPlaceholder: 'أنشئ كلمة مرور',
+    passwordPlaceholder: '8 أحرف + كبير + رمز خاص',
     confirmPasswordPlaceholder: 'أعد إدخال كلمة المرور',
     submit: 'إنشاء الحساب',
     google: 'التسجيل عبر Google',
@@ -70,8 +70,17 @@ export function RegisterForm() {
       setError(isArabic ? 'كلمتا المرور غير متطابقتين.' : 'Passwords do not match.');
       return;
     }
-    if (password.length < 8) {
-      setError(isArabic ? 'كلمة المرور يجب أن تكون 8 أحرف على الأقل.' : 'Password must be at least 8 characters.');
+    const passwordValid =
+      password.length >= 8 &&
+      /[A-Z]/.test(password) &&
+      /[a-z]/.test(password) &&
+      /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password);
+    if (!passwordValid) {
+      setError(
+        isArabic
+          ? 'كلمة المرور يجب أن تكون 8 أحرف على الأقل، وتحتوي على حرف كبير، وحرف صغير، ورمز خاص (مثل ! @ # $).'
+          : 'Password must be at least 8 characters and include an uppercase letter, a lowercase letter, and a special character (e.g. ! @ # $).'
+      );
       return;
     }
     setLoading(true);
@@ -102,7 +111,7 @@ export function RegisterForm() {
   if (success) {
     return (
       <AuthShell title={copy.title} subtitle="" contentWidthClassName="max-w-[470px]">
-        <div className="rounded-xl bg-green-50 px-6 py-5 text-center text-sm text-green-700 dark:bg-green-950/40 dark:text-green-400">
+        <div className="rounded-xl bg-green-50 px-6 py-5 text-center text-sm text-green-800 dark:bg-green-950/40 dark:text-green-300">
           {isArabic
             ? 'تم إنشاء حسابك! تحقق من بريدك الإلكتروني لتأكيد التسجيل.'
             : 'Account created! Check your email to confirm your registration.'}
@@ -180,7 +189,7 @@ export function RegisterForm() {
         </div>
 
         {error ? (
-          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700 dark:bg-red-900/50 dark:text-red-100">
+          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-800 dark:bg-red-900/50 dark:text-red-200">
             {error}
           </p>
         ) : null}

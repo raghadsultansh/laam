@@ -1,0 +1,633 @@
+row_id,question,answer,answer_type,derivation,scale,answer_from,req_comparison,table_text,relevant_paragraphs_text,generation_model,generation_status,created_at,retry_count,reasoning_target,derived_answer,used_values,quality_notes
+tatqa_007244,How many components of assets in 2018 were above $100 million?,2,count,Net operating loss carryforwards##Accrued asset retirement obligations,,table-text,False,"|  | December 31, 2019 | December 31, 2018 |
+| Assets: |  |  |
+| Operating lease liability | $878.5 | $— |
+| Net operating loss carryforwards | 356.6 | 264.9 |
+| Accrued asset retirement obligations | 174.9 | 165.7 |
+| Stock-based compensation | 5.6 | 6.3 |
+| Unearned revenue | 31.7 | 28.3 |
+| Unrealized loss on foreign currency | 3.8 | 12.9 |
+| Other accruals and allowances | 65.6 | 78.6 |
+| Items not currently deductible and other | 26.1 | 26.2 |
+| Liabilities: |  |  |
+| Depreciation and amortization | (1,040.3) | (757.0) |
+| Right-of-use asset | (865.1) | — |
+| Deferred rent | (79.7) | (36.9) |
+| Other | — | (15.3) |
+| Subtotal | (442.3) | (226.3) |
+| Valuation allowance | (194.2) | (151.9) |
+| Net deferred tax liabilities | $(636.5) | $(378.2) |","AMERICAN TOWER CORPORATION AND SUBSIDIARIES NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Tabular amounts in millions, unless otherwise disclosed)",gemini-2.5-flash,success,2026-04-25T21:24:25.588051+00:00,0,"Reasoning & Calculations:
+Values used:
+- Net operating loss carryforwards ($264.9 million)
+- Accrued asset retirement obligations ($165.7 million)
+Calculation:
+Counting the items above: 2
+Analysis:
+No financial analysis required.
+Final Answer:
+There were 2 components of assets in 2018 above $100 million.<|im_end|>",2,"[""Net operating loss carryforwards"", ""264.9"", ""Accrued asset retirement obligations"", ""165.7""]",
+tatqa_005273,What percentage of total shares purchased is the August share purchase?,10.39,arithmetic,"362,200/3,486,700",percent,table,False,"|  | Purchase consideration per share |  |  |  |
+|  |  |  |  | Aggregate |
+|  | No. of shares | Highest | Lowest | consideration |
+| Month of purchase in 2019 | purchased | price paid | price paid | paid |
+|  |  | HKD | HKD | HKD |
+| August | 362,200 | 327.00 | 312.40 | 116,330,916 |
+| September | 2,294,500 | 351.00 | 323.60 | 776,104,729 |
+| October | 830,000 | 327.80 | 317.40 | 268,272,462 |
+| Total: | 3,486,700 |  |  | 1,160,708,107 |","During the year ended 31 December 2019, the Company repurchased 3,486,700 shares on the Stock Exchange for an aggregate consideration of approximately HKD1.16 billion before expenses. The repurchased shares were subsequently cancelled. The repurchase was effected by the Board for the enhancement of shareholder value in the long term. Details of the shares repurchased are as follows:
+Save as disclosed above and in Note 32 to the consolidated financial statements, neither the Company nor any of its subsidiaries has purchased, sold or redeemed any of the Company’s shares during the year ended 31 December 2019.",gemini-2.5-flash,success,2026-04-25T21:24:32.076659+00:00,0,"Reasoning & Calculations:
+Values used:
+- August No. of shares purchased: 362,200
+- Total No. of shares purchased: 3,486,700
+Calculation:
+(362,200 / 3,486,700) * 100 = 10.39
+Analysis:
+The August share purchase represents 10.39% of the total shares repurchased by the company in 2019. This indicates that a significant portion, though not the majority, of the total share repurchase activity occurred during the month of August.
+Final Answer:
+The August share purchase is 10.39 percent of the total shares purchased.
+<|im_end|>",10.39,"[""362,200"", ""3,486,700""]",
+tatqa_000916,What is the change in the Fair value through other comprehensive income from 2017 to 2018?,9,arithmetic,46 - 37,million,table,False,"| At 31 March | 2019 £m | 2018 £m | 2017 £m |
+| Non-current assets | 48 | - | - |
+| Fair value through other comprehensive income | - | 46 | 37 |
+| Available-for-sale | 6 | 7 | 7 |
+| Fair value through profit or loss | 54 | 53 | 44 |
+| Current assets |  |  |  |
+| Fair value through other comprehensive income | - | - | - |
+| Available-for-sale | - | 2,575 | 1,437 |
+| Investments held at amortised cost | 3,214 | - | - |
+| Loans and receivables | - | 447 | 83 |
+|  | 3,214 | 3,022 | 1,520 |","23. Investments continued
+IFRS 9 was applied for the first time on 1 April 2018 and introduces new classifications for financial instruments, including investments. Under IAS 39, we classified investments as available-for-sale, loans and receivables, and fair value through profit or loss. On transition to IFRS 9 we have reclassified them as fair value through other comprehensive income, fair value through profit or loss, and amortised cost, as set out in note 1. The current year figures in the following table reflect the classifications under IFRS 9, and the prior year figures reflect the previous classifications under IAS 39.
+Investments held at amortised cost consist of investments previously classified as loans and receivables and relate to money market investments denominated in sterling of £2,687m (2017/18: £416m, 2016/17: £35m), in US dollars of £26m (2017/18: £27m, 2016/17: £30m) in euros of £499m (2017/18: £nil, 2016/17: £nil) and in other currencies £2m (2017/18: £4m, 2016/17: £18m). They also include investments in liquidity funds of £2,522m (2017/18: £2,575m, 2016/17: £1,437m) held to collect contractual cash flows. In prior years these were classified as available-for-sale.",gemini-2.5-flash,success,2026-04-25T21:24:39.450397+00:00,0,"Reasoning & Calculations:
+Values used:
+- Fair value through other comprehensive income in 2018: 46 million
+- Fair value through other comprehensive income in 2017: 37 million
+Calculation:
+46 - 37 = 9
+Analysis:
+The Fair value through other comprehensive income increased from 2017 to 2018, indicating an improvement in the value of these financial instruments over the period.
+Final Answer:
+The change in the Fair value through other comprehensive income from 2017 to 2018 is 9 million.
+<|im_end|>",9,"[""46"", ""37""]","The reasoning target correctly extracts values, performs the calculation, provides a financial analysis, and forms a precise final answer, including the scale 'million'."
+tatqa_001068,What is the average cash and cash equivalents presented in the statement of cash flows?,9499.5,arithmetic,"(13,605+5,394)/2",million,table,False,"|  | 2019 | 2018 |
+|  | €m | €m |
+| Cash at bank and in hand | 2,434 | 2,197 |
+| Repurchase agreements and bank deposits | 2,196 | – |
+| Money market funds1 | 9,007 | 2,477 |
+| Cash and cash equivalents as presented in the statement of financial position | 13,637 | 4,674 |
+| Bank overdrafts | (32) | (7) |
+| Cash and cash equivalents of discontinued operations | – | 727 |
+| Cash and cash equivalents as presented in the statement of cash flows | 13,605 | 5,394 |","19. Cash and cash equivalents
+The majority of the Group’s cash is held in bank deposits or money market funds which have a maturity of three months or less to enable us to meet our short-term liquidity requirements.
+Accounting policies
+Cash and cash equivalents comprise cash in hand and call deposits, and other short-term highly liquid investments that are readily convertible to a known amount of cash and are subject to an insignificant risk of changes in value. Assets in money market funds, whose contractual cash flows do not represent solely payments of interest and principal, are measured at fair value with gains and losses arising from changes in fair value included in net profit or loss for the period. All other cash and cash equivalents are measured at amortised cost.
+Note: 1 Items are measured at fair value and the valuation basis is level 1 classification, which comprises financial instruments where fair value is determined by unadjusted quoted prices in active markets.
+The carrying amount of balances at amortised cost approximates their fair value.
+Cash and cash equivalents of €1,381 million (2018: €1,449 million) are held in countries with restrictions on remittances but where the balances could be used to repay subsidiaries’ third party liabilities.",gemini-2.5-flash,success,2026-04-25T21:24:49.365796+00:00,0,"Reasoning & Calculations:
+Values used:
+- Cash and cash equivalents as presented in the statement of cash flows for 2019: 13,605 million
+- Cash and cash equivalents as presented in the statement of cash flows for 2018: 5,394 million
+Calculation:
+(13,605 + 5,394) / 2 = 9499.5
+Analysis:
+The average cash and cash equivalents of 9499.5 million over 2018 and 2019 indicates the mean liquid resources reported in the cash flow statement for these periods, reflecting the overall availability of funds for business operations and investments.
+Final Answer:
+The average cash and cash equivalents presented in the statement of cash flows is 9499.5 million.
+<|im_end|>",9499.5 million,"[""13,605"", ""5,394""]",All requirements met.
+tatqa_005745,How is the number of PSUs calculated?,The number of PSUs is based on the dollar value of the award and the average closing stock price of the Corporation for the previous twelve month period ending August 31.,span,,,text,False,"| Years ended August 31, | 2019 | 2018 |
+| Outstanding, beginning of the year | 133,181 | 115,207 |
+| Granted (1) | 45,800 | 65,525 |
+| Performance-based additional units granted | 200 | 2,639 |
+| Distributed | (43,319) | (41,441) |
+| Cancelled | (31,889) | (12,184) |
+| Dividend equivalents | 3,578 | 3,435 |
+| Outstanding, end of the year | 107,551 | 133,181 |","The number of PSUs is based on the dollar value of the award and the average closing stock price of the Corporation for the previous twelve month period ending August 31. The PSUs vest over a three-year less one day period, based on the level of increase in the economic value of the Corporation or the relevant subsidiary for the preceding three-year period ending August 31, meaning that no vesting will occur if there is no increase in the economic value.",gemini-2.5-flash,success,2026-04-25T21:24:56.276248+00:00,0,"Reasoning & Calculations:
+Values used:
+- ""The number of PSUs is based on the dollar value of the award and the average closing stock price of the Corporation for the previous twelve month period ending August 31.""
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The number of PSUs is based on the dollar value of the award and the average closing stock price of the Corporation for the previous twelve month period ending August 31.
+<|im_end|>",The number of PSUs is based on the dollar value of the award and the average closing stock price of the Corporation for the previous twelve month period ending August 31.,"[""The number of PSUs is based on the dollar value of the award and the average closing stock price of the Corporation for the previous twelve month period ending August 31.""]",
+tatqa_010767,"What are the accelerated vesting of Robert Dooley's stock options for termination by Systemax without ""Cause"" or unvested performance restricted stock units for termination due to death respectively?","48,849 | 10,630",multi-span,,,table-text,False,"| Type of Payment | Termination by Systemax without “Cause” or Resignation by Employee for “good reason” ($) | Termination Due to Death or Total Disability ($) | Change In Control Only ($) | Termination by Systemax without “Cause” or Resignation by Employee for “good reason” within a certain period of time following a Change in Control ($) |
+| Cash Compensation (Salary & Non-Equity Incentive Compensation) | - | - | - | - |
+| Value of Accelerated Vesting of Stock Option Awards | - | - | - | 505,100 (1) |
+| Value of Accelerated Vesting of Restricted Stock Unit Awards | 377,400 (2) | 188,700 (3) | 377,400 (2) | - |
+| Value of Accelerated Vesting of Performance Restricted Stock Unit Awards | - | 267,500 (4) | - | 267,500 (4) |
+| Medical and Other Benefits | - | - | - | - |
+| Total | 377,400 | 456,200 | 377,400 | 772,600 |","(1) Represents accelerated vesting of 48,849 stock options. Pursuant to Mr. Dooley’s stock option agreements (dated January 17, 2019),
+if Mr. Dooley’s employment is terminated without cause or for good reason within six months following a “change in control”, he will
+become immediately vested in all outstanding unvested stock options, and all of Mr. Dooley’s outstanding options shall remain
+exercisable in accordance with their terms, but in no event for less than 90 days after such termination.
+(4) Represents accelerated vesting of 10,630 unvested performance restricted stock units. Pursuant to Mr. Dooley's performance restricted
+stock unit agreement (dated January 17, 2019), if Mr. Dooley’s employment is terminated without cause or for good reason within six
+months following a “change in control” or if Mr. Dooley's employment is terminated due to death or total disability, all non-vested units
+shall accelerate and be vested as of the date of termination.",gemini-2.5-flash,success,2026-04-25T21:25:08.548461+00:00,0,"Reasoning & Calculations:
+Values used:
+- The accelerated vesting of stock options for termination by Systemax without ""Cause"" (specifically, within six months following a ""change in control"") is 48,849 stock options (from paragraph 1).
+- The accelerated vesting of unvested performance restricted stock units for termination due to death is 10,630 units (from paragraph 4).
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The accelerated vesting of Robert Dooley's stock options for termination by Systemax without ""Cause"" is 48,849, and unvested performance restricted stock units for termination due to death is 10,630.<|im_end|>","48,849 | 10,630","[""48,849 stock options"", ""10,630 unvested performance restricted stock units""]",
+tatqa_003105,In which years is the information about the net periodic benefit cost and other accumulated comprehensive income for the Pension Plans provided?,2019 | 2018 | 2017,multi-span,,,table-text,False,"|  |  | Years Ended December 31, |  |
+|  | 2019 | 2018 | 2017 |
+| Service cost | $405 | $448 | $443 |
+| Interest cost | 254 | 196 | 194 |
+| Recognized actuarial (gains) | (86) | (58) | (43) |
+| Net periodic benefit cost | 573 | 586 | 594 |
+| Unrealized net actuarial (gains), net of tax | (2,324) | (2,256) | (1,574) |
+| Total amount recognized in net periodic benefit cost and accumulated other comprehensive income (loss) | $(1,751) | $(1,670) | $(980) |",The following table provides information about the net periodic benefit cost and other accumulated comprehensive income for the Pension Plans (in thousands):,gemini-2.5-flash,success,2026-04-25T21:25:18.384176+00:00,0,"Reasoning & Calculations:
+Values used:
+- The years 2019, 2018, and 2017 are listed as column headers for the financial data related to the net periodic benefit cost and other accumulated comprehensive income for the Pension Plans.
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The information about the net periodic benefit cost and other accumulated comprehensive income for the Pension Plans is provided in 2019, 2018, and 2017.
+<|im_end|>","2019, 2018, and 2017","[""2019"", ""2018"", ""2017""]",None
+tatqa_004608,What is the average interest income from 2017-2019?,6308.33,arithmetic,"($8,178+$7,796+$2,951)/(2019-2017+1)",thousand,table,False,"|  |  | Year Ended December 31, |  |
+|  | 2019 | 2018 | 2017 |
+|  |  | (in thousands) |  |
+| Interest income | $8,178 | $7,796 | $2,951 |
+| Interest expense | (21,559) | (28,176) | (14,762) |
+| Other, net | 84 | (3,098) | 1,478 |
+| Other expense, net | $(13,297) | $(23,478) | $(10,333) |","Other Income (Expense)
+Interest income in 2019 increased by $0.4 million due to an increase in interest income earned on investment securities and money market portfolios.
+Interest expense in 2019 decreased by $6.6 million due to the payoff of the 1.50% convertible notes due July 1, 2018 with a principal amount of $253.0 million (the “2018 Notes”) in the third quarter of 2018. Refer to the section titled “Liquidity and Capital Resources” for additional information on the convertible notes.
+Other, net primarily included foreign exchange gains and losses related to transactions denominated in foreign currencies, as well as foreign exchange gains and losses related to our intercompany loans and certain cash accounts. Foreign exchange gains and losses for the years ended December 31, 2019, 2018, and 2017, were primarily driven by fluctuations in the euro and US dollar in relation to the British pound.",gemini-2.5-flash,success,2026-04-25T21:25:26.126685+00:00,0,"Reasoning & Calculations:
+Values used:
+- Interest income for 2019: $8,178 thousand
+- Interest income for 2018: $7,796 thousand
+- Interest income for 2017: $2,951 thousand
+Calculation:
+($8,178 + $7,796 + $2,951) / 3 = $18,925 / 3 = $6308.33
+Analysis:
+The average interest income over this three-year period indicates the typical level of earnings from interest-bearing activities. The average reflects the combined performance of interest income during these years.
+Final Answer:
+The average interest income from 2017-2019 is 6308.33 thousand.
+<|im_end|>",6308.33,"[""8,178"", ""7,796"", ""2,951"", ""2019"", ""2018"", ""2017""]",None
+tatqa_002783,"How many years did total additions exceed $1,500 million?",1,count,2019,,table-text,False,"|  | 2019 | 2018 | 2017 |
+| Gross amount at beginning | $15,960.1 | $15,349.0 | $14,277.0 |
+| Additions during period: |  |  |  |
+| Acquisitions | 887.0 | 721.4 | 499.7 |
+| Discretionary capital projects (1) | 258.1 | 173.5 | 120.7 |
+| Discretionary ground lease purchases (2) | 189.8 | 180.4 | 150.4 |
+| Redevelopment capital expenditures (3) | 213.6 | 177.3 | 138.8 |
+| Capital improvements (4) | 161.2 | 94.0 | 65.6 |
+| Start-up capital expenditures (5) | 71.3 | 113.1 | 158.1 |
+| Other (6) | 45.2 | (3.0) | 106.4 |
+| Total additions | 1,826.2 | 1,456.7 | 1,239.7 |
+| Deductions during period: |  |  |  |
+| Cost of real estate sold or disposed | (304.6) | (395.7) | (246.5) |
+| Other (7) | (52.4) | (449.9) | 78.8 |
+| Total deductions: | (357.0) | (845.6) | (167.7) |
+| Balance at end | $17,429.3 | $15,960.1 | $15,349.0 |",AMERICAN TOWER CORPORATION AND SUBSIDIARIES SCHEDULE III—SCHEDULE OF REAL ESTATE AND ACCUMULATED DEPRECIATION (dollars in millions),gemini-2.5-flash,success,2026-04-25T21:25:33.671038+00:00,0,"Reasoning & Calculations:
+Values used:
+- 2019 Total additions: 1,826.2 million
+Calculation:
+Counting the items above: 1
+Analysis:
+No financial analysis required.
+Final Answer:
+Total additions exceeded $1,500 million for 1 year.
+<|im_end|>",1,"[""1,826.2 million (2019 Total additions)""]",
+tatqa_001719,Which quarter of 2018 did the company grant shares to certain employees of Hawaiian Telcom?,third,span,,,text,False,"| Year Ended December 31, |  |  |  |
+| (in millions, except per share amounts) | 2019 | 2018 | 2017 |
+| Numerator: |  |  |  |
+| Net (loss) income | $(66.6) | $(69.8) | $40.0 |
+| Preferred stock dividends | 10.4 | 10.4 | 10.4 |
+| Net (loss) income applicable to common shareowners - basic and diluted | $(77.0) | $(80.2) | $29.6 |
+| Denominator: |  |  |  |
+| Weighted-average common shares outstanding - basic | 50.4 | 46.3 | 42.2 |
+| Stock-based compensation arrangements | — | — | 0.2 |
+| Weighted-average common shares outstanding - diluted | 50.4 | 46.3 | 42.4 |
+| Basic and diluted net (loss) earnings per common share | ($1.53) | ($1.73) | $0.70 |","In conjunction with the acquisition of Hawaiian Telcom in the third quarter of 2018, the Company issued 7.7 million Common Shares as a part of the acquisition consideration. In addition, the Company granted 0.1 million time-based restricted stock units to certain Hawaiian Telcom employees under the Hawaiian Telcom 2010 Equity Incentive Plan",gemini-2.5-flash,success,2026-04-25T21:25:41.159281+00:00,0,"Reasoning & Calculations:
+Values used:
+- ""third quarter of 2018"" from the relevant text.
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The company granted shares to certain employees of Hawaiian Telcom in the third quarter of 2018.
+<|im_end|>",The company granted shares to certain employees of Hawaiian Telcom in the third quarter of 2018.,"[""third quarter of 2018""]",
+tatqa_006974,What is the average annual total Fees for Fiscal year 2019 and 2018?,4832,arithmetic,"(4,746+4,918)/2",thousand,table,False,"|  | Year ended June 30, |  |
+| (In thousands) | 2019 | 2018 |
+| Audit fees (1) | $4,598 | $4,701 |
+| Audit-related fees (2) | — | — |
+| Tax fees (3) | 108 | 116 |
+| All other fees (4) | 40 | 101 |
+| Total | $4,746 | $4,918 |","Item 14. Principal Accountant Fees and Services
+The aggregate fees for professional services rendered by our independent registered public accounting firm, KPMG LLP, for Fiscal 2019 and Fiscal 2018 were:
+(1) Audit fees were primarily for professional services rendered for (a) the annual audits of our consolidated financial statements and the accompanying attestation report regarding our ICFR contained in our Annual Report on Form 10- K, (b) the review of quarterly financial information included in our Quarterly Reports on Form 10-Q, (c) audit services related to mergers and acquisitions and offering documents, and (d) annual statutory audits where applicable.
+(2) Audit-related fees were primarily for assurance and related services, such as the review of non-periodic filings with the SEC.
+(3) Tax fees were for services related to tax compliance, including the preparation of tax returns, tax planning and tax advice.
+(4) All other fees consist of fees for services other than the services reported in audit fees, audit-related fees, and tax fees.
+OpenText's Audit Committee has established a policy of reviewing, in advance, and either approving or not approving, all audit, audit-related, tax and other non-audit services that our independent registered public accounting firm provides to us. This policy requires that all services received from our independent registered public accounting firm be approved in advance by the Audit Committee or a delegate of the Audit Committee. The Audit Committee has delegated the pre-approval responsibility to the Chair of the Audit Committee. All services that KPMG LLP provided to us in Fiscal 2019 and Fiscal 2018 have been preapproved by the Audit Committee.
+The Audit Committee has determined that the provision of the services as set out above is compatible with the maintaining of KPMG LLP's independence in the conduct of its auditing functions.",gemini-2.5-flash,success,2026-04-25T21:25:47.757948+00:00,0,"Reasoning & Calculations:
+Values used:
+- Total Fees for Fiscal year 2019: $4,746 thousand
+- Total Fees for Fiscal year 2018: $4,918 thousand
+Calculation:
+($4,746 + $4,918) / 2 = $4,832
+Analysis:
+The average annual total fees for fiscal years 2019 and 2018 were $4,832 thousand, indicating the consistent scale of professional services expenses over this period.
+Final Answer:
+The average annual total Fees for Fiscal year 2019 and 2018 is $4,832 thousand.
+<|im_end|>",4832,"[""4746"", ""4918""]",
+tatqa_003632,What was the amount of accounts receivable in 2018?,"225,167",span,,thousand,table-text,False,"|  | June 30,
+2019 | June 30,
+2018 |
+| Accounts receivable | $201,365 | $225,167 |
+| Allowance for doubtful accounts | (1,054) | (1,478) |
+| Allowance for product returns | (25,897) | (11,266) |
+| Accounts receivable, net | $174,414 | $212,423 |",The following is a summary of Accounts receivable (in thousands):,gemini-2.5-flash,success,2026-04-25T21:25:54.623593+00:00,0,"Reasoning & Calculations:
+Values used:
+- Accounts receivable for June 30, 2018: $225,167
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The amount of accounts receivable in 2018 was 225,167 thousand.<|im_end|>","225,167","[""225,167""]",
+tatqa_007695,What is the increase / (decrease) in income tax from 2018 to 2019?,-4.96,arithmetic,-115 / -121 - 1,percent,table,False,"| (in millions of €) | 2019 | 2018 |
+| Net income | 5,648 | 6,120 |
+| Less: Other interest expenses / income, net 1 | (529) | (482) |
+| Plus: SFS Other interest expenses / income | 763 | 721 |
+| Plus: Net interest expenses related to provisions for pensions and similar |  |  |
+| obligations | 148 | 164 |
+| Less: Interest adjustments |  |  |
+| (discontinued operations) | – | – |
+| Less: Taxes on interest adjustments |  |  |
+| (tax rate (flat) 30%) | (115) | (121) |
+| (I) Income before interest after tax | 5,916 | 6,401 |
+| (II) Average capital employed | 53,459 | 50,715 |
+| (I) / (II) ROCE | 11.1 % | 12.6 % |","A.2.6 Calculation of return on capital employed
+For purposes of calculating ROCE in interim periods, income before interest after tax is annualized. Average capital employed is determined using the average of the respective balances as of the quarterly reporting dates for the periods under review.
+[1] Item Other interest expenses / income, net primarily consists of interest relating to corporate debt, and related hedging activities, as well as interest income on corporate assets.",gemini-2.5-flash,success,2026-04-25T21:26:10.339552+00:00,0,"Reasoning & Calculations:
+Values used:
+- Taxes on interest adjustments for 2019: (115)
+- Taxes on interest adjustments for 2018: (121)
+Calculation:
+((Taxes on interest adjustments for 2019) - (Taxes on interest adjustments for 2018)) / (Taxes on interest adjustments for 2018)
+= ((-115) - (-121)) / (-121)
+= 6 / -121
+= -0.04958677...
+To express as a percentage: -0.04958677... * 100 = -4.958677...
+Rounded to two decimal places: -4.96%
+Analysis:
+A decrease of 4.96 percent in income tax from 2018 to 2019 indicates a reduction in tax expense related to interest adjustments. This results in a lower tax burden for the period.
+Final Answer:
+The increase / (decrease) in income tax from 2018 to 2019 is -4.96 percent.
+<|im_end|>",-4.96,"[""(115)"", ""(121)""]",
+tatqa_012953,What are the respective pension discount rates for actuarial benefit obligation in 2019 and 2018 respectively?,3.20% | 3.80%,multi-span,,,table-text,False,"| As at December 31, | Pension 2019 | Other 2019 | Pension 2018 | Other 2018 |
+| Actuarial benefit obligation |  |  |  |  |
+| Discount rate | 3.20% | 2.95% to 3.20% | 3.80% | 3.80% to 4.00% |
+| Benefit costs for the year ended |  |  |  |  |
+| Discount rate | 3.90% | 3.90% to 4.00% | 3.60% | 3.25% to 3.60% |
+| Future salary growth | 2.50% | N/A | 2.50% | N/A |
+| Health care cost trend rate | N/A | 3.49% to 5.49% | N/A | 4.50% |
+| Other medical trend rates | N/A | 4.00% to 4.56% | N/A | 4.50% |",The following are the significant assumptions adopted in measuring the Company’s pension and other benefit obligations:,gemini-2.5-flash,success,2026-04-25T21:26:28.134398+00:00,0,"Reasoning & Calculations:
+Values used:
+- Pension 2019 Actuarial benefit obligation Discount rate: 3.20%
+- Pension 2018 Actuarial benefit obligation Discount rate: 3.80%
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The respective pension discount rates for actuarial benefit obligation are 3.20% in 2019 and 3.80% in 2018.<|im_end|>",3.20% | 3.80%,"[""3.20%"", ""3.80%""]",
+tatqa_012868,What was the accumulated benefit obligation in 2019?,$43.9 million,span,,,text,False,"| (In thousands) | 2019 | 2018 |
+| Change in projected benefit obligation: |  |  |
+| Projected benefit obligation at beginning of period | $37,245 | $34,893 |
+| Service cost | 1,471 | 1,193 |
+| Interest cost | 634 | 727 |
+| Actuarial loss - experience | 453 | 38 |
+| Actuarial loss - assumptions | 5,091 | 2,139 |
+| Benefit payments | (166) | (138) |
+| Effects of foreign currency exchange rate changes | (826) | (1,607) |
+| Projected benefit obligation at end of period | 43,902 | 37,245 |
+| Change in plan assets: |  |  |
+| Fair value of plan assets at beginning of period | 24,159 | 26,624 |
+| Actual gain (loss) on plan assets | 4,392 | (2,024) |
+| Contributions | — | 688 |
+| Effects of foreign currency exchange rate changes | (535) | (1,129) |
+| Fair value of plan assets at end of period | 28,016 | 24,159 |
+| Unfunded status at end of period | $(15,886) | $(13,086) |","The accumulated benefit obligation was $43.9 million and $37.2 million as of December 31, 2019 and 2018, respectively. The increase in the accumulated benefit obligation and the actuarial loss was primarily attributable to a decrease in the discount rate during 2019.",gemini-2.5-flash,success,2026-04-25T21:26:38.258395+00:00,0,"Reasoning & Calculations:
+Values used:
+- The accumulated benefit obligation was $43.9 million as of December 31, 2019.
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The accumulated benefit obligation in 2019 was $43.9 million.<|im_end|>",$43.9 million,"[""$43.9 million""]",
+tatqa_006685,What is the percentage change in the provided deferred tax provision for investment and development property from 1 January 2018 to 31 December 2019?,-90.65,arithmetic,(2.3-24.6)/24.6,percent,table,False,"| £m | Investment and development property | Other temporary differences | Total |
+| Provided deferred tax provision/(asset): |  |  |  |
+| At 1 January 2018 | 24.6 | (0.9) | 23.7 |
+| Recognised in the income statement | (5.5) | (0.3) | (5.8) |
+| Foreign exchange movements | 0.1 | – | 0.1 |
+| At 31 December 2018 | 19.2 | (1.2) | 18.0 |
+| Recognised in the income statement | (16.4) | (0.2) | (16.6) |
+| Foreign exchange movements | (0.5) | – | (0.5) |
+| At 31 December 2019 | 2.3 | (1.4) | 0.9 |","Balance sheet
+Under IAS 12 Income Taxes, provision is made for the deferred tax assets and liabilities associated with the revaluation of assets and liabilities at the corporate tax rate expected to apply to the Group at the time the temporary differences are expected to reverse. For those UK assets and liabilities benefiting from REIT exemption the relevant tax rate will be 0 per cent (2018: 0 per cent), and for other UK assets and liabilities the relevant rate will be 19 per cent if the temporary difference is expected to be realised before 1 April 2020 and 17 per cent if it is expected to be realised on or after 1 April 2020 (2018: 19 per cent before 1 April 2020, 17 per cent thereafter). For Spanish assets and liabilities the relevant tax rate will be 25 per cent (2018: 25 per cent).
+Movements in the provision for deferred tax:
+The net deferred tax provision of £0.9 million predominantly arises in respect of the revaluation of development property at intu Costa del Sol, partially offset by associated tax losses.",gemini-2.5-flash,success,2026-04-25T21:26:49.146117+00:00,0,"Reasoning & Calculations:
+Values used:
+- Deferred tax provision for investment and development property at 1 January 2018: 24.6
+- Deferred tax provision for investment and development property at 31 December 2019: 2.3
+Calculation:
+Percentage Change = ((Value at 31 December 2019 - Value at 1 January 2018) / Value at 1 January 2018) * 100
+Percentage Change = ((2.3 - 24.6) / 24.6) * 100 = -90.65%
+Analysis:
+The deferred tax provision for investment and development property experienced a significant decrease from January 2018 to December 2019, indicating a substantial reduction in the estimated future tax liability related to these assets. This decline suggests potential revaluation adjustments or changes in tax expectations over the period.
+Final Answer:
+The percentage change in the provided deferred tax provision for investment and development property from 1 January 2018 to 31 December 2019 is -90.65 percent.
+<|im_end|>",-90.65,"[""24.6"", ""2.3""]",
+tatqa_010835,"How many assets and liabilities had an end balance at September 30, 2019 that exceeded $1,000,000 thousand?",1,count,Retained earnings,,table-text,False,"|  | Balance at September 29, 2018 | Impacts due to adoption of Topic
+606 | Balance at September 30, 2018 |
+| ASSETS |  |  |  |
+| Contract assets | $— | $76,417 | $76,417 |
+| Inventories | 794,346 | (68,959) | 725,387 |
+| LIABILITIES AND SHAREHOLDERS' EQUITY |  |  |  |
+| Other accrued liabilities | $68,163 | $(357) | $67,806 |
+| Retained earnings | 1,062,246 | 7,815 | 1,070,061 |","The Company adopted Topic 606 at the beginning of fiscal 2019 using the modified retrospective method. The new standard resulted in a change to the timing of revenue recognition for a significant portion of the Company's revenue, whereby revenue is recognized over time, as products are produced, as opposed to at a point in time based upon shipping terms. As a result of the adoption of Topic 606, the following adjustments were made to the opening balances of the Company's Consolidated Balance Sheets (in thousands):",gemini-2.5-flash,success,2026-04-25T21:27:00.103525+00:00,0,"Reasoning & Calculations:
+Values used:
+- Retained earnings: $1,070,061 thousand
+- Contract assets: $76,417 thousand
+- Inventories: $725,387 thousand
+- Other accrued liabilities: $67,806 thousand
+Calculation:
+Counting the items above: 1
+Analysis:
+No financial analysis required.
+Final Answer:
+1 asset and liability had an end balance at September 30, 2018 that exceeded $1,000,000 thousand.
+<|im_end|>",1,"[""1,070,061"", ""76,417"", ""725,387"", ""67,806""]","The question asks for 'September 30, 2019', but the provided table only has data for 'September 30, 2018'. Based on the gold answer's derivation 'Retained earnings' (which is 1,070,061 in 2018), the reasoning uses the 2018 data available in the table. The final answer reflects the date from the table (2018) while still answering the core question about the count."
+tatqa_012197,Which operating segments in the table achieved an improvement in gross margin?,Networks & Security | Lifecycle Service Assurance | Connected Devices,multi-span,,,table-text,False,"| $ million | 2019 | % | 2018 | % |
+| Networks & Security | 232.3 | 72.6 | 205.3 | 72.0 |
+| Lifecycle Service Assurance | 88.6 | 79.7 | 87.9 | 77.9 |
+| Connected Devices | 47.7 | 65.8 | 51.3 | 64.9 |
+|  | 368.6 | 73.2 | 344.5 | 72.2 |","The Group achieved further gross margin expansion in 2019 with an increase of 1.0 percentage points, to 73.2 per cent from 72.2 per cent in 2018. This followed an increase of 0.7 percentage points last year. Once again, all the operating segments achieved an improvement in gross margin, benefiting from new product launches and a higher proportion of software sales.
+Gross margin",gemini-2.5-flash,success,2026-04-25T21:27:12.648398+00:00,0,"Reasoning & Calculations:
+Values used:
+- Networks & Security gross margin: 72.6% in 2019 and 72.0% in 2018.
+- Lifecycle Service Assurance gross margin: 79.7% in 2019 and 77.9% in 2018.
+- Connected Devices gross margin: 65.8% in 2019 and 64.9% in 2018.
+- Text: ""Once again, all the operating segments achieved an improvement in gross margin.""
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The operating segments that achieved an improvement in gross margin are Networks & Security, Lifecycle Service Assurance, and Connected Devices.
+<|im_end|>",Networks & Security | Lifecycle Service Assurance | Connected Devices,"[""Networks & Security gross margin 2019: 72.6%"", ""Networks & Security gross margin 2018: 72.0%"", ""Lifecycle Service Assurance gross margin 2019: 79.7%"", ""Lifecycle Service Assurance gross margin 2018: 77.9%"", ""Connected Devices gross margin 2019: 65.8%"", ""Connected Devices gross margin 2018: 64.9%"", ""Text: 'all the operating segments achieved an improvement in gross margin'""]",
+tatqa_010856,"What were the investments composed of as of December 31, 2019?","commingled and multi-strategy funds invested in diversified portfolios of corporate bonds (37%), government bonds (32%), equity (15%) and other instruments (16%).",span,,,text,False,"|  | Percentage of Plan Assets at December |  |
+| Asset Category | 2019 | 2018 |
+| Cash and cash equivalents | 1% | 2% |
+| Equity securities | 24% | 27% |
+| Government debt securities | 12% | 3% |
+| Corporate debt securities | 16% | 26% |
+| Investments in funds(a) | 21% | 17% |
+| Real estate | 2% | 3% |
+| Other (mainly insurance assets – contracts and reserves) | 24% | 22% |
+| Total | 100% | 100% |","As of December 31, 2019, investments in funds were composed of commingled and multi-strategy funds invested in diversified portfolios of corporate bonds (37%), government bonds (32%), equity (15%) and other instruments (16%).",gemini-2.5-flash,success,2026-04-25T21:27:23.955742+00:00,0,"Reasoning & Calculations:
+Values used:
+- commingled and multi-strategy funds invested in diversified portfolios of corporate bonds (37%), government bonds (32%), equity (15%) and other instruments (16%).
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The investments were composed of commingled and multi-strategy funds invested in diversified portfolios of corporate bonds (37%), government bonds (32%), equity (15%) and other instruments (16%).
+<|im_end|>","commingled and multi-strategy funds invested in diversified portfolios of corporate bonds (37%), government bonds (32%), equity (15%) and other instruments (16%).","[""commingled and multi-strategy funds invested in diversified portfolios of corporate bonds (37%), government bonds (32%), equity (15%) and other instruments (16%).""]",
+tatqa_008260,How many years did the amount of Finished goods exceed $200 million?,1,count,2019,,table-text,False,"|  | March 31, |  |
+|  | 2019 | 2018 |
+| Raw materials | $74.5 | $26.0 |
+| Work in process | 413.0 | 311.8 |
+| Finished goods | 224.2 | 138.4 |
+| Total inventories | $711.7 | $476.2 |",The components of inventories consist of the following (in millions):,gemini-2.5-flash,success,2026-04-25T21:27:35.700269+00:00,0,"Reasoning & Calculations:
+Values used:
+- 2019 (Finished goods: $224.2 million)
+Calculation:
+Counting the items above: 1
+Analysis:
+No financial analysis required.
+Final Answer:
+There was 1 year when the amount of Finished goods exceeded $200 million.
+<|im_end|>",1,"[""224.2"", ""138.4""]",
+tatqa_008543,What is the average annual Net cash used in investing activities for 2017-2019?,-172781.33,arithmetic,"-(157,733 + 185,420 + 175,191) / 3",thousand,table,False,"|  |  | Year Ended March 31, |  |
+|  | 2019 | 2018 | 2017 |
+|  |  | (in thousands) |  |
+| Net cash from operating activities | $74,966 | $83,243 | $98,993 |
+| Net cash used in investing activities | $(157,733) | $(185,420) | $(175,191) |
+| Net cash from financing activities | $84,117 | $77,415 | $5,929 |","Sources and uses of cash
+Cash flow movement for the year ended March 31, 2019 compared to year ended March 31, 2018
+Net cash generated from operating activities in fiscal year 2019 was $75.0 million compared to $83.2 million in the in fiscal year 2018, a decrease of $8.2 million, or 9.9%, primarily due to decrease in working capital movement of $65.1 million, mainly attributable to increase in trade receivables by $88.5 million and increase in trade payables by $23.4 million and as a result of lower operating profit before exceptional item generated in fiscal year 2019 as compared to fiscal year 2018.
+Net cash used in investing activities in fiscal year 2019 was $157.7 million compared to $185.4 million in fiscal year 2018, a decrease of $27.7 million, or 14.9%, primarily as a result of investment in restricted deposits amounting to $53.5 million in fiscal year 2019 and offset by the decrease in purchase of intangible film rights and content rights in fiscal year 2019 was $107.7 million, compared to $186.8 million in fiscal year 2018, decrease of $79.1 million, or 42.3%.
+Net cash from financing activities in fiscal year 2019 was $84.1 million compared to $77.4 million in fiscal year 2018, an increase of $6.7 million, or 8.7%, primarily as a result of the proceeds from the issuance of share capital and an increase in short-term borrowings in fiscal year, 2019.
+Cash flow movement for the year ended March 31, 2018 compared to year ended March 31, 2017
+Net cash generated from operating activities in fiscal year 2018, was $83.2 million, compared to $99.0 million in fiscal year 2017, a decrease of $15.8 million, or 15.9%, primarily due to decrease in working capital movement of $24.3 million mainly attributable to increase in trade receivables to $19.1 million and decrease in trade payables by $5.4 million. The cash flow from operating activities has also decreased due to increase in interest and income tax paid in fiscal 2018 by 2.4 million and $2.9 million respectively. The aforesaid decrease is partially offset on account of deconsolidation of a subsidiary during the year.
+Net cash used in investing activities in fiscal year 2018 was $185.4 million, compared to $175.2 million in fiscal year 2017, an increase of $10.2 million, or 5.8%, due to the change in mix of films released in fiscal year 2018. The purchase of intangible film rights and content rights in fiscal year 2018 was $186.8 million, compared to $173.5 million in fiscal year 2017, an increase of $13.3 million, or 7.7%.
+Net cash generated from financing activities in fiscal year 2018 was $77.4 million, compared to $5.9 million in fiscal year 2017, an increase of $71.5 million, or 1,205.7%, primarily due proceeds from issue of share capital of $16.6 million, proceeds from sale of shares of a subsidiary of $40.2 million and share application money of 18.0 million.
+Capital expenditures
+In fiscal year 2019, the company invested over $264.3 million (of which cash outflow is $107.7 million) in film content, and in fiscal 2020 the company expects to invest approximately $150 to $160 million in film content.",gemini-2.5-flash,success,2026-04-25T21:27:43.319713+00:00,0,"Reasoning & Calculations:
+Values used:
+- Net cash used in investing activities for 2019: $(157,733) thousand
+- Net cash used in investing activities for 2018: $(185,420) thousand
+- Net cash used in investing activities for 2017: $(175,191) thousand
+Calculation:
+( -157733 + -185420 + -175191 ) / 3 = -172781.33
+Analysis:
+The average annual net cash used in investing activities for 2017-2019 indicates a consistent outflow of cash for investment purposes, with the average being approximately $172,781.33 thousand over this period.
+Final Answer:
+The average annual Net cash used in investing activities for 2017-2019 is -172781.33 thousand.
+<|im_end|>",-172781.33,"[""-157733"", ""-185420"", ""-175191"", ""3""]",
+tatqa_010728,"Between year ended 2017 and 2018, which year had higher gross profit?",2018,span,"596,267>380,253",,table,True,"|  | Years ended December 31 |  |  | 2019 vs 2018 | 2018 vs 2017 |
+|  | 2019 | 2018 | 2017 | % Change | % Change |
+|  | (in thousands, except percentages) |  |  |  |  |
+| Gross profit | $ 865,643 | $ 596,267 | $ 380,253 | 45.2 % | 56.8 % |
+| Percentage of total revenues | 54.9 % | 55.6 % | 56.5 % |  |  |","Gross Profit
+Gross profit increased $269.4 million, or 45.2%, for the year ended December 31, 2019 compared to the same period in 2018. As a percentage of total revenues, gross profit decreased from 55.6% in the year ended December 31, 2018 to 54.9% in the year ended December 31, 2019, due to Shopify Payments representing a larger percentage of total revenue and an increase in amortization of technology related to the 6RS acquisition as well as other platform enhancements. This was partly offset by lower third-party infrastructure and hosting costs and employee-related costs as a percentage of revenues as well as the relative growth of higher-margin merchant solutions products, namely Shopify Capital and referral fees from partners.
+Gross profit increased $216.0 million, or 56.8%, for the year ended December 31, 2018 compared to the same period in 2017. As a percentage of total revenues, gross profit decreased from 56.5% in the year ended December 31, 2017 to 55.6% in the year ended December 31, 2018, due to Shopify Payments representing a larger percentage of total revenue, increasing the functionality and flexibility of our hosting infrastructure, and higher product costs associated with expanding our product offerings. This was partly offset by the relative growth of higher-margin merchant solutions products, namely referral fees from partners, Shopify Capital, and Shopify Shipping.",gemini-2.5-flash,success,2026-04-25T21:27:58.901456+00:00,0,"Reasoning & Calculations:
+Values used:
+- Gross profit for the year ended December 31, 2018: $596,267 (in thousands)
+- Gross profit for the year ended December 31, 2017: $380,253 (in thousands)
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The year 2018 had higher gross profit.
+<|im_end|>",2018,"[""Gross profit for the year ended December 31, 2018: $596,267 (in thousands)"", ""Gross profit for the year ended December 31, 2017: $380,253 (in thousands)""]",
+tatqa_006591,What is the difference between the total payment for operating leases and finance lease obligations?,412,arithmetic,574-162,million,table,False,"|  | Payments due by period |  |  |  |  |  |  |
+| (IN MILLIONS) | Total | 2020 | 2021 | 2022 | 2023 | 2024 | Thereafter |
+| Finance lease obligations(a) | $162 | $61 | $42 | $29 | $15 | $7 | $8 |
+| Operating leases(b) | 574 | 136 | 99 | 75 | 53 | 40 | 171 |
+| Other contractual obligations(c) | 1,639 | 627 | 295 | 203 | 190 | 185 | 139 |
+| Long-term debt, including current portion(a) | 8,164 | 854 | 702 | 2,399 | 3,710 | — | 499 |
+| Interest(d) | 1,038 | 354 | 315 | 216 | 115 | 25 | 13 |
+| Pension fund obligations(e) | 28 | 28 | — | — | — | — | — |
+| Total | $11,605 | $2,060 | $1,453 | $2,922 | $4,083 | $257 | $830 |","Other Contractual Obligations
+Our other contractual obligations include finance lease obligations (including interest portion), facility leases, leases of certain computer and other equipment, agreements to purchase data and telecommunication services, the payment of principal and interest on debt and pension fund obligations.
+At December 31, 2019, the minimum annual payments under these agreements and other contracts that had initial or remaining non-cancelable terms in excess of one year are as listed in the following table. Due to the uncertainty with respect to the timing of future cash flows associated with our unrecognized tax positions at December 31, 2019, we are unable to make reasonably reliable estimates of the timing of any potential cash settlements with the respective taxing authorities. Therefore, $189 million in uncertain tax positions (which includes interest and penalties of $25 million) have been excluded from the contractual obligations table below. See Note 15 – “Income Taxes” – to the consolidated financial statements for a discussion on income taxes.
+(a) Our short-term and long-term debt obligations are described in Note 12 – “Long-Term Debt and Other Financing Arrangements” and our short-term and long-term finance lease obligations are described in Note 5 “Leases”,– to our consolidated financial statements.
+(b) Our operating lease obligations are described in Note 17 – “Commitments and Contingencies” – to our consolidated financial statements.",gemini-2.5-flash,success,2026-04-25T21:28:05.716030+00:00,0,"Reasoning & Calculations:
+Values used:
+- Total Operating leases: 574 million
+- Total Finance lease obligations: 162 million
+Calculation:
+574 - 162 = 412
+Analysis:
+The difference indicates that the total financial commitment for operating leases is significantly higher than for finance lease obligations, by 412 million. This suggests a greater reliance on operating leases for asset access.
+Final Answer:
+The difference between the total payment for operating leases and finance lease obligations is 412 million.
+<|im_end|>",412 million,"[""574"", ""162""]",
+tatqa_001697,"How many years did the recognized actuarial loss exceed $1,000 thousand?",2,count,2018##2017,,table-text,False,"|  |  | Pension |  |
+|  | 2019 | 2018 | 2017 |
+| Service cost | $1,437 | $1,063 | $1,068 |
+| Interest cost | 3,715 | 3,807 | 2,942 |
+| Expected long-term return on plan assets | (5,291) | (5,954) | (4,206) |
+| Recognized actuarial loss | 741 | 1,127 | 1,929 |
+| Amortization of prior service credit | (44) | (88) | (138) |
+| Net settlement loss | 634 | 116 | 1,472 |
+| Net periodic benefit cost | $1,192 | $71 | $3,067 |","The following table provides information about the net periodic benefit cost for the plans for fiscal years 2019, 2018 and 2017 (in thousands):",gemini-2.5-flash,success,2026-04-25T21:28:16.352501+00:00,0,"Reasoning & Calculations:
+Values used:
+- Recognized actuarial loss in 2019: $741 thousand
+- Recognized actuarial loss in 2018: $1,127 thousand
+- Recognized actuarial loss in 2017: $1,929 thousand
+- Threshold for exceeding: $1,000 thousand
+Calculation:
+Counting the items above: 2
+Analysis:
+No financial analysis required.
+Final Answer:
+The recognized actuarial loss exceeded $1,000 thousand for 2 years.
+<|im_end|>",2,"[""$741"", ""$1,127"", ""$1,929"", ""$1,000""]",
+tatqa_001406,What is the total operating expenses in 2019?,"$ 62,095",span,,million,table,False,"|  |  |  | (dollars in millions) Increase/ (Decrease) |  |
+| Years Ended December 31, | 2019 | 2018 | 2019 vs. 2018 |  |
+| Cost of services | $15,884 | $15,335 | $ 549 | 3.6% |
+| Cost of wireless equipment | 18,219 | 18,763 | (544) | (2.9) |
+| Selling, general and administrative expense | 16,639 | 15,701 | 938 | 6.0 |
+| Depreciation and amortization expense | 11,353 | 11,952 | (599) | (5.0) |
+| Total Operating Expenses | $ 62,095 | $ 61,751 | $ 344 | 0.6 |","Operating Expenses
+Cost of Services Cost of services increased $549 million, or 3.6%, during 2019 compared to 2018, primarily due to increases in rent expense as a result of adding capacity to the networks to support demand as well as an increase due to the adoption of the new lease accounting standard in 2019, increases in costs related to the device protection package offered to our wireless retail postpaid customers, as well as regulatory fees.
+These increases were partially offset by decreases in employee-related costs primarily due to the Voluntary Separation Program, as well as decreases in access costs and roaming.
+Cost of Wireless Equipment Cost of wireless equipment decreased $544 million, or 2.9%, during 2019 compared to 2018, primarily as a result of declines in the number of wireless devices sold as a result of an elongation of the handset upgrade cycle. These decrease were partially offset by a shift to higher priced devices in the mix of wireless devices sold.
+Selling, General and Administrative Expense Selling, general and administrative expense increased $938 million, or 6.0%, during 2019 compared to 2018, primarily due to increases in sales commission and bad debt expense, and an increase in advertising costs. The increase in sales commission expense during 2019 compared to 2018 was primarily due to a lower net deferral of commission costs as a result of the adoption of Topic 606 on January 1, 2018 using a modified retrospective approach.
+These increases were partially offset by decreases in employee-related costs primarily due to the Voluntary Separation Program.
+Depreciation and Amortization Expense Depreciation and amortization expense decreased $599 million, or 5.0%, during 2019 compared to 2018, driven by the change in the mix of total Verizon depreciable assets and Consumer’s usage of those assets.",gemini-2.5-flash,success,2026-04-25T21:28:23.346527+00:00,0,"Reasoning & Calculations:
+Values used:
+- Total Operating Expenses in 2019: $62,095
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The total operating expenses in 2019 are $62,095 million.
+<|im_end|>","$ 62,095","[""$62,095""]",
+tatqa_004717,What was the percentage change in accruals in 2019 from 2018?,11.72,arithmetic,(64.8-58.0)/58.0,percent,table,False,"|  | 2019 | 2018 |
+|  | £m | £m |
+| Trade payables | 57.9 | 57.4 |
+| Contract liabilities | 8.7 | 8.9 |
+| Social security | 5.6 | 5.1 |
+| Other payables | 37.8 | 37.6 |
+| Accruals | 64.8 | 58.0 |
+| Total trade and other payables | 174.8 | 167.0 |","19 Trade and other payables
+Contract liabilities relate to advance payments received from customers which have not yet been recognised as revenue. £8.3m of the contract liabilities at 31st December 2018 was recognised as revenue during 2019 (2018: £3.0m).",gemini-2.5-flash,success,2026-04-25T21:28:32.916466+00:00,0,"Reasoning & Calculations:
+Values used:
+- Accruals for 2019: 64.8
+- Accruals for 2018: 58.0
+Calculation:
+(64.8 - 58.0) / 58.0 = 0.117241379...
+0.117241379... * 100 = 11.7241379...
+Analysis:
+The accruals increased from 58.0 in 2018 to 64.8 in 2019, representing an 11.72% growth. This indicates a significant increase in liabilities for expenses incurred but not yet paid.
+Final Answer:
+The percentage change in accruals in 2019 from 2018 was 11.72 percent.
+<|im_end|>",11.72,"[""64.8"", ""58.0""]",
+tatqa_004835,"How many years did the fair value changes exceed $100,000 thousand?",1,count,2019,,table-text,False,"|  |  | Year Ended December 31, |  |
+|  | 2019 | 2018 | 2017 |
+| Beginning balance | $138,589 | $94,148 | $68,064 |
+| Receipts(1) | 159,527 | 129,153 | 109,818 |
+| Settlements(2) | (262,449) | (181,590) | (127,029) |
+| Fair value changes recognized in cost of revenue(3) | 170,368 | 96,878 | 43,295 |
+| Ending balance | $206,035 | $138,589 | $94,148 |","GreenSky, Inc. NOTES TO CONSOLIDATED FINANCIAL STATEMENTS — (Continued) (United States Dollars in thousands, except per share data, unless otherwise stated)",gemini-2.5-flash,success,2026-04-25T21:28:42.847603+00:00,0,"Reasoning & Calculations:
+Values used:
+- Fair value changes recognized in cost of revenue 2019: 170,368
+- Fair value changes recognized in cost of revenue 2018: 96,878
+- Fair value changes recognized in cost of revenue 2017: 43,295
+- Threshold for comparison: 100,000 (in thousands)
+Calculation:
+Compare each year's fair value changes to the threshold of 100,000:
+- 2019: 170,368 > 100,000 (True)
+- 2018: 96,878 < 100,000 (False)
+- 2017: 43,295 < 100,000 (False)
+Counting the items above: 1
+Analysis:
+No financial analysis required.
+Final Answer:
+The fair value changes exceeded $100,000 thousand in 1 year.
+<|im_end|>",1,"[""170,368"", ""96,878"", ""43,295"", ""100,000""]","The question specifies the unit as 'thousand' for the threshold, which aligns with the table's context. The `Final Answer` correctly reflects the count and implicitly acknowledges the unit."
+tatqa_012296,What is the percentage change in the Depreciation and amortization from 2018 to 2019?,0,arithmetic,0.3 / 0.3 - 1,percent,table,False,"|  |  | Years Ended December 31, |  |
+|  | 2019 | 2018 | Increase / (Decrease) |
+| Net revenue | $696.1 | $793.6 | $(97.5) |
+| Cost of revenue | 684.9 | 779.1 | (94.2) |
+| Selling, general and administrative | 8.2 | 9.4 | (1.2) |
+| Depreciation and amortization | 0.3 | 0.3 | — |
+| Other operating expense | 4.5 | — | 4.5 |
+| Income (loss) from operations | (1.8) | $4.8 | $(6.6) |","Segment Results of Operations In the Company's Consolidated Financial Statements, other operating (income) expense includes (i) (gain) loss on sale or disposal of assets, (ii) lease termination costs, (iii) asset impairment expense, (iv) accretion of asset retirement obligations, and (v) FCC reimbursements. Each table summarizes the results of operations of our operating segments and compares the amount of the change between the periods presented (in millions).
+Telecommunications Segment
+Net revenue: Net revenue from our Telecommunications segment for the year ended December 31, 2019 decreased $97.5 million to $696.1 million from $793.6 million for the year ended December 31, 2018. The decrease can be attributed to changes in our customer mix, fluctuations in wholesale voice termination volumes and market pressures, which resulted in a decline in revenue contribution.
+Cost of revenue: Cost of revenue from our Telecommunications segment for the year ended December 31, 2019 decreased $94.2 million to $684.9 million from $779.1 million for the year ended December 31, 2018. The decrease was directly correlated to the fluctuations in wholesale voice termination volumes, in addition to a slight reduction in margin mix attributed to market pressures on call termination rates.
+Selling, general and administrative: Selling, general and administrative expenses from our Telecommunications segment for the year ended December 31, 2019 decreased $1.2 million to $8.2 million from $9.4 million for the year ended December 31, 2018. The decrease was primarily due to a decrease in compensation expense due to headcount decreases and reductions in bad debt expense.
+Other operating expense: $4.5 million of other operating expense for the year ended December 31, 2019 was driven by impairment of goodwill as a result of declining performance at the segment.",gemini-2.5-flash,success,2026-04-25T21:28:53.312727+00:00,0,"Reasoning & Calculations:
+Values used:
+- Depreciation and amortization for 2019: 0.3
+- Depreciation and amortization for 2018: 0.3
+Calculation:
+(0.3 - 0.3) / 0.3 = 0
+Analysis:
+The Depreciation and amortization remained constant from 2018 to 2019, resulting in no percentage change for this expense item.
+Final Answer:
+The percentage change in the Depreciation and amortization from 2018 to 2019 is 0 percent.
+<|im_end|>",0,"[""0.3 (Depreciation and amortization for 2019)"", ""0.3 (Depreciation and amortization for 2018)""]",
+tatqa_000469,"Where are the principal executive offices, as well as research and development facility located?","San Diego, California",span,,,text,False,"|  | Less than 1 year | 1-3 years | 3-5 years | More than 5 years | Total |
+| Operating lease obligations | $1,699 | $3,950 | $2,707 | $36 | $8,392 |
+| Other borrowings | 131 | 145 | 219 | 61 | 556 |
+| Total | $1,830 | $4,095 | $2,926 | $97 | $8,948 |","Our principal executive offices, as well as our research and development facility, are located in approximately 29,000 square feet of office space in San Diego, California and the term of the lease continues through June 30, 2024. The average annual base rent under this lease is approximately $1.0 million per year. In connection with this lease, we received tenant improvement allowances totaling approximately $1.0 million. These lease incentives are being amortized as a reduction of rent expense over the term of the lease.",gemini-2.5-flash,success,2026-04-25T21:29:00.256262+00:00,0,"Reasoning & Calculations:
+Values used:
+- San Diego, California
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The principal executive offices, as well as the research and development facility, are located in San Diego, California.
+<|im_end|>","San Diego, California","[""San Diego, California""]",
+tatqa_005692,What were the components under Trade revenue?,Retailer | Home trader | Other,multi-span,,,table-text,False,"|  | 2019 | 2018 |  |
+| Revenue | £m | £m | Change |
+| Retailer | 293.0 | 268.7 | 9% |
+| Home trader | 10.2 | 11.4 | (11%) |
+| Other | 1.4 | 1.1 | 27% |
+| Trade | 304.6 | 281.2 | 8% |
+| Consumer Services | 28.0 | 29.8 | (6%) |
+| Manufacturer and Agency | 22.5 | 19.1 | 18% |
+| Total | 355.1 | 330.1 | 8% |","Trade revenue – comprising Retailers, Home Traders and other revenue – increased by 8% to £304.6m (2018: £281.2m). Retailer revenue grew 9% to £293.0m (2018: £268.7m), driven by the launch of new products, our annual pricing event and further penetration of higher yielding advertising packages. Average Revenue Per Retailer (‘ARPR’) improved by £149 to £1,844 per month (2018: £1,695). Average retailer forecourts were stable, with a marginal increase in the year to 13,240 (2018: 13,213). Trade revenue – comprising Retailers, Home Traders and other revenue – increased by 8% to £304.6m (2018: £281.2m). Retailer revenue grew 9% to £293.0m (2018: £268.7m), driven by the launch of new products, our annual pricing event and further penetration of higher yielding advertising packages. Average Revenue Per Retailer (‘ARPR’) improved by £149 to £1,844 per month (2018: £1,695). Average retailer forecourts were stable, with a marginal increase in the year to 13,240 (2018: 13,213).",gemini-2.5-flash,success,2026-04-25T21:29:06.782581+00:00,0,"Reasoning & Calculations:
+Values used:
+- Retailer
+- Home trader
+- Other
+Calculation:
+No numerical calculation required.
+Analysis:
+No financial analysis required.
+Final Answer:
+The components under Trade revenue were Retailer, Home trader, and Other.<|im_end|>",Retailer | Home trader | Other,"[""Retailer"", ""Home trader"", ""Other""]",

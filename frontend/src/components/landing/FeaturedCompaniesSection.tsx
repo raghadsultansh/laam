@@ -85,7 +85,7 @@ export function FeaturedCompaniesSection() {
   }, []);
 
   return (
-    <section id="companies" className="section-anchor px-4 py-20 md:px-6">
+    <section id="companies" className="section-anchor px-4 py-20 md:px-6 md:py-28">
       <div className="surface-card mx-auto max-w-7xl rounded-[2.4rem] px-5 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold text-[var(--brand)]">{copy.badge}</p>

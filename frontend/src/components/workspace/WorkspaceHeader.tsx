@@ -55,7 +55,7 @@ export function WorkspaceHeader({
   }
 
   return (
-    <div className="px-6 py-4" dir={isArabic ? 'rtl' : 'ltr'}>
+    <div className="px-3 py-3 md:px-6 md:py-4" dir={isArabic ? 'rtl' : 'ltr'}>
       <div className="flex flex-col items-start text-start">
         {isEditing ? (
           <div className="flex w-full max-w-md items-center gap-2">
@@ -90,7 +90,7 @@ export function WorkspaceHeader({
           <div className="group flex items-center gap-2">
             <h1
               onDoubleClick={startEdit}
-              className={`cursor-default text-2xl font-bold ${sessionId ? 'select-none' : ''} ${isArabic ? `${xbShafigh.className} arabic-display` : 'display-heading'}`}
+              className={`cursor-default text-xl font-bold md:text-2xl ${sessionId ? 'select-none' : ''} ${isArabic ? `${xbShafigh.className} arabic-display` : 'display-heading'}`}
               title={sessionId ? (isArabic ? 'انقر مرتين للتعديل' : 'Double-click to rename') : undefined}
             >
               {displayTitle}
@@ -112,7 +112,7 @@ export function WorkspaceHeader({
 
         {reportLabel ? (
           <div className="mt-3 flex w-fit max-w-full flex-wrap items-center justify-start gap-2">
-            <span dir={isArabic ? 'rtl' : 'ltr'} className="rounded-full bg-[var(--brand-soft)] px-3 py-1.5 text-xs font-semibold text-[var(--brand)]">
+            <span dir={isArabic ? 'rtl' : 'ltr'} className="rounded-full bg-[var(--brand-soft)] px-3 py-1.5 text-xs font-semibold text-[var(--foreground)]">
               {reportLabel}
             </span>
             <span dir={isArabic ? 'rtl' : 'ltr'} className="rounded-full bg-[var(--background)] px-3 py-1.5 text-xs font-semibold text-[var(--muted-foreground)] shadow-[var(--shadow-sm)]">

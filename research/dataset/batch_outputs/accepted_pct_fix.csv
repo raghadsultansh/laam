@@ -1,0 +1,66 @@
+row_id,question,answer,answer_type,derivation,scale,table_text,relevant_paragraphs_text,reasoning_target,generation_model,generation_status,validation_status,validation_issues,retry_count,created_at,used_values,derived_answer,quality_notes
+tatqa_000948,What is the percentage change in the Depreciation and amortization from 2018 to 2019?,25.45,arithmetic,6.9 / 5.5 - 1,percent,"|  |  | Years Ended December 31, |  |
+|  | 2019 | 2018 | Increase / (Decrease) |
+| Net revenue | $39.0 | $20.7 | $18.3 |
+| Cost of revenue | 17.1 | 11.2 | 5.9 |
+| Selling, general and administrative | 4.9 | 4.0 | 0.9 |
+| Depreciation and amortization | 6.9 | 5.5 | 1.4 |
+| Other operating expense | — | 0.5 | (0.5) |
+| Income (loss) from operations | 10.1 | $(0.5) | $10.6 |","Energy Segment
+Segment Results of Operations In the Company's Consolidated Financial Statements, other operating (income) expense includes (i) (gain) loss on sale or disposal of assets, (ii) lease termination costs, (iii) asset impairment expense, (iv) accretion of asset retirement obligations, and (v) FCC reimbursements. Each table summarizes the results of operations of our operating segments and compares the amount of the change between the periods presented (in millions).
+Net revenue: Net revenue from our Energy segment for the year ended December 31, 2019 increased $18.3 million to $39.0 million from $20.7 million for the year ended December 31, 2018. The increase was primarily driven by the AFTC related to the 2018 and 2019 CNG sales that was recognized in the fourth quarter of 2019, inclusive of prior period AFTC at the acquired ampCNG stations which was also recognized in 2019. The increase was also driven by higher volume-related revenues from the recent acquisition of the ampCNG stations and growth in CNG sales volumes.
+Cost of revenue: Cost of revenue from our Energy segment for the year ended December 31, 2019 increased $5.9 million to $17.1 million from $11.2 million for the year ended December 31, 2018. The increase was due to overall growth in volumes of gasoline gallons delivered and higher commodity and utility costs driven by the acquisition of ampCNG stations.
+Selling, general and administrative: Selling, general and administrative expenses from our Energy segment for the year ended December 31, 2019 increased $0.9 million to $4.9 million from $4.0 million for the year ended December 31, 2018. The increase was driven by an increase in salaries and benefits largely due to the of the acquisition of ampCNG stations, which were acquired late in the second quarter of 2019, partially offset by a one-time expense in the prior year related to the abandonment of a station development project.
+Depreciation and amortization from our Energy segment for the year ended December 31, 2019 increased $1.4 million to $6.9 million from $5.5 million for the year ended December 31, 2018. The increase was due to additional depreciation and amortization from the recent acquisition of ampCNG stations.
+Other operating expense from our Energy segment was a loss of $0.5 million for the year ended December 31, 2018, driven by impairment of certain stations during the fourth quarter of 2018.","Reasoning & Calculations:
+Values used:
+- Depreciation and amortization 2019: $6.9 million
+- Depreciation and amortization 2018: $5.5 million
+Calculation:
+Percentage Change = ((Depreciation and amortization 2019 / Depreciation and amortization 2018) - 1) * 100
+Percentage Change = ((6.9 / 5.5) - 1) * 100 = 25.45
+Analysis:
+The Depreciation and amortization increased from $5.5 million in 2018 to $6.9 million in 2019. This represents a 25.45 percent increase in Depreciation and amortization during this period.
+Final Answer:
+The percentage change in Depreciation and amortization from 2018 to 2019 is 25.45 percent.
+<|im_end|>",gemini-2.5-flash,fixed,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},1,2026-04-25T23:21:29.139530+00:00,"[""6.9"", ""5.5""]",25.45,"Corrected the Calculation to multiply the decimal result by 100 to accurately represent the percentage value shown in the Final Answer. Rewrote the Analysis to be purely descriptive, grounding it only in the provided values and describing the computed result as a percentage increase, without introducing external financial terms or explanations for the change."
+tatqa_005597,What is the percentage increase in the deferred tax assets from 2018 to 2019?,3.35,arithmetic,"(84,873-82,120)/82,120",percent,"| Consolidated |  |  |
+|  | 2019 | 2018 |
+|  | US$000 | US$000 |
+| Deferred tax asset comprises temporary differences attributable to: |  |  |
+| Amounts recognised in profit or loss: |  |  |
+| Tax losses | 2,068 | 688 |
+| Property, plant and equipment | (176) | 58 |
+| Employee benefits | 608 | 235 |
+| Employee entitlements | 714 | - |
+| Intellectual property | 79,260 | 79,011 |
+| Revenue received in advance | 633 | 1,019 |
+| Provisions | 1,054 | 328 |
+| Foreign currency translation | 613 | 534 |
+| Tax credits | 17 | - |
+| Deferred rent | 82 | 163 |
+|  | 84,873 | 82,036 |
+| Amounts recognised in equity: |  |  |
+| Transaction costs on share issue | - | 84 |
+| Deferred tax asset | 84,873 | 82,120 |
+| Amount expected to be recovered within 12 months | 26,588 | 26,995 |
+| Amount expected to be recovered after more than 12 months | 58,285 | 55,125 |
+| Movements: |  |  |
+| Opening balance | 82,120 | 82,946 |
+| Credited/(charged) to profit or loss (note 5) | 2,440 | (933) |
+| Additions through business combinations (note 28) | 314 | 105 |
+| Translation differences | (1) | 2 |
+| Closing balance | 84,873 | 82,120 |","Note 11. Non-current assets - deferred tax assets
+Critical accounting judgements, estimates and assumptions
+Deferred tax assets are recognised for deductible temporary differences only if the Group considers it is probable that future taxable amounts will be available to utilise those temporary differences and losses. Calculation of future taxable amounts involve the use of assumptions and management judgments.
+A deferred tax asset can only be recorded for the portion of a potential benefit where utilisation is considered probable. The assessment of future taxable amounts involves the use of assumptions and management judgments. The Group has fully recognised a deferred tax asset of $79.3m in relation to assets previously transferred to USA. It is considered probable that there will be future taxable income in the USA to fully realise these temporary differences.","Reasoning & Calculations:
+Values used:
+- Deferred tax asset 2019: 84,873 US$000
+- Deferred tax asset 2018: 82,120 US$000
+Calculation:
+((84,873 - 82,120) / 82,120) * 100 = 3.35
+Analysis:
+This calculation represents the percentage increase in the deferred tax assets from 2018 to 2019. The deferred tax assets increased by 3.35 percent from 82,120 US$000 in 2018 to 84,873 US$000 in 2019.
+Final Answer:
+The percentage increase in the deferred tax assets from 2018 to 2019 is 3.35 percent.
+<|im_end|>",gemini-2.5-flash,fixed,pass,NUMBER_GROUNDING_WARNING: unverified numbers {'100'},2,2026-04-25T23:25:15.437469+00:00,"[""84,873"", ""82,120""]",3.35,"ARITHMETIC_FAIL: The calculation for a percentage increase was not multiplied by 100 in the Calculation section. Added `* 100` to the calculation to correctly yield the percentage value. The Analysis was also refined to clearly state what the computed percentage increase means, referencing the initial and final values."
