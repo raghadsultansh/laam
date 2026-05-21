@@ -18,9 +18,8 @@ from qdrant_client.models import Distance, VectorParams
 import os
 import pickle
 
-# Use the locally cached CrossEncoder weights — prevents unexpected network calls
-# at runtime. The model must be downloaded once before deployment.
-os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+# Allow HuggingFace to download weights on first run (Railway/cloud deployment).
+# Set TRANSFORMERS_OFFLINE=1 only if you have pre-cached weights on disk.
 
 
 class RetrieverManager:
