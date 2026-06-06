@@ -1,3 +1,5 @@
+<p align="center"> <img src="frontend/public/brand/GP logo dark with slogan english name.svg" alt="LAAM" width="320" /> </p>
+
 # LAAM — لّام
 
 > مُلِمّ لتقاريرك المالية &nbsp;·&nbsp; Deeply knowledgeable about your financial reports
