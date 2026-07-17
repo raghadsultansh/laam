@@ -34,6 +34,19 @@ export async function getReportStatus(reportId: string) {
   return data;
 }
 
+export async function getReportSummary(reportId: string): Promise<{ url: string } | null> {
+  try {
+    const { data } = await api.get(`/api/v1/reports/${reportId}/summary`);
+    return data;
+  } catch {
+    return null;
+  }
+}
+
+export async function generateReportSummary(reportId: string): Promise<void> {
+  await api.post(`/api/v1/reports/${reportId}/summary`);
+}
+
 export async function uploadReport(file: File, companyId?: string) {
   const form = new FormData();
   form.append('file', file);
@@ -101,6 +114,39 @@ export async function generateDashboard(reportId: string) {
   return data;
 }
 
+// ── Comparison ────────────────────────────────────────────────────────────────
+
+export async function createComparisonSession(reportIds: string[], title?: string) {
+  const { data } = await api.post<ComparisonSession>('/api/v1/comparison-sessions', {
+    report_ids: reportIds,
+    title,
+  });
+  return data;
+}
+
+export async function listComparisonSessions() {
+  const { data } = await api.get<ComparisonSession[]>('/api/v1/comparison-sessions');
+  return data;
+}
+
+export async function getComparisonSession(sessionId: string) {
+  const { data } = await api.get<ComparisonSession>(`/api/v1/comparison-sessions/${sessionId}`);
+  return data;
+}
+
+export async function getComparisonMessages(sessionId: string) {
+  const { data } = await api.get<ComparisonMessage[]>(`/api/v1/comparison-sessions/${sessionId}/messages`);
+  return data;
+}
+
+export async function sendComparisonMessage(sessionId: string, question: string) {
+  const { data } = await api.post<ComparisonChatResponse>(
+    `/api/v1/comparison-sessions/${sessionId}/chat`,
+    { question },
+  );
+  return data;
+}
+
 // ── Admin ─────────────────────────────────────────────────────────────────────
 
 export async function adminListCompanies() {
@@ -123,7 +169,7 @@ export async function adminListReports() {
 
 export async function adminUpdateReport(
   id: string,
-  update: { visibility?: string; status?: string; title?: string },
+  update: { visibility?: string; status?: string; title?: string; company_id?: string },
 ) {
   const { data } = await api.patch<AdminReport>(`/api/v1/admin/reports/${id}`, update);
   return data;
@@ -262,6 +308,7 @@ export type AdminReport = {
   status: string;
   visibility: string;
   created_at: string;
+  company_id: string | null;
   companies: { id: string; name_en: string } | null;
 };
 
@@ -271,4 +318,35 @@ export type AdminUser = {
   created_at: string;
   last_sign_in_at: string | null;
   sessions: number;
+};
+
+export type ComparisonSession = {
+  id: string;
+  user_id: string;
+  title: string;
+  report_ids: string[];
+  created_at: string;
+  reports: BackendReport[];
+};
+
+export type ComparisonMessage = {
+  id: string;
+  session_id: string;
+  role: 'user' | 'assistant';
+  content: string;
+  per_company_answers: PerCompanyAnswer[] | null;
+  created_at: string;
+};
+
+export type PerCompanyAnswer = {
+  report_id: string;
+  company_name: string;
+  fiscal_year: string;
+  answer: string;
+  sources: Source[];
+};
+
+export type ComparisonChatResponse = {
+  per_company: PerCompanyAnswer[];
+  synthesis: string;
 };

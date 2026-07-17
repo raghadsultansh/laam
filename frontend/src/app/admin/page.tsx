@@ -27,6 +27,30 @@ import {
   type AdminUser,
 } from '@/lib/api';
 
+// ── Company picker (used in Reports tab to fix orphaned company_id) ───────────
+function CompanyPicker({
+  report,
+  companies,
+  onAssign,
+}: {
+  report: AdminReport;
+  companies: AdminCompany[];
+  onAssign: (companyId: string) => void;
+}) {
+  return (
+    <select
+      className="rounded-lg border border-[var(--border)] bg-[var(--background)] px-2 py-1 text-xs text-[var(--foreground)]"
+      value={report.company_id ?? ''}
+      onChange={e => e.target.value && onAssign(e.target.value)}
+    >
+      <option value="" disabled>— assign company —</option>
+      {companies.map(c => (
+        <option key={c.id} value={c.id}>{c.name_en}</option>
+      ))}
+    </select>
+  );
+}
+
 type Tab = 'companies' | 'reports' | 'users';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -207,12 +231,20 @@ function CompaniesTab() {
 
 function ReportsTab() {
   const [reports, setReports] = useState<AdminReport[]>([]);
+  const [companies, setCompanies] = useState<AdminCompany[]>([]);
   const [loading, setLoading] = useState(true);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [editTitleId, setEditTitleId] = useState<string | null>(null);
+  const [titleDraft, setTitleDraft] = useState('');
+  const [savingTitle, setSavingTitle] = useState(false);
 
   async function load() {
     setLoading(true);
-    try { setReports(await adminListReports()); } catch {}
+    try {
+      const [r, c] = await Promise.all([adminListReports(), adminListCompanies()]);
+      setReports(r);
+      setCompanies(c);
+    } catch {}
     setLoading(false);
   }
 
@@ -226,6 +258,16 @@ function ReportsTab() {
     } catch {}
   }
 
+  async function assignCompany(r: AdminReport, companyId: string) {
+    const company = companies.find(c => c.id === companyId);
+    try {
+      await adminUpdateReport(r.id, { company_id: companyId });
+      setReports(prev => prev.map(x => x.id === r.id
+        ? { ...x, company_id: companyId, companies: company ? { id: company.id, name_en: company.name_en } : x.companies }
+        : x));
+    } catch {}
+  }
+
   async function del(id: string) {
     setDeletingId(id);
     try {
@@ -233,6 +275,21 @@ function ReportsTab() {
       setReports(prev => prev.filter(r => r.id !== id));
     } catch {}
     setDeletingId(null);
+  }
+
+  function startEditTitle(r: AdminReport) {
+    setEditTitleId(r.id);
+    setTitleDraft(r.title ?? r.file_name ?? '');
+  }
+
+  async function saveTitle(id: string) {
+    setSavingTitle(true);
+    try {
+      await adminUpdateReport(id, { title: titleDraft });
+      setReports(prev => prev.map(x => x.id === id ? { ...x, title: titleDraft } : x));
+      setEditTitleId(null);
+    } catch {}
+    setSavingTitle(false);
   }
 
   if (loading) return <TableSkeleton cols={6} />;
@@ -251,10 +308,50 @@ function ReportsTab() {
           {reports.map(r => (
             <tr key={r.id} className="bg-[color:var(--card)] transition hover:bg-[var(--card-strong)]">
               <td className="px-4 py-3">
-                <p className="font-semibold text-[var(--foreground)]">{r.title || r.file_name || '—'}</p>
-                <p className="text-xs text-[var(--muted-foreground)]">{fmt(r.created_at)}</p>
+                {editTitleId === r.id ? (
+                  <div className="flex items-center gap-1.5">
+                    <input
+                      autoFocus
+                      className="w-full rounded-lg border border-[var(--border)] bg-[var(--background)] px-2 py-1 text-sm text-[var(--foreground)]"
+                      value={titleDraft}
+                      onChange={e => setTitleDraft(e.target.value)}
+                      onKeyDown={e => {
+                        if (e.key === 'Enter') saveTitle(r.id);
+                        if (e.key === 'Escape') setEditTitleId(null);
+                      }}
+                    />
+                    <button onClick={() => saveTitle(r.id)} disabled={savingTitle} className="grid h-7 w-7 shrink-0 place-content-center rounded-lg bg-[var(--brand)] text-white disabled:opacity-50">
+                      <Check className="h-3.5 w-3.5" />
+                    </button>
+                    <button onClick={() => setEditTitleId(null)} className="grid h-7 w-7 shrink-0 place-content-center rounded-lg border border-[var(--border)] text-[var(--muted-foreground)]">
+                      <X className="h-3.5 w-3.5" />
+                    </button>
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-1.5">
+                    <div>
+                      <p className="font-semibold text-[var(--foreground)]">{r.title || r.file_name || '—'}</p>
+                      <p className="text-xs text-[var(--muted-foreground)]">{fmt(r.created_at)}</p>
+                    </div>
+                    <button onClick={() => startEditTitle(r)} className="grid h-6 w-6 shrink-0 place-content-center rounded-lg text-[var(--muted-foreground)] transition hover:text-[var(--foreground)]" title="Rename report">
+                      <Pencil className="h-3 w-3" />
+                    </button>
+                  </div>
+                )}
               </td>
-              <td className="px-4 py-3 text-[var(--muted-foreground)]">{r.companies?.name_en ?? '—'}</td>
+              <td className="px-4 py-3 text-[var(--muted-foreground)]">
+                {r.company_id ? (
+                  <div className="flex flex-col gap-1">
+                    <span>{r.companies?.name_en ?? '—'}</span>
+                    <CompanyPicker report={r} companies={companies} onAssign={(id) => assignCompany(r, id)} />
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[11px] font-semibold text-amber-500">Unlinked</span>
+                    <CompanyPicker report={r} companies={companies} onAssign={(id) => assignCompany(r, id)} />
+                  </div>
+                )}
+              </td>
               <td className="px-4 py-3 text-[var(--muted-foreground)]">{r.fiscal_year ?? '—'}</td>
               <td className="px-4 py-3"><StatusBadge value={r.status} /></td>
               <td className="px-4 py-3">

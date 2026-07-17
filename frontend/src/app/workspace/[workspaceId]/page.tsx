@@ -2,15 +2,64 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { BarChart3, FilePlus2, LockKeyhole, Menu, MessageSquare, Moon, PanelRightOpen, Sun } from 'lucide-react';
+import { BarChart3, FileText, FilePlus2, LockKeyhole, Menu, MessageSquare, Moon, PanelRightOpen, ShieldAlert, Sun } from 'lucide-react';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { ChatWindow } from '@/components/workspace/ChatWindow';
 import { EvidencePanel } from '@/components/workspace/EvidencePanel';
 import { Dashboard } from '@/components/workspace/Dashboard';
+import { SummaryTab } from '@/components/workspace/SummaryTab';
+import { AnalyzerDashboard } from '@/components/workspace/AnalyzerDashboard';
+import { AnalyzerChat } from '@/components/workspace/AnalyzerChat';
+import { RiskAnalysisTab } from '@/components/workspace/RiskAnalysisTab';
 import { UploadReportCard } from '@/components/workspace/UploadReportCard';
 import { WorkspaceHeader } from '@/components/workspace/WorkspaceHeader';
 import { useAppPreferences } from '@/components/providers/AppPreferencesProvider';
 import { getSession, type BackendSession, type Source } from '@/lib/api';
+
+// Mock evidence sources for the Aramco demo — all page refs from the
+// saudi-aramco-ara-2024-english.pdf Annual Report
+const ARAMCO_MOCK_SOURCES: Source[] = [
+  {
+    page_number: 166,
+    section_title: 'Five-Year Financial Summary — Income Statement',
+    snippet: 'Total revenues and other income: 2024 $480.4B · 2023 $495.0B · 2022 $604.4B · 2021 $400.5B · 2020 $229.9B. Net income: 2024 $106.2B · 2023 $121.3B · 2022 $161.1B. Operating income (EBIT): 2024 $206.6B · 2023 $231.5B.',
+  },
+  {
+    page_number: 168,
+    section_title: 'Consolidated Balance Sheet',
+    snippet: 'Total assets $646.3B (2023: $660.8B). Total equity $440.4B (2023: $463.2B). Shareholders\' equity $388.9B. Total borrowings $85.1B (2023: $77.4B). Cash and cash equivalents $57.8B (2023: $53.1B).',
+  },
+  {
+    page_number: 170,
+    section_title: 'Consolidated Statement of Cash Flows',
+    snippet: 'Net cash from operating activities $135.7B (2023: $143.4B). Capital expenditure $(50.4)B (2023: $(42.2)B). Dividends paid to shareholders $(124.2)B (2023: $(97.8)B). Net increase/(decrease) in borrowings $7.7B.',
+  },
+  {
+    page_number: 44,
+    section_title: 'Free Cash Flow',
+    snippet: 'Free cash flow (non-IFRS): 2024 $85.3B · 2023 $101.2B · 2022 $148.5B. Defined as net cash provided by operating activities less capital expenditure.',
+  },
+  {
+    page_number: 32,
+    section_title: 'Key Financial and Operational Metrics',
+    snippet: 'ROACE: 20.2% (2023: 24.2%). Gearing: 4.5% (2023: 3.4%). Average crude oil price realized: $80.2/bbl (2023: $84.9/bbl). Total hydrocarbon production: 12.4 Mboe/d.',
+  },
+  {
+    page_number: 47,
+    section_title: 'Upstream — Reserves & Lifting Cost',
+    snippet: 'Proved reserves: 250.0 billion BOE — crude oil & condensate 189.8 Bbbl, NGL 26.1 Bbbl, natural gas 209.8 tscf. Upstream lifting cost: $3.53/boe (2023: $3.19/boe). Average upstream capex per boe: $8.3.',
+  },
+  {
+    page_number: 166,
+    section_title: 'Earnings Per Share & Finance Costs',
+    snippet: 'Basic EPS: $0.43 (2023: $0.50; 2022: $0.66) on 241.7B weighted-average shares. Finance costs: $2.8B (2023: $2.2B). Interest coverage (EBIT / finance costs): ~73.8×.',
+  },
+  {
+    page_number: 122,
+    section_title: 'Consolidated Statements of Income (Full Year)',
+    snippet: 'Total revenues $480.4B. Operating income $206.6B. Net income $106.2B. Net income attributable to shareholders of Saudi Aramco $105.0B. Non-controlling interests $1.2B.',
+  },
+];
 import { supabase } from '@/lib/supabase';
 
 export default function WorkspacePage({
@@ -20,7 +69,7 @@ export default function WorkspacePage({
 }) {
   const { locale, mounted, theme, toggleTheme, toggleLocale } = useAppPreferences();
   const isArabic = locale === 'ar';
-  const [activeTab, setActiveTab] = useState<'chat' | 'dashboard'>('chat');
+  const [activeTab, setActiveTab] = useState<'chat' | 'dashboard' | 'summary' | 'risk'>('chat');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [showRightPanel, setShowRightPanel] = useState(false);
@@ -49,8 +98,15 @@ export default function WorkspacePage({
     getSession(sessionId).then(setSession).catch(() => {});
   }, [sessionId]);
 
+  // Pre-load mock sources into the evidence panel for the Aramco demo
+  useEffect(() => {
+    const companyName = (session?.reports?.companies as any)?.name_en?.toLowerCase() ?? '';
+    if (companyName.includes('aramco')) setLatestSources(ARAMCO_MOCK_SOURCES);
+  }, [session]);
+
   const report = session?.reports ?? null;
   const company = report?.companies ?? null;
+  const isAramco = !!(company as any)?.name_en?.toLowerCase().includes('aramco');
   const resolvedSessionTitle = sessionTitle ?? session?.title ?? undefined;
   const reportLabel = company
     ? `${isArabic ? company.name_ar || company.name_en : company.name_en} ${report?.fiscal_year ?? ''}`
@@ -185,23 +241,57 @@ export default function WorkspacePage({
                   <BarChart3 className="h-4 w-4 text-[var(--brand)]" />
                   {isArabic ? 'لوحة المعلومات' : 'Dashboard'}
                 </button>
+                <button
+                  type="button"
+                  onClick={() => setActiveTab('summary')}
+                  className={`inline-flex items-center gap-2 rounded-[0.9rem] px-3 py-2 text-sm font-semibold transition md:px-4 md:py-2.5 ${
+                    activeTab === 'summary'
+                      ? 'bg-[var(--background)] text-[var(--foreground)] shadow-[var(--shadow-sm)]'
+                      : 'text-[var(--muted-foreground)]'
+                  }`}
+                >
+                  <FileText className="h-4 w-4 text-[var(--brand)]" />
+                  {isArabic ? 'الملخص' : 'Summary'}
+                </button>
+                {isAramco && (
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab('risk')}
+                    className={`inline-flex items-center gap-2 rounded-[0.9rem] px-3 py-2 text-sm font-semibold transition md:px-4 md:py-2.5 ${
+                      activeTab === 'risk'
+                        ? 'bg-[var(--background)] text-[var(--foreground)] shadow-[var(--shadow-sm)]'
+                        : 'text-[var(--muted-foreground)]'
+                    }`}
+                  >
+                    <ShieldAlert className="h-4 w-4 text-amber-500" />
+                    {isArabic ? 'تحليل المخاطر' : 'Risk Analysis'}
+                  </button>
+                )}
               </div>
 
               <div className="min-h-0 flex-1">
                 {activeTab === 'chat' ? (
-                  <ChatWindow
-                    sessionId={sessionId}
-                    reportLabel={reportLabel}
-                    onNewSources={setLatestSources}
-                    onSourceClick={(sources, index) => {
-                      setLatestSources(sources);
-                      setShowRightPanel(true);
-                      setHighlightedSourceIndex(index);
-                      setTimeout(() => setHighlightedSourceIndex(undefined), 1500);
-                    }}
-                  />
+                  isAramco ? <AnalyzerChat /> : (
+                    <ChatWindow
+                      sessionId={sessionId}
+                      reportLabel={reportLabel}
+                      onNewSources={setLatestSources}
+                      onSourceClick={(sources, index) => {
+                        setLatestSources(sources);
+                        setShowRightPanel(true);
+                        setHighlightedSourceIndex(index);
+                        setTimeout(() => setHighlightedSourceIndex(undefined), 1500);
+                      }}
+                    />
+                  )
+                ) : activeTab === 'dashboard' ? (
+                  isAramco
+                    ? <AnalyzerDashboard reportId={report?.id ?? undefined} />
+                    : <Dashboard reportId={report?.id ?? undefined} />
+                ) : activeTab === 'risk' ? (
+                  <RiskAnalysisTab />
                 ) : (
-                  <Dashboard reportId={report?.id ?? undefined} />
+                  <SummaryTab reportId={report?.id ?? undefined} />
                 )}
               </div>
             </section>

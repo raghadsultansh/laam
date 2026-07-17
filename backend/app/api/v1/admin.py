@@ -13,12 +13,17 @@ from app.db.supabase import supabase
 
 router = APIRouter()
 
-ADMIN_EMAILS = {"laam.ai.team@gmail.com"}
-
 
 def _require_admin(user: dict = Depends(get_current_user)) -> dict:
-    """Raises 403 if the authenticated user is not an admin."""
-    if user.get("email") not in ADMIN_EMAILS:
+    """Raises 403 if the authenticated user's profile is not system_role='admin'."""
+    result = (
+        supabase.table("profiles")
+        .select("system_role")
+        .eq("id", user["id"])
+        .single()
+        .execute()
+    )
+    if not result.data or result.data.get("system_role") != "admin":
         raise HTTPException(status_code=403, detail="Admin access required")
     return user
 
@@ -76,6 +81,7 @@ class ReportUpdate(BaseModel):
     visibility: Optional[str] = None
     status:     Optional[str] = None
     title:      Optional[str] = None
+    company_id: Optional[str] = None
 
 
 @router.get("/admin/reports")
@@ -83,7 +89,7 @@ async def list_reports(admin: dict = Depends(_require_admin)):
     """Returns all reports with company info and processing status."""
     result = (
         supabase.table("reports")
-        .select("id, title, file_name, fiscal_year, status, visibility, created_at, companies(name_en)")
+        .select("id, title, file_name, fiscal_year, status, visibility, created_at, company_id, companies(id, name_en)")
         .order("created_at", desc=True)
         .execute()
     )
