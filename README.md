@@ -105,9 +105,7 @@ Training notebooks and evaluation scripts are in `research/`.
 **Latifa Hassan Altuwairqi**  
 **Raghad Sultan Alshanar**
 
-Supervisor: Dr. Fatmah Alanazi  
-College of Computer and Information Sciences, Imam Mohammad Ibn Saud Islamic University  
-Graduation Project, 2026
+
 
 ---
 
